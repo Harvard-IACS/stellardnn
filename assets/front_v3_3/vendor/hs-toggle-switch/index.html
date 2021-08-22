@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title -->
+    <title>Toggle Switch</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <!-- Favicon -->
+    <link href="../../../favicon.ico" rel="shortcut icon">
+
+    <!-- Google Fonts -->
+    <!-- Font -->
+    <link as="font" href="../../assets/vendor/inter-font-family/Inter-Regular.woff2" rel="preload">
+    <link as="font" href="../../assets/vendor/inter-font-family/Inter-SemiBold.woff2" rel="preload">
+
+
+    <!-- CSS Implementing Plugins -->
+
+    <!-- CSS Front Template -->
+    <link href="../../../assets/css/theme.css" rel="stylesheet">
+</head>
+<body>
+<div style="height: 20vh;"></div>
+
+<div class="container">
+    <div class="mb-5">
+        <div class="row justify-content-between align-items-center mb-3">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <h2 class="h3 mb-0">Subscription plans</h2>
+            </div>
+
+            <div class="col-sm-6 text-sm-right">
+                <div class="d-flex justify-content-end align-items-center">
+                    <span class="font-size-1 text-muted">Annual</span>
+                    <div class="toggle-switch pl-10">
+                        <input class="js-toggle-switch toggle-switch-input" data-hs-toggle-switch-options='{
+								         "targetSelector": "#count1, #count2, #count3"
+								       }' id="customSwitch"
+                               type="checkbox">
+                        <label class="toggle-switch-label" for="customSwitch"></label>
+                    </div>
+                    <span class="font-size-1 text-muted">Monthly</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4 mb-5 mb-md-0">
+                <div class="custom-control custom-radio custom-control-inline checkbox-outline checkbox-icon w-100 h-100">
+                    <input class="custom-control-input checkbox-outline-input checkbox-icon-input" id="pricingRadio1"
+                           name="pricingRadio1" type="radio">
+                    <label class="checkbox-outline-label checkbox-icon-label card w-100 py-6 px-4 mb-0"
+                           for="pricingRadio1">
+                        <span class="h6 text-primary mb-3">Starter</span>
+                        <span class="d-block mb-2">
+	                <span class="h1 font-weight-normal">
+		                $<span data-hs-toggle-switch-item-options='{
+										         "min": 22,
+										         "max": 32
+										       }'
+                               id="count1">22</span>
+	                </span>
+	                <span class="font-size-1">/ mon</span>
+	              </span>
+                        <span class="d-block text-body font-size-1">For individuals just getting started</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 mb-5 mb-md-0">
+                <div class="custom-control custom-radio custom-control-inline checkbox-outline checkbox-icon w-100 h-100">
+                    <input checked class="custom-control-input checkbox-outline-input checkbox-icon-input"
+                           id="pricingRadio2" name="pricingRadio1" type="radio">
+                    <label class="checkbox-outline-label checkbox-icon-label card w-100 py-6 px-4 mb-0"
+                           for="pricingRadio2">
+                        <span class="h6 text-primary mb-3">Pro</span>
+                        <span class="d-block mb-2">
+									<span class="h1 font-weight-normal">
+										$<span data-hs-toggle-switch-item-options='{
+										         "min": 44,
+										         "max": 54
+										       }'
+                                               id="count2">44</span>
+									</span>
+	                <span class="font-size-1">/ mon</span>
+	              </span>
+                        <span class="d-block text-body font-size-1">For growing teams creating what's next</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="custom-control custom-radio custom-control-inline checkbox-outline checkbox-icon w-100 h-100">
+                    <input class="custom-control-input checkbox-outline-input checkbox-icon-input" id="pricingRadio3"
+                           name="pricingRadio1" type="radio">
+                    <label class="checkbox-outline-label checkbox-icon-label card w-100 py-6 px-4 mb-0"
+                           for="pricingRadio3">
+                        <span class="h6 text-primary mb-3">Enterprise</span>
+                        <span class="d-block mb-2">
+									<span class="h1 font-weight-normal">
+										$<span data-hs-toggle-switch-item-options='{
+										         "min": 69,
+										         "max": 79
+										       }'
+                                               id="count3">69</span>
+									</span>
+	                <span class="font-size-1">/ mon</span>
+	              </span>
+                        <span class="d-block text-body font-size-1">For teams building mission-critical apps</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="row justify-content-between align-items-center mb-3">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <h2 class="h3 mb-0">Subscription plans (Checked)</h2>
+            </div>
+
+            <div class="col-sm-6 text-sm-right">
+                <div class="d-flex justify-content-end align-items-center">
+                    <span class="font-size-1 text-muted">Annual</span>
+                    <div class="toggle-switch pl-10">
+                        <input checked class="js-toggle-switch toggle-switch-input" data-hs-toggle-switch-options='{
+								         "targetSelector": "#count1Checked, #count2Checked, #count3Checked"
+								       }' id="customSwitchChecked"
+                               type="checkbox">
+                        <label class="toggle-switch-label" for="customSwitchChecked"></label>
+                    </div>
+                    <span class="font-size-1 text-muted">Monthly</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4 mb-5 mb-md-0">
+                <div class="custom-control custom-radio custom-control-inline checkbox-outline checkbox-icon w-100 h-100">
+                    <input class="custom-control-input checkbox-outline-input checkbox-icon-input"
+                           id="pricingRadio1Checked" name="pricingRadio1Checked" type="radio">
+                    <label class="checkbox-outline-label checkbox-icon-label card w-100 py-6 px-4 mb-0"
+                           for="pricingRadio1Checked">
+                        <span class="h6 text-primary mb-3">Starter</span>
+                        <span class="d-block mb-2">
+	                <span class="h1 font-weight-normal">
+		                $<span data-hs-toggle-switch-item-options='{
+										         "min": 22,
+										         "max": 32
+										       }'
+                               id="count1Checked">22</span>
+	                </span>
+	                <span class="font-size-1">/ mon</span>
+	              </span>
+                        <span class="d-block text-body font-size-1">For individuals just getting started</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 mb-5 mb-md-0">
+                <div class="custom-control custom-radio custom-control-inline checkbox-outline checkbox-icon w-100 h-100">
+                    <input checked class="custom-control-input checkbox-outline-input checkbox-icon-input"
+                           id="pricingRadio2Checked" name="pricingRadio1Checked" type="radio">
+                    <label class="checkbox-outline-label checkbox-icon-label card w-100 py-6 px-4 mb-0"
+                           for="pricingRadio2Checked">
+                        <span class="h6 text-primary mb-3">Pro</span>
+                        <span class="d-block mb-2">
+									<span class="h1 font-weight-normal">
+										$<span data-hs-toggle-switch-item-options='{
+										         "min": 44,
+										         "max": 54
+										       }'
+                                               id="count2Checked">44</span>
+									</span>
+	                <span class="font-size-1">/ mon</span>
+	              </span>
+                        <span class="d-block text-body font-size-1">For growing teams creating what's next</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="custom-control custom-radio custom-control-inline checkbox-outline checkbox-icon w-100 h-100">
+                    <input class="custom-control-input checkbox-outline-input checkbox-icon-input"
+                           id="pricingRadio3Checked" name="pricingRadio1Checked" type="radio">
+                    <label class="checkbox-outline-label checkbox-icon-label card w-100 py-6 px-4 mb-0"
+                           for="pricingRadio3Checked">
+                        <span class="h6 text-primary mb-3">Enterprise</span>
+                        <span class="d-block mb-2">
+									<span class="h1 font-weight-normal">
+										$<span data-hs-toggle-switch-item-options='{
+										         "min": 69,
+										         "max": 79
+										       }'
+                                               id="count3Checked">69</span>
+									</span>
+	                <span class="font-size-1">/ mon</span>
+	              </span>
+                        <span class="d-block text-body font-size-1">For teams building mission-critical apps</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="height: 20vh;"></div>
+
+<script src="../../../assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="../../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+<script src="../../../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="./dist/hs-toggle-switch.min.js"></script>
+
+<script>
+    $(document).on('ready', function () {
+        $('.js-toggle-switch').each(function () {
+            var toggleSwitch = new HSToggleSwitch($(this)).init();
+        });
+    });
+</script>
+</body>
+</html>

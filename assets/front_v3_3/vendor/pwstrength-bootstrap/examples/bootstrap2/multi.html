@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 2 Password Strength Meter Example - Multiple inputs</title>
+    <link href="bootstrap2.css" media="screen" rel="stylesheet"/>
+</head>
+<body>
+<div class="container" style="margin-left: 20px;">
+    <h1>Bootstrap 2 Password Strength Meter Example - Multiple inputs</h1>
+    <form style="margin-bottom: 20px;">
+        User: <input id="username" type="text"/><br/>
+        <fieldset>
+            <legend>Please type in your first password</legend>
+            Pass: <input id="first_password" type="password"/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Please type in your second password</legend>
+            Pass: <input id="second_password" type="password"/>
+        </fieldset>
+    </form>
+    <div class="row">
+        <div class="span12">
+<pre>jQuery(document).ready(function () {
+    "use strict";
+    $(':password').pwstrength({
+        ui: { bootstrap2: true }
+    });
+});</pre>
+        </div>
+    </div>
+    <p><a href="..">Go back</a></p>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="../pwstrength.js" type="text/javascript"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        "use strict";
+        $(':password').pwstrength({
+            ui: {bootstrap2: true}
+        });
+    });
+</script>
+</body>
+</html>

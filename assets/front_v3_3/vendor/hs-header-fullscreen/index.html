@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Title -->
     <title>Header Fullscreen</title>
@@ -13,8 +14,8 @@
 
     <!-- Google Fonts -->
     <!-- Font -->
-    <link as="font" href="../../assets/vendor/inter-font-family/Inter-Regular.woff2" rel="preload">
-    <link as="font" href="../../assets/vendor/inter-font-family/Inter-SemiBold.woff2" rel="preload">
+    <link as="font" href="../.assets/front_v3_3/vendor/inter-font-family/Inter-Regular.woff2" rel="preload">
+    <link as="font" href="../.assets/front_v3_3/vendor/inter-font-family/Inter-SemiBold.woff2" rel="preload">
 
 
     <!-- CSS Implementing Plugins -->
@@ -22,6 +23,7 @@
     <!-- CSS Front Template -->
     <link href="../../../assets/css/theme.css" rel="stylesheet">
 </head>
+
 <body>
 <header class="header header-bg-transparent header-abs-top" id="header">
     <div class="header-section">
@@ -31,7 +33,7 @@
                 <div class="d-flex justify-content-between w-100">
                     <!-- Logo -->
                     <a aria-label="Front" class="navbar-brand header-navbar-brand" href="/">
-                        <img alt="Logo" src="../../../assets/svg/logos/logo-white.svg">
+                        <img alt="Logo" src="../../.assets/front_v3_3/svg/logos/logo-white.svg">
                     </a>
                     <!-- End Logo -->
 
@@ -39,9 +41,7 @@
                     <button aria-controls="fullscreen" aria-expanded="false" aria-haspopup="true"
                             aria-label="Toggle Header"
                             class="navbar-toggler d-block btn hamburger hamburger--white fullscreen-toggler"
-                            data-target="#headerFullscreen"
-                            id="headerToggler"
-                            type="button">
+                            data-target="#headerFullscreen" id="headerToggler" type="button">
 	              <span class="hamburger-box" id="hamburgerTrigger">
 	                <span class="hamburger-inner"></span>
 	              </span>
@@ -52,11 +52,9 @@
             <!-- End Nav -->
 
             <!-- Navigation -->
-            <div aria-labelledby="headerToggler" class="fullscreen"
-                 data-hs-header-fullscreen-options='{
+            <div aria-labelledby="headerToggler" class="fullscreen" data-hs-header-fullscreen-options='{
 					       "overlayClass": "fullscreen-overlay"
-					     }'
-                 id="headerFullscreen">
+					     }' id="headerFullscreen">
                 <div class="fullscreen-container">
                     <div class="container">
                         <div class="row justify-content-md-between align-items-center">
@@ -525,10 +523,10 @@
 
 <div style="height: 100vh; background-color: #000;"></div>
 
-<script src="../../../assets/vendor/jquery/dist/jquery.min.js"></script>
-<script src="../../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
-<script src="../../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
-<script src="../../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="../../.assets/front_v3_3/vendor/jquery/dist/jquery.min.js"></script>
+<script src="../../.assets/front_v3_3/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+<script src="../../.assets/front_v3_3/vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="../../.assets/front_v3_3/vendor/bootstrap/bootstrap.min.js"></script>
 
 <script src="../hs-hamburgers/dist/hs-hamburgers.min.js"></script>
 <script src="./dist/hs-header-fullscreen.min.js"></script>
@@ -553,4 +551,5 @@
     });
 </script>
 </body>
+
 </html>

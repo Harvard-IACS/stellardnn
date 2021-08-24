@@ -1,0 +1,197 @@
+
+Tjavascript:S1481"8Remove the declaration of the unused 'version' variable.(ï•˜Ö
+Qjavascript:S1854"5Remove this useless assignment to variable "version".(ï•˜Ö
+Pjavascript:S1117¡".'data' is already declared in the upper scope.(Ù×µ»ûÿÿÿÿ
+Yjavascript:S1481é"7Remove the declaration of the unused 'widget' variable.(»¹¥Ùüÿÿÿÿ
+Vjavascript:S1854é"4Remove this useless assignment to variable "widget".(»¹¥Ùüÿÿÿÿ
+Ojavascript:S1117Ç"2'position' is already declared in the upper scope.(§¸µ”
+Ojavascript:S1117 "2'position' is already declared in the upper scope.(¨ëÍ‡
+Kjavascript:S1117 ".'data' is already declared in the upper scope.(¨ëÍ‡
+Tjavascript:S1117Ì"2'position' is already declared in the upper scope.(€šÙÿøÿÿÿÿ
+Pjavascript:S1117Ì".'data' is already declared in the upper scope.(€šÙÿøÿÿÿÿ
+Ojavascript:S1117ú"2'position' is already declared in the upper scope.(¨ëÍ‡
+Kjavascript:S1117ú".'data' is already declared in the upper scope.(¨ëÍ‡
+Tjavascript:S1117	"2'position' is already declared in the upper scope.(€šÙÿøÿÿÿÿ
+Pjavascript:S1117	".'data' is already declared in the upper scope.(€šÙÿøÿÿÿÿ
+Vjavascript:S1481Ñ	"9Remove the declaration of the unused 'position' variable.(ÚÜÇ
+Sjavascript:S1854Ñ	"6Remove this useless assignment to variable "position".(ÚÜÇ
+Wjavascript:S1481ã	"5Remove the declaration of the unused 'data' variable.(¹«úùûÿÿÿÿ
+Tjavascript:S1854ã	"2Remove this useless assignment to variable "data".(¹«úùûÿÿÿÿ
+^javascript:S1481‚
+"ARemove the declaration of the unused 'disableSelection' variable.(ëÔÛå
+[javascript:S1854‚
+">Remove this useless assignment to variable "disableSelection".(ëÔÛå
+Ljavascript:S1117½
+"0'jQuery' is already declared in the upper scope.(•ƒŠP
+]javascript:S2137½
+"ADo not use "undefined" to declare a parameter - use another name.(•ƒŠP
+Ljavascript:S1117ş
+"/'color' is already declared in the upper scope.(Òˆûß
+Hjavascript:S1117ã"+'_' is already declared in the upper scope.(òìŞ
+Kjavascript:S1117ú".'hook' is already declared in the upper scope.(¤èó·
+gjavascript:S905ú"FExpected an assignment or function call and instead saw an expression.(“¸’ıÿÿÿÿ
+Rjavascript:S1117º"0'effect' is already declared in the upper scope.(‡Ÿóàşÿÿÿÿ
+Ojavascript:S1117¯"2'position' is already declared in the upper scope.(ÎÈÚ
+Rjavascript:S1117ÿ"0'effect' is already declared in the upper scope.(¢ Øôıÿÿÿÿ
+„javascript:S2692ã"bThis check ignores index 0; consider using 'includes' method to make this check safe and explicit.(Äü¢¤ÿÿÿÿÿ
+2javascript:S108×"Empty block statement.(ÄüİÔ
+`javascript:S1481ş"CRemove the declaration of the unused 'effectsEffectBlind' variable.(µÏ¢”
+]javascript:S1854ş"@Remove this useless assignment to variable "effectsEffectBlind".(µÏ¢”
+ajavascript:S1481µ"DRemove the declaration of the unused 'effectsEffectBounce' variable.(Ú«’
+^javascript:S1854µ"ARemove this useless assignment to variable "effectsEffectBounce".(Ú«’
+djavascript:S1481”"BRemove the declaration of the unused 'effectsEffectClip' variable.(Ø£’íùÿÿÿÿ
+ajavascript:S1854”"?Remove this useless assignment to variable "effectsEffectClip".(Ø£’íùÿÿÿÿ
+_javascript:S1481Æ"BRemove the declaration of the unused 'effectsEffectDrop' variable.(ÉİÄ
+\javascript:S1854Æ"?Remove this useless assignment to variable "effectsEffectDrop".(ÉİÄ
+gjavascript:S1481ş"ERemove the declaration of the unused 'effectsEffectExplode' variable.(ïûÖøÿÿÿÿ
+djavascript:S1854ş"BRemove this useless assignment to variable "effectsEffectExplode".(ïûÖøÿÿÿÿ
+_javascript:S1481Ü"BRemove the declaration of the unused 'effectsEffectFade' variable.(õõÑ—
+\javascript:S1854Ü"?Remove this useless assignment to variable "effectsEffectFade".(õõÑ—
+djavascript:S1481ü"BRemove the declaration of the unused 'effectsEffectFold' variable.(…ÊÎ„úÿÿÿÿ
+ajavascript:S1854ü"?Remove this useless assignment to variable "effectsEffectFold".(…ÊÎ„úÿÿÿÿ
+cjavascript:S1481Æ"GRemove the declaration of the unused 'effectsEffectHighlight' variable.(ü¶‹d
+`javascript:S1854Æ"DRemove this useless assignment to variable "effectsEffectHighlight".(ü¶‹d
+^javascript:S1481ğ"BRemove the declaration of the unused 'effectsEffectSize' variable.(¼šª
+[javascript:S1854ğ"?Remove this useless assignment to variable "effectsEffectSize".(¼šª
+Njavascript:S1117€"2'position' is already declared in the upper scope.(¨¥ÌW
+_javascript:S1481 "CRemove the declaration of the unused 'effectsEffectScale' variable.(Ú¢:
+\javascript:S1854 "@Remove this useless assignment to variable "effectsEffectScale".(Ú¢:
+_javascript:S1481È"BRemove the declaration of the unused 'effectsEffectPuff' variable.(ÀÖùí
+\javascript:S1854È"?Remove this useless assignment to variable "effectsEffectPuff".(ÀÖùí
+gjavascript:S1481â"ERemove the declaration of the unused 'effectsEffectPulsate' variable.(¤£•Ÿùÿÿÿÿ
+djavascript:S1854â"BRemove this useless assignment to variable "effectsEffectPulsate".(¤£•Ÿùÿÿÿÿ
+`javascript:S1481“"CRemove the declaration of the unused 'effectsEffectShake' variable.(Œ‰«À
+]javascript:S1854“"@Remove this useless assignment to variable "effectsEffectShake".(Œ‰«À
+ejavascript:S1481Î"CRemove the declaration of the unused 'effectsEffectSlide' variable.(¥Ìùşÿÿÿÿ
+bjavascript:S1854Î"@Remove this useless assignment to variable "effectsEffectSlide".(¥Ìùşÿÿÿÿ
+9javascript:S2814‹"'effect' is already defined.(Àç·©
+hjavascript:S1481‘"FRemove the declaration of the unused 'effectsEffectTransfer' variable.(—Ñ÷–øÿÿÿÿ
+ejavascript:S1854‘"CRemove this useless assignment to variable "effectsEffectTransfer".(—Ñ÷–øÿÿÿÿ
+Wjavascript:S1481Ú":Remove the declaration of the unused 'focusable' variable.(­ä»¸
+Tjavascript:S1854Ú"7Remove this useless assignment to variable "focusable".(­ä»¸
+Wjavascript:S1481à"5Remove the declaration of the unused 'form' variable.(÷í÷¿øÿÿÿÿ
+Tjavascript:S1854à"2Remove this useless assignment to variable "form".(÷í÷¿øÿÿÿÿ
+ajavascript:S1481ô"?Remove the declaration of the unused 'formResetMixin' variable.(Ì‹ºÖüÿÿÿÿ
+^javascript:S1854ô"<Remove this useless assignment to variable "formResetMixin".(Ì‹ºÖüÿÿÿÿ
+Pjavascript:S1117ö".'form' is already declared in the upper scope.(öÓêÆûÿÿÿÿ
+8javascript:S1116ğ"Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+Ujavascript:S1481€ "8Remove the declaration of the unused 'keycode' variable.(åæ‰ˆ
+Rjavascript:S1854€ "5Remove this useless assignment to variable "keycode".(åæ‰ˆ
+ajavascript:S1481• "?Remove the declaration of the unused 'escapeSelector' variable.(ı°âİøÿÿÿÿ
+^javascript:S1854• "<Remove this useless assignment to variable "escapeSelector".(ı°âİøÿÿÿÿ
+Tjavascript:S1481¬ "7Remove the declaration of the unused 'labels' variable.(Òáº®
+Qjavascript:S1854¬ "4Remove this useless assignment to variable "labels".(Òáº®
+Rjavascript:S1117­ "0'labels' is already declared in the upper scope.(¥Íû¡ùÿÿÿÿ
+_javascript:S1481ß "=Remove the declaration of the unused 'scrollParent' variable.(’½Ëøÿÿÿÿ
+\javascript:S1854ß ":Remove this useless assignment to variable "scrollParent".(’½Ëøÿÿÿÿ
+Ojavascript:S1117à "2'position' is already declared in the upper scope.(©å®Å
+Xjavascript:S1117ã "6'scrollParent' is already declared in the upper scope.(¢ùÏåıÿÿÿÿ
+[javascript:S1481!"9Remove the declaration of the unused 'tabbable' variable.(¾ •ÿøÿÿÿÿ
+Xjavascript:S1854!"6Remove this useless assignment to variable "tabbable".(¾ •ÿøÿÿÿÿ
+[javascript:S1481™!"9Remove the declaration of the unused 'uniqueId' variable.(Æ­î¦ÿÿÿÿÿ
+Xjavascript:S1854™!"6Remove this useless assignment to variable "uniqueId".(Æ­î¦ÿÿÿÿÿ
+^javascript:S1481Å!"ARemove the declaration of the unused 'widgetsAccordion' variable.(Ş²°±
+[javascript:S1854Å!">Remove this useless assignment to variable "widgetsAccordion".(Ş²°±
+Ojavascript:S1117ƒ$"2'position' is already declared in the upper scope.(Ûî
+Pjavascript:S1117†%".'data' is already declared in the upper scope.(÷ëåŞùÿÿÿÿ
+Kjavascript:S1117¸%".'data' is already declared in the upper scope.(§‚×Ä
+Kjavascript:S1117ó%".'data' is already declared in the upper scope.(á²Çö
+_javascript:S1481„&"BRemove the declaration of the unused 'safeActiveElement' variable.(Ã©‡¡
+\javascript:S1854„&"?Remove this useless assignment to variable "safeActiveElement".(Ã©‡¡
+Yjavascript:S1481´&"<Remove the declaration of the unused 'widgetsMenu' variable.(ÊÃùÏ
+Vjavascript:S1854´&"9Remove this useless assignment to variable "widgetsMenu".(ÊÃùÏ
+Ojavascript:S1117à)"2'position' is already declared in the upper scope.(šÁ‰
+Kjavascript:S1117°.".'data' is already declared in the upper scope.(ı ô 
+ajavascript:S1481Â0"DRemove the declaration of the unused 'widgetsAutocomplete' variable.(ê‰‹‘
+^javascript:S1854Â0"ARemove this useless assignment to variable "widgetsAutocomplete".(ê‰‹‘
+ajavascript:S1481Ú0"DRemove the declaration of the unused 'widgetsControlgroup' variable.(üÎÊ²
+^javascript:S1854Ú0"ARemove this useless assignment to variable "widgetsControlgroup".(üÎÊ²
+Mjavascript:S1117…1"0'widget' is already declared in the upper scope.(í¤¬¹
+Mjavascript:S1117†1"0'labels' is already declared in the upper scope.(š¬Èÿ
+Kjavascript:S1117×1".'data' is already declared in the upper scope.(è´¢ù
+Tjavascript:S1117Ş1"2'position' is already declared in the upper scope.(İ€ğèûÿÿÿÿ
+Ojavascript:S1117æ1"2'position' is already declared in the upper scope.(Ñú•«
+Ojavascript:S1117õ1"2'position' is already declared in the upper scope.(÷©±
+Tjavascript:S1117ş1"2'position' is already declared in the upper scope.(†š±™ùÿÿÿÿ
+Ojavascript:S1117‚2"2'position' is already declared in the upper scope.(ÀÙ”€
+Tjavascript:S1117†2"2'position' is already declared in the upper scope.(”ÒÇÑıÿÿÿÿ
+Rjavascript:S1117ƒ3"0'labels' is already declared in the upper scope.(úøÿÿÿÿ
+gjavascript:S1481ì4"ERemove the declaration of the unused 'widgetsCheckboxradio' variable.(­ÊĞ»ùÿÿÿÿ
+djavascript:S1854ì4"BRemove this useless assignment to variable "widgetsCheckboxradio".(­ÊĞ»ùÿÿÿÿ
+ujavascript:S1529§5"SReview this use of bitwise "&" operator; conditional "&&" might have been intended.(›’€…ıÿÿÿÿ
+Tjavascript:S1117é5"2'position' is already declared in the upper scope.(‹Šö±ùÿÿÿÿ
+`javascript:S1481Ù7">Remove the declaration of the unused 'widgetsButton' variable.(Èç­Áşÿÿÿÿ
+]javascript:S1854Ù7";Remove this useless assignment to variable "widgetsButton".(Èç­Áşÿÿÿÿ
+Njavascript:S1117ö7"2'position' is already declared in the upper scope.(öÓ‰U
+Ojavascript:S1117İ>"2'position' is already declared in the upper scope.(³¯×º
+Cjavascript:S1110§?"!Remove these useless parentheses.(¡Ò´ƒÿÿÿÿÿ
+Kjavascript:S1117ÒC".'date' is already declared in the upper scope.(ş°Û‚
+Pjavascript:S1117ßC".'date' is already declared in the upper scope.(şşò¼ùÿÿÿÿ
+Pjavascript:S1117ÇF".'year' is already declared in the upper scope.(ÔˆÃıÿÿÿÿ
+djavascript:S1481¯H"BRemove the declaration of the unused 'widgetsDatepicker' variable.(–ÜñÁıÿÿÿÿ
+ajavascript:S1854¯H"?Remove this useless assignment to variable "widgetsDatepicker".(–ÜñÁıÿÿÿÿ
+Ujavascript:S1481³H"3Remove the declaration of the unused 'ie' variable.(”»ÀÆøÿÿÿÿ
+Rjavascript:S1854³H"0Remove this useless assignment to variable "ie".(”»ÀÆøÿÿÿÿ
+_javascript:S1481ÉH"=Remove the declaration of the unused 'widgetsMouse' variable.(—Ğ¶ùÿÿÿÿ
+\javascript:S1854ÉH":Remove this useless assignment to variable "widgetsMouse".(—Ğ¶ùÿÿÿÿ
+Qjavascript:S1117›I"/'event' is already declared in the upper scope.(ÁÖËùÿÿÿÿ
+Ljavascript:S1117I"/'event' is already declared in the upper scope.(±¨ƒî
+Yjavascript:S1481J"7Remove the declaration of the unused 'plugin' variable.(İÆ‡œûÿÿÿÿ
+Vjavascript:S1854J"4Remove this useless assignment to variable "plugin".(İÆ‡œûÿÿÿÿ
+[javascript:S1481¬J"9Remove the declaration of the unused 'safeBlur' variable.(ê°¸±üÿÿÿÿ
+Xjavascript:S1854¬J"6Remove this useless assignment to variable "safeBlur".(ê°¸±üÿÿÿÿ
+]javascript:S3516›L";Refactor this function to not always return the same value.(êÕ¶ øÿÿÿÿ
+Xjavascript:S1117 R"6'scrollParent' is already declared in the upper scope.(Ö†¡øÿÿÿÿ
+^javascript:S1481‚T"ARemove the declaration of the unused 'widgetsDraggable' variable.(²‰Å
+[javascript:S1854‚T">Remove this useless assignment to variable "widgetsDraggable".(²‰Å
+Vjavascript:S1301ÒU"9"switch" statements should have at least 3 "case" clauses(°Ó÷
+Mjavascript:S1117†V"+'i' is already declared in the upper scope.(ˆğİşÿÿÿÿ
+Pjavascript:S1117†V".'axis' is already declared in the upper scope.(ˆğİşÿÿÿÿ
+Xjavascript:S3516‹W";Refactor this function to not always return the same value.(ì¹™¦
+Kjavascript:S1117W".'data' is already declared in the upper scope.(’€ü
+Pjavascript:S1117§X".'data' is already declared in the upper scope.(¦úĞÍûÿÿÿÿ
+Pjavascript:S1117·X".'data' is already declared in the upper scope.(×‰ê•şÿÿÿÿ
+Pjavascript:S1117ÏX".'data' is already declared in the upper scope.(›äÖøÿÿÿÿ
+Pjavascript:S1117¥Z".'data' is already declared in the upper scope.(ˆ©€’ùÿÿÿÿ
+bjavascript:S2589–\"@This always evaluates to truthy. Consider refactoring this code.(Î¹Ã¹üÿÿÿÿ
+cjavascript:S1481¡]"ARemove the declaration of the unused 'widgetsResizable' variable.(Ô¸Üıøÿÿÿÿ
+`javascript:S1854¡]">Remove this useless assignment to variable "widgetsResizable".(Ô¸Üıøÿÿÿÿ
+Ojavascript:S1117Ía"2'position' is already declared in the upper scope.(–úˆ“
+[javascript:S1481´d">Remove the declaration of the unused 'widgetsDialog' variable.(Éæº
+Xjavascript:S1854´d";Remove this useless assignment to variable "widgetsDialog".(Éæº
+^javascript:S1481•h"ARemove the declaration of the unused 'widgetsDroppable' variable.(øğ—
+[javascript:S1854•h">Remove this useless assignment to variable "widgetsDroppable".(øğ—
+`javascript:S1481­h"CRemove the declaration of the unused 'widgetsProgressbar' variable.(çÚ¥Û
+]javascript:S1854­h"@Remove this useless assignment to variable "widgetsProgressbar".(çÚ¥Û
+_javascript:S1481Ìi"BRemove the declaration of the unused 'widgetsSelectable' variable.(±‡¢Û
+\javascript:S1854Ìi"?Remove this useless assignment to variable "widgetsSelectable".(±‡¢Û
+_javascript:S1481şk"BRemove the declaration of the unused 'widgetsSelectmenu' variable.(øïÖË
+\javascript:S1854şk"?Remove this useless assignment to variable "widgetsSelectmenu".(øïÖË
+Kjavascript:S1117âp".'data' is already declared in the upper scope.(ì¼§
+`javascript:S1481”q">Remove the declaration of the unused 'widgetsSlider' variable.(úåØßûÿÿÿÿ
+]javascript:S1854”q";Remove this useless assignment to variable "widgetsSlider".(úåØßûÿÿÿÿ
+Mjavascript:S1117æq"+'i' is already declared in the upper scope.(”¯üöúÿÿÿÿ
+Ojavascript:S1117¥r"2'position' is already declared in the upper scope.(º‹¸“
+Ojavascript:S1117ãr"2'position' is already declared in the upper scope.(¼ïÅş
+Tjavascript:S1117ır"2'position' is already declared in the upper scope.(êºä†ûÿÿÿÿ
+bjavascript:S1481ñv"@Remove the declaration of the unused 'widgetsSortable' variable.(Ê øüøÿÿÿÿ
+_javascript:S1854ñv"=Remove this useless assignment to variable "widgetsSortable".(Ê øüøÿÿÿÿ
+?javascript:S1110œ"!Remove these useless parentheses.(ë³ä
+?javascript:S1110­"!Remove these useless parentheses.(ë³ä
+Mjavascript:S1117ì"/'event' is already declared in the upper scope.(øÓ™ç
+Mjavascript:S1117ö"/'event' is already declared in the upper scope.(øÓ™ç
+Mjavascript:S1117ÿ"/'event' is already declared in the upper scope.(øÓ™ç
+Mjavascript:S1117ƒ‚"/'event' is already declared in the upper scope.( Õ
+Mjavascript:S1117ˆ‚"/'event' is already declared in the upper scope.( Õ
+Mjavascript:S1117‘‚"/'event' is already declared in the upper scope.( Õ
+\javascript:S1481Œ‡"?Remove the declaration of the unused 'widgetsSpinner' variable.(å§¨'
+Yjavascript:S1854Œ‡"<Remove this useless assignment to variable "widgetsSpinner".(å§¨'
+Rjavascript:S1117‹"/'event' is already declared in the upper scope.(ÕöÔİÿÿÿÿÿ
+Pjavascript:S1117³‹"2'position' is already declared in the upper scope.(Ûî
+_javascript:S1481—"<Remove the declaration of the unused 'widgetsTabs' variable.(›µ”¼øÿÿÿÿ
+\javascript:S1854—"9Remove this useless assignment to variable "widgetsTabs".(›µ”¼øÿÿÿÿ
+Pjavascript:S1117³"2'position' is already declared in the upper scope.(êšä¬
+Mjavascript:S1117³"/'event' is already declared in the upper scope.(êšä¬
+Rjavascript:S1117Ş"/'event' is already declared in the upper scope.(Õé‚‘øÿÿÿÿ
+]javascript:S1481’"?Remove the declaration of the unused 'widgetsTooltip' variable.(ãÒÿÄ
+Zjavascript:S1854’"<Remove this useless assignment to variable "widgetsTooltip".(ãÒÿÄ

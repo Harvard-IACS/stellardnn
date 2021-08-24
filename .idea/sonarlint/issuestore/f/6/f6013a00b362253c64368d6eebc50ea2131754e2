@@ -1,28 +1,26 @@
 
-QWeb:AvoidCommentedOutCodeCheckŸ"Remove this commented out code.(„Æˆâ8î¿ŠÛ–/
-VWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(µÃ¶»ÿÿÿÿÿ8î¿ŠÛ–/
-QWeb:AvoidCommentedOutCodeCheck¥"Remove this commented out code.(°ö»Ú8Ïà™É–/
-QWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(‹ü­½8î¿ŠÛ–/
-VWeb:AvoidCommentedOutCodeCheck•"Remove this commented out code.(Éö®³üÿÿÿÿ8î¿ŠÛ–/
-QWeb:AvoidCommentedOutCodeCheck£"Remove this commented out code.(Ñœºó8î¿ŠÛ–/
-QWeb:AvoidCommentedOutCodeCheck˜"Remove this commented out code.(® ¼ƒ8î¿ŠÛ–/
-QWeb:AvoidCommentedOutCodeCheck—"Remove this commented out code.(†êµş8î¿ŠÛ–/
-VWeb:AvoidCommentedOutCodeCheckš"Remove this commented out code.(Ù‚ğæúÿÿÿÿ8î¿ŠÛ–/
-VWeb:AvoidCommentedOutCodeCheck›"Remove this commented out code.(§ì³øÿÿÿÿ8î¿ŠÛ–/
-QWeb:AvoidCommentedOutCodeCheck¨"Remove this commented out code.(‹ü­½8î¿ŠÛ–/
-QWeb:AvoidCommentedOutCodeCheckœ"Remove this commented out code.(öëˆì8î¿ŠÛ–/
-QWeb:AvoidCommentedOutCodeCheck¥"Remove this commented out code.(‹ü­½8î¿ŠÛ–/
-VWeb:AvoidCommentedOutCodeCheck¨"Remove this commented out code.(ÅÏûÊûÿÿÿÿ8È«šÉ–/
-QWeb:AvoidCommentedOutCodeCheck¢"Remove this commented out code.(ó·É8î¿ŠÛ–/
-VWeb:AvoidCommentedOutCodeCheck’"Remove this commented out code.(µÃ¶»ÿÿÿÿÿ8î¿ŠÛ–/
-QWeb:AvoidCommentedOutCodeCheck¦"Remove this commented out code.(ßƒÃÂ8Õ†šÉ–/
-VWeb:AvoidCommentedOutCodeCheck§"Remove this commented out code.(Ø°£ºûÿÿÿÿ8È«šÉ–/
-UWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(ÜêŠšşÿÿÿÿ8»˜É–/
-VWeb:AvoidCommentedOutCodeCheck–"Remove this commented out code.(¬Ö¬Üøÿÿÿÿ8î¿ŠÛ–/
-VWeb:AvoidCommentedOutCodeCheck™"Remove this commented out code.(±¤—šÿÿÿÿÿ8î¿ŠÛ–/
-QWeb:AvoidCommentedOutCodeCheck¦"Remove this commented out code.(‹ü­½8î¿ŠÛ–/
-VWeb:AvoidCommentedOutCodeCheckª"Remove this commented out code.(Şÿ§Âøÿÿÿÿ8¡äšÉ–/
-QWeb:AvoidCommentedOutCodeCheck§"Remove this commented out code.(‹ü­½8î¿ŠÛ–/
-QWeb:AvoidCommentedOutCodeCheck¡"Remove this commented out code.(‹ü­½8î¿ŠÛ–/
-VWeb:AvoidCommentedOutCodeCheck¤"Remove this commented out code.(®¦»Éÿÿÿÿÿ8î¿ŠÛ–/
-VWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(Ç Ô“ıÿÿÿÿ8î¿ŠÛ–/
+OWeb:BoldAndItalicTagsChecka"Replace this <i> tag by <em>.(š¾ŒÔùÿÿÿÿ8›–Œˆ·/
+KWeb:BoldAndItalicTagsCheckÂ"Replace this <i> tag by <em>.(ƒËÏ8›–Œˆ·/
+KWeb:BoldAndItalicTagsCheckŒ"Replace this <i> tag by <em>.(ÒÂ™é8›–Œˆ·/
+JWeb:BoldAndItalicTagsCheckj"Replace this <i> tag by <em>.(ŸÉ»¥8›–Œˆ·/
+KWeb:BoldAndItalicTagsCheckÌ"Replace this <i> tag by <em>.(ÒÂ™é8›–Œˆ·/
+PWeb:BoldAndItalicTagsCheck‘"Replace this <i> tag by <em>.(Ëïáƒûÿÿÿÿ8›–Œˆ·/
+PWeb:BoldAndItalicTagsCheckƒ"Replace this <i> tag by <em>.(²€Æúÿÿÿÿÿ8›–Œˆ·/
+KWeb:BoldAndItalicTagsCheck¤"Replace this <i> tag by <em>.(ÒÂ™é8›–Œˆ·/
+KWeb:BoldAndItalicTagsCheckÜ"Replace this <i> tag by <em>.(£ÆúÀ8›–Œˆ·/
+OWeb:BoldAndItalicTagsCheckN"Replace this <i> tag by <em>.(½¸ğøÿÿÿÿ8›–Œˆ·/
+PWeb:BoldAndItalicTagsCheckÇ"Replace this <i> tag by <em>.(‘—¯¸ùÿÿÿÿ8›–Œˆ·/
+PWeb:BoldAndItalicTagsCheck‡"Replace this <i> tag by <em>.(‘—¯¸ùÿÿÿÿ8›–Œˆ·/
+KWeb:BoldAndItalicTagsCheckò"Replace this <i> tag by <em>.(ƒËÏ8›–Œˆ·/
+JWeb:BoldAndItalicTagsCheckW"Replace this <i> tag by <em>.(÷Ä‡œ8›–Œˆ·/
+PWeb:BoldAndItalicTagsCheck÷"Replace this <i> tag by <em>.(‘—¯¸ùÿÿÿÿ8›–Œˆ·/
+OWeb:BoldAndItalicTagsCheckd"Replace this <i> tag by <em>.(–üÍØıÿÿÿÿ8›–Œˆ·/
+KWeb:BoldAndItalicTagsCheckš"Replace this <i> tag by <em>.(ƒËÏ8›–Œˆ·/
+KWeb:BoldAndItalicTagsCheckÔ"Replace this <i> tag by <em>.(ö­“–8›–Œˆ·/
+OWeb:BoldAndItalicTagsCheckg"Replace this <i> tag by <em>.(¦›Íîşÿÿÿÿ8›–Œˆ·/
+KWeb:BoldAndItalicTagsCheckü"Replace this <i> tag by <em>.(ÒÂ™é8›–Œˆ·/
+PWeb:BoldAndItalicTagsCheckŸ"Replace this <i> tag by <em>.(‘—¯¸ùÿÿÿÿ8›–Œˆ·/
+KWeb:BoldAndItalicTagsCheck‚"Replace this <i> tag by <em>.(ƒËÏ8›–Œˆ·/
+JWeb:BoldAndItalicTagsCheckK"Replace this <i> tag by <em>.(œÀ¹Å8›–Œˆ·/
+OWeb:BoldAndItalicTagsCheckQ"Replace this <i> tag by <em>.(£Éµçøÿÿÿÿ8›–Œˆ·/
+OWeb:BoldAndItalicTagsCheckT"Replace this <i> tag by <em>.(‰ÀÑÁüÿÿÿÿ8›–Œˆ·/

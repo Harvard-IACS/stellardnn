@@ -1,0 +1,50 @@
+
+Tjavascript:S1481U"8Remove the declaration of the unused 'nritems' variable.(ê±ö§
+Wjavascript:S1481V";Remove the declaration of the unused 'tobeloaded' variable.(’Êºè
+ajavascript:S1481†"DRemove the declaration of the unused 'backup_duration_viy' variable.(‹œ‘Ç
+ljavascript:S1481§"JRemove the declaration of the unused 'inter_suspend_enter_frame' variable.(ª²³úıÿÿÿÿ
+Ojavascript:S1117º"-'aux' is already declared in the upper scope.(®ŠÜşÿÿÿÿ
+Jjavascript:S1117Ï"-'aux' is already declared in the upper scope.(ñ¦òÛ
+Jjavascript:S1117å"-'aux' is already declared in the upper scope.(‰Ä«œ
+Rjavascript:S1117Œ"5'_loadTarget' is already declared in the upper scope.(µÌ€°
+bjavascript:S1854»"@Remove this useless assignment to variable "inter_recheck_dims".(²ªÍíùÿÿÿÿ
+Ojavascript:S1117İ"-'aux' is already declared in the upper scope.(Í¨ìıÿÿÿÿ
+7javascript:S108ô"Empty block statement.(ö²×ûÿÿÿÿ
+Tjavascript:S1854ª"7Remove this useless assignment to variable "destroyed".(µ¸šÀ
+Tjavascript:S1854º"7Remove this useless assignment to variable "destroyed".(µ¸šÀ
+cjavascript:S1854¾"ARemove this useless assignment to variable "sw_stop_enter_frame".(‡¢éùÿÿÿÿ
+Jjavascript:S1117ğ"-'aux' is already declared in the upper scope.(ÒäÀ
+Kjavascript:S1117‚".'vi_y' is already declared in the upper scope.(Æ—µÈ
+8javascript:S1116‘"Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+8javascript:S1116•"Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+8javascript:S1116™"Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+8javascript:S1116"Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+8javascript:S1116´"Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+8javascript:S1116¸"Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+5javascript:S2814Æ"'mx' is already defined.(˜“Ğ©
+8javascript:S1116Ô"Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+8javascript:S1116Ø"Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+8javascript:S1116İ"Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+8javascript:S1116á"Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+ajavascript:S1854‚"?Remove this useless assignment to variable "sw_out_of_display".(›ıÃìıÿÿÿÿ
+\javascript:S1854ˆ"?Remove this useless assignment to variable "sw_out_of_display".(µù‡‚
+Cjavascript:S1110“	"!Remove these useless parentheses.(¨ŒâÀıÿÿÿÿ
+Ajavascript:S2814†
+"$'auxer5_doubled' is already defined.(ÿâŸ
+Hjavascript:S2814‡
+",'auxer5_doubled_inverse' is already defined.(¦üûq
+>javascript:S2814‘
+"'auxval' is already defined.(ÈŞ™Üÿÿÿÿÿ
+6javascript:S2814”
+"'cval' is already defined.(™Âœ
+8javascript:S1116ü
+"Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+8javascript:S1116€"Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+8javascript:S1116ˆ"Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+8javascript:S1116Œ"Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+Qjavascript:S1481Î"5Remove the declaration of the unused 'time' variable.(“Œk
+Qjavascript:S1481×"4Remove unused function 'switch_suspend_enter_frame'.(›½†Ø
+Tjavascript:S1481Ò"2Remove the declaration of the unused 'e' variable.(³·İ»şÿÿÿÿ
+Qjavascript:S1854Ò"/Remove this useless assignment to variable "e".(³·İ»şÿÿÿÿ
+8javascript:S1116 "Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+8javascript:S1116©"Unnecessary semicolon.(Åñ­õşÿÿÿÿ

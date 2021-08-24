@@ -1,0 +1,7 @@
+
+Qjavascript:S1481$"5Remove the declaration of the unused 'self' variable.(¶Â®Ä
+Njavascript:S1854$"2Remove this useless assignment to variable "self".(¶Â®Ä
+Rjavascript:S1481<"6Remove the declaration of the unused 'field' variable.(ìËÐ
+Ojavascript:S1854<"3Remove this useless assignment to variable "field".(ìËÐ
+Gjavascript:S1117Z"+'i' is already declared in the upper scope.(ù®‘¾
+Hjavascript:S1117Z",'el' is already declared in the upper scope.(ù®‘¾

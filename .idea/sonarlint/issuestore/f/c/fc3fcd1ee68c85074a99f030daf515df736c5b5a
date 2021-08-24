@@ -1,0 +1,25 @@
+
+6javascript:S108"Empty block statement.(©ÛÒ²şÿÿÿÿ
+_javascript:S1481A">Remove the declaration of the unused '_blackOverlay' variable.(³æ”öıÿÿÿÿ
+[javascript:S1481B"?Remove the declaration of the unused '_fadeouttarget' variable.(ğ”àø
+Tjavascript:S1481E"8Remove the declaration of the unused 'nritems' variable.(ê±ö§
+Wjavascript:S1481F";Remove the declaration of the unused 'tobeloaded' variable.(’Êºè
+Njavascript:S1481H"2Remove the declaration of the unused 'i' variable.(­¢¤ê
+Ojavascript:S1481J"3Remove the declaration of the unused 'tw' variable.(÷áß
+Tjavascript:S1481K"3Remove the declaration of the unused 'th' variable.(ˆ·Êíÿÿÿÿÿ
+Ojavascript:S1481L"3Remove the declaration of the unused 'ch' variable.(ÁŒ
+4javascript:S2814M"'tw' is already defined.(ËÚé†
+Ojavascript:S1481M"3Remove the declaration of the unused 'tw' variable.(ËÚé†
+~javascript:S4165M"bReview this redundant assignment: "tw" already holds the assigned value along all execution paths.(ËÚé†
+Zjavascript:S1481S">Remove the declaration of the unused 'initialheight' variable.(İúµŒ
+ejavascript:S1854‰"CRemove this useless assignment to variable "sw_suspend_functional".(»ÍÕÂıÿÿÿÿ
+ejavascript:S1854"CRemove this useless assignment to variable "sw_suspend_functional".(½öÈüÿÿÿÿ
+`javascript:S1854“"CRemove this useless assignment to variable "api_outer_update_func".(íæŸì
+`javascript:S1854¤"CRemove this useless assignment to variable "api_outer_update_func".(Ğó¸
+[javascript:S1854¥">Remove this useless assignment to variable "stop_enter_frame".(ô˜Ù
+Ejavascript:S1481ä"(Remove unused function 'calculate_dims'.(ÙÎË¯
+Ljavascript:S1481ê"*Remove unused function 'handle_mousemove'.(€”Ïğşÿÿÿÿ
+Pjavascript:S1481¡"3Remove the declaration of the unused 'i3' variable.(ğ·š¢
+Mjavascript:S1854¡"0Remove this useless assignment to variable "i3".(ğ·š¢
+8javascript:S1116Ü"Unnecessary semicolon.(Åñ­õşÿÿÿÿ
+8javascript:S1116å"Unnecessary semicolon.(Åñ­õşÿÿÿÿ

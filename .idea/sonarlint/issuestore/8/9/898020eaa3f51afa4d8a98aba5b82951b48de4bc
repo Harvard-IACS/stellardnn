@@ -1,0 +1,50 @@
+
+:javascript:S2990$"Remove the use of "this".( †ğÚûÿÿÿÿ
+Kjavascript:S1117ù".'obj1' is already declared in the upper scope.(©§ş
+Kjavascript:S1117ù".'obj2' is already declared in the upper scope.(©§ş
+Ljavascript:S1117‹"/'match' is already declared in the upper scope.(Ğ­ë«
+Mjavascript:S1117Ç"0'samsam' is already declared in the upper scope.(”ä¦
+Tjavascript:S1117É"2'formatio' is already declared in the upper scope.(€àË«ÿÿÿÿÿ
+Tjavascript:S1481Î"7Remove the declaration of the unused 'hasOwn' variable.(‡ßòö
+Qjavascript:S1854Î"4Remove this useless assignment to variable "hasOwn".(‡ßòö
+ojavascript:S1871õ"MThis branch's code block is the same as the block for the branch on line 499.(ßéıÇıÿÿÿÿ
+Tjavascript:S1117§"2'formatio' is already declared in the upper scope.(èÁˆ¿şÿÿÿÿ
+Ljavascript:S1117Ö"/'sinon' is already declared in the upper scope.(òÛŞ
+Tjavascript:S1854á"2Remove this useless assignment to variable "prop".(ÒÁòóşÿÿÿÿ
+Qjavascript:S1117ª"/'sinon' is already declared in the upper scope.(ÁËıõıÿÿÿÿ
+Qjavascript:S1117¦
+"/'sinon' is already declared in the upper scope.(ÁËıõıÿÿÿÿ
+Qjavascript:S1117ô"/'sinon' is already declared in the upper scope.(ÁËıõıÿÿÿÿ
+Ijavascript:S1117÷"-'spy' is already declared in the upper scope.(”²¨-
+Ojavascript:S1117Õ"-'spy' is already declared in the upper scope.(·éøàüÿÿÿÿ
+Ojavascript:S1117Ù"-'spy' is already declared in the upper scope.(„‰Æıÿÿÿÿ
+Jjavascript:S1117İ"-'spy' is already declared in the upper scope.(œÇ–
+Ojavascript:S1117ë"-'spy' is already declared in the upper scope.(úŠûåûÿÿÿÿ
+Ojavascript:S1117õ"-'spy' is already declared in the upper scope.(¤õ®êùÿÿÿÿ
+Qjavascript:S1117"/'sinon' is already declared in the upper scope.(ÁËıõıÿÿÿÿ
+Qjavascript:S1117î"/'sinon' is already declared in the upper scope.(ÁËıõıÿÿÿÿ
+Kjavascript:S1117—".'stub' is already declared in the upper scope.(¨ç³á
+Pjavascript:S1117›".'stub' is already declared in the upper scope.(¼Éıóúÿÿÿÿ
+Pjavascript:S1117Ÿ".'stub' is already declared in the upper scope.(¶Áìæÿÿÿÿÿ
+Qjavascript:S1117"/'sinon' is already declared in the upper scope.(ÁËıõıÿÿÿÿ
+Qjavascript:S1117Ö"/'sinon' is already declared in the upper scope.(ÁËıõıÿÿÿÿ
+=javascript:S2814ø"'sinon' is already defined.(ø–Ïùÿÿÿÿ
+Ijavascript:S1117±",'id' is already declared in the upper scope.(šÆ¡Ô
+Xjavascript:S1854¸";Remove this useless assignment to variable "originalTimer".(Ä–á›
+Ojavascript:S1117¦"-'xhr' is already declared in the upper scope.(Ñòè«úÿÿÿÿ
+Ijavascript:S1117ß"-'xhr' is already declared in the upper scope.(åÛÙW
+Jjavascript:S1117‘"-'xhr' is already declared in the upper scope.(Ä³­ğ
+Djavascript:S1515´"'Define this function outside of a loop.(ù„ãà
+Jjavascript:S1117Á"-'xhr' is already declared in the upper scope.(œ¾üå
+Ojavascript:S1117Ç"-'xhr' is already declared in the upper scope.(ã™Ù¾úÿÿÿÿ
+Ojavascript:S1117Í"-'xhr' is already declared in the upper scope.(½’’´úÿÿÿÿ
+[javascript:S1301‚"9"switch" statements should have at least 3 "case" clauses(ºÏ¾úÿÿÿÿ
+=javascript:S2814½ "'sinon' is already defined.(ø–Ïùÿÿÿÿ
+=javascript:S2814ë""'sinon' is already defined.(ô‹Ûüÿÿÿÿ
+Qjavascript:S1117û#"/'sinon' is already declared in the upper scope.(ÁËıõıÿÿÿÿ
+8javascript:S1116¢$"Unnecessary semicolon.(ôŸìúÿÿÿÿ
+Ojavascript:S1117¥$"2'callback' is already declared in the upper scope.(çĞ˜»
+Qjavascript:S1117Ï$"/'sinon' is already declared in the upper scope.(ÁËıõıÿÿÿÿ
+Ljavascript:S1117´%"/'sinon' is already declared in the upper scope.(ë€¡
+Jjavascript:S1117“'"-'xdr' is already declared in the upper scope.(ôÇ¶‘
+Jjavascript:S1117'"-'xdr' is already declared in the upper scope.(Ëÿß

@@ -1,0 +1,28 @@
+
+Ljavascript:S1117"+'o' is already declared in the upper scope.(›‚âıÿÿÿÿÿ
+Ajavascript:S878	"!Unexpected use of comma operator.(ç¿èİûÿÿÿÿ
+Ljavascript:S1117"+'e' is already declared in the upper scope.(ÃÃ‚üÿÿÿÿ
+Ljavascript:S1117"+'n' is already declared in the upper scope.(ŸæÊƒøÿÿÿÿ
+Njavascript:S1264ı",Replace this "for" loop with a "while" loop.(ÎõÈÓùÿÿÿÿ
+vjavascript:S2703å"YAdd the "let", "const" or "var" keyword to this declaration of "__e" to make it explicit.(Ÿßó
+Njavascript:S1117ü"1'exports' is already declared in the upper scope.(«Åü 
+:javascript:S2814"'exports' is already defined.(éÆú
+vjavascript:S2703¹"YAdd the "let", "const" or "var" keyword to this declaration of "__g" to make it explicit.(§š›é
+mjavascript:S3686‘"KCorrect the use of this function; on line 2959 it was called without "new".(Ä°­ıÿÿÿÿ
+ajavascript:S2137®"?Do not use "Infinity" to declare a variable - use another name.(²ıÔıÿÿÿÿ
+Ljavascript:S1854ê"/Remove this useless assignment to variable "i".(Ñà±Í
+Ojavascript:S1117 "-'key' is already declared in the upper scope.(ŠîÿÕÿÿÿÿÿ
+Kjavascript:S1117¨".'view' is already declared in the upper scope.(‡ÇÆ™
+Kjavascript:S1117²".'view' is already declared in the upper scope.(Õñ²¬
+mjavascript:S3686"KCorrect the use of this function; on line 3342 it was called without "new".(ƒ¯À”ùÿÿÿÿ
+ajavascript:S4030Œ"?Either use this collection's contents or remove the collection.(ù è÷şÿÿÿÿ
+ejavascript:S3686ö)"HCorrect the use of this function; on line 5361 it was called with "new".(ğï§’
+ejavascript:S3686ÿ)"HCorrect the use of this function; on line 5374 it was called with "new".(•ƒò–
+<javascript:S1143¹5"Unsafe usage of ThrowStatement.(ö™û
+<javascript:S1143Ë5"Unsafe usage of ThrowStatement.(ö™û
+<javascript:S1143İ5"Unsafe usage of ThrowStatement.(ö™û
+Rjavascript:S1117£="0'global' is already declared in the upper scope.(û¿ şÿÿÿÿ
+]javascript:S2137¨="@Do not use "undefined" to declare a variable - use another name.(«åïŞ
+Ljavascript:S1117Â>"/'value' is already declared in the upper scope.(³ŸÏØ
+Ojavascript:S1117ø@"-'key' is already declared in the upper scope.(ÊéØøÿÿÿÿ
+Pjavascript:S1117”A".'next' is already declared in the upper scope.(àÙŒÄıÿÿÿÿ

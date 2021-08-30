@@ -26,415 +26,819 @@
 
 <body>
 <!-- ========== HEADER ========== -->
-<header class="header header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide"
-        data-hs-header-options='{
-      "fixMoment": 1000,
-      "fixEffect": "slide"
-    }' id="header">
-    <!-- Search -->
-    <div class="search-push-top" id="searchPushTop">
-        <div class="container position-relative">
-            <div class="search-push-top-content pt-3">
-                <!-- Close Button -->
-                <div class="search-push-top-close-btn">
-                    <div class="hs-unfold">
-                        <a class="js-hs-unfold-invoker btn btn-icon btn-xs btn-soft-secondary mt-2 mr-2"
-                           data-hs-unfold-options='{
-            "target": "#searchPushTop",
-            "type": "jquery-slide",
-            "contentSelector": ".search-push-top"
-           }' href="javascript:;">
-                            <svg height="10" viewBox="0 0 18 18" width="10" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"
-                                      fill="currentColor"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <!-- End Close Button -->
-
-                <!-- Input -->
-                <form class="input-group">
-                    <input aria-label="Search Front" class="form-control" placeholder="Search Front" type="search">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="button">Search</button>
-                    </div>
-                </form>
-                <!-- End Input -->
-
-                <!-- Content -->
-                <div class="row d-none d-md-flex mt-7">
-                    <div class="col-sm-6">
-                        <span class="h5">Quick Links</span>
-
-                        <div class="row">
-                            <!-- Nav Link -->
-                            <div class="col-6">
-                                <div class="nav nav-sm nav-x-0 flex-column">
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Search Results List
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Search Results Grid
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> About
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Services
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Invoice
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- End Nav Link -->
-
-                            <!-- Nav Link -->
-                            <div class="col-6">
-                                <div class="nav nav-sm nav-x-0 flex-column">
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Profile
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> User Contacts
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Reviews
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Settings
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- End Nav Link -->
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <!-- Banner -->
-                        <div class="rounded search-push-top-banner">
-                            <div class="d-flex align-items-center">
-                                <div class="search-push-top-banner-container">
-                                    <img alt="Image Description" class="img-fluid search-push-top-banner-img"
-                                         src="assets/front_v3_3/img/mockups/img3.png">
-                                    <img alt="Image Description" class="img-fluid search-push-top-banner-img"
-                                         src="assets/front_v3_3/img/mockups/img2.png">
-                                </div>
-
-                                <div>
-                                    <div class="mb-4">
-                                        <span class="h5">Featured Item</span>
-                                        <p>Create astonishing web sites and pages.</p>
-                                    </div>
-                                    <a class="btn btn-xs btn-soft-success transition-3d-hover" href="javascript:;">Apply
-                                        Now <i class="fas fa-angle-right fa-sm ml-1"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Banner -->
-                    </div>
-                </div>
-                <!-- End Content -->
-            </div>
-        </div>
-    </div>
-    <!-- End Search -->
-
-    <div class="header-section">
-
-
-        <div class="container" id="logoAndNav">
-            <!-- Nav -->
-            <nav class="js-mega-menu navbar navbar-expand-lg">
-                <!-- Logo -->
-                <a aria-label="Front" class="navbar-brand" href="./index.html">
-                    <img alt="Logo" src="assets/front_v3_3/svg/logos/logo.svg">
-                </a>
-                <!-- End Logo -->
-
-                <!-- Responsive Toggle Button -->
-                <button aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation"
-                        class="navbar-toggler btn btn-icon btn-sm rounded-circle" data-target="#navBar"
-                        data-toggle="collapse" type="button">
-      <span class="navbar-toggler-default">
-        <svg height="14" viewBox="0 0 18 18" width="14" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"
-                fill="currentColor"/>
-        </svg>
-      </span>
-                    <span class="navbar-toggler-toggled">
-        <svg height="14" viewBox="0 0 18 18" width="14" xmlns="http://www.w3.org/2000/svg">
-          <path d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"
-                fill="currentColor"/>
-        </svg>
-      </span>
-                </button>
-                <!-- End Responsive Toggle Button -->
-
-                <!-- Navigation -->
-                <div class="collapse navbar-collapse" id="navBar">
-                    <div class="navbar-body header-abs-top-inner">
-                        <ul class="navbar-nav">
-                            <!-- Home -->
-                            <li class="hs-has-mega-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/index.html"> Home</a>
-                            </li>
-                            <!-- End Home -->
-
-
-                            <!-- Projects -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/projects.html">Projects</a>
-                            </li>
-                            <!-- End Projects -->
-
-                            <!-- People -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/people.html">People</a>
-                            </li>
-                            <!-- End Newsroom -->
-
-                            <!-- Newsroom -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/publications.html">Publications</a>
-                            </li>
-                            <!-- Courses -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/courses.html">Courses</a>
-                            </li>
-                            <!-- End Courses -->
-
-                            <!-- End Newsroom -->
-
-
-                            <!-- Work With Us -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/contact_us.html">Contact Us</a>
-                            </li>
-                            <!-- End Work With Us -->
-                        </ul>
-                    </div>
-                </div>
-                <!-- End Navigation -->
-            </nav>
-            <!-- End Nav -->
-        </div>
-    </div>
-</header>
+<header-component></header-component>
 <!-- ========== END HEADER ========== -->
 
 <!-- ========== MAIN ========== -->
 <main id="content" role="main">
     <!-- Hero Section -->
-    <div class="container space-top-3 space-top-lg-4 space-bottom-2">
-
-              <h2 class="wrap separator">
-         <span class="separator-text">Members</span>
-
-    [ADD MEMBERS HERE]
-Hayden, Hargun, Augusto, Arya, Sree, Shuheng, Elaine, Blake, Tao, et
-
-        <h2 class="wrap separator">
-   <span class="separator-text">Associates</span>
- </h2>
-
-
+    <div class="container space-top-3 space-top-lg-4">
+        <div class="w-lg-80 text-center mx-lg-auto">
+            <div class="mb-5 mb-md-11">
+                <h1 class="display-4">Principal Investigator</h1>
+                <!-- <p class="lead">StellarDNN is .... .</p> -->
+            </div>
+        </div>
     </div>
     <!-- End Hero Section -->
 
+    <!-- Principal Investigator -->
+    <div class="overflow-hidden">
+        <div class="container space-bottom-2">
+            <div class="row justify-content-lg-center align-items-md-center">
+                <div class="col-md-5 mb-11 mb-md-0">
+                    <div class="position-relative">
+                        <img alt="Image Description" class="img-fluid rounded-lg"
+                             src="/assets/general/img/team/pavlosp.jpg">
 
+                        <!-- SVG Elements -->
+                        <figure class="max-w-19rem w-100 position-absolute bottom-0 left-0 z-index-n1">
+                            <div class="mb-n7 ml-n7">
+                                <img alt="Image Description" class="img-fluid"
+                                     src="/assets/front_v3_3/svg/components/dots-2.svg">
+                            </div>
+                        </figure>
+                        <!-- End SVG Elements -->
+                    </div>
+                </div>
 
-    <!-- Divider -->
-    <div class="container">
-        <div class="w-lg-65 mx-lg-auto">
-            <hr class="my-0">
+                <div class="col-md-6 col-lg-5">
+                    <div class="pl-lg-5">
+                        <img alt="Image Description" class="max-w-13rem mb-4"
+                             src="/assets/general/img//home/harvard-university.png">
+                        <div class="mb-6">
+                            <blockquote class="h3 font-weight-normal text-lh-lg">Write somenthing about you here Thank
+                                you!
+                            </blockquote>
+                        </div>
+                        <h4 class="mb-1">Pavlos Protopapas</h4>
+                        <p class="small">Executive Director</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- End Divider -->
+    <!-- End Principal Investigator -->
 
+    <!-- Team Section -->
+    <div class="container border-bottom space-2 space-lg-3">
+        <!-- Title -->
+        <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-5 mb-md-9">
+            <h2>Members</h2>
+            <span class="d-block small font-weight-bold text-cap mb-2">Creative mind by behind our success</span>
+        </div>
+        <!-- End Title -->
 
+        <div class="row mx-n2 mb-5">
+            <div class="col-sm-6 col-lg-3 px-2 mb-3">
+                <!-- Team -->
+                <div class="card h-100 transition-3d-hover">
+                    <div class="card-body">
+                        <div class="avatar avatar-lg avatar-circle mb-4">
+                            <img alt="David Sondak" class="avatar-img" src="/assets/general/img/team/DavidSondak.jpg">
+                            <!-- ./assets/img/100x100/img1.jpg -->
+                        </div>
+                        <span class="d-block small font-weight-bold text-cap mb-1">CO FOUNDER</span>
+                        <h4 class="text-lh-sm">David Sondak</h4>
+                        <p class="font-size-1">I am passionate about fluids and dogs, but apart from that, pretty simple
+                            person.</p>
+                    </div>
 
+                    <div class="card-footer border-0 pt-0">
+                        <!-- Social Networks -->
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Social Networks -->
+                    </div>
+                </div>
+                <!-- End Team -->
+            </div>
 
+            <div class="col-sm-6 col-lg-3 px-2 mb-3">
+                <!-- Team -->
+                <div class="card h-100 transition-3d-hover">
+                    <div class="card-body">
+                        <div class="avatar avatar-lg avatar-circle mb-4">
+                            <img alt="Marios Mattheakis" class="avatar-img" src="/assets/general/img/team/MariosM.jpg">
+                            <!-- ./assets/img/100x100/img1.jpg -->
+                        </div>
+                        <span class="d-block small font-weight-bold text-cap mb-1">CO FOUNDER</span>
+                        <h4 class="text-lh-sm">Marios Mattheakis</h4>
+                        <p class="font-size-1">I am passionate about Physics, Deep Neural Networks and Boxing. Other
+                            than that I am normal.</p>
+                    </div>
 
+                    <div class="card-footer border-0 pt-0">
+                        <!-- Social Networks -->
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Social Networks -->
+                    </div>
+                </div>
+                <!-- End Team -->
+            </div>
 
+            <div class="col-sm-6 col-lg-3 px-2 mb-3">
+                <!-- Team -->
+                <div class="card h-100 transition-3d-hover">
+                    <div class="card-body">
+                        <div class="avatar avatar-lg avatar-circle mb-4">
+                            <img alt="name person here" class="avatar-img" src="">
+                            <!-- ./assets/img/100x100/img1.jpg -->
+                        </div>
+                        <span class="d-block small font-weight-bold text-cap mb-1">Position Person here</span>
+                        <h4 class="text-lh-sm">Name person Here</h4>
+                        <p class="font-size-1">Description Person here</p>
+                    </div>
+
+                    <div class="card-footer border-0 pt-0">
+                        <!-- Social Networks -->
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Social Networks -->
+                    </div>
+                </div>
+                <!-- End Team -->
+            </div>
+
+            <div class="col-sm-6 col-lg-3 px-2 mb-3">
+                <!-- Team -->
+                <div class="card h-100 transition-3d-hover">
+                    <div class="card-body">
+                        <div class="avatar avatar-lg avatar-circle mb-4">
+                            <img alt="name person here" class="avatar-img" src="">
+                            <!-- ./assets/img/100x100/img1.jpg -->
+                        </div>
+                        <span class="d-block small font-weight-bold text-cap mb-1">Position Person here</span>
+                        <h4 class="text-lh-sm">Name person Here</h4>
+                        <p class="font-size-1">Description Person here</p>
+                    </div>
+
+                    <div class="card-footer border-0 pt-0">
+                        <!-- Social Networks -->
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Social Networks -->
+                    </div>
+                </div>
+                <!-- End Team -->
+            </div>
+
+            <div class="col-sm-6 col-lg-3 px-2 mb-3">
+                <!-- Team -->
+                <div class="card h-100 transition-3d-hover">
+                    <div class="card-body">
+                        <div class="avatar avatar-lg avatar-circle mb-4">
+                            <img alt="name person here" class="avatar-img" src="">
+                            <!-- ./assets/img/100x100/img1.jpg -->
+                        </div>
+                        <span class="d-block small font-weight-bold text-cap mb-1">Position Person here</span>
+                        <h4 class="text-lh-sm">Name person Here</h4>
+                        <p class="font-size-1">Description Person here</p>
+                    </div>
+
+                    <div class="card-footer border-0 pt-0">
+                        <!-- Social Networks -->
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Social Networks -->
+                    </div>
+                </div>
+                <!-- End Team -->
+            </div>
+
+            <div class="col-sm-6 col-lg-3 px-2 mb-3">
+                <!-- Team -->
+                <div class="card h-100 transition-3d-hover">
+                    <div class="card-body">
+                        <div class="avatar avatar-lg avatar-circle mb-4">
+                            <img alt="name person here" class="avatar-img" src="">
+                            <!-- ./assets/img/100x100/img1.jpg -->
+                        </div>
+                        <span class="d-block small font-weight-bold text-cap mb-1">Position Person here</span>
+                        <h4 class="text-lh-sm">Name person Here</h4>
+                        <p class="font-size-1">Description Person here</p>
+                    </div>
+
+                    <div class="card-footer border-0 pt-0">
+                        <!-- Social Networks -->
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Social Networks -->
+                    </div>
+                </div>
+                <!-- End Team -->
+            </div>
+
+            <div class="col-sm-6 col-lg-3 px-2 mb-3">
+                <!-- Team -->
+                <div class="card h-100 transition-3d-hover">
+                    <div class="card-body">
+                        <div class="avatar avatar-lg avatar-circle mb-4">
+                            <img alt="name person here" class="avatar-img" src="">
+                            <!-- ./assets/img/100x100/img1.jpg -->
+                        </div>
+                        <span class="d-block small font-weight-bold text-cap mb-1">Position Person here</span>
+                        <h4 class="text-lh-sm">Name person Here</h4>
+                        <p class="font-size-1">Description Person here</p>
+                    </div>
+
+                    <div class="card-footer border-0 pt-0">
+                        <!-- Social Networks -->
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Social Networks -->
+                    </div>
+                </div>
+                <!-- End Team -->
+            </div>
+
+            <div class="col-sm-6 col-lg-3 px-2 mb-3">
+                <!-- Team -->
+                <div class="card h-100 transition-3d-hover">
+                    <div class="card-body">
+                        <div class="avatar avatar-lg avatar-circle mb-4">
+                            <img alt="name person here" class="avatar-img" src="">
+                            <!-- ./assets/img/100x100/img1.jpg -->
+                        </div>
+                        <span class="d-block small font-weight-bold text-cap mb-1">Position Person here</span>
+                        <h4 class="text-lh-sm">Name person Here</h4>
+                        <p class="font-size-1">Description Person here</p>
+                    </div>
+
+                    <div class="card-footer border-0 pt-0">
+                        <!-- Social Networks -->
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Social Networks -->
+                    </div>
+                </div>
+                <!-- End Team -->
+            </div>
+        </div>
+    </div>
+    <!-- End Team Section -->
+
+    <!-- Associates Section -->
+    <div class="container">
+        <div class="border-bottom space-2">
+            <!-- Title -->
+            <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+                <h2>Associates</h2>
+                <span class="d-block small font-weight-bold text-cap mb-2">Write something here</span>
+            </div>
+            <!-- End Title -->
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+                    <!-- Author -->
+                    <div class="media align-items-center ">
+                        <div class="avatar avatar-circle avatar-xl">
+                            <img alt="Image Description" class="avatar-img"
+                                 src="/assets/front_v3_3/img/100x100/img11.jpg">
+                        </div>
+                        <div class="media-body ml-3">
+                            <small class="d-block small font-weight-bold text-cap">Person Last position</small>
+                            <h3 class="mb-0"><a href="blog-profile.html">Person Name</a></h3>
+                            <p class="mb-0">Person Description</p>
+                            <!-- <div class="col-md-5"> -->
+                            <div class="d-flex justify-content-md-start">
+
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <!-- End Author -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+                    <!-- Author -->
+                    <div class="media align-items-center ">
+                        <div class="avatar avatar-circle avatar-xl">
+                            <img alt="Image Description" class="avatar-img"
+                                 src="/assets/front_v3_3/img/100x100/img11.jpg">
+                        </div>
+                        <div class="media-body ml-3">
+                            <small class="d-block small font-weight-bold text-cap">Person Last position</small>
+                            <h3 class="mb-0"><a href="blog-profile.html">Person Name</a></h3>
+                            <p class="mb-0">Person Description</p>
+                            <!-- <div class="col-md-5"> -->
+                            <div class="d-flex justify-content-md-start">
+
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <!-- End Author -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+                    <!-- Author -->
+                    <div class="media align-items-center ">
+                        <div class="avatar avatar-circle avatar-xl">
+                            <img alt="Image Description" class="avatar-img"
+                                 src="/assets/front_v3_3/img/100x100/img11.jpg">
+                        </div>
+                        <div class="media-body ml-3">
+                            <small class="d-block small font-weight-bold text-cap">Person Last position</small>
+                            <h3 class="mb-0"><a href="blog-profile.html">Person Name</a></h3>
+                            <p class="mb-0">Person Description</p>
+                            <!-- <div class="col-md-5"> -->
+                            <div class="d-flex justify-content-md-start">
+
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <!-- End Author -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+                    <!-- Author -->
+                    <div class="media align-items-center ">
+                        <div class="avatar avatar-circle avatar-xl">
+                            <img alt="Image Description" class="avatar-img"
+                                 src="/assets/front_v3_3/img/100x100/img11.jpg">
+                        </div>
+                        <div class="media-body ml-3">
+                            <small class="d-block small font-weight-bold text-cap">Person Last position</small>
+                            <h3 class="mb-0"><a href="blog-profile.html">Person Name</a></h3>
+                            <p class="mb-0">Person Description</p>
+                            <!-- <div class="col-md-5"> -->
+                            <div class="d-flex justify-content-md-start">
+
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <!-- End Author -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+                    <!-- Author -->
+                    <div class="media align-items-center ">
+                        <div class="avatar avatar-circle avatar-xl">
+                            <img alt="Image Description" class="avatar-img"
+                                 src="/assets/front_v3_3/img/100x100/img11.jpg">
+                        </div>
+                        <div class="media-body ml-3">
+                            <small class="d-block small font-weight-bold text-cap">Person Last position</small>
+                            <h3 class="mb-0"><a href="blog-profile.html">Person Name</a></h3>
+                            <p class="mb-0">Person Description</p>
+                            <!-- <div class="col-md-5"> -->
+                            <div class="d-flex justify-content-md-start">
+
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <!-- End Author -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+                    <!-- Author -->
+                    <div class="media align-items-center ">
+                        <div class="avatar avatar-circle avatar-xl">
+                            <img alt="Image Description" class="avatar-img"
+                                 src="/assets/front_v3_3/img/100x100/img11.jpg">
+                        </div>
+                        <div class="media-body ml-3">
+                            <small class="d-block small font-weight-bold text-cap">Person Last position</small>
+                            <h3 class="mb-0"><a href="blog-profile.html">Person Name</a></h3>
+                            <p class="mb-0">Person Description</p>
+                            <!-- <div class="col-md-5"> -->
+                            <div class="d-flex justify-content-md-start">
+
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <!-- End Author -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Associates Section -->
+
+    <!-- Alumni Section -->
+    <div class="container">
+        <div class="border-bottom space-2">
+            <!-- Title -->
+            <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+                <h2>Alumni</h2>
+                <span class="d-block small font-weight-bold text-cap mb-2">Write something here</span>
+            </div>
+            <!-- End Title -->
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+                    <!-- Author -->
+                    <div class="media align-items-center ">
+                        <div class="avatar avatar-circle avatar-xl">
+                            <img alt="Image Description" class="avatar-img"
+                                 src="/assets/front_v3_3/img/100x100/img11.jpg">
+                        </div>
+                        <div class="media-body ml-3">
+                            <small class="d-block small font-weight-bold text-cap">Person Last position</small>
+                            <h3 class="mb-0"><a href="blog-profile.html">Person Name</a></h3>
+                            <p class="mb-0">Person Description</p>
+                            <!-- <div class="col-md-5"> -->
+                            <div class="d-flex justify-content-md-start">
+
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <!-- End Author -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+                    <!-- Author -->
+                    <div class="media align-items-center ">
+                        <div class="avatar avatar-circle avatar-xl">
+                            <img alt="Image Description" class="avatar-img"
+                                 src="/assets/front_v3_3/img/100x100/img11.jpg">
+                        </div>
+                        <div class="media-body ml-3">
+                            <small class="d-block small font-weight-bold text-cap">Person Last position</small>
+                            <h3 class="mb-0"><a href="blog-profile.html">Person Name</a></h3>
+                            <p class="mb-0">Person Description</p>
+                            <!-- <div class="col-md-5"> -->
+                            <div class="d-flex justify-content-md-start">
+
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <!-- End Author -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+                    <!-- Author -->
+                    <div class="media align-items-center ">
+                        <div class="avatar avatar-circle avatar-xl">
+                            <img alt="Image Description" class="avatar-img"
+                                 src="/assets/front_v3_3/img/100x100/img11.jpg">
+                        </div>
+                        <div class="media-body ml-3">
+                            <small class="d-block small font-weight-bold text-cap">Person Last position</small>
+                            <h3 class="mb-0"><a href="blog-profile.html">Person Name</a></h3>
+                            <p class="mb-0">Person Description</p>
+                            <!-- <div class="col-md-5"> -->
+                            <div class="d-flex justify-content-md-start">
+
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <!-- End Author -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+                    <!-- Author -->
+                    <div class="media align-items-center ">
+                        <div class="avatar avatar-circle avatar-xl">
+                            <img alt="Image Description" class="avatar-img"
+                                 src="/assets/front_v3_3/img/100x100/img11.jpg">
+                        </div>
+                        <div class="media-body ml-3">
+                            <small class="d-block small font-weight-bold text-cap">Person Last position</small>
+                            <h3 class="mb-0"><a href="blog-profile.html">Person Name</a></h3>
+                            <p class="mb-0">Person Description</p>
+                            <!-- <div class="col-md-5"> -->
+                            <div class="d-flex justify-content-md-start">
+
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <!-- End Author -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+                    <!-- Author -->
+                    <div class="media align-items-center ">
+                        <div class="avatar avatar-circle avatar-xl">
+                            <img alt="Image Description" class="avatar-img"
+                                 src="/assets/front_v3_3/img/100x100/img11.jpg">
+                        </div>
+                        <div class="media-body ml-3">
+                            <small class="d-block small font-weight-bold text-cap">Person Last position</small>
+                            <h3 class="mb-0"><a href="blog-profile.html">Person Name</a></h3>
+                            <p class="mb-0">Person Description</p>
+                            <!-- <div class="col-md-5"> -->
+                            <div class="d-flex justify-content-md-start">
+
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <!-- End Author -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-3 mb-sm-7">
+                    <!-- Author -->
+                    <div class="media align-items-center ">
+                        <div class="avatar avatar-circle avatar-xl">
+                            <img alt="Image Description" class="avatar-img"
+                                 src="/assets/front_v3_3/img/100x100/img11.jpg">
+                        </div>
+                        <div class="media-body ml-3">
+                            <small class="d-block small font-weight-bold text-cap">Person Last position</small>
+                            <h3 class="mb-0"><a href="blog-profile.html">Person Name</a></h3>
+                            <p class="mb-0">Person Description</p>
+                            <!-- <div class="col-md-5"> -->
+                            <div class="d-flex justify-content-md-start">
+
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="btn btn-xs btn-icon btn-soft-secondary rounded-circle ml-2" href="#">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <!-- End Author -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Alumni Section -->
+
+    <!-- Info -->
+    <div class="text-center space-2">
+        <div class="d-inline-block font-size-1 border bg-white text-center rounded-pill py-3 px-4">
+            Wanna work with us? <a class="font-weight-bold ml-3" href="page-hire-us.html">We are always looking for
+            collaborations <span class="fas fa-angle-right fa-sm ml-1"></span></a>
+        </div>
+    </div>
+    <!-- End Info -->
 
 </main>
 <!-- ========== END MAIN ========== -->
 
 <!-- ========== FOOTER ========== -->
-<footer class="bg-dark">
-    <div class="container">
-        <div class="space-top-2 space-bottom-1 space-bottom-lg-2">
-            <div class="row justify-content-lg-between">
-                <div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0">
-                    <!-- Logo -->
-                    <div class="mb-4">
-                        <a aria-label="Front" href="index.html">
-                            <img alt="Logo" class="brand" src="assets/front_v3_3/svg/logos/logo-white.svg">
-                        </a>
-                    </div>
-                    <!-- End Logo -->
-
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link media" href="javascript:;">
-                                    <span class="media">
-                      <span class="fas fa-location-arrow mt-1 mr-2"></span>
-                                    <span class="media-body">
-                        SEC ADDRESS
-                      </span>
-                                    </span>
-                            </a>
-
-                    </ul>
-                    <!-- End Nav Link -->
-                </div>
-
-
-
-                <div class="col-6 col-md-3 col-lg mb-5 mb-lg-0">
-                    <h5 class="text-white">Publications</h5>
-
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item"><a class="nav-link" href="#">Arxiv</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">ADS</a></li>
-                    </ul>
-                    <!-- End Nav Link -->
-                </div>
-
-                <div class="col-6 col-md-3 col-lg">
-                    <h5 class="text-white">People</h5>
-
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item"><a class="nav-link" href="#">Members</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Associates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Alumni</a></li>
-                    </ul>
-                    <!-- End Nav Link -->
-                </div>
-
-                <div class="col-6 col-md-3 col-lg">
-                    <h5 class="text-white">Resources</h5>
-
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                    <span class="media align-items-center">
-                      <i class="fa fa-info-circle mr-2"></i>
-                      <span class="media-body">Contact</span>
-                                    </span>
-                            </a>
-                        </li>
-
-                    </ul>
-                    <!-- End Nav Link -->
-                </div>
-            </div>
-        </div>
-
-        <hr class="opacity-xs my-0">
-
-        <div class="space-1">
-            <div class="row align-items-md-center mb-7">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-white nav-x-sm align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Privacy &amp; Policy</a>
-                        </li>
-                        <li class="nav-item opacity mx-3">&#47;</li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Terms</a>
-                        </li>
-                        <li class="nav-item opacity mx-3">&#47;</li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Site Map</a>
-                        </li>
-                    </ul>
-                    <!-- End Nav Link -->
-                </div>
-
-                <div class="col-md-6 text-md-right">
-                    <ul class="list-inline mb-0">
-                        <!-- Social Networks -->
-                        <li class="list-inline-item">
-                            <a class="btn btn-xs btn-icon btn-soft-light" href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-xs btn-icon btn-soft-light" href="#">
-                                <i class="fab fa-google"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-xs btn-icon btn-soft-light" href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-xs btn-icon btn-soft-light" href="#">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <!-- End Social Networks -->
-
-                        <!-- Language -->
-                        <li class="list-inline-item">
-                            <div class="hs-unfold">
-                                <a class="js-hs-unfold-invoker dropdown-toggle btn btn-xs btn-soft-light"
-                                   data-hs-unfold-options='{
-                        "target": "#footerLanguage",
-                        "type": "css-animation",
-                        "animationIn": "slideInDown"
-                       }' href="javascript:;">
-                                    <img alt="United States Flag" class="dropdown-item-icon"
-                                         src="assets/front_v3_3/vendor/flag-icon-css/flags/4x3/us.svg">
-                                    <span>United States</span>
-                                </a>
-
-                                <div class="hs-unfold-content dropdown-menu dropdown-unfold dropdown-menu-bottom mb-2"
-                                     id="footerLanguage">
-                                    <a class="dropdown-item active" href="#">English</a>
-                                    <a class="dropdown-item" href="#">Deutsch</a>
-                                    <a class="dropdown-item" href="#">Español</a>
-                                    <a class="dropdown-item" href="#">Français</a>
-                                    <a class="dropdown-item" href="#">Italiano</a>
-                                    <a class="dropdown-item" href="#">日本語</a>
-                                    <a class="dropdown-item" href="#">한국어</a>
-                                    <a class="dropdown-item" href="#">Nederlands</a>
-                                    <a class="dropdown-item" href="#">Português</a>
-                                    <a class="dropdown-item" href="#">Русский</a>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- End Language -->
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Copyright -->
-            <div class="w-md-75 text-lg-center mx-lg-auto">
-                <p class="text-white opacity-sm small">&copy; Front. 2020 Htmlstream. All rights reserved.</p>
-                <p class="text-white opacity-sm small">When you visit or interact with our sites, services or tools, we
-                    or our authorised service providers may use cookies for storing information to help provide you with
-                    a better, faster and safer experience and for marketing purposes.</p>
-            </div>
-            <!-- End Copyright -->
-        </div>
-    </div>
-</footer>
+<footer-component></footer-component>
 <!-- ========== END FOOTER ========== -->
 
 <!-- JS Global Compulsory  -->
@@ -457,6 +861,10 @@ Hayden, Hargun, Augusto, Arya, Sree, Shuheng, Elaine, Blake, Tao, et
 <script>
     if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/front_v3_3/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
 </script>
+
+<!-- JS -->
+<script src="assets/common_components/js/header.js"></script>
+<script src="assets/common_components/js/footer.js"></script>
 </body>
 
 </html>

@@ -25,754 +25,302 @@
 </head>
 
 <body>
-<!-- ========== HEADER ========== -->
-<header class="header header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide"
-        data-hs-header-options='{
-      "fixMoment": 1000,
-      "fixEffect": "slide"
-    }' id="header">
-    <!-- Search -->
-    <div class="search-push-top" id="searchPushTop">
-        <div class="container position-relative">
-            <div class="search-push-top-content pt-3">
-                <!-- Close Button -->
-                <div class="search-push-top-close-btn">
-                    <div class="hs-unfold">
-                        <a class="js-hs-unfold-invoker btn btn-icon btn-xs btn-soft-secondary mt-2 mr-2"
-                           data-hs-unfold-options='{
-            "target": "#searchPushTop",
-            "type": "jquery-slide",
-            "contentSelector": ".search-push-top"
-           }' href="javascript:;">
-                            <svg height="10" viewBox="0 0 18 18" width="10" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"
-                                      fill="currentColor"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <!-- End Close Button -->
+    <!-- ========== HEADER ========== -->
+    <header-component></header-component>
+    <!-- ========== END HEADER ========== -->
 
-                <!-- Input -->
-                <form class="input-group">
-                    <input aria-label="Search Front" class="form-control" placeholder="Search Front" type="search">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="button">Search</button>
-                    </div>
-                </form>
-                <!-- End Input -->
-
-                <!-- Content -->
-                <div class="row d-none d-md-flex mt-7">
-                    <div class="col-sm-6">
-                        <span class="h5">Quick Links</span>
-
-                        <div class="row">
-                            <!-- Nav Link -->
-                            <div class="col-6">
-                                <div class="nav nav-sm nav-x-0 flex-column">
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Search Results List
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Search Results Grid
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> About
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Services
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Invoice
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- End Nav Link -->
-
-                            <!-- Nav Link -->
-                            <div class="col-6">
-                                <div class="nav nav-sm nav-x-0 flex-column">
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Profile
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> User Contacts
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Reviews
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Settings
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- End Nav Link -->
-                        </div>
+    <!-- ========== MAIN ========== -->
+    <main id="content " role="main ">
+        <!-- User Profile Section -->
+        <div class="container space-top-3 space-bottom-2 ">
+            <div class="border-bottom w-md-75 w-lg-60 space-bottom-2 mx-md-auto ">
+                <div class="media d-block d-sm-flex ">
+                    <div class="position-relative mx-auto mb-3 mb-sm-0 mr-sm-4 " style="width: 160px; height: 160px; ">
+                        <img alt="Image Description " class="img-fluid rounded-circle " height="160 " src="assets/front_v3_3/img/160x160/img1.jpg " width="160 ">
+                        <img alt="Icon " class="bg-white position-absolute bottom-0 right-0 rounded-circle p-1 " height="36 " src="assets/front_v3_3/svg/illustrations/top-vendor.svg " title="Top Writer " width="36 ">
                     </div>
 
-                    <div class="col-sm-6">
-                        <!-- Banner -->
-                        <div class="rounded search-push-top-banner">
-                            <div class="d-flex align-items-center">
-                                <div class="search-push-top-banner-container">
-                                    <img alt="Image Description" class="img-fluid search-push-top-banner-img"
-                                         src="assets/front_v3_3/img/mockups/img3.png">
-                                    <img alt="Image Description" class="img-fluid search-push-top-banner-img"
-                                         src="assets/front_v3_3/img/mockups/img2.png">
-                                </div>
-
-                                <div>
-                                    <div class="mb-4">
-                                        <span class="h5">Featured Item</span>
-                                        <p>Create astonishing web sites and pages.</p>
-                                    </div>
-                                    <a class="btn btn-xs btn-soft-success transition-3d-hover" href="javascript:;">Apply
-                                        Now <i class="fas fa-angle-right fa-sm ml-1"></i></a>
-                                </div>
+                    <div class="media-body ">
+                        <div class="d-flex justify-content-between align-items-center mb-2 ">
+                            <h1 class="h3 ">Pavlos Protopapas</h1>
+                            <div class="d-block ">
+                                <button class="btn btn-xs btn-outline-primary font-weight-bold text-nowrap ml-1 " type="button ">Follow
+                            </button>
                             </div>
                         </div>
-                        <!-- End Banner -->
+
+                        <div class="row text-body font-size-1 mb-2 ">
+                            <div class="col-auto ">
+                                <span class="h6 ">906</span>
+                                <span>Posts</span>
+                            </div>
+                            <div class="col-auto ">
+                                <span class="h6 ">19.5k</span>
+                                <span>Followers</span>
+                            </div>
+                            <div class="col-auto ">
+                                <span class="h6 ">109</span>
+                                <span>Following</span>
+                            </div>
+                        </div>
+
+                        <p class="mb-0 ">Nataly is a freelance journalist who's been published by Popular Science, The Washington Post, USA Today, Slate, and many more. Read more at <a class="font-weight-bold " href="# ">hannawolfe.com</a>
+                        </p>
                     </div>
                 </div>
-                <!-- End Content -->
             </div>
         </div>
-    </div>
-    <!-- End Search -->
+        <!-- End User Profile Section -->
 
-    <div class="header-section">
+        <!-- Blog Listing Section -->
+        <div class="container space-bottom-3">
+            <div class="w-md-75 w-lg-60 mx-md-auto ">
+                <!-- End Blog Card -->
+                <article class="card mb-3 mb-sm-5">
+                    <img alt="Image Description " class="card-img-top " src="assets/front_v3_3/img/900x450/img1.jpg ">
+                    <div class="card-body ">
+                        <a class="d-block small font-weight-bold text-cap mb-2" href="projects.html#NeuroDiffHUB">NeuroDiffHUB</a>
 
+                        <h2 class="h3 " id="projects.html#NeuroDiffHUB">Small Title Here (Max 10 words)</h2>
 
-        <div class="container" id="logoAndNav">
-            <!-- Nav -->
-            <nav class="js-mega-menu navbar navbar-expand-lg">
-                <!-- Logo -->
-                <a aria-label="Front" class="navbar-brand" href="./index.html">
-                    <img alt="Logo" src="assets/front_v3_3/svg/logos/logo.svg">
-                </a>
-                <!-- End Logo -->
+                        <p>Front is a financial technology company. We build products. We do it fast and we do it well.</p>
 
-                <!-- Responsive Toggle Button -->
-                <button aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation"
-                        class="navbar-toggler btn btn-icon btn-sm rounded-circle" data-target="#navBar"
-                        data-toggle="collapse" type="button">
-      <span class="navbar-toggler-default">
-        <svg height="14" viewBox="0 0 18 18" width="14" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"
-                fill="currentColor"/>
-        </svg>
-      </span>
-                    <span class="navbar-toggler-toggled">
-        <svg height="14" viewBox="0 0 18 18" width="14" xmlns="http://www.w3.org/2000/svg">
-          <path d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"
-                fill="currentColor"/>
-        </svg>
-      </span>
-                </button>
-                <!-- End Responsive Toggle Button -->
-
-                <!-- Navigation -->
-                <div class="collapse navbar-collapse" id="navBar">
-                    <div class="navbar-body header-abs-top-inner">
-                        <ul class="navbar-nav">
-                            <!-- Home -->
-                            <li class="hs-has-mega-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/index.html"> Home</a>
-                            </li>
-                            <!-- End Home -->
-
-                            <!-- Courses -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/courses.html">Courses</a>
-                            </li>
-                            <!-- End Courses -->
-
-                            <!-- Projects -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/projects.html">Projects</a>
-                            </li>
-                            <!-- End Projects -->
-
-                            <!-- Newsroom -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/newsroom.html">Newsroom</a>
-                            </li>
-                            <!-- End Newsroom -->
-
-                            <!-- Newsroom -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/publications.html">Publications</a>
-                            </li>
-                            <!-- End Newsroom -->
-
-                            <!-- Work With Us -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/work_with_us.html">Work With Us</a>
-                            </li>
-                            <!-- End Work With Us -->
-
-                            <!-- Work With Us -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/contact_us.html">Contact Us</a>
-                            </li>
-                            <!-- End Work With Us -->
-                        </ul>
-                    </div>
-                </div>
-                <!-- End Navigation -->
-            </nav>
-            <!-- End Nav -->
-        </div>
-    </div>
-</header>
-<!-- ========== END HEADER ========== -->
-
-<!-- ========== MAIN ========== -->
-<main id="content" role="main">
-    <!-- Hero Section -->
-    <div class="js-slick-carousel slick slick-equal-height w-100" data-hs-slick-carousel-options='{
-           "infinite": true,
-           "autoplay": true,
-           "autoplaySpeed": 10000,
-           "dots": true,
-           "rows": 0,
-           "dotsClass": "slick-pagination slick-pagination-white position-absolute bottom-0 right-0 left-0 mb-3"
-         }'>
-        <div class="js-slide gradient-x-overlay-lg-dark bg-img-hero space-3 min-vh-lg-100"
-             style="background-image: url(/assets/front_v3_3/img/1920x1080/img8.jpg);">
-            <!-- Hero News -->
-            <div class="container d-lg-flex align-items-lg-center">
-                <article class="w-lg-60 text-center mx-lg-auto">
-                        <span class="d-block mb-2" data-hs-slick-carousel-animation="fadeInUp">
-              <a class="d-block small text-white-70 font-weight-bold text-cap mb-2" href="#">Adventure</a>
-            </span>
-
-                    <h1 class="text-white mb-4 mb-md-7" data-hs-slick-carousel-animation="fadeInUp"
-                        data-hs-slick-carousel-animation-delay="150">The top 30 self-improvement goals we never get
-                        around to achieving</h1>
-                    <a class="btn btn-light btn-wide transition-3d-hover" data-hs-slick-carousel-animation="fadeInUp"
-                       data-hs-slick-carousel-animation-delay="200" href="./blog-single-article.html">Read More <i
-                            class="fas fa-angle-right fa-sm ml-1"></i></a>
-                </article>
-            </div>
-            <!-- End Hero News -->
-        </div>
-
-        <div class="js-slide gradient-x-overlay-lg-dark bg-img-hero space-3 min-vh-lg-100"
-             style="background-image: url(/assets/front_v3_3/img/1920x1080/img22.jpg);">
-            <!-- Hero News -->
-            <div class="container d-lg-flex align-items-lg-center">
-                <article class="w-lg-60 text-center mx-lg-auto">
-                        <span class="d-block mb-2" data-hs-slick-carousel-animation="fadeInUp">
-              <a class="d-block small text-white-70 font-weight-bold text-cap mb-2" href="#">Science</a>
-            </span>
-
-                    <h2 class="h1 text-white mb-4 mb-md-7" data-hs-slick-carousel-animation="fadeInUp"
-                        data-hs-slick-carousel-animation-delay="150">Bonded﻿ by science: researchers describe their
-                        nerdy proposals</h2>
-                    <a class="btn btn-light btn-wide transition-3d-hover" data-hs-slick-carousel-animation="fadeInUp"
-                       data-hs-slick-carousel-animation-delay="200" href="./blog-single-article.html">Read More <i
-                            class="fas fa-angle-right fa-sm ml-1"></i></a>
-                </article>
-            </div>
-            <!-- End Hero News -->
-        </div>
-
-        <div class="js-slide gradient-x-overlay-lg-dark bg-img-hero space-3 min-vh-lg-100"
-             style="background-image: url(/assets/front_v3_3/img/1920x1080/img2.jpg);">
-            <!-- Hero News -->
-            <div class="container d-lg-flex align-items-lg-center">
-                <article class="w-lg-60 text-center mx-lg-auto">
-                        <span class="d-block mb-2" data-hs-slick-carousel-animation="fadeInUp">
-              <a class="d-block small text-white-70 font-weight-bold text-cap mb-2" href="#">Environment</a>
-            </span>
-
-                    <h2 class="h1 text-white mb-4 mb-md-7" data-hs-slick-carousel-animation="fadeInUp"
-                        data-hs-slick-carousel-animation-delay="150">Tree rings reveal increased fire risk for
-                        southwestern US</h2>
-                    <a class="btn btn-light btn-wide transition-3d-hover" data-hs-slick-carousel-animation="fadeInUp"
-                       data-hs-slick-carousel-animation-delay="200" href="./blog-single-article.html">Read More <i
-                            class="fas fa-angle-right fa-sm ml-1"></i></a>
-                </article>
-            </div>
-            <!-- End Hero News -->
-        </div>
-
-        <div class="js-slide gradient-x-overlay-lg-dark bg-img-hero space-3 min-vh-lg-100"
-             style="background-image: url(/assets/front_v3_3/img/1920x1080/img7.jpg);">
-            <!-- Hero News -->
-            <div class="container d-lg-flex align-items-lg-center">
-                <article class="w-lg-60 text-center mx-lg-auto">
-                        <span class="d-block mb-2" data-hs-slick-carousel-animation="fadeInUp">
-              <a class="d-block small text-white-70 font-weight-bold text-cap mb-2" href="#">Lifestyle</a>
-            </span>
-
-                    <h2 class="h1 text-white mb-4 mb-md-7" data-hs-slick-carousel-animation="fadeInUp"
-                        data-hs-slick-carousel-animation-delay="150">2020's Most Relaxing and Affordable Vacations</h2>
-                    <a class="btn btn-light btn-wide transition-3d-hover" data-hs-slick-carousel-animation="fadeInUp"
-                       data-hs-slick-carousel-animation-delay="200" href="./blog-single-article.html">Read More <i
-                            class="fas fa-angle-right fa-sm ml-1"></i></a>
-                </article>
-            </div>
-            <!-- End Hero News -->
-        </div>
-    </div>
-    <!-- End Hero Section -->
-
-    <!-- Blog News Section -->
-    <div class="container space-2 space-bottom-lg-3">
-        <!-- Tags -->
-        <div class="text-center mb-5 mb-md-9">
-            <a class="btn btn-xs btn-soft-secondary btn-pill mx-1 mb-2" href="javascript:;">Business</a>
-            <a class="btn btn-xs btn-soft-secondary btn-pill mx-1 mb-2" href="javascript:;">Strategy</a>
-            <a class="btn btn-xs btn-soft-secondary btn-pill mx-1 mb-2" href="javascript:;">Health</a>
-            <a class="btn btn-xs btn-soft-secondary btn-pill mx-1 mb-2" href="javascript:;">Creative</a>
-            <a class="btn btn-xs btn-soft-secondary btn-pill mx-1 mb-2" href="javascript:;">Environment</a>
-            <a class="btn btn-xs btn-soft-secondary btn-pill mx-1 mb-2" href="javascript:;">Adventure</a>
-            <a class="btn btn-xs btn-soft-secondary btn-pill mx-1 mb-2" href="javascript:;">Stories</a>
-        </div>
-        <!-- End Tags -->
-
-        <div class="row">
-            <div class="col-12 mb-3 mb-sm-7">
-                <!-- Blog Card -->
-                <article class="row align-items-lg-center">
-                    <div class="col-lg-8">
-                        <img alt="Image Description" class="img-fluid rounded-lg"
-                             src="/assets/front_v3_3/img/900x450/img1.jpg">
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="py-5 px-lg-3">
-                                <span class="d-block mb-2">
-                  <a class="small text-body font-weight-bold text-cap" href="#">neurodiffHUB</a>
-                </span>
-                            <h2><a class="text-inherit" href="blog-single-article.html">Should Product Owners think like
-                                entrepreneurs?</a></h2>
-                            <p>Front is a financial technology company. We build products. We do it fast and we do it
-                                well.</p>
-                            <a href="#">Read more <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+                        <div class="media align-items-center pt-5 ">
+                            <div class="avatar-group ">
+                                <div class="avatar avatar-xs avatar-circle " data-placement="top " data-toggle="tooltip " title="Hanna Wolfe ">
+                                    <img alt="Image Description " class="avatar-img " src="assets/front_v3_3/img/100x100/img20.jpg ">
+                                </div>
+                            </div>
+                            <div class="media-body d-flex justify-content-end text-muted font-size-1 ml-2 ">
+                                July 15
+                            </div>
                         </div>
                     </div>
                 </article>
                 <!-- End Blog Card -->
-            </div>
 
-            <div class="order-lg-1 col-sm-6 col-lg-4 mb-3 mb-sm-7">
-                <!-- Blog -->
-                <article
-                        class="card align-items-start flex-wrap flex-row h-380rem gradient-y-overlay-sm-gray-900 bg-img-hero rounded-lg-pseudo transition-3d-hover"
-                        style="background-image: url(/assets/front_v3_3/img/400x500/img9.jpg);">
-                    <div class="card-header border-0 bg-transparent w-100">
-                        <a class="small text-white font-weight-bold text-cap mr-2" href="#">neurodiffEQ</a>
-                    </div>
+                <!-- End Blog Card -->
+                <article class="card mb-3 mb-sm-5 ">
+                    <img alt="Image Description " class="card-img-top " src="assets/front_v3_3/img/900x450/img13.jpg ">
 
-                    <div class="card-footer border-0 bg-transparent mt-auto">
-                        <a href="#">
-                            <h3 class="text-white">This Watch gym partnerships give you perks for working out</h3>
-                            <span class="text-white-70">Read more <i class="fas fa-angle-right fa-sm ml-1"></i></span>
-                        </a>
-                    </div>
-                </article>
-                <!-- End Blog -->
-            </div>
+                    <div class="card-body ">
+                        <a class="d-block small font-weight-bold text-cap mb-2 " href="projects.html#NeuroDiffEq">NeuroDiffEq</a>
 
-            <div class="order-lg-2 col-sm-6 col-lg-4 mb-3 mb-sm-7">
-                <!-- Blog -->
-                <article class="card align-items-start flex-wrap flex-row h-380rem bg-dark transition-3d-hover"
-                         style="background-image: url(/assets/front_v3_3/svg/components/abstract-shapes-20.svg);">
-                    <div class="card-header border-0 bg-transparent w-100">
-                        <a class="small text-white font-weight-bold text-cap mr-2" href="#">RCTorch</a>
-                    </div>
+                        <h3 id="projects.html#NeuroDiffEq">Small Title Here (Max 10 words)</h3>
 
-                    <div class="card-footer border-0 bg-transparent mt-auto">
-                        <a href="#">
-                            <h3 class="text-white">Announcing Front Strategies: Ready-to-use rules</h3>
-                            <span class="text-white-70">Read more <i class="fas fa-angle-right fa-sm ml-1"></i></span>
-                        </a>
-                    </div>
-                </article>
-                <!-- End Blog -->
-            </div>
+                        <p>Description Here (Max 1000 words) </p>
 
-            <div class="order-lg-3 col-sm-6 col-lg-4 mb-3 mb-sm-7">
-                <!-- Blog -->
-                <article
-                        class="card align-items-start flex-wrap flex-row h-380rem gradient-y-overlay-sm-gray-900 bg-img-hero rounded-lg-pseudo transition-3d-hover"
-                        style="background-image: url(/assets/front_v3_3/img/400x500/img2.jpg);">
-                    <div class="card-header border-0 bg-transparent w-100">
-                        <a class="small text-white font-weight-bold text-cap mr-2" href="#">physicsNN</a>
-                    </div>
-
-                    <div class="card-footer border-0 bg-transparent mt-auto">
-                        <a href="#">
-                            <h3 class="text-white">Drone Company PrecisionHawk Names New CEO</h3>
-                            <span class="text-white-70">Read more <i class="fas fa-angle-right fa-sm ml-1"></i></span>
-                        </a>
-                    </div>
-                </article>
-                <!-- End Blog -->
-            </div>
-
-            <div class="order-lg-5 col-sm-6 col-lg-4 mb-3 mb-sm-7">
-                <!-- Blog -->
-                <article
-                        class="card align-items-start flex-wrap flex-row h-380rem gradient-y-overlay-sm-gray-900 bg-img-hero rounded-lg-pseudo transition-3d-hover"
-                        style="background-image: url(/assets/front_v3_3/img/400x500/img1.jpg);">
-                    <div class="card-header border-0 bg-transparent w-100">
-                        <a class="small text-white font-weight-bold text-cap mr-2" href="#">BlackHoleDNN</a>
-                    </div>
-
-                    <div class="card-footer border-0 bg-transparent mt-auto">
-                        <a href="#">
-                            <h3 class="text-white">Front Interview with a Lead Designer of the Hubble</h3>
-                            <span class="text-white-70">Read more <i class="fas fa-angle-right fa-sm ml-1"></i></span>
-                        </a>
-                    </div>
-                </article>
-                <!-- End Blog -->
-            </div>
-
-            <div class="order-lg-4 col-12 mb-3 mb-sm-7">
-                <!-- Blog Card -->
-                <article class="row align-items-lg-center">
-                    <div class="col-lg-8">
-                        <img alt="Image Description" class="img-fluid rounded-lg"
-                             src="/assets/front_v3_3/img/900x450/img2.jpg">
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="py-5 px-lg-3">
-                                <span class="d-block mb-2">
-                  <a class="small text-body font-weight-bold text-cap" href="#">Astromer</a>
-                </span>
-                            <h2><a class="text-inherit" href="blog-single-article.html">How Google Assistant now helps
-                                you record stories for kids</a></h2>
-                            <p>Google is constantly updating its consumer AI, Google Assistant, with new features.</p>
-                            <a href="#">Read more <i class="fas fa-angle-right fa-sm ml-1"></i></a>
+                        <div class="media align-items-center pt-5 ">
+                            <div class="avatar-group ">
+                                <div class="avatar avatar-xs avatar-circle " data-placement="top " data-toggle="tooltip " title="Hanna Wolfe ">
+                                    <img alt="Image Description " class="avatar-img " src="assets/front_v3_3/img/100x100/img20.jpg ">
+                                </div>
+                                <div class="avatar avatar-xs avatar-circle " data-placement="top " data-toggle="tooltip " title="John O 'nolan">
+                                    <img alt="Image Description" class="avatar-img" src="assets/front_v3_3/img/100x100/img4.jpg">
+                                </div>
+                            </div>
+                            <div class="media-body d-flex justify-content-end text-muted font-size-1 ml-2">
+                                July 15
+                            </div>
                         </div>
                     </div>
                 </article>
                 <!-- End Blog Card -->
-            </div>
 
-            <div class="order-lg-6 col-sm-6 col-lg-4 mb-3 mb-sm-7">
-                <!-- Blog -->
-                <article
-                        class="card align-items-start flex-wrap flex-row h-380rem gradient-y-overlay-sm-gray-900 bg-img-hero rounded-lg-pseudo transition-3d-hover"
-                        style="background-image: url(/assets/front_v3_3/img/400x500/img4.jpg);">
-                    <div class="card-header border-0 bg-transparent w-100">
-                        <a class="small text-white font-weight-bold text-cap mr-2" href="#">Health,</a>
-                        <a class="small text-white font-weight-bold text-cap mr-2" href="#">Environment</a>
-                    </div>
+                <!-- End Blog Card -->
+                <article class="card mb-3 mb-sm-5">
+                    <img alt="Image Description " class="card-img-top " src="assets/front_v3_3/img/900x450/img1.jpg ">
+                    <div class="card-body ">
+                        <a class="d-block small font-weight-bold text-cap mb-2" href="projects.html#Astromer">Astromer</a>
 
-                    <div class="card-footer border-0 bg-transparent mt-auto">
-                        <a href="#">
-                            <h3 class="text-white">Better is when everything works together</h3>
-                            <span class="text-white-70">Read more <i class="fas fa-angle-right fa-sm ml-1"></i></span>
-                        </a>
-                    </div>
-                </article>
-                <!-- End Blog -->
-            </div>
+                        <h2 class="h3 " id="projects.html#Astromer">Small Title Here (Max 10 words)</h2>
 
-            <div class="order-lg-7 col-sm-6 col-lg-4 mb-3 mb-sm-7">
-                <!-- Blog -->
-                <article
-                        class="card align-items-start flex-wrap flex-row h-380rem gradient-y-overlay-sm-gray-900 bg-img-hero rounded-lg-pseudo transition-3d-hover"
-                        style="background-image: url(/assets/front_v3_3/img/400x500/img5.jpg);">
-                    <div class="card-header border-0 bg-transparent w-100">
-                        <a class="small text-white font-weight-bold text-cap mr-2" href="#">Stories</a>
-                    </div>
+                        <p>Front is a financial technology company. We build products. We do it fast and we do it well.</p>
 
-                    <div class="card-footer border-0 bg-transparent mt-auto">
-                        <a href="#">
-                            <h3 class="text-white">Should You Buy An Apple Pencil?</h3>
-                            <span class="text-white-70">Read more <i class="fas fa-angle-right fa-sm ml-1"></i></span>
-                        </a>
-                    </div>
-                </article>
-                <!-- End Blog -->
-            </div>
-        </div>
-
-        <!-- Info -->
-        <div class="text-center">
-            <div class="d-inline-block font-size-1 border bg-white text-center rounded-pill py-3 px-4">
-                Want to read more? <a class="font-weight-bold ml-3" href="#">Go here <span
-                    class="fas fa-angle-right fa-sm ml-1"></span></a>
-            </div>
-        </div>
-        <!-- End Info -->
-    </div>
-    <!-- End Blog News Section -->
-</main>
-<!-- ========== END MAIN ========== -->
-
-<!-- ========== FOOTER ========== -->
-<footer class="bg-dark">
-    <div class="container">
-        <div class="space-top-2 space-bottom-1 space-bottom-lg-2">
-            <div class="row justify-content-lg-between">
-                <div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0">
-                    <!-- Logo -->
-                    <div class="mb-4">
-                        <a aria-label="Front" href="index.html">
-                            <img alt="Logo" class="brand" src="/assets/front_v3_3/svg/logos/logo-white.svg">
-                        </a>
-                    </div>
-                    <!-- End Logo -->
-
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link media" href="javascript:;">
-                                    <span class="media">
-                      <span class="fas fa-location-arrow mt-1 mr-2"></span>
-                                    <span class="media-body">
-                        153 Williamson Plaza, Maggieberg
-                      </span>
-                                    </span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link media" href="tel:1-062-109-9222">
-                                    <span class="media">
-                      <span class="fas fa-phone-alt mt-1 mr-2"></span>
-                                    <span class="media-body">
-                        +1 (062) 109-9222
-                      </span>
-                                    </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- End Nav Link -->
-                </div>
-
-                <div class="col-6 col-md-3 col-lg mb-5 mb-lg-0">
-                    <h5 class="text-white">Company</h5>
-
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Careers <span
-                                class="badge badge-primary ml-1">We're hiring</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Customers</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Hire us</a></li>
-                    </ul>
-                    <!-- End Nav Link -->
-                </div>
-
-                <div class="col-6 col-md-3 col-lg mb-5 mb-lg-0">
-                    <h5 class="text-white">Features</h5>
-
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item"><a class="nav-link" href="#">Press</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Release notes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Integrations</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-                    </ul>
-                    <!-- End Nav Link -->
-                </div>
-
-                <div class="col-6 col-md-3 col-lg">
-                    <h5 class="text-white">Documentation</h5>
-
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Docs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Status</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">API Reference</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Tech Requirements</a></li>
-                    </ul>
-                    <!-- End Nav Link -->
-                </div>
-
-                <div class="col-6 col-md-3 col-lg">
-                    <h5 class="text-white">Resources</h5>
-
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                    <span class="media align-items-center">
-                      <i class="fa fa-info-circle mr-2"></i>
-                      <span class="media-body">Help</span>
-                                    </span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                    <span class="media align-items-center">
-                      <i class="fa fa-user-circle mr-2"></i>
-                      <span class="media-body">Your Account</span>
-                                    </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- End Nav Link -->
-                </div>
-            </div>
-        </div>
-
-        <hr class="opacity-xs my-0">
-
-        <div class="space-1">
-            <div class="row align-items-md-center mb-7">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-white nav-x-sm align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Privacy &amp; Policy</a>
-                        </li>
-                        <li class="nav-item opacity mx-3">&#47;</li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Terms</a>
-                        </li>
-                        <li class="nav-item opacity mx-3">&#47;</li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Site Map</a>
-                        </li>
-                    </ul>
-                    <!-- End Nav Link -->
-                </div>
-
-                <div class="col-md-6 text-md-right">
-                    <ul class="list-inline mb-0">
-                        <!-- Social Networks -->
-                        <li class="list-inline-item">
-                            <a class="btn btn-xs btn-icon btn-soft-light" href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-xs btn-icon btn-soft-light" href="#">
-                                <i class="fab fa-google"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-xs btn-icon btn-soft-light" href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-xs btn-icon btn-soft-light" href="#">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <!-- End Social Networks -->
-
-                        <!-- Language -->
-                        <li class="list-inline-item">
-                            <div class="hs-unfold">
-                                <a class="js-hs-unfold-invoker dropdown-toggle btn btn-xs btn-soft-light"
-                                   data-hs-unfold-options='{
-                        "target": "#footerLanguage",
-                        "type": "css-animation",
-                        "animationIn": "slideInDown"
-                       }' href="javascript:;">
-                                    <img alt="United States Flag" class="dropdown-item-icon"
-                                         src="/assets/front_v3_3/vendor/flag-icon-css/flags/4x3/us.svg">
-                                    <span>United States</span>
-                                </a>
-
-                                <div class="hs-unfold-content dropdown-menu dropdown-unfold dropdown-menu-bottom mb-2"
-                                     id="footerLanguage">
-                                    <a class="dropdown-item active" href="#">English</a>
-                                    <a class="dropdown-item" href="#">Deutsch</a>
-                                    <a class="dropdown-item" href="#">Español</a>
-                                    <a class="dropdown-item" href="#">Français</a>
-                                    <a class="dropdown-item" href="#">Italiano</a>
-                                    <a class="dropdown-item" href="#">日本語</a>
-                                    <a class="dropdown-item" href="#">한국어</a>
-                                    <a class="dropdown-item" href="#">Nederlands</a>
-                                    <a class="dropdown-item" href="#">Português</a>
-                                    <a class="dropdown-item" href="#">Русский</a>
+                        <div class="media align-items-center pt-5 ">
+                            <div class="avatar-group ">
+                                <div class="avatar avatar-xs avatar-circle " data-placement="top " data-toggle="tooltip " title="Hanna Wolfe ">
+                                    <img alt="Image Description " class="avatar-img " src="assets/front_v3_3/img/100x100/img20.jpg ">
                                 </div>
                             </div>
-                        </li>
-                        <!-- End Language -->
-                    </ul>
-                </div>
-            </div>
+                            <div class="media-body d-flex justify-content-end text-muted font-size-1 ml-2 ">
+                                July 15
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- End Blog Card -->
 
-            <!-- Copyright -->
-            <div class="w-md-75 text-lg-center mx-lg-auto">
-                <p class="text-white opacity-sm small">&copy; Front. 2020 Htmlstream. All rights reserved.</p>
-                <p class="text-white opacity-sm small">When you visit or interact with our sites, services or tools, we
-                    or our authorised service providers may use cookies for storing information to help provide you with
-                    a better, faster and safer experience and for marketing purposes.</p>
+                <!-- End Blog Card -->
+                <article class="card mb-3 mb-sm-5 ">
+                    <img alt="Image Description " class="card-img-top " src="assets/front_v3_3/img/900x450/img13.jpg ">
+
+                    <div class="card-body ">
+                        <a class="d-block small font-weight-bold text-cap mb-2 " href="projects.html#NNETH">NNETH</a>
+
+                        <h3 id="projects.html#NNETH">Small Title Here (Max 10 words)</h3>
+
+                        <p>Description Here (Max 1000 words) </p>
+
+                        <div class="media align-items-center pt-5 ">
+                            <div class="avatar-group ">
+                                <div class="avatar avatar-xs avatar-circle " data-placement="top " data-toggle="tooltip " title="Hanna Wolfe ">
+                                    <img alt="Image Description " class="avatar-img " src="assets/front_v3_3/img/100x100/img20.jpg ">
+                                </div>
+                                <div class="avatar avatar-xs avatar-circle " data-placement="top " data-toggle="tooltip " title="John O 'nolan">
+                                    <img alt="Image Description" class="avatar-img" src="assets/front_v3_3/img/100x100/img4.jpg">
+                                </div>
+                            </div>
+                            <div class="media-body d-flex justify-content-end text-muted font-size-1 ml-2">
+                                July 15
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- End Blog Card -->
+
+                <!-- End Blog Card -->
+                <article class="card mb-3 mb-sm-5">
+                    <img alt="Image Description " class="card-img-top " src="assets/front_v3_3/img/900x450/img1.jpg ">
+                    <div class="card-body ">
+                        <a class="d-block small font-weight-bold text-cap mb-2" href="projects.html#StellarNet">Stellar Net</a>
+
+                        <h2 class="h3 " id="projects.html#StellarNet">Small Title Here (Max 10 words)</h2>
+
+                        <p>Front is a financial technology company. We build products. We do it fast and we do it well.</p>
+
+                        <div class="media align-items-center pt-5 ">
+                            <div class="avatar-group ">
+                                <div class="avatar avatar-xs avatar-circle " data-placement="top " data-toggle="tooltip " title="Hanna Wolfe ">
+                                    <img alt="Image Description " class="avatar-img " src="assets/front_v3_3/img/100x100/img20.jpg ">
+                                </div>
+                            </div>
+                            <div class="media-body d-flex justify-content-end text-muted font-size-1 ml-2 ">
+                                July 15
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- End Blog Card -->
+
+                <!-- End Blog Card -->
+                <article class="card mb-3 mb-sm-5 ">
+                    <img alt="Image Description " class="card-img-top " src="assets/front_v3_3/img/900x450/img13.jpg ">
+
+                    <div class="card-body ">
+                        <a class="d-block small font-weight-bold text-cap mb-2 " href="projects.html#RCTorch">RCTorch</a>
+
+                        <h3 id="projects.html#RCTorch">Small Title Here (Max 10 words)</h3>
+
+                        <p>Description Here (Max 1000 words) </p>
+
+                        <div class="media align-items-center pt-5 ">
+                            <div class="avatar-group ">
+                                <div class="avatar avatar-xs avatar-circle " data-placement="top " data-toggle="tooltip " title="Hanna Wolfe ">
+                                    <img alt="Image Description " class="avatar-img " src="assets/front_v3_3/img/100x100/img20.jpg ">
+                                </div>
+                                <div class="avatar avatar-xs avatar-circle " data-placement="top " data-toggle="tooltip " title="John O 'nolan">
+                                    <img alt="Image Description" class="avatar-img" src="assets/front_v3_3/img/100x100/img4.jpg">
+                                </div>
+                            </div>
+                            <div class="media-body d-flex justify-content-end text-muted font-size-1 ml-2">
+                                July 15
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- End Blog Card -->
+
+                <!-- End Blog Card -->
+                <article class="card mb-3 mb-sm-5">
+                    <img alt="Image Description " class="card-img-top " src="assets/front_v3_3/img/900x450/img1.jpg ">
+                    <div class="card-body ">
+                        <a class="d-block small font-weight-bold text-cap mb-2" href="projects.html#Physics">Physics</a>
+
+                        <h2 class="h3 " id="projects.html#Physics">Small Title Here (Max 10 words)</h2>
+
+                        <p>Front is a financial technology company. We build products. We do it fast and we do it well.</p>
+
+                        <div class="media align-items-center pt-5 ">
+                            <div class="avatar-group ">
+                                <div class="avatar avatar-xs avatar-circle " data-placement="top " data-toggle="tooltip " title="Hanna Wolfe ">
+                                    <img alt="Image Description " class="avatar-img " src="assets/front_v3_3/img/100x100/img20.jpg ">
+                                </div>
+                            </div>
+                            <div class="media-body d-flex justify-content-end text-muted font-size-1 ml-2 ">
+                                July 15
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- End Blog Card -->
+
+                <!-- End Blog Card -->
+                <article class="card mb-3 mb-sm-5 ">
+                    <img alt="Image Description " class="card-img-top " src="assets/front_v3_3/img/900x450/img13.jpg ">
+
+                    <div class="card-body ">
+                        <a class="d-block small font-weight-bold text-cap mb-2 " href="projects.html#Astronomy">Astronomy</a>
+
+                        <h3 id="projects.html#Astronomy">Small Title Here (Max 10 words)</h3>
+
+                        <p>Description Here (Max 1000 words) </p>
+
+                        <div class="media align-items-center pt-5 ">
+                            <div class="avatar-group ">
+                                <div class="avatar avatar-xs avatar-circle " data-placement="top " data-toggle="tooltip " title="Hanna Wolfe ">
+                                    <img alt="Image Description " class="avatar-img " src="assets/front_v3_3/img/100x100/img20.jpg ">
+                                </div>
+                                <div class="avatar avatar-xs avatar-circle " data-placement="top " data-toggle="tooltip " title="John O 'nolan">
+                                    <img alt="Image Description" class="avatar-img" src="assets/front_v3_3/img/100x100/img4.jpg">
+                                </div>
+                            </div>
+                            <div class="media-body d-flex justify-content-end text-muted font-size-1 ml-2">
+                                July 15
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- End Blog Card -->
+
+
+                <div class="space-bottom-2"></div>
+
             </div>
-            <!-- End Copyright -->
         </div>
-    </div>
-</footer>
-<!-- ========== END FOOTER ========== -->
+        <!-- End Blog Listing Section -->
+    </main>
+    <!-- ========== END MAIN ========== -->
 
-<!-- JS Global Compulsory  -->
-<script src="/assets/front_v3_3/vendor/jquery/dist/jquery.min.js"></script>
-<script src="/assets/front_v3_3/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
-<script src="/assets/front_v3_3/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- JS Implementing Plugins -->
-<script src="/assets/front_v3_3/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
-<script src="/assets/front_v3_3/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
-<script src="/assets/front_v3_3/vendor/hs-header-fullscreen/dist/hs-header-fullscreen.min.js"></script>
-<script src="/assets/front_v3_3/vendor/slick-carousel/slick/slick.js"></script>
-
-<!-- JS Front -->
-<script src="/assets/front_v3_3/js/theme.min.js"></script>
-
-<!-- JS Plugins Init. -->
-<script>
-    $(document).on('ready', function () {
-        // INITIALIZATION OF UNFOLD
-        // =======================================================
-        var unfold = new HSUnfold('.js-hs-unfold-invoker').init();
+    <!-- ========== FOOTER ========== -->
+    <footer-component></footer-component>
+    <!-- ========== END FOOTER ========== -->
 
 
-        // INITIALIZATION OF HEADER FULLSCREEN
-        // =======================================================
-        var headerFullscreen = new HSHeaderFullscreen($('#headerFullscreen')).init();
+    <!-- JS Global Compulsory  -->
+    <script src="assets/front_v3_3/vendor/jquery/dist/jquery.min.js "></script>
+    <script src="assets/front_v3_3/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="assets/front_v3_3/vendor/bootstrap/dist/js/bootstrap.bundle.min.js "></script>
 
-        $(document).on('keydown', function (e) {
-            if (e.keyCode && e.keyCode === 27) {
-                $('[aria-pressed]').attr('aria-pressed', false).removeClass('active focus');
-                $('#fullscreenNav .collapse').collapse('hide');
-            }
-        });
+    <!-- JS Implementing Plugins -->
+    <script src="assets/front_v3_3/vendor/hs-header/dist/hs-header.min.js"></script>
+    <script src="assets/front_v3_3/vendor/hs-go-to/dist/hs-go-to.min.js "></script>
+    <script src="assets/front_v3_3/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+    <script src="assets/front_v3_3/vendor/hs-mega-menu/dist/hs-mega-menu.min.js "></script>
+    <script src="assets/front_v3_3/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+    <script src="assets/front_v3_3/vendor/jquery-validation/dist/jquery.validate.min.js "></script>
 
+    <!-- JS Front -->
+    <script src="assets/front_v3_3/js/theme.min.js"></script>
 
-        // INITIALIZATION OF SLICK CAROUSEL
-        // =======================================================
-        $('.js-slick-carousel').each(function () {
-            var slickCarousel = $.HSCore.components.HSSlickCarousel.init($(this));
-        });
+    <!-- IE Support -->
+    <script>
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/front_v3_3/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
+    </script>
 
-
-        // INITIALIZATION OF GO TO
-        // =======================================================
-        $('.js-go-to').each(function () {
-            var goTo = new HSGoTo($(this)).init();
-        });
-    });
-</script>
-
-<!-- IE Support -->
-<script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="/assets/front_v3_3/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
-</script>
+    <!-- JS -->
+    <script src="assets/common_components/js/header.js"></script>
+    <script src="assets/common_components/js/footer.js"></script>
 </body>
 
 </html>

@@ -8127,3 +8127,9 @@ c
 3assets/front_v3_3/vendor/select2/dist/js/select2.js,3/7/377f6784ee8da13f6103b0efdbf5644afe9c67ad
 g
 7assets/front_v3_3/vendor/select2/dist/js/select2.min.js,6/5/654a70a8a5cc20692879e168b676bb22877f9966
+U
+%assets/common_components/js/footer.js,c/1/c15cff535d8162b7404a2b46e83c2f581d0398b9
+U
+%assets/common_components/js/header.js,a/4/a402fd8ef366a188ee2ae18b871f7977dfdd83cd
+;
+people.html,d/5/d5fee6fcaa4bc7904c49796d686e59bad65dd452

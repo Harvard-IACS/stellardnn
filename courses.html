@@ -25,732 +25,311 @@
 </head>
 
 <body>
-<!-- ========== HEADER ========== -->
-<header class="header header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide"
-        data-hs-header-options='{
-      "fixMoment": 1000,
-      "fixEffect": "slide"
-    }' id="header">
-    <!-- Search -->
-    <div class="search-push-top" id="searchPushTop">
-        <div class="container position-relative">
-            <div class="search-push-top-content pt-3">
-                <!-- Close Button -->
-                <div class="search-push-top-close-btn">
-                    <div class="hs-unfold">
-                        <a class="js-hs-unfold-invoker btn btn-icon btn-xs btn-soft-secondary mt-2 mr-2"
-                           data-hs-unfold-options='{
-            "target": "#searchPushTop",
-            "type": "jquery-slide",
-            "contentSelector": ".search-push-top"
-           }' href="javascript:;">
-                            <svg height="10" viewBox="0 0 18 18" width="10" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"
-                                      fill="currentColor"/>
-                            </svg>
-                        </a>
-                    </div>
+    <!-- ========== HEADER ========== -->
+    <header-component></header-component>
+    <!-- ========== END HEADER ========== -->
+
+    <!-- ========== MAIN ========== -->
+    <main id="content" role="main">
+        <!-- Hero Section -->
+        <div class="position-relative bg-img-hero" style="background-image: url(assets/front_v3_3/img/1920x1080/img6.jpg);">
+            <div class="container space-2 space-md-3 space-bottom-lg-4 min-h-300rem">
+                <div class="d-none d-md-block w-lg-50">
+                    <h1>You're in good company.</h1>
+                    <h2 class="h1 text-primary">Join millions of businesses on Front.</h2>
                 </div>
-                <!-- End Close Button -->
-
-                <!-- Input -->
-                <form class="input-group">
-                    <input aria-label="Search Front" class="form-control" placeholder="Search Front" type="search">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="button">Search</button>
-                    </div>
-                </form>
-                <!-- End Input -->
-
-                <!-- Content -->
-                <div class="row d-none d-md-flex mt-7">
-                    <div class="col-sm-6">
-                        <span class="h5">Quick Links</span>
-
-                        <div class="row">
-                            <!-- Nav Link -->
-                            <div class="col-6">
-                                <div class="nav nav-sm nav-x-0 flex-column">
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Search Results List
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Search Results Grid
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> About
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Services
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Invoice
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- End Nav Link -->
-
-                            <!-- Nav Link -->
-                            <div class="col-6">
-                                <div class="nav nav-sm nav-x-0 flex-column">
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Profile
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> User Contacts
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Reviews
-                                    </a>
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-angle-right mr-1"></i> Settings
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- End Nav Link -->
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <!-- Banner -->
-                        <div class="rounded search-push-top-banner">
-                            <div class="d-flex align-items-center">
-                                <div class="search-push-top-banner-container">
-                                    <img alt="Image Description" class="img-fluid search-push-top-banner-img"
-                                         src="assets/front_v3_3/img/mockups/img3.png">
-                                    <img alt="Image Description" class="img-fluid search-push-top-banner-img"
-                                         src="assets/front_v3_3/img/mockups/img2.png">
-                                </div>
-
-                                <div>
-                                    <div class="mb-4">
-                                        <span class="h5">Featured Item</span>
-                                        <p>Create astonishing web sites and pages.</p>
-                                    </div>
-                                    <a class="btn btn-xs btn-soft-success transition-3d-hover" href="javascript:;">Apply
-                                        Now <i class="fas fa-angle-right fa-sm ml-1"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Banner -->
-                    </div>
-                </div>
-                <!-- End Content -->
             </div>
-        </div>
-    </div>
-    <!-- End Search -->
 
-    <div class="header-section">
-
-
-        <div class="container" id="logoAndNav">
-            <!-- Nav -->
-            <nav class="js-mega-menu navbar navbar-expand-lg">
-                <!-- Logo -->
-                <a aria-label="Front" class="navbar-brand" href="./index.html">
-                    <img alt="Logo" src="assets/front_v3_3/svg/logos/logo.svg">
-                </a>
-                <!-- End Logo -->
-
-                <!-- Responsive Toggle Button -->
-                <button aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation"
-                        class="navbar-toggler btn btn-icon btn-sm rounded-circle" data-target="#navBar"
-                        data-toggle="collapse" type="button">
-      <span class="navbar-toggler-default">
-        <svg height="14" viewBox="0 0 18 18" width="14" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"
-                fill="currentColor"/>
-        </svg>
-      </span>
-                    <span class="navbar-toggler-toggled">
-        <svg height="14" viewBox="0 0 18 18" width="14" xmlns="http://www.w3.org/2000/svg">
-          <path d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"
-                fill="currentColor"/>
-        </svg>
-      </span>
-                </button>
-                <!-- End Responsive Toggle Button -->
-
-                <!-- Navigation -->
-                <div class="collapse navbar-collapse" id="navBar">
-                    <div class="navbar-body header-abs-top-inner">
-                        <ul class="navbar-nav">
-                            <!-- Home -->
-                            <li class="hs-has-mega-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/index.html"> Home</a>
-                            </li>
-                            <!-- End Home -->
-
-                            <!-- Courses -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/courses.html">Courses</a>
-                            </li>
-                            <!-- End Courses -->
-
-                            <!-- Projects -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/projects.html">Projects</a>
-                            </li>
-                            <!-- End Projects -->
-
-                            <!-- Newsroom -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/newsroom.html">Newsroom</a>
-                            </li>
-                            <!-- End Newsroom -->
-
-                            <!-- Newsroom -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/publications.html">Publications</a>
-                            </li>
-                            <!-- End Newsroom -->
-
-                            <!-- Work With Us -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/work_with_us.html">Work With Us</a>
-                            </li>
-                            <!-- End Work With Us -->
-
-                            <!-- Work With Us -->
-                            <li class="hs-has-sub-menu navbar-nav-item">
-                                <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/contact_us.html">Contact Us</a>
-                            </li>
-                            <!-- End Work With Us -->
-                        </ul>
-                    </div>
-                </div>
-                <!-- End Navigation -->
-            </nav>
-            <!-- End Nav -->
-        </div>
-    </div>
-</header>
-<!-- ========== END HEADER ========== -->
-
-<!-- ========== MAIN ========== -->
-<main id="content" role="main">
-    <!-- Hero Section -->
-    <div class="position-relative bg-img-hero" style="background-image: url(assets/front_v3_3/img/1920x1080/img6.jpg);">
-        <div class="container space-2 space-md-3 space-bottom-lg-4 min-h-300rem">
-            <div class="d-none d-md-block w-lg-50">
-                <h1>You're in good company.</h1>
-                <h2 class="h1 text-primary">Join millions of businesses on Front.</h2>
-            </div>
-        </div>
-
-        <!-- SVG Background -->
-        <figure class="position-absolute right-0 bottom-0 left-0">
-            <svg preserveAspectRatio="none" viewBox="0 0 1920 100.1" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+            <!-- SVG Background -->
+            <figure class="position-absolute right-0 bottom-0 left-0">
+                <svg preserveAspectRatio="none" viewBox="0 0 1920 100.1" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
                 <path d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z" fill="#fff"/>
             </svg>
-        </figure>
-        <!-- End SVG Background -->
-    </div>
-    <!-- End Hero Section -->
-
-    <!-- Clients Section -->
-    <div class="container position-relative z-index-2">
-        <div class="row justify-content-center mt-n5">
-            <div class="col-3 col-lg-2 d-none d-sm-inline-block mt-n11">
-                <!-- Logo -->
-                <div class="avatar avatar-xl avatar-circle bg-white shadow-soft p-4 mx-auto">
-                    <img alt="Image Description" class="avatar-img" src="assets/front_v3_3/img/160x160/img18.png">
-                </div>
-                <!-- End Logo -->
-            </div>
-
-            <div class="col-lg-2 d-none d-lg-inline-block mt-lg-n8">
-                <!-- Logo -->
-                <div class="bg-white shadow-soft rounded-circle p-6 mx-auto">
-                    <img alt="Image Description" class="avatar-img" height="160"
-                         src="assets/front_v3_3/img/160x160/img17.png" width="160">
-                </div>
-                <!-- End Logo -->
-            </div>
-
-            <div class="col-3 col-lg-2 d-none d-sm-inline-block mt-n4">
-                <!-- Logo -->
-                <div class="avatar avatar-xl avatar-circle bg-white shadow-soft p-4 mx-auto">
-                    <img alt="Image Description" class="avatar-img" src="assets/front_v3_3/img/160x160/img13.png">
-                </div>
-                <!-- End Logo -->
-            </div>
-
-            <div class="col-3 col-lg-2 d-none d-sm-inline-block mt-n7">
-                <!-- Logo -->
-                <div class="avatar avatar-xl avatar-circle bg-white shadow-soft p-4 mx-auto">
-                    <img alt="Image Description" class="avatar-img" src="assets/front_v3_3/img/160x160/img14.png">
-                </div>
-                <!-- End Logo -->
-            </div>
-
-            <div class="col-lg-2 d-none d-lg-inline-block mt-lg-n11">
-                <!-- Logo -->
-                <div class="bg-white shadow-soft rounded-circle p-6 mx-auto">
-                    <img alt="Image Description" class="avatar-img" height="160"
-                         src="assets/front_v3_3/img/160x160/img16.png" width="160">
-                </div>
-                <!-- End Logo -->
-            </div>
-
-            <div class="col-3 col-lg-2 d-none d-sm-inline-block">
-                <!-- Logo -->
-                <div class="avatar avatar-xl avatar-circle bg-white shadow-soft p-4 mx-auto">
-                    <img alt="Image Description" class="avatar-img" src="assets/front_v3_3/img/160x160/img15.png">
-                </div>
-                <!-- End Logo -->
-            </div>
+            </figure>
+            <!-- End SVG Background -->
         </div>
-    </div>
-    <!-- End Clients Section -->
+        <!-- End Hero Section -->
 
-    <!-- Stories Section -->
-    <div class="container space-2 space-lg-3">
-        <!-- Title -->
-        <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-            <span class="d-block small font-weight-bold text-cap mb-2">Success stories</span>
-            <h2>See how Front is helping teams get organized and work smarter</h2>
-        </div>
-        <!-- End Title -->
-
-        <div class="row">
-            <div class="col-sm-6 col-md-4 mb-5">
-                <!-- Card Info -->
-                <div class="card h-100">
-                    <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img13.jpg">
-                    <div class="card-body">
-                        <div class="max-w-13rem w-100 mb-3">
-                            <img alt="Logo" class="img-fluid"
-                                 src="assets/front_v3_3/svg/clients-logo/amazon-original.svg">
-                        </div>
-                        <h4 class="text-lh-sm">pyDS</h4>
-                        <p class="mb-0">Amazon launched their enterprise platform and built a powerful user experience.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="font-weight-bold" href="page-customer-story.html">Read story <i
-                                class="fas fa-angle-right fa-sm ml-1"></i></a>
-                    </div>
-                </div>
-                <!-- End Card Info -->
-            </div>
-
-            <div class="col-sm-6 col-md-4 mb-5">
-                <!-- Card Info -->
-                <div class="card h-100">
-                    <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img17.jpg">
-                    <div class="card-body">
-                        <div class="max-w-13rem w-100 mb-3">
-                            <img alt="Logo" class="img-fluid"
-                                 src="assets/front_v3_3/svg/clients-logo/mapbox-original.svg">
-                        </div>
-                        <h4 class="text-lh-sm">AC215</h4>
-                        <p class="mb-0">Mapbox empowers marketers to create digital marketing dashboards easily and
-                            share them with their team.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="font-weight-bold" href="page-customer-story.html">Read story <i
-                                class="fas fa-angle-right fa-sm ml-1"></i></a>
-                    </div>
-                </div>
-                <!-- End Card Info -->
-            </div>
-
-            <div class="col-sm-6 col-md-4 mb-5">
-                <!-- Card Info -->
-                <div class="card h-100">
-                    <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img16.jpg">
-                    <div class="card-body">
-                        <div class="max-w-13rem w-100 mb-3">
-                            <img alt="Logo" class="img-fluid"
-                                 src="assets/front_v3_3/svg/clients-logo/netflix-original.svg">
-                        </div>
-                        <h4 class="text-lh-sm">CS109A</h4>
-                        <p class="mb-0">Netflix's mission is to create a planet run by the sun. In order to achieve this
-                            goal, they needed to find a way to make solar simple.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="font-weight-bold" href="page-customer-story.html">Read story <i
-                                class="fas fa-angle-right fa-sm ml-1"></i></a>
-                    </div>
-                </div>
-                <!-- End Card Info -->
-            </div>
-
-            <div class="col-sm-6 col-md-4 mb-5">
-                <!-- Card Info -->
-                <div class="card h-100">
-                    <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img15.jpg">
-                    <div class="card-body">
-                        <div class="max-w-13rem w-100 mb-3">
-                            <img alt="Logo" class="img-fluid"
-                                 src="assets/front_v3_3/svg/clients-logo/google-original.svg">
-                        </div>
-                        <h4 class="text-lh-sm">CS109B</h4>
-                        <p class="mb-0">Google is an innovator in public safety technology. First-to-market with TASER
-                            conducted energy weapons (CEWs).</p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="font-weight-bold" href="page-customer-story.html">Read story <i
-                                class="fas fa-angle-right fa-sm ml-1"></i></a>
-                    </div>
-                </div>
-                <!-- End Card Info -->
-            </div>
-
-            <div class="col-sm-6 col-md-4 mb-5">
-                <!-- Card Info -->
-                <div class="card h-100">
-                    <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img14.jpg">
-                    <div class="card-body">
-                        <div class="max-w-13rem w-100 mb-3">
-                            <img alt="Logo" class="img-fluid"
-                                 src="assets/front_v3_3/svg/clients-logo/paypal-original.svg">
-                        </div>
-                        <p class="mb-0">Front Projects has proved to be most efficient cloud based project tracking and
-                            bug tracking tool.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="font-weight-bold" href="page-customer-story.html">Read story <i
-                                class="fas fa-angle-right fa-sm ml-1"></i></a>
-                    </div>
-                </div>
-                <!-- End Card Info -->
-            </div>
-
-            <div class="col-sm-6 col-md-4 mb-5">
-                <!-- Card Info -->
-                <div class="card h-100">
-                    <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img27.jpg">
-                    <div class="card-body">
-                        <div class="max-w-13rem w-100 mb-3">
-                            <img alt="Logo" class="img-fluid"
-                                 src="assets/front_v3_3/svg/clients-logo/hubspot-original.svg">
-                        </div>
-                        <p class="mb-0">Visitors can build a form or survey before signing up, but in order to save and
-                            share it, they need to create an account.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="font-weight-bold" href="page-customer-story.html">Read story <i
-                                class="fas fa-angle-right fa-sm ml-1"></i></a>
-                    </div>
-                </div>
-                <!-- End Card Info -->
-            </div>
-
-            <div class="col-sm-6 col-md-4 mb-5">
-                <!-- Card Info -->
-                <div class="card h-100">
-                    <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img12.jpg">
-                    <div class="card-body">
-                        <div class="max-w-13rem w-100 mb-3">
-                            <img alt="Logo" class="img-fluid"
-                                 src="assets/front_v3_3/svg/clients-logo/fitbit-original.svg">
-                        </div>
-                        <p class="mb-0">Google is an innovator in public safety technology. First-to-market with TASER
-                            conducted energy weapons (CEWs).</p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="font-weight-bold" href="page-customer-story.html">Read story <i
-                                class="fas fa-angle-right fa-sm ml-1"></i></a>
-                    </div>
-                </div>
-                <!-- End Card Info -->
-            </div>
-
-            <div class="col-sm-6 col-md-4 mb-5">
-                <!-- Card Info -->
-                <div class="card h-100">
-                    <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img7.jpg">
-                    <div class="card-body">
-                        <div class="max-w-13rem w-100 mb-3">
-                            <img alt="Logo" class="img-fluid"
-                                 src="assets/front_v3_3/svg/clients-logo/airbnb-original.svg">
-                        </div>
-                        <p class="mb-0">Front Projects has proved to be most efficient cloud based project tracking and
-                            bug tracking tool.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="font-weight-bold" href="page-customer-story.html">Read story <i
-                                class="fas fa-angle-right fa-sm ml-1"></i></a>
-                    </div>
-                </div>
-                <!-- End Card Info -->
-            </div>
-
-            <div class="col-sm-6 col-md-4 mb-5">
-                <!-- Card Info -->
-                <div class="card h-100">
-                    <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img6.jpg">
-                    <div class="card-body">
-                        <div class="max-w-13rem w-100 mb-3">
-                            <img alt="Logo" class="img-fluid"
-                                 src="assets/front_v3_3/svg/clients-logo/slack-original.svg">
-                        </div>
-                        <p class="mb-0">Front Projects has proved to be most efficient cloud based project tracking and
-                            bug tracking tool.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a class="font-weight-bold" href="page-customer-story.html">Read story <i
-                                class="fas fa-angle-right fa-sm ml-1"></i></a>
-                    </div>
-                </div>
-                <!-- End Card Info -->
-            </div>
-        </div>
-
-        <div class="text-center mt-5">
-            <a class="btn btn-primary" href="#">View all Stories</a>
-        </div>
-    </div>
-    <!-- End Stories Section -->
-
-    <!-- CTA Section -->
-    <div class="bg-primary text-center bg-img-hero"
-         style="background-image: url(assets/front_v3_3/svg/components/abstract-shapes-5.svg);">
-        <div class="container space-2">
-            <div class="mb-5">
-                <h2 class="text-white">Start your demo with Front today</h2>
-            </div>
-            <a class="btn btn-light transition-3d-hover" href="#">Schedule a Demo</a>
-        </div>
-    </div>
-    <!-- End CTA Section -->
-</main>
-<!-- ========== END MAIN ========== -->
-
-<!-- ========== FOOTER ========== -->
-<footer class="bg-dark">
-    <div class="container">
-        <div class="space-top-2 space-bottom-1 space-bottom-lg-2">
-            <div class="row justify-content-lg-between">
-                <div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0">
+        <!-- Clients Section -->
+        <div class="container position-relative z-index-2">
+            <div class="row justify-content-center mt-n5">
+                <div class="col-3 col-lg-2 d-none d-sm-inline-block mt-n11">
                     <!-- Logo -->
-                    <div class="mb-4">
-                        <a aria-label="Front" href="index.html">
-                            <img alt="Logo" class="brand" src="assets/front_v3_3/svg/logos/logo-white.svg">
-                        </a>
+                    <div class="avatar avatar-xl avatar-circle bg-white shadow-soft p-4 mx-auto">
+                        <img alt="Image Description" class="avatar-img" src="assets/front_v3_3/img/160x160/img18.png">
                     </div>
                     <!-- End Logo -->
-
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link media" href="javascript:;">
-                                    <span class="media">
-                      <span class="fas fa-location-arrow mt-1 mr-2"></span>
-                                    <span class="media-body">
-                        153 Williamson Plaza, Maggieberg
-                      </span>
-                                    </span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link media" href="tel:1-062-109-9222">
-                                    <span class="media">
-                      <span class="fas fa-phone-alt mt-1 mr-2"></span>
-                                    <span class="media-body">
-                        +1 (062) 109-9222
-                      </span>
-                                    </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- End Nav Link -->
                 </div>
 
-                <div class="col-6 col-md-3 col-lg mb-5 mb-lg-0">
-                    <h5 class="text-white">Company</h5>
-
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Careers <span
-                                class="badge badge-primary ml-1">We're hiring</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Customers</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Hire us</a></li>
-                    </ul>
-                    <!-- End Nav Link -->
+                <div class="col-lg-2 d-none d-lg-inline-block mt-lg-n8">
+                    <!-- Logo -->
+                    <div class="bg-white shadow-soft rounded-circle p-6 mx-auto">
+                        <img alt="Image Description" class="avatar-img" height="160" src="assets/front_v3_3/img/160x160/img17.png" width="160">
+                    </div>
+                    <!-- End Logo -->
                 </div>
 
-                <div class="col-6 col-md-3 col-lg mb-5 mb-lg-0">
-                    <h5 class="text-white">Features</h5>
-
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item"><a class="nav-link" href="#">Press</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Release notes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Integrations</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-                    </ul>
-                    <!-- End Nav Link -->
+                <div class="col-3 col-lg-2 d-none d-sm-inline-block mt-n4">
+                    <!-- Logo -->
+                    <div class="avatar avatar-xl avatar-circle bg-white shadow-soft p-4 mx-auto">
+                        <img alt="Image Description" class="avatar-img" src="assets/front_v3_3/img/160x160/img13.png">
+                    </div>
+                    <!-- End Logo -->
                 </div>
 
-                <div class="col-6 col-md-3 col-lg">
-                    <h5 class="text-white">Documentation</h5>
-
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Docs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Status</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">API Reference</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Tech Requirements</a></li>
-                    </ul>
-                    <!-- End Nav Link -->
+                <div class="col-3 col-lg-2 d-none d-sm-inline-block mt-n7">
+                    <!-- Logo -->
+                    <div class="avatar avatar-xl avatar-circle bg-white shadow-soft p-4 mx-auto">
+                        <img alt="Image Description" class="avatar-img" src="assets/front_v3_3/img/160x160/img14.png">
+                    </div>
+                    <!-- End Logo -->
                 </div>
 
-                <div class="col-6 col-md-3 col-lg">
-                    <h5 class="text-white">Resources</h5>
+                <div class="col-lg-2 d-none d-lg-inline-block mt-lg-n11">
+                    <!-- Logo -->
+                    <div class="bg-white shadow-soft rounded-circle p-6 mx-auto">
+                        <img alt="Image Description" class="avatar-img" height="160" src="assets/front_v3_3/img/160x160/img16.png" width="160">
+                    </div>
+                    <!-- End Logo -->
+                </div>
 
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-x-0 nav-white flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                    <span class="media align-items-center">
-                      <i class="fa fa-info-circle mr-2"></i>
-                      <span class="media-body">Help</span>
-                                    </span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                    <span class="media align-items-center">
-                      <i class="fa fa-user-circle mr-2"></i>
-                      <span class="media-body">Your Account</span>
-                                    </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- End Nav Link -->
+                <div class="col-3 col-lg-2 d-none d-sm-inline-block">
+                    <!-- Logo -->
+                    <div class="avatar avatar-xl avatar-circle bg-white shadow-soft p-4 mx-auto">
+                        <img alt="Image Description" class="avatar-img" src="assets/front_v3_3/img/160x160/img15.png">
+                    </div>
+                    <!-- End Logo -->
                 </div>
             </div>
         </div>
+        <!-- End Clients Section -->
 
-        <hr class="opacity-xs my-0">
+        <!-- Stories Section -->
+        <div class="container space-2 space-lg-3">
+            <!-- Title -->
+            <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+                <span class="d-block small font-weight-bold text-cap mb-2">Success stories</span>
+                <h2>See how Front is helping teams get organized and work smarter</h2>
+            </div>
+            <!-- End Title -->
 
-        <div class="space-1">
-            <div class="row align-items-md-center mb-7">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <!-- Nav Link -->
-                    <ul class="nav nav-sm nav-white nav-x-sm align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Privacy &amp; Policy</a>
-                        </li>
-                        <li class="nav-item opacity mx-3">&#47;</li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Terms</a>
-                        </li>
-                        <li class="nav-item opacity mx-3">&#47;</li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Site Map</a>
-                        </li>
-                    </ul>
-                    <!-- End Nav Link -->
-                </div>
-
-                <div class="col-md-6 text-md-right">
-                    <ul class="list-inline mb-0">
-                        <!-- Social Networks -->
-                        <li class="list-inline-item">
-                            <a class="btn btn-xs btn-icon btn-soft-light" href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-xs btn-icon btn-soft-light" href="#">
-                                <i class="fab fa-google"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-xs btn-icon btn-soft-light" href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-xs btn-icon btn-soft-light" href="#">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <!-- End Social Networks -->
-
-                        <!-- Language -->
-                        <li class="list-inline-item">
-                            <div class="hs-unfold">
-                                <a class="js-hs-unfold-invoker dropdown-toggle btn btn-xs btn-soft-light"
-                                   data-hs-unfold-options='{
-                        "target": "#footerLanguage",
-                        "type": "css-animation",
-                        "animationIn": "slideInDown"
-                       }' href="javascript:;">
-                                    <img alt="United States Flag" class="dropdown-item-icon"
-                                         src="assets/front_v3_3/vendor/flag-icon-css/flags/4x3/us.svg">
-                                    <span>United States</span>
-                                </a>
-
-                                <div class="hs-unfold-content dropdown-menu dropdown-unfold dropdown-menu-bottom mb-2"
-                                     id="footerLanguage">
-                                    <a class="dropdown-item active" href="#">English</a>
-                                    <a class="dropdown-item" href="#">Deutsch</a>
-                                    <a class="dropdown-item" href="#">Español</a>
-                                    <a class="dropdown-item" href="#">Français</a>
-                                    <a class="dropdown-item" href="#">Italiano</a>
-                                    <a class="dropdown-item" href="#">日本語</a>
-                                    <a class="dropdown-item" href="#">한국어</a>
-                                    <a class="dropdown-item" href="#">Nederlands</a>
-                                    <a class="dropdown-item" href="#">Português</a>
-                                    <a class="dropdown-item" href="#">Русский</a>
-                                </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 mb-5">
+                    <!-- Card Info -->
+                    <div class="card h-100">
+                        <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img13.jpg">
+                        <div class="card-body">
+                            <div class="max-w-13rem w-100 mb-3">
+                                <img alt="Logo" class="img-fluid" src="assets/front_v3_3/svg/clients-logo/amazon-original.svg">
                             </div>
-                        </li>
-                        <!-- End Language -->
-                    </ul>
+                            <h4 class="text-lh-sm">pyDS</h4>
+                            <p class="mb-0">Amazon launched their enterprise platform and built a powerful user experience.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="font-weight-bold" href="page-customer-story.html">Read story <i
+                                class="fas fa-angle-right fa-sm ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Card Info -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-5">
+                    <!-- Card Info -->
+                    <div class="card h-100">
+                        <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img17.jpg">
+                        <div class="card-body">
+                            <div class="max-w-13rem w-100 mb-3">
+                                <img alt="Logo" class="img-fluid" src="assets/front_v3_3/svg/clients-logo/mapbox-original.svg">
+                            </div>
+                            <h4 class="text-lh-sm">AC215</h4>
+                            <p class="mb-0">Mapbox empowers marketers to create digital marketing dashboards easily and share them with their team.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="font-weight-bold" href="page-customer-story.html">Read story <i
+                                class="fas fa-angle-right fa-sm ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Card Info -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-5">
+                    <!-- Card Info -->
+                    <div class="card h-100">
+                        <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img16.jpg">
+                        <div class="card-body">
+                            <div class="max-w-13rem w-100 mb-3">
+                                <img alt="Logo" class="img-fluid" src="assets/front_v3_3/svg/clients-logo/netflix-original.svg">
+                            </div>
+                            <h4 class="text-lh-sm">CS109A</h4>
+                            <p class="mb-0">Netflix's mission is to create a planet run by the sun. In order to achieve this goal, they needed to find a way to make solar simple.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="font-weight-bold" href="page-customer-story.html">Read story <i
+                                class="fas fa-angle-right fa-sm ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Card Info -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-5">
+                    <!-- Card Info -->
+                    <div class="card h-100">
+                        <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img15.jpg">
+                        <div class="card-body">
+                            <div class="max-w-13rem w-100 mb-3">
+                                <img alt="Logo" class="img-fluid" src="assets/front_v3_3/svg/clients-logo/google-original.svg">
+                            </div>
+                            <h4 class="text-lh-sm">CS109B</h4>
+                            <p class="mb-0">Google is an innovator in public safety technology. First-to-market with TASER conducted energy weapons (CEWs).</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="font-weight-bold" href="page-customer-story.html">Read story <i
+                                class="fas fa-angle-right fa-sm ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Card Info -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-5">
+                    <!-- Card Info -->
+                    <div class="card h-100">
+                        <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img14.jpg">
+                        <div class="card-body">
+                            <div class="max-w-13rem w-100 mb-3">
+                                <img alt="Logo" class="img-fluid" src="assets/front_v3_3/svg/clients-logo/paypal-original.svg">
+                            </div>
+                            <p class="mb-0">Front Projects has proved to be most efficient cloud based project tracking and bug tracking tool.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="font-weight-bold" href="page-customer-story.html">Read story <i
+                                class="fas fa-angle-right fa-sm ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Card Info -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-5">
+                    <!-- Card Info -->
+                    <div class="card h-100">
+                        <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img27.jpg">
+                        <div class="card-body">
+                            <div class="max-w-13rem w-100 mb-3">
+                                <img alt="Logo" class="img-fluid" src="assets/front_v3_3/svg/clients-logo/hubspot-original.svg">
+                            </div>
+                            <p class="mb-0">Visitors can build a form or survey before signing up, but in order to save and share it, they need to create an account.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="font-weight-bold" href="page-customer-story.html">Read story <i
+                                class="fas fa-angle-right fa-sm ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Card Info -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-5">
+                    <!-- Card Info -->
+                    <div class="card h-100">
+                        <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img12.jpg">
+                        <div class="card-body">
+                            <div class="max-w-13rem w-100 mb-3">
+                                <img alt="Logo" class="img-fluid" src="assets/front_v3_3/svg/clients-logo/fitbit-original.svg">
+                            </div>
+                            <p class="mb-0">Google is an innovator in public safety technology. First-to-market with TASER conducted energy weapons (CEWs).</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="font-weight-bold" href="page-customer-story.html">Read story <i
+                                class="fas fa-angle-right fa-sm ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Card Info -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-5">
+                    <!-- Card Info -->
+                    <div class="card h-100">
+                        <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img7.jpg">
+                        <div class="card-body">
+                            <div class="max-w-13rem w-100 mb-3">
+                                <img alt="Logo" class="img-fluid" src="assets/front_v3_3/svg/clients-logo/airbnb-original.svg">
+                            </div>
+                            <p class="mb-0">Front Projects has proved to be most efficient cloud based project tracking and bug tracking tool.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="font-weight-bold" href="page-customer-story.html">Read story <i
+                                class="fas fa-angle-right fa-sm ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Card Info -->
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-5">
+                    <!-- Card Info -->
+                    <div class="card h-100">
+                        <img alt="Image Description" class="card-img-top" src="assets/front_v3_3/img/480x320/img6.jpg">
+                        <div class="card-body">
+                            <div class="max-w-13rem w-100 mb-3">
+                                <img alt="Logo" class="img-fluid" src="assets/front_v3_3/svg/clients-logo/slack-original.svg">
+                            </div>
+                            <p class="mb-0">Front Projects has proved to be most efficient cloud based project tracking and bug tracking tool.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="font-weight-bold" href="page-customer-story.html">Read story <i
+                                class="fas fa-angle-right fa-sm ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Card Info -->
                 </div>
             </div>
 
-            <!-- Copyright -->
-            <div class="w-md-75 text-lg-center mx-lg-auto">
-                <p class="text-white opacity-sm small">&copy; Front. 2020 Htmlstream. All rights reserved.</p>
-                <p class="text-white opacity-sm small">When you visit or interact with our sites, services or tools, we
-                    or our authorised service providers may use cookies for storing information to help provide you with
-                    a better, faster and safer experience and for marketing purposes.</p>
+            <div class="text-center mt-5">
+                <a class="btn btn-primary" href="#">View all Stories</a>
             </div>
-            <!-- End Copyright -->
         </div>
-    </div>
-</footer>
-<!-- ========== END FOOTER ========== -->
+        <!-- End Stories Section -->
+
+        <!-- CTA Section -->
+        <div class="bg-primary text-center bg-img-hero" style="background-image: url(assets/front_v3_3/svg/components/abstract-shapes-5.svg);">
+            <div class="container space-2">
+                <div class="mb-5">
+                    <h2 class="text-white">Start your demo with Front today</h2>
+                </div>
+                <a class="btn btn-light transition-3d-hover" href="#">Schedule a Demo</a>
+            </div>
+        </div>
+        <!-- End CTA Section -->
+    </main>
+    <!-- ========== END MAIN ========== -->
+
+    <!-- ========== FOOTER ========== -->
+    <footer-component></footer-component>
+    <!-- ========== END FOOTER ========== -->
 
 
-<!-- JS Global Compulsory  -->
-<script src="assets/front_v3_3/vendor/jquery/dist/jquery.min.js"></script>
-<script src="assets/front_v3_3/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
-<script src="assets/front_v3_3/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Global Compulsory  -->
+    <script src="assets/front_v3_3/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/front_v3_3/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="assets/front_v3_3/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- JS Implementing Plugins -->
-<script src="assets/front_v3_3/vendor/hs-header/dist/hs-header.min.js"></script>
-<script src="assets/front_v3_3/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
-<script src="assets/front_v3_3/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
-<script src="assets/front_v3_3/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
-<script src="assets/front_v3_3/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
-<script src="assets/front_v3_3/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script src="assets/front_v3_3/vendor/hs-header/dist/hs-header.min.js"></script>
+    <script src="assets/front_v3_3/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+    <script src="assets/front_v3_3/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+    <script src="assets/front_v3_3/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+    <script src="assets/front_v3_3/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+    <script src="assets/front_v3_3/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
 
-<!-- JS Front -->
-<script src="assets/front_v3_3/js/theme.min.js"></script>
+    <!-- JS Front -->
+    <script src="assets/front_v3_3/js/theme.min.js"></script>
 
-<!-- IE Support -->
-<script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/front_v3_3/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
-</script>
+    <!-- IE Support -->
+    <script>
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/front_v3_3/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
+    </script>
+
+    <!-- JS -->
+    <script src="assets/common_components/js/header.js"></script>
+    <script src="assets/common_components/js/footer.js"></script>
 </body>
 
 </html>

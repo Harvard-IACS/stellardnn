@@ -14259,6 +14259,12 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://colab.research.google.com/github/Niegil-Francis/astromer_notebooks/blob/main/Tutorial_training_astromer.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Tutorial---Training-Astromer">Tutorial - Training Astromer<a class="anchor-link" href="#Tutorial---Training-Astromer">&#182;</a></h1>
 </div>
 </div>
@@ -14275,7 +14281,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="o">%%</span><span class="n">capture</span>
@@ -14292,10 +14298,10 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h5 id="Mount-the-drive-containing-the-custom-dataset"><em>Mount the drive containing the custom dataset</em><a class="anchor-link" href="#Mount-the-drive-containing-the-custom-dataset">&#182;</a></h5>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
@@ -14307,6 +14313,27 @@ a.anchor-link {
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Drive already mounted at /content/drive/; to attempt to forcibly remount, call drive.mount(&#34;/content/drive/&#34;, force_remount=True).
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14315,7 +14342,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">core.astromer</span> <span class="kn">import</span> <span class="n">ASTROMER</span> 
@@ -14345,61 +14372,24 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="Load-tf-records-of-the-custom-dataset-and-Astromer-model"><em>Load tf records of the custom dataset and Astromer model</em><a class="anchor-link" href="#Load-tf-records-of-the-custom-dataset-and-Astromer-model">&#182;</a></h5>
+<h5 id="Load-the-Astromer-model"><em>Load the Astromer model</em><a class="anchor-link" href="#Load-the-Astromer-model">&#182;</a></h5>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">opt</span><span class="p">):</span>
-    <span class="c1"># Get model</span>
-    <span class="n">astromer</span> <span class="o">=</span> <span class="n">ASTROMER</span><span class="p">(</span><span class="n">num_layers</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;layers&quot;</span><span class="p">],</span>
-                            <span class="n">num_heads</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;heads&quot;</span><span class="p">],</span>
-                            <span class="n">dff</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;dff&quot;</span><span class="p">],</span>
-                            <span class="n">base</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;base&quot;</span><span class="p">],</span>
-                            <span class="n">dropout</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;dropout&quot;</span><span class="p">],</span>
-                            <span class="n">maxlen</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;max_obs&quot;</span><span class="p">],</span>
-                            <span class="n">no_train</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;no_train&quot;</span><span class="p">],</span>
-                            <span class="n">pretrained_weights</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;pretrained_weights&quot;</span><span class="p">])</span>
-
-    <span class="c1"># Make sure we don&#39;t overwrite a previous training</span>
-    <span class="n">opt</span><span class="p">[</span><span class="s2">&quot;p&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_folder_name</span><span class="p">(</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;p&quot;</span><span class="p">],</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-
-    <span class="c1"># Creating (--p)royect directory</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;p&quot;</span><span class="p">],</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-    <span class="c1"># Save Hyperparameters</span>
-    <span class="n">conf_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;p&quot;</span><span class="p">],</span> <span class="s1">&#39;conf.json&#39;</span><span class="p">)</span>
-    <span class="n">varsdic</span> <span class="o">=</span> <span class="n">opt</span>
-    <span class="n">varsdic</span><span class="p">[</span><span class="s1">&#39;exp_date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">,</span> <span class="n">gmtime</span><span class="p">())</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">conf_file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">json_file</span><span class="p">:</span>
-        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">varsdic</span><span class="p">,</span> <span class="n">json_file</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-
-    <span class="c1"># Loading data</span>
-    <span class="n">train_batches</span> <span class="o">=</span> <span class="n">pretraining_data</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;data&quot;</span><span class="p">],</span> <span class="s1">&#39;train&#39;</span><span class="p">),</span>
-                                        <span class="n">opt</span><span class="p">[</span><span class="s2">&quot;batch_size&quot;</span><span class="p">],</span>
-                                        <span class="n">max_obs</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;max_obs&quot;</span><span class="p">],</span>
-                                        <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-                                        <span class="n">msk_frac</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;msk_frac&quot;</span><span class="p">],</span>
-                                        <span class="n">rnd_frac</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;rnd_frac&quot;</span><span class="p">],</span>
-                                        <span class="n">same_frac</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;same_frac&quot;</span><span class="p">])</span>
-    <span class="n">valid_batches</span> <span class="o">=</span> <span class="n">pretraining_data</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;data&quot;</span><span class="p">],</span> <span class="s1">&#39;val&#39;</span><span class="p">),</span>
-                                        <span class="n">opt</span><span class="p">[</span><span class="s2">&quot;batch_size&quot;</span><span class="p">],</span>
-                                        <span class="n">max_obs</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;max_obs&quot;</span><span class="p">],</span>
-                                        <span class="n">shuffle</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-                                        <span class="n">msk_frac</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;msk_frac&quot;</span><span class="p">],</span>
-                                        <span class="n">rnd_frac</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;rnd_frac&quot;</span><span class="p">],</span>
-                                        <span class="n">same_frac</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;same_frac&quot;</span><span class="p">])</span>
-
-    <span class="c1"># Training ASTROMER</span>
-    <span class="n">astromer</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">train_batches</span><span class="p">,</span> <span class="n">valid_batches</span><span class="p">,</span>
-          <span class="n">patience</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;patience&quot;</span><span class="p">],</span>
-          <span class="n">exp_path</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;p&quot;</span><span class="p">],</span>
-          <span class="n">epochs</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;epochs&quot;</span><span class="p">],</span>
-          <span class="n">lr</span><span class="o">=</span><span class="n">opt</span><span class="p">[</span><span class="s2">&quot;lr&quot;</span><span class="p">],</span>
-          <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># Get model</span>
+<span class="n">astromer</span> <span class="o">=</span> <span class="n">ASTROMER</span><span class="p">(</span><span class="n">num_layers</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+                        <span class="n">num_heads</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+                        <span class="n">dff</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span>
+                        <span class="n">base</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
+                        <span class="n">dropout</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+                        <span class="n">maxlen</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+                        <span class="n">no_train</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                        <span class="n">pretrained_weights</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">astromer</span><span class="o">.</span><span class="n">get_model</span><span class="p">()</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14407,23 +14397,178 @@ a.anchor-link {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Model: &#34;ASTROMER&#34;
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input (InputLayer)             [(None, 200, 1)]     0           []                               
+                                                                                                  
+ length (InputLayer)            [(None, 200)]        0           []                               
+                                                                                                  
+ mask (InputLayer)              [(None, 200, 1)]     0           []                               
+                                                                                                  
+ times (InputLayer)             [(None, 200, 1)]     0           []                               
+                                                                                                  
+ encoder (Encoder)              (None, None, 200)    426656      [&#39;input[0][0]&#39;,                  
+                                                                  &#39;length[0][0]&#39;,                 
+                                                                  &#39;mask[0][0]&#39;,                   
+                                                                  &#39;times[0][0]&#39;]                  
+                                                                                                  
+ regression (RegLayer)          (None, None, 1)      601         [&#39;encoder[0][0]&#39;]                
+                                                                                                  
+==================================================================================================
+Total params: 427,257
+Trainable params: 427,257
+Non-trainable params: 0
+__________________________________________________________________________________________________
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h5 id="Load-the-data"><em>Load the data</em><a class="anchor-link" href="#Load-the-data">&#182;</a></h5>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="n">opt</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;batch_size&quot;</span><span class="p">:</span><span class="mi">256</span><span class="p">,</span> <span class="s2">&quot;shuffle&quot;</span><span class="p">:</span><span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;max_obs&quot;</span><span class="p">:</span><span class="mi">200</span><span class="p">,</span> <span class="s2">&quot;msk_frac&quot;</span><span class="p">:</span><span class="mf">0.5</span><span class="p">,</span> <span class="s2">&quot;rnd_frac&quot;</span><span class="p">:</span><span class="mf">0.2</span><span class="p">,</span> <span class="s2">&quot;same_frac&quot;</span><span class="p">:</span><span class="mf">0.2</span><span class="p">,</span> \
-       <span class="s2">&quot;msk_frac&quot;</span><span class="p">:</span><span class="mf">0.5</span><span class="p">,</span> <span class="s2">&quot;rnd_frac&quot;</span><span class="p">:</span><span class="mf">0.2</span> <span class="p">,</span> <span class="s2">&quot;same_frac&quot;</span><span class="p">:</span><span class="mf">0.2</span><span class="p">,</span> <span class="s2">&quot;epochs&quot;</span><span class="p">:</span><span class="mi">10000</span><span class="p">,</span> <span class="s2">&quot;patience&quot;</span><span class="p">:</span><span class="mi">200</span><span class="p">,</span> <span class="s2">&quot;layers&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;heads&quot;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> \
-       <span class="s2">&quot;dff&quot;</span><span class="p">:</span><span class="mi">128</span><span class="p">,</span> <span class="s2">&quot;dropout&quot;</span><span class="p">:</span><span class="mf">0.1</span><span class="p">,</span> <span class="s2">&quot;base&quot;</span><span class="p">:</span><span class="mi">1000</span><span class="p">,</span> <span class="s2">&quot;lr&quot;</span><span class="p">:</span><span class="mf">0.001</span><span class="p">,</span> <span class="s2">&quot;no_train&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">&quot;pretrained_weights&quot;</span> <span class="p">:</span> <span class="kc">None</span><span class="p">,</span>\
-       <span class="s2">&quot;data&quot;</span><span class="p">:</span><span class="s2">&quot;/content/drive/Shareddrives/AstroMer/public/records/alcock_500&quot;</span><span class="p">,</span> \
-       <span class="s2">&quot;p&quot;</span><span class="p">:</span><span class="s2">&quot;/content/drive/MyDrive/Astromer/Docker/Alcock/runs&quot;</span><span class="p">}</span>
-<span class="n">run</span><span class="p">(</span><span class="n">opt</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s1">&#39;/content/Alcock&#39;</span><span class="p">,</span> <span class="n">exist_ok</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="c1"># Make sure we don&#39;t overwrite a previous training</span>
+<span class="nb">dir</span> <span class="o">=</span> <span class="n">get_folder_name</span><span class="p">(</span><span class="s2">&quot;/content/Alcock/runs&quot;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+<span class="c1"># Creating directory</span>
+<span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Loading data</span>
+<span class="n">train_batches</span> <span class="o">=</span> <span class="n">pretraining_data</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;/content/drive/Shareddrives/AstroMer/public/records/alcock_500&quot;</span><span class="p">,</span> <span class="s1">&#39;train&#39;</span><span class="p">),</span>
+                                    <span class="mi">256</span><span class="p">,</span>
+                                    <span class="n">max_obs</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+                                    <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                                    <span class="n">msk_frac</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+                                    <span class="n">rnd_frac</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+                                    <span class="n">same_frac</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+<span class="n">valid_batches</span> <span class="o">=</span> <span class="n">pretraining_data</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;/content/drive/Shareddrives/AstroMer/public/records/alcock_500&quot;</span><span class="p">,</span> <span class="s1">&#39;val&#39;</span><span class="p">),</span>
+                                    <span class="mi">256</span><span class="p">,</span>
+                                    <span class="n">max_obs</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+                                    <span class="n">shuffle</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                                    <span class="n">msk_frac</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+                                    <span class="n">rnd_frac</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+                                    <span class="n">same_frac</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[INFO] Shuffling
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h5 id="Train-Astromer"><em>Train Astromer</em><a class="anchor-link" href="#Train-Astromer">&#182;</a></h5>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># Training ASTROMER</span>
+<span class="n">astromer</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">train_batches</span><span class="p">,</span> <span class="n">valid_batches</span><span class="p">,</span>
+      <span class="n">patience</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span>
+      <span class="n">exp_path</span><span class="o">=</span><span class="nb">dir</span><span class="p">,</span>
+      <span class="n">epochs</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span>
+      <span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span>
+      <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>EPOCH 104 - ES COUNT: 24.0/25 train mse: 0.1338 - val mse: 0.1706:   1%|          | 104/10000 [13:27&lt;21:20:43,  7.77s/it]</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[INFO] Early Stopping Triggered
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>

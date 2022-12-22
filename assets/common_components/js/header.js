@@ -129,7 +129,7 @@ class Header extends HTMLElement {
             <nav class="js-mega-menu navbar navbar-expand-lg">
                 <!-- Logo -->
                 <a aria-label="Front" class="navbar-brand" href="./index.html">
-                    <img style="Width:250pt" alt="Logo" src="assets/general/img/logo-stellardnn.svg">
+                    <img style="Width:300pt" alt="Logo" src="assets/general/img/logo-stellardnn.svg">
                 </a>
                 <!-- End Logo -->
     

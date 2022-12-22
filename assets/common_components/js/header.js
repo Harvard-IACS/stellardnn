@@ -41,12 +41,12 @@ class Header extends HTMLElement {
                     </div>
                 </form>
                 <!-- End Input -->
-
+    
                 <!-- Content -->
                 <div class="row d-none d-md-flex mt-7">
                     <div class="col-sm-6">
                         <span class="h5">Quick Links</span>
-
+    
                         <div class="row">
                             <!-- Nav Link -->
                             <div class="col-6">
@@ -69,7 +69,7 @@ class Header extends HTMLElement {
                                 </div>
                             </div>
                             <!-- End Nav Link -->
-
+    
                             <!-- Nav Link -->
                             <div class="col-6">
                                 <div class="nav nav-sm nav-x-0 flex-column">
@@ -90,7 +90,7 @@ class Header extends HTMLElement {
                             <!-- End Nav Link -->
                         </div>
                     </div>
-
+    
                     <div class="col-sm-6">
                         <!-- Banner -->
                         <div class="rounded search-push-top-banner">
@@ -101,7 +101,7 @@ class Header extends HTMLElement {
                                     <img alt="Image Description" class="img-fluid search-push-top-banner-img"
                                          src="assets/front_v3_3/img/mockups/img2.png">
                                 </div>
-
+    
                                 <div>
                                     <div class="mb-4">
                                         <span class="h5">Featured Item</span>
@@ -120,7 +120,7 @@ class Header extends HTMLElement {
         </div>
     </div>
     <!-- End Search -->
-
+    
     <div class="header-section">
 
 
@@ -129,10 +129,10 @@ class Header extends HTMLElement {
             <nav class="js-mega-menu navbar navbar-expand-lg">
                 <!-- Logo -->
                 <a aria-label="Front" class="navbar-brand" href="./index.html">
-                    <img style="Width:250pt" alt="Logo" src="assets/front_v3_3/svg/logos/logo-stellardnn.svg">
+                    <img style="Width:250pt" alt="Logo" src="assets/general/img/logo-stellardnn.svg">
                 </a>
                 <!-- End Logo -->
-
+    
                 <!-- Responsive Toggle Button -->
                 <button aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation"
                         class="navbar-toggler btn btn-icon btn-sm rounded-circle" data-target="#navBar"
@@ -151,7 +151,7 @@ class Header extends HTMLElement {
       </span>
                 </button>
                 <!-- End Responsive Toggle Button -->
-
+    
                 <!-- Navigation -->
                 <div class="collapse navbar-collapse" id="navBar">
                     <div class="navbar-body header-abs-top-inner">
@@ -170,14 +170,14 @@ class Header extends HTMLElement {
                                    href="/projects.html">Projects</a>
                             </li>
                             <!-- End Projects -->
-
+    
                             <!-- People -->
                             <li class="hs-has-sub-menu navbar-nav-item">
                                 <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
                                    href="/people.html">People</a>
                             </li>
                             <!-- End Newsroom -->
-
+    
                             <!-- Newsroom -->
                             <li class="hs-has-sub-menu navbar-nav-item">
                                 <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
@@ -189,7 +189,7 @@ class Header extends HTMLElement {
                                    href="/courses.html">Courses</a>
                             </li>
                             <!-- End Courses -->
-
+    
                             <!-- End Newsroom -->
 
 

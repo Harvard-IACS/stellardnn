@@ -308,12 +308,7 @@ h3 {
     border-radius: 5px;
 }
 
-.research-proj-title {
-
-    font-size: 16px;
-    line-height: 26px;
- 
-}
+.research-proj-title {font-size: 16px;line-height: 26px;position: relative;top: 20px;}
 
 .research-proj-title:hover {
     border-bottom: 1px solid #003373;
@@ -322,7 +317,8 @@ h3 {
 .research-proj p {
     font-size: 14px;
     line-height: 24px;
-
+    position: relative;
+    top: 20px;
 }
 
 .research-proj p strong {

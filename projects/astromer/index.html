@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Amaryllis
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140131
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<main-header root='./'></main-header>
+
+<div class="wrapper">
+	<!--  -->
+	<!-- FIRST PART -->
+	<!--  -->
+	<div id="welcome" class="container">
+		<div class="title">
+			<img src="images/astromer_logo.png" width="300" height="200" alt="" class="image" />
+			<h2>Get started</h2>
+		</div>
+
+		<p>
+			ASTROMER is a transformed-based model which was pre-trained on millions of light curves.
+			We use ASTROMER representation to create informative light curves embeddings.
+			the ASTROMER pre-trained encoder can be finetuned on other domains for solving downstream tasks.
+			Read <a href="#" rel="nofollow">the paper</a> for more information.
+		</p>
+		<p>Install our python package including all the functionalities</p>
+		<code>pip install astromer</code>
+	</div>
+  <!--  -->
+	<!-- SECOND PART -->
+	<!--  -->
+	<div id="three-column" class="container">
+		<div id="welcome" class="container">
+			<div class="title">
+				<h1>Basic Tutorials</h1>
+			</div>
+			</div>
+		<div><span class="arrow-down"></span></div>
+		<!-- Prepare data -->
+		<div id="tbox1">
+			<a href="./tutorials/Tutorial_numpy_tf_records_data_prep.html"><img src="images/prepare_data.png" alt="" class="image image-full" /></a>
+			<div class="title">
+				<h2>Prepare Data</h2>
+			</div>
+			<p> Either numpy or tf.records, here you will learn how to format your own
+				data to fit Astromer requirements</p>
+			<a href="./tutorials/Tutorial_numpy_tf_records_data_prep.html" class="button">Learn More</a>
+		</div>
+		<!-- Finetuning -->
+		<div id="tbox2">
+			<a href="./tutorials/Tutorial_finetuning_astromer.html"><img src="images/finetuning.png" alt="" class="image image-full" /></a>
+			<div class="title">
+				<h2>Finetuning</h2>
+			</div>
+			<p>Finetune Astromer using your own dataset.</p>
+			<br><br><br>
+			<a href="./tutorials/Tutorial_finetuning_astromer.html" class="button">Learn More</a> </div>
+		<!-- pre-training on your own data -->
+		<div id="tbox3">
+			<a href="./tutorials/Tutorial_training_astromer.html"><img src="images/pretraining.png" alt="" class="image image-full" /></a>
+			<div class="title">
+				<h2>Training</h2>
+			</div>
+			<p>Have a lot of samples? Here we teach you how to train ASTROMER from scratch.</p>
+			<br><br>
+			<a href="./tutorials/Tutorial_training_astromer.html" class="button">Learn More</a> </div>>
+	</div>
+
+	<!--  -->
+	<!-- THIRD PART -->
+	<!--  -->
+	<div id="portfolio" class="container">
+		<div id="welcome" class="container">
+			<div class="title">
+				<h1>Task Tutorials</h1>
+			</div>
+			</div>
+		<div class="column1">
+			<div class="box"> <a href="#"><img src="images/colab.png" alt="" class="image image-full" /></a>
+				<h3>Tutorial 1: Classification</h3>
+				<p>Classification of variable stars from Ogle's catalog
+					using the pre-trained model on MACHO dataset</p>
+				<a href="./tutorials/Tutorial_classification_astromer.html" class="button button-small">Read more</a> </div>
+		</div>
+
+		<div class="column2">
+			<div class="box"> <a href="#"><img src="images/colab.png" alt="" class="image image-full" /></a>
+				<h3>Tutorial 2: Regression</h3>
+				<p>Predicting physical parameters from GAIA light curves representations.</p>
+				<a href="#" class="button button-small">Read more</a> </div>
+			</div>
+
+
+	</div>
+
+</div>
+<main-footer></main-footer>
+
+<script src="components/header.js"></script>
+<script src="components/footer.js"></script>
+
+</body>
+</html>

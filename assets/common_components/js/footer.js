@@ -21,7 +21,7 @@ class Footer extends HTMLElement {
                                     <span class="media">
                       <span class="fas fa-location-arrow mt-1 mr-2"></span>
                                         <span class="media-body">
-                                            SEC ADDRESS: 150 Western Ave, Boston
+                                            SEC ADDRESS: 150 Western Ave, Bosto, MA 02134
                                         </span>
                                     </span>
                                 </a>

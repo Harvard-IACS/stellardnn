@@ -17,9 +17,61 @@
       	<div id="welcome" class="container">
           <h1>About ASTROMER</h1>
           <br><br>
-          <img src="../images/astro_arch.png" width="500" height="700" alt="" class="image" />
+          <p style="text-align:justify">
+            We introduce <a href="https://arxiv.org/abs/2205.01677" target="_blank">ASTROMER</a>, a transformer-based model that creates light curve representations, trained on millions of R-band light sequences to adjust its weights. With those representations, our model creates embeddings to be used to train other models with ease, supporting downstream tasks such as Classification and Regression.
+          </p>
+          <p style="text-align:justify">
+            For further user implementation, we developed a Python library for the model, its methods, and trained weights, all available on our <a href="https://github.com/astromer-science" target="_blank">GitHub repository</a>.
+          </p>
+          <br><br>
+          <h2>Our Statement</h2>
+          <br><br>
+          <p style="text-align:justify">
+            The increasing volume of new data and the new telescope technologies present a new challenge for researchers and their methods of studying variable objects, where traditional Machine Learning (ML) methods start to get overwhelmed, especially when it comes to dealing with millions of unlabeled data, like the vast majority of data available in surveys like MACHO or ATLAS.
+          </p>
+          <p style="text-align:justify">
+            To overcome these challenges, we took inspiration from the bidirectional transformers that have performed well in natural language processing, mostly using the self-attention block and Positional Encoding (PE) because both methods are effective in capturing relationships between observations to encode light curves.
+          </p>
+          <h3>Why BERT-based model?</h3>
+          <br><br>
+          <p style="text-align:justify">
+            We base our model on the Bidirectional Encoder Representations from Transformers (BERT) presented by a team of <a href="https://arxiv.org/abs/1810.04805" target="_blank">Google in 2019</a>, which allows us to create representations from unlabeled data, pre-train the weights of those observations, and also be finetuned with just one additional output layer.
+          </p>
+          <h2>Our Proposal</h2>
+          <br><br>
+          <p style="text-align:justify">
+            The main objective we propose is using learned representations embeddings of object variability to help train downstream models on small datasets for other researchers. To achieve this ASTROMER was pre-trained in a self-supervised manner which codifies observations into attention vectors.
+          </p>
+          <p style="text-align:justify">
+            The embeddings capture enough information of the light curves to reconstruct magnitudes using only the surrounding local context of the hidden observations transforming the light curves into embeddings via learnable parameters.
+          </p>
+          <p style="text-align:justify">
+            ASTROMER uses a feed-forward network (FNN) without hidden layers that transform each magnitude to a vector of size 256, maintaining the light curves observation fixed, avoiding the variation of the difference of stars and survey goals.
+          </p>
+          <h2>The Model</h2>
+          <br><br>
+          <p style="text-align:justify">
+            As we said before, the observation remains fixed, and to do that, we use Masking and Padding for each observation window. Then, ASTROMER passes the combined input sequences on the two self-attention blocks that capture similarities between observations and output the attention-based embeddings.
+          </p>
+          <p style="text-align:justify">
+            We initiate the forward pass of the encoder by transforming input times and magnitudes to a 256 vector that mixes temporal and brightness information. More specifically we use two self-attention blocks with four heads of sixtyfour neurons each.
+          </p>
+          <br><br>
+          <p style="text-align:center">
+            <i>“The final representation is the normalized concatenation of the heads of the last block. Then, the resulting embedding is a collection of 200 vectors of size 256, describing the attention of every observation to each other.”</i> <a href="https://arxiv.org/abs/2205.01677" target="_blank">(C. Donoso-Oliva et al., 2022)</a>
+          </p>
+          <img src="../images/astro_arch.png" width="500" height="700" alt="" class="image" /> 
+          <br><br>
+          <p style="text-align:justify">
+            Currently, our team is in the second stage of ASTROMER, improving both the efficiency and smooth implementation by the users. In order to make embeddings more informative, we will explore adding new tasks during the pre-training and fine-tuning steps. 
+          </p>
+          <p style="text-align:center">
+            <strong>If you want to go deeper into how we implement our model, please take a look at <a href="https://arxiv.org/abs/2205.01677" target="_blank">our publication</a>.</strong>
+          </p>
+          <img src="../images/astromer_logo_inv.png" width="400" height="300" alt="" class="image" /> 
         </div>
     </div>
+
     
     <main-footer></main-footer>
     <script src="../components/header.js"></script>

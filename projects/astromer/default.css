@@ -163,7 +163,7 @@
 	.image
 	{
 		display: inline-block;
-		border: 1px solid rgba(0,0,0,.1);
+		border: 0px solid rgba(0,0,0,.1);
 	}
 
 	.image img
@@ -309,7 +309,7 @@
 	#header-wrapper
 	{
 		overflow: hidden;
-		background: #cf3a23 url(images/overlay.png) repeat;
+		background: #e95f5f url(images/overlay.png) repeat;
 	}
 
 	#header
@@ -323,7 +323,7 @@
 
 	#logo
 	{
-		padding: 8em 0em 4em 0em;
+		padding: 4em 0em 2em 0em;
 	}
 
 	#logo h1
@@ -381,7 +381,7 @@
 		display: inline-block;
 		padding: 0em 1.5em;
 		text-decoration: none;
-		font-size: 0.90em;
+		font-size: 1.10em;
 		font-weight: 600;
 		text-transform: uppercase;
 		line-height: 60px;

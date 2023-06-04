@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #efc5c5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+}
+
+
+.h1-text{
+    font-size: 1.3rem;
+    margin: 20px 0;
+    color: #2c2c2c;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1-text i{
+    background-color: #fc5050;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    box-shadow: 2px 5px 30px rgba(80, 123, 252, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0 20px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+
+
+.box{
+    position: relative;
+    min-width: 250px;
+    background-color: #fff;
+    box-shadow: 2px 3px 30px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+
+.top-bar{
+    width: 50%;
+    height: 4px;
+    background: #fc5050;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    width: 100%;
+}
+
+.fa-check-circle{
+    color: #17b667;
+}
+
+/* creating heart */
+ .heart{
+    color: rgba(155,155,155);
+}
+.heart::before{
+    content: '\f004';
+    font-family: fontawesome;
+    line-height: 30px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.3s;
+}
+.box .heart-btn:checked ~ .heart::before{
+    color:#e41934
+}
+.heart-btn{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    padding: 1rem;
+    display: none;
+}
+
+
+.content img{
+    width: 150px;
+    height: 150px;
+    border-radius:100px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: top;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content strong{
+    font-weight: 500;
+    color: #141414;
+    margin-top: 10px;
+}
+.content p{
+    font-size: 0.9rem;
+    color: #7a7a7a;
+    margin: 4px 0px 10px 0px;
+    cursor: pointer;
+}
+.content p:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.btn a i{
+    margin-right: 9px;
+}
+.btn a{
+    border-radius: 20px;
+    color: #8b8b8b;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+}
+.btn a:hover{
+    color: #fff;
+    box-shadow: 2px 5px 15px rgba(80,123,252,0.05);
+    background-color: #507bfc;
+    transition: all ease 0.5s;
+}
+
+/*********************************************************************************/
+/* Three Columns                                                                 */
+/*********************************************************************************/
+
+#three-column
+{
+    overflow: hidden;
+    margin-top: 5em;
+    padding-top: 1em;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+#three-column h2
+{
+    margin: 1em 0em;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+#three-column .icon
+{
+    position: relative;
+    display: block;
+    margin: 0px auto 0.80em auto;
+    background: none;
+    line-height: 150px;
+    font-size: 4em;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 6px solid #67128F;
+    text-align: center;
+    color: #FFF;
+
+}
+
+#three-column #tbox1,
+#three-column #tbox2,
+#three-column #tbox3
+{
+    float: left;
+    width: 320px;
+    padding: 80px 40px 80px 40px;
+}
+
+#three-column .title
+{
+    text-align: center;
+}
+
+#three-column .title h2
+{
+    font-size: 1.60em;
+}
+
+#three-column .title .byline
+{
+    padding-top: 0.50em;
+    font-size: 0.90em;
+    color: #858585;
+}
+
+#three-column .arrow-down
+{
+    border-top-color: #292929;
+}

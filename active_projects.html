@@ -122,32 +122,62 @@
 
                         <p> Foundational Model for Spectra
                             <p> Foundational Model for Spectra
+                                Spectroscopic data are crucial for astronomical research. Observing celestial objects across various wavelengths 
+                                reveals more information about them than most other observational techniques. Spectra typically represent the intensity of 
+                                light at various wavelengths or wavelength bins. A typical spectrum can range from a few hundred to several thousand observations. 
+                                As data, a spectrum is a sequence of light intensities at the center of each wavelength bin, which typically ranges from 400 to 1000 nm.
+                                <br/> <br/>
+                                Typical stellar spectra will exhibit a blackbody radiation spectrum following the Stefan-Boltzmann law [1], which depends on the object's temperature, 
+                                along with a series of absorption and emission lines. Similarly other celestial objects have unique characteristics. 
+                                These features provide insights into the object's temperature, mass, age, and elemental abundances [2]. Moreover, these spectra
+                                lines are shifted according to the object's proper motion, enabling the deduction of intrinsic velocities and cosmological properties [3].
+                                <br/> <br/>
+                                Spectra are orders of magnitude more scarce than traditional imaging, as it require longer exposure times and more delicate equipment. 
+                                Due to the significance of spectroscopic data, astronomers have developed sophisticated instruments for spectral observations. 
+                                In particular, observing the spectra of numerous celestial objects has motivated outstanding engineering achievements. 
+                                Currently, millions of spectra are available through various surveys, such as the Sloan Digital Sky Survey (SDSS) [4] and the Gaia mission [5].
+                                <br/> <br/>
+                                Spectra have been extensively used in the analysis and classification of celestial objects. Stars are classified 
+                                according to their spectral features using the Harvard Classification system [6], and objects can be assigned to variability 
+                                types and classified into categories like stars, galaxies, and active galactic nuclei (AGNs) based on their spectra [7].
+                                <br/> <br/>
+                                In this project, we aim to create a foundational model using transformers for embeddings of various types of spectra. 
+                                We will leverage millions of available spectra to pre-train the model following the paradigms of masked 
+                                language models (though adapted for continuous data) and next-sentence predictions. We will then test the embeddings 
+                                by fine-tuning and using either regression or classification tasks.  The project will take advantage of our previous work 
+                                on time series analysis and adapt it to spectroscopic data, as described in the Astromer paper by Donoso et al. [8]. 
+                                The final models will be made available as pre-trained models for the community to use. 
+                                Additionally, we will adhere to proper software development and ML-OPS standards, utilizing cloud infrastructure 
+                                for training and deployment, as well as data and code versioning practices.
+                                <br/> <br/><br/> <br/>
 
-                                Spectroscopic data are crucial for astronomical research. Observing celestial objects across various wavelengths reveals more information about them than most other observational techniques. Spectra typically represent the intensity of light at various wavelengths or wavelength bins. A typical spectrum can range from a few hundred to several thousand observations. As data, a spectrum is a sequence of light intensities at the center of each wavelength bin. [ADD wavelenth ranges]
-                                
-                                A typical celestial object will exhibit a blackbody radiation spectrum following the Stefan-Boltzmann law [1], which depends on the object's temperature, along with a series of absorption and emission lines. Together, these features provide insights into the object's temperature, mass, age, and elemental abundances [2]. Moreover, these spectral lines are shifted according to the object's proper motion, enabling the deduction of intrinsic velocities and cosmological properties [3].
-                                
-                                Due to the significance of spectroscopic data, astronomers have developed sophisticated instruments for spectral observations. In particular, observing the spectra of numerous celestial objects has motivated outstanding engineering achievements. Currently, millions of spectra are available through various surveys, such as the Sloan Digital Sky Survey (SDSS) [4] and the Gaia mission [5].
-                                
-                                Spectra have been extensively used in the analysis and classification of celestial objects. Stars are classified according to their spectral features using the Harvard Classification system [6], and objects can be assigned to variability types and classified into categories like stars, galaxies, and active galactic nuclei (AGNs) based on their spectra [7].
-                                
-                                In this project, we aim to create a foundational model using transformers for embeddings of various types of spectra. We will leverage millions of available spectra to pre-train the model following the paradigms of masked language models (though adapted for continuous data) and next-sentence predictions. We will then test the embeddings by fine-tuning and using either regression or classification tasks.  The project will take advantage of our previous work on time series analysis and adapt it to spectroscopic data, as described in the astromer paper by Donoso et al. [8]. The final models will be made available as pre-trained models for the community to use. Additionally, we will adhere to proper ML-OPS standards, utilizing cloud infrastructure for training and deployment, as well as data and code versioning practices.
-                                
-                                References: [1] Stefan-Boltzmann law: [https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law](https://en.wikipedia.org/wiki/Stefan–Boltzmann_law) 
-                                
-                                [2] Spectroscopic analysis of stellar properties: https://www.annualreviews.org/doi/10.1146/annurev-astro-081817-051846 
-                                
-                                [3] Doppler shift and spectral line analysis: https://astronomy.swin.edu.au/cosmos/D/Doppler+Shift 
-                                
-                                [4] Sloan Digital Sky Survey (SDSS): https://www.sdss.org/ 
-                                
-                                [5] Gaia mission: https://www.cosmos.esa.int/web/gaia 
-                                
-                                [6] Harvard Classification system: https://en.wikipedia.org/wiki/Stellar_classification 
-                                
-                                [7] Spectroscopic classification of celestial objects: https://iopscience.iop.org/article/10.3847/1538-4357/aa6890
-                                
-                                [8] Donoso et al. - astromer: </p>
+                                References: 
+                                <br/> <br/>
+                                [1] Stefan-Boltzmann law: 
+                                <a href="https://en.wikipedia.org/wiki/Stefan–Boltzmann_law">https://en.wikipedia.org/wiki/Stefan–Boltzmann_law</a>
+                                <br/> <br/>
+                                [2] Spectroscopic analysis of stellar properties: 
+                                <a href="https://www.annualreviews.org/doi/10.1146/annurev-astro-081817-051846">https://www.annualreviews.org/doi/10.1146/annurev-astro-081817-051846</a> 
+                                <br/> <br/>
+                                [3] Doppler shift and spectral line analysis: 
+                                <a href="https://astronomy.swin.edu.au/cosmos/D/Doppler+Shift">https://astronomy.swin.edu.au/cosmos/D/Doppler+Shift </a> 
+                                <br/> <br/>
+                                [4] Sloan Digital Sky Survey (SDSS): 
+                                <a href="https://www.sdss.org/"> https://www.sdss.org/</a>
+                                <br/> <br/>
+                                [5] Gaia mission: 
+                                <a href="https://www.cosmos.esa.int/web/gaia">https://www.cosmos.esa.int/web/gaia </a>
+                                <br/> <br/>
+                                [6] Harvard Classification system:
+                                <a href="https://en.wikipedia.org/wiki/Stellar_classification"> https://en.wikipedia.org/wiki/Stellar_classification </a>
+                                <br/> <br/>
+                                [7] Spectroscopic classification of celestial objects:
+                                <a href="https://iopscience.iop.org/article/10.3847/1538-4357/aa6890"> https://iopscience.iop.org/article/10.3847/1538-4357/aa6890</a>
+                                <br/> <br/>
+                                [8] ASTROMER-A transformer-based embedding for the representation of light curves. Astronomy & Astrophysics 
+                                <a href="https://www.aanda.org/articles/aa/pdf/2023/02/aa43928-22.pdf">https://www.aanda.org/articles/aa/pdf/2023/02/aa43928-22.pdf</a>
+
+                                 </p>
                     </div>
                 </article>
                 <!-- End Blog Card -->

@@ -64,7 +64,7 @@
         <div class="container space-bottom-3">
             <div class="w-md-75 w-lg-60 mx-md-auto ">
                 <!-- End Blog Card -->
-                <article class="card mb-3 mb-sm-5" id="NeuroDiffHUB">
+                <!-- <article class="card mb-3 mb-sm-5" id="NeuroDiffHUB">
                     <img style="width:100pt" alt="Image Descriptions" class="card-img-top " src="assets/general/img/home/neurodiffhub_logo.png">
                     <div class="card-body ">
                         <a class="d-block small font-weight-bold text-cap mb-2" href="http://dev.neurodiff.io">NeuroDiffHUB</a>
@@ -82,7 +82,7 @@
 
                          
                     </div>
-                </article>
+                </article> -->
                 <!-- End Blog Card -->
 
                 <!-- End Blog Card -->
@@ -256,7 +256,7 @@
 
 
                 <!-- End Blog Card -->
-                <article class="card mb-3 mb-sm-5 " id="RCTorch">
+                <!-- <article class="card mb-3 mb-sm-5 " id="RCTorch">
                     <img style="width:100pt"  alt="Image Description " class="card-img-top " src="assets/general/img/home/RCTORCH_logo.png">
 
                     <div class="card-body ">
@@ -273,7 +273,7 @@
                             In addition, we introduce an unsupervised reservoir computing (RC), capable of discovering 
                             approximate solutions that satisfy ordinary differential equations (ODEs). 
                     </div>
-                </article>
+                </article> -->
                 <!-- End Blog Card -->
 
 
@@ -285,17 +285,24 @@
 
                         <h2 class="h3 ">Cosmologically Informed NNs </h2>
 
-                        <p>The field of machine learning has drawn increasing interest from various fields due to its methods' 
-                            success in solving many different problems. An application of these has been to train artificial neural 
-                            networks to solve differential equations without needing a numerical solver. In these works, we use 
-                            artificial neural networks to represent solutions of the differential equations that govern the 
-                            background dynamics of the Universe for four different models. We have applied these methods to various models such as the  &Lambda;CDM, a quintessence model with exponential potential, and the Hu-Sawicki f(R) model. 
-                            We used the networks' solutions to perform statistical analyses to estimate the values of 
-                            each model's parameters with observational data. Additionally, we use similar methods for holographic 
-                            calculation of the bubble wall velocity in a cosmological phase transition, which is crucial to determine 
-                            the resulting spectrum of GWs. </p>
-
-                        
+                        <h3 id='studies-of-alternative-cosmological-models-with-artificial-neural-networks'>Studies of alternative cosmological models with artificial neural networks</h3>
+                            <p>Motivation for the research topic.  The accelerated expansion of the Universe is one of the most intriguing problems in modern cosmology, as there is currently no consensus within the scientific community regarding the physical mechanism responsible for it. Although the standard cosmological model can explain this phenomenon, it presents some unresolved issues. For these reasons, the study of alternative cosmological models to the standard cosmological model and their comparison with recent observational data has become relevant. To address the aforementioned issues with the standard cosmological model, a set of alternative cosmological models has been considered. In this work, we will focus on cosmological models constructed assuming an alternative theory of gravitation to General Relativity. To quantify the effect that each modification to the Standard Cosmological Model will have on observable quantities, it is necessary to solve a complex system of differential equations. Usually, this type of system can be solved using numerical methods. However, these methods tend to be computationally intensive.</p>
+                            <p>&nbsp;</p>
+                            <p> Recently, methods using neural networks for solving systems of differential equations through unsupervised learning (i.e., where numerical solutions are not used in NN training) have been developed. In contrast to solutions obtained with numerical methods, solutions provided by NNs are continuous, completely differentiable, require less computational capacity than classical methods [1], and can be stored in small memory spaces. An extension of the unsupervised method for solving differential equations with NNs was proposed in [2], which introduces the possibility of training NNs that represent a set (or bundle) of solutions corresponding to a continuous range of parameter values for the differential system, which may include initial and boundary conditions. The great advantage of this method is that once the neural networks are trained, the solution can be used indefinitely without the need to re-integrate the process, as is the case with numerical methods. This results in a reduction of computational times in Markov chain inference processes. The proposed method is implemented in the neurodiffeq library [3], developed by the our group. </p>
+                            <p>&nbsp;</p>
+                            <p>The NN method was applied to solve the background dynamics equations of the Universe in 4 different cosmological models [4]. The results showed significant optimization of parameter inference computational times.  The application of the method described  was then optimized. The key to improving computational times lies in the calculation of an integral using the same NN bundle method [5]. And finally similar method  was applied to solve the matter perturbations equation (undergraduate thesis by Luca Gomez Bachar). </p>
+                            <p> The objective of the thesis work is to calculate the uncertainties of the solutions obtained with the neural network bundle method. One of the major flaws of the neural network bundle method applied to cosmology currently is that it cannot estimate its uncertainty. To date, solutions obtained with the method have been compared with those of a numerical method. The proposal of the current work plan is to focus on the matter perturbations equation, which can be written as a simple system of two ODEs.  The proposal is to go one step further and calculate the uncertainties of the previously obtained solutions. To do this, we will rely on similar estimations developed for other contexts by our  group [6].</p>
+                            <p>&nbsp;</p>
+                            <p>This work will be carried out in collaboration with a group in Argentina led by Professor Susana Landau. The entire work group meets remotely once a week.</p>
+                            <p>&nbsp;</p>
+                            <p>References</p>
+                            <p>[1] Lagaris I E, Likas A and Fotiadis D I 1998 IEEE Transactions on Neural Networks 9 987–1000</p>
+                            <p>[2] Flamant C, Protopapas P and Sondak D 2020 arXiv e-prints arXiv:2006.14372</p>
+                            <p>[3] Chen F, Sondak D, Protopapas P, Mattheakis M, Liu S, Agarwal D and Di Giovanni M 2020 Journal of Open Source Software 5 1931</p>
+                            <p>[4] Chantada A T, Landau S J, Protopapas P, Scóccola C G and Garraffo C 2023 Phys. Rev. D 107(6) 063523 URL <a href='https://link.aps.org/doi/10.1103/PhysRevD.107.063523' target='_blank' class='url'>https://link.aps.org/doi/10.1103/PhysRevD.107.063523</a></p>
+                            <p>[5] Chantada A T, Landau S J, Protopapas P, Scóccola C G and Garraffo C 2023 arXiv e-prints ar- Xiv:2311.15955 (Preprint 2311.15955) </p>
+                            <p>[6] Liu S, Huang X and Protopapas P 2023 arXiv e-prints arXiv:2306.03786 (Preprint 2306.03786)&quot;</p>
+                                                    
                     </div>
                 </article>
                 <!-- End Blog Card -->
@@ -308,15 +315,53 @@
 
                         <h2 class="h3 ">ADSML</h2>
 
-                        <p>he SAO/NASA Astrophysics Data System (ADS) is a digital library portal for researchers in astronomy and physics, 
-                            operated by the Smithsonian Astrophysical Observatory (SAO) under a NASA grant.
-                             ADS maintains three bibliographic collections containing more than 15 million records covering 
-                             publications in astronomy and astrophysics, physics, and general science, including all arXiv e-prints. 
-                             The abstracts and full text of major astronomy and physics publications are indexed and searchable. 
-                             At ADS ML, we are applying modern machine learning and natural language processing techniques to 
-                             the ADS dataset to train astroBERT, a deeply contextual language model based on research at Google.
-                              Using astroBERT, we aim to enrich the ADS dataset and improve its discoverability; in particular, 
-                              we are developing our own named entity recognition and concept discovery tools.</p>
+                        <h3 id='llms-for-bibliography-curation'>LLMs for Bibliography Curation</h3>
+
+                            <h4 id='introduction-and-motivation'>Introduction and Motivation</h4>
+                            <p>A well-established way to assess the scientific impact of an observational facility in astronomy is the quantitative analysis of the studies published in the literature which have made use of the data taken by the facility. A requirement of such analysis is the creation of bibliographies which annotate and link data products with the literature, thus providing a way to use bibliometrics as an impact measure for the underlying data. Creating such links and bibliographies is a laborious process which involves specialists searching the literature for names, acronyms and identifiers, and then determining how observations were used in those publications, if at all (<a href='https://arxiv.org/abs/2401.00060'>Observatory Bibliographers Collaboration, 2024</a>).</p>
+                            <p>The creation of such links represents more than just a useful way to generate metrics: doing science with archival data depends on being able to critically review prior studies and then locate the data used therein, a basic tenet behind the principle of scientific reproducibility. From the perspective of a research scientist, the data-literature connections provide a critical path to data discovery and access. Thus, by leveraging the efforts of librarians and archivists, we can make use of telescope bibliographies to support the scientific inquiry process. We wish to make the creation of such bibliographies simpler and more consistent by using AI technologies to support the efforts of data curators.</p>
+                            <h4 id='typical-curation-process'>Typical Curation Process</h4>
+                            <p>While different groups use different approaches and criteria to the problem of bibliography creation and maintenance, the steps involved typically consist of the following:</p>
+                            <ol start='' >
+                            <li><p>Use a set of full-text queries to the ADS bibliographic database in order to find all possible relevant papers. This first step aims to identify articles that contain mention of the telescope/instrument of interest so that they can be further analyzed. For instance, the set of query terms used to find papers related to the Chandra X-Ray telescope may be “Chandra,” “CXC,” “CXO,” “AXAF,” etc.</p>
+                            </li>
+                            <li><p>Analyze the text containing mentions of the telescope/instrument and its variations in order to disambiguate the use of the terms of interest. For the Chandra example, this includes teasing apart the different entities associated with “Chandra,” which may correspond to a person, a ground-based telescope, or a space-based telescope.</p>
+                            </li>
+                            <li><p>Identify whether the paper in question shows evidence of the use of datasets generated by the telescope or hosted by the archive of interest. The mention of data use may be explicit (e.g. the listing of dataset identifiers), or implied in the text (e.g. mention of analysis and results without identification of the actual dataset). Whenever dataset ids are used, they should be extracted and identified.</p>
+                            </li>
+                            <li><p>In some cases, additional classification of the dataset may be collected, such as the instrument used in the observations. This information is also correlated with the kind of data that was used (e.g. image vs. spectra vs. catalog) and its characteristics. In the case of Chandra, there are 7 different instruments that can be used for the data collection (ACIS, HRC, HETG, LETG, HRMA, PCAD, EPHIN), and their use, if explicitly mentioned in the paper, should be reported.</p>
+                            </li>
+                            <li><p>For some bibliographies, additional information is collected, such as the relevance of the paper to the scientific use of the data archive. For example, for the Chandra bibliography, the following categories are defined:</p>
+                            <ol start='' >
+                            <li>Direct use of Chandra data</li>
+                            <li>Refers to published results</li>
+                            <li>Predicts Chandra results</li>
+                            <li>Paper on Chandra software, operations, and/or instrumentation</li>
+                            <li>General reference to Chandra</li>
+
+                            </ol>
+                            </li>
+
+                            </ol>
+                            <p>An automated assistant able to emulate the supervised curation activities listed in the steps 2-5 above would provide a valuable contribution to the human effort involved. LLMs have shown flexibility in interpreting and classifying scientific articles which are the basis for this curation activity. They have also been successfully used for information extraction tasks, which would help identify the specific datasets mentioned in the papers. This shared task aims at improving the state of the art technologies to support these curation efforts. To this end, a dataset consisting of open access fulltext papers and annotated bibliography from institutions that collect this information is being solicited.</p>
+                            <h4 id='call-for-contributions'>Call for Contributions</h4>
+                            <p>For the upcoming 2024 <a href='https://ui.adsabs.harvard.edu/WIESP/'>WIESP</a> Shared Task Challenge, we are soliciting contributions of labeled data that can be used to train an expert assistant. Contributions towards this goal include:</p>
+                            <ol start='' >
+                            <li>A set of full-text, liberally licensed papers from the ADS</li>
+                            <li>A dump of the <a href='https://cxc.harvard.edu/cgi-gen/cda/bibliography'>Chandra Archive bibliography</a>, providing a classification of the articles according to the criteria above</li>
+                            <li>Other observatory’s labeled data [<strong>please indicate your interest here</strong>]</li>
+
+                            </ol>
+                            <p>Potential data contributors:</p>
+                            <ul>
+                            <li>MAST </li>
+                            <li>HEASARC</li>
+                            <li>NASA HPD</li>
+                            <li>ESA</li>
+
+                            </ul>
+                            <p>This work will be carried out in collaboration with the ADS group lef by Alberto Accomazzi and Raffaele D’Abrusco. The entire work group meets remotely once a week.</p>
+
 
                          
                     </div>

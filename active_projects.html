@@ -92,21 +92,33 @@
                     <div class="card-body ">
                         <a class="d-block small font-weight-bold text-cap mb-2 " href="projects/neurodiff.html">NeuroDiffEq</a>
 
-                        <h3>Solving Differential Equations Using Neural Networks</h3>
+                        <h3 id='one-shot-transfer-learning-for-nonlinear-differential-equations-with-neural-networks'>One-Shot Transfer Learning for Nonlinear Differential Equations with Neural Networks</h2>
+                    <p>The ability to rapidly adapt neural networks for solving various differential equations holds immense potential. Achieving &quot;one-shot transfer learning&quot; would pave the way for foundational models applicable to entire families of differential equations, encompassing both ordinary (ODEs) and partial differential equations (PDEs). Such models could efficiently handle diverse initial conditions, forcing functions, and other parameters, offering a universally reusable solution framework.</p>
+                    <p><strong>Background and Prior Work:</strong></p>
+                    <p>Our research has made significant strides in this direction. We previously demonstrated one-shot transfer learning for linear equations [1,2]. Subsequently, we built upon this success by employing perturbation methods to achieve iterative one-shot transfer learning for simple polynomial nonlinearities in differential equations [3].</p>
+                    <p><strong>Project Goals:</strong></p>
+                    <p>This project aims to extend our prior work by tackling non-polynomial nonlinearities in differential equations. While our prior work utilized the homotopy perturbation method, its limited convergence regions pose a challenge. Here, we propose exploring alternative expansion techniques, such as Pade approximations [3], as a means to effectively handle a broader range of nonlinearities.</p>
+                    <p><strong>Methodology:</strong></p>
+                    <ol>
+                    <li><strong>Exploration of Expansion Techniques:</strong> We will delve into Pade approximations and potentially other expansion methods suitable for representing diverse nonlinearities in differential equations.</li>
+                    <li><strong>Model Development:</strong> We will integrate the chosen expansion technique into a neural network architecture, enabling the model to learn the solution structure for various non-polynomial nonlinearities.</li>
+                    <li><strong>Benchmarking and Validation:</strong> The model&#39;s performance will be evaluated across a diverse set of ODEs and PDEs.</li>
+                    <li><strong>Real-World Application:</strong> We will select a specific real-world application involving non-polynomial nonlinearities and demonstrate the effectiveness of the developed model in solving the corresponding differential equations.</li>
 
-                        <p> Differential equations occur in various scientific and 
-                            engineering domains. Most differential equations of practical 
-                            interest are analytically intractable. 
-                            Traditionally, differential equations are solved by numerical methods. 
-                            Neural networks have been proven to be universal function approximators, 
-                            suggesting the possibility of using ANNs to solve differential equations. 
-                            These approaches are knows as Physics Informed Neural Networks (PINNs) 
-                            have been one of the focus of our work. 
-                            Those include NN solutions that preserve physical symmetries or symmetries in general, 
-                            specialize networks for Hamiltonian systems, using GANs architectures to enhance the 
-                            performance, a library that allows researchers to deploy these solutions. 
-                            In this page you will find a summary of all current and future work. 
-                            
+                    </ol>
+                    <p><strong>References:</strong></p>
+                    <ol>
+                    <li><p><a href='https://arxiv.org/abs/2110.11286'>One-shot transfer learning of physics-informed neural networks</a></p>
+                    </li>
+                    <li><p> <a href='https://openreview.net/forum?id=x2Mscu1b7H'>Generalized One-Shot Transfer Learning of Linear Ordinary and Partial Differential Equations</a></p>
+                    </li>
+                    <li><p><a href='https://arxiv.org/abs/2311.14931'>One-Shot Transfer Learning for Nonlinear ODEs</a></p>
+                    </li>
+                    <li><a href='https://www.sciencedirect.com/science/article/pii/S0377042799000424'>Algebraic <strong>approximants</strong> and the numerical solution of parabolic equations</a></h3>
+                    </li>
+
+                    </ol>
+<p>&nbsp;</p>
                            
                     </div>
                 </article>
@@ -178,6 +190,41 @@
                                 <a href="https://www.aanda.org/articles/aa/pdf/2023/02/aa43928-22.pdf">https://www.aanda.org/articles/aa/pdf/2023/02/aa43928-22.pdf</a>
 
                                  </p>
+                    </div>
+
+
+                    <div class="card-body ">
+                        
+
+                        <h2 class="h3 ">Multi-Band Astromer</h2>
+                    <p>Multi-Band Astromer; Modeling Multi-band Lightcurves for Astronomical Surveys</p>
+                    <p>Astronomical surveys rely on collecting data across various wavelengths, known as bands. Each band captures light at a specific range within the electromagnetic spectrum. This multi-band approach provides rich information about celestial objects, enabling astronomers to infer properties like temperature, composition, and age.</p>
+                    <p>Building robust models for astronomical lightcurves, which represent brightness variations over time, presents a unique challenge when dealing with multi-band data. A straightforward method, inspired by Astromer [1], involves feeding multi-band observations directly into a transformer-based encoder as a multi-dimensional input. However, telescopes often employ different physical filters for observations bands, leading to inconsistencies in data acquisition times. Traditional transformer architectures struggle with such asynchronous data.</p>
+                    <p>This project aims to explore alternative approaches for effectively handling multi-band lightcurve data. We will investigate methods beyond the basic multi-dimensional input approach:</p>
+                    <ul>
+                    <li>Late Fusion with Embedding Mixing: Here, we will train independent transformer encoders for each band, similar to Astromer. However, instead of feeding the combined bands directly, we will extract embeddings from each individual encoder. These embeddings will then be combined using techniques like embedding mixing [2] only when addressing the final task (e.g., classification, regression). This approach allows for independent processing of asynchronous data while leveraging the power of transformers.</li>
+                    <li>Multi-attention Layers: We will go into more complex architectures, specifically exploring the use of multi-attention layers within the transformer framework. These layers enable the model to attend to information across different bands at various time steps, potentially capturing the relationships between asynchronous observations.</li>
+
+                    </ul>
+                    <p><strong>Flexible Input Pipeline and Model Applications:</strong></p>
+                    <p>To ensure maximum adaptability, we will develop a flexible input pipeline capable of ingesting data from various multi-band astronomical sources. This pipeline will preprocess and format the data seamlessly, regardless of the specific survey or telescope behind the observations.</p>
+                    <p>Once the models are trained, we can fine-tune them using rich public datasets like Gaia DR3 (third data release of the Gaia space mission) and ZTF DR20 (the Zwicky Transient Facility DR20). These datasets provide a wealth of multi-band lightcurve information for a multitude of celestial objects.</p>
+                    <p>The fine-tuned models can then be employed for various astronomical tasks, including:</p>
+                    <ul>
+                    <li><strong>Classification of Variable Objects:</strong> By analyzing lightcurve patterns, the models can identify objects whose brightness fluctuates over time, such as pulsating stars or eclipsing binary systems.</li>
+                    <li><strong>Prediction of Physical Parameters:</strong> The models can be trained to predict the physical properties of objects based on their lightcurve characteristics. This could involve estimating an object&#39;s temperature, mass, or even its distance through techniques like redshift estimation.</li>
+
+                    </ul>
+                    <p>As we will go deeper into this project, potential areas for future exploration include:</p>
+                    <ul>
+                    <li>Integrating additional data sources, such as spectroscopic information, to enhance model performance.</li>
+                    <li>Investigating the effectiveness of self-attention mechanisms specifically designed to handle asynchronous data.</li>
+                    <li>Applying the developed models to real-world astronomical datasets to assess their practical capabilities.</li>
+
+                    </ul>
+                    <p>[1] ASTROMER-A transformer-based embedding for the representation of light curves. <em>Astronomy &amp; Astrophysics</em> </p>
+                    <p><a href='https://www.aanda.org/articles/aa/pdf/2023/02/aa43928-22.pdf'><em>https://www.aanda.org/articles/aa/pdf/2023/02/aa43928-22.pdf</em></a></p>
+                    <p>[2] Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., … Polosukhin, I. (2021). Attention is all you need. arxiv:1706.03762: <a href='https://arxiv.org/abs/1706.03762' target='_blank' class='url'>https://arxiv.org/abs/1706.03762</a></p>
                     </div>
                 </article>
                 <!-- End Blog Card -->

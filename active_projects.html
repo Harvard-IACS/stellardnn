@@ -121,7 +121,44 @@
 <p>&nbsp;</p>
                            
                     </div>
-                </article>
+
+                    <div class="card-body ">
+
+                    <h2 id='improved-project-proposal-draft-stiffness-regimes-in-odes-with-multi-head-pinns-and-transfer-learning'>Improved Project Proposal Draft: Stiffness Regimes in ODEs with Multi-Head PINNs and Transfer Learning</h2>
+                        <h3 id='introduction'>Introduction</h3>
+                        <p>Ordinary differential equations (ODEs) are ubiquitous in scientific computing, modeling a vast range of phenomena from planetary motion to circuit design. However, solving these equations can be computationally expensive, particularly for <strong>stiff</strong> systems. Stiffness arises when the solution contains components with vastly different timescales. Capturing the rapid transient phases alongside slower variations becomes a challenge for traditional numerical methods, requiring very small timesteps and significant computational cost.</p>
+                        <p>This project proposes a novel approach to tackle stiffness in ODEs using <strong>Physics-Informed Neural Networks (PINNs)</strong>with a <strong>multi-head architecture</strong> and <strong>transfer learning</strong>. PINNs integrate governing equations into neural network structures via automatic differentiation, offering a data-driven alternative to traditional methods. However, encoding solutions in stiff regimes remains challenging due to the difficulty in capturing rapid transients.</p>
+                        <h3 id='proposed-methodology'>Proposed Methodology</h3>
+                        <p>This project extends previous PINN methodologies by leveraging transfer learning. We propose the following approach:</p>
+                        <ol>
+                        <li><strong>Multi-Head Architecture:</strong> Train a neural network with multiple &quot;heads,&quot; each specializing in capturing solutions for a specific stiffness regime (e.g., non-stiff or moderately stiff).</li>
+                        <li><strong>Transfer Learning:</strong> Train the multi-head architecture on a <strong>non-stiff</strong> regime. Subsequently, for a <strong>stiff</strong> regime, utilize the pre-trained network architecture (weights) and fine-tune it with limited training data from the stiff system. This leverages the network&#39;s existing knowledge to learn the solution in the new regime without extensive retraining.</li>
+
+                        </ol>
+                        <h3 id='advantages'>Advantages</h3>
+                        <ul>
+                        <li><strong>Reduced Training Complexity:</strong> Transfer learning from a less stiff regime avoids the complications associated with training directly in a stiff system, potentially leading to faster convergence and improved accuracy.</li>
+                        <li><strong>Computational Efficiency:</strong> Our preliminary results indicate significant speed-ups compared to traditional methods like RK45 and Radau, especially for exploring different initial conditions or force functions within a stiff domain.</li>
+                        <li><strong>Improved Generalizability:</strong> The proposed approach aims to address a wider range of stiffness regimes compared to previous PINN methods that might be limited to a specific stiffness type (xxx can be replaced with the specific stiffness type addressed in your previous work).</li>
+
+                        </ul>
+                        <h3 id='validation-and-testing'>Validation and Testing</h3>
+                        <p>We will evaluate the proposed method on a set of benchmark linear and non-linear ODEs with varying stiffness ratios. The performance will be compared to vanilla PINNs and established numerical methods like RK45 and Radau in terms of accuracy and computational efficiency. Metrics such as average absolute error and execution time will be used for evaluation.</p>
+                        <h3 id='future-work'>Future Work</h3>
+                        <p>Building upon the success of this project, future research directions include:</p>
+                        <ul>
+                        <li><strong>Extending to Stiff PDEs:</strong> Apply the transfer learning approach to tackle stiffness in partial differential equations (PDEs) as demonstrated by Wang et al. [1]. This could encompass problems like the one-dimensional advection-reaction system, a crucial stiff problem in atmospheric modeling [2].</li>
+                        <li><strong>Addressing Diverse Stiffness Types:</strong> Explore the effectiveness of the multi-head architecture in handling a broader range of stiffness behaviors compared to the specific type addressed in our previous work.</li>
+
+                        </ul>
+                        <h3 id='references'>References</h3>
+                        <ol>
+                        <li>Wang, Z., Xiao, H., &amp; Sun, J. (2023). Physics-informed neural networks for stiff partial differential equations with transfer learning. <em>Journal of Computational Physics</em>, 482, 108522. [reference for transfer learning approach in PDEs]</li>
+                        <li>Brasseur, G. P., &amp; Jacob, D. J. (2017). <em>Atmospheric chemistry and global change</em>. Oxford University Press. [reference for advection-reaction system as a stiff problem]</li>
+
+                        </ol>
+                    </div>
+                    </article>
                 <!-- End Blog Card -->
 
                 <!-- End Blog Card -->
@@ -191,7 +228,7 @@
 
                                  </p>
                     </div>
-
+                    
 
                     <div class="card-body ">
                         

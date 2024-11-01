@@ -164,12 +164,12 @@ class Header extends HTMLElement {
                             <!-- End Home -->
 
 
-                            <!-- Projects -->
+                            <!-- Research -->
                             <li class="hs-has-sub-menu navbar-nav-item">
                                 <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/projects.html">Projects</a>
+                                   href="/projects.html">Research</a>
                             </li>
-                            <!-- End Projects -->
+                            <!-- End Research -->
     
                             <!-- People -->
                             <li class="hs-has-sub-menu navbar-nav-item">
@@ -183,12 +183,12 @@ class Header extends HTMLElement {
                                 <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
                                    href="/publications.html">Publications</a>
                             </li>
-                            <!-- Courses -->
+                            <!-- Educations -->
                             <li class="hs-has-sub-menu navbar-nav-item">
                                 <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/courses.html">Courses</a>
+                                   href="/courses.html">Education</a>
                             </li>
-                            <!-- End Courses -->
+                            <!-- End Educations -->
     
                             <!-- End Newsroom -->
 

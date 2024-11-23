@@ -23,6 +23,95 @@
     <!-- CSS Front Template -->
     <link href="assets/front_v3_3/css/theme.min.css" rel="stylesheet">
 
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="StellarDNN is a Harvard research lab focusing on machine learning applications in astronomy and physics. Led by Pavlos Protopapas, we develop neural networks and transformers for astronomical analysis.">
+    <meta name="keywords" content="StellarDNN, Machine Learning, Astronomy, Physics, Neural Networks, Harvard, Research Lab, Pavlos Protopapas, NeuroDiffEQ, Astromer, NNEHT">
+    <meta name="author" content="StellarDNN Research Lab">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="StellarDNN | Machine Learning Research Lab">
+    <meta property="og:description" content="Harvard research lab applying machine learning to astronomy and physics, developing innovative solutions for astronomical analysis and physical simulations.">
+    <meta property="og:image" content="https://stellardnn.org/assets/general/img/home/stellardnn_social.jpg">
+    <meta property="og:url" content="https://stellardnn.org">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="StellarDNN | Machine Learning Research Lab">
+    <meta name="twitter:description" content="Harvard research lab applying machine learning to astronomy and physics.">
+    <meta name="twitter:image" content="https://stellardnn.org/assets/general/img/home/stellardnn_social.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://stellardnn.org">
+
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="assets/front_v3_3/css/theme.min.css" as="style">
+    <link rel="preload" href="assets/front_v3_3/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" as="script">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ResearchOrganization",
+        "name": "StellarDNN",
+        "url": "https://stellardnn.org",
+        "logo": "https://stellardnn.org/assets/general/img/home/stellardnn_logo.png",
+        "description": "Research lab focusing on machine learning applications in astronomy and physics",
+        "parentOrganization": {
+            "@type": "Organization",
+            "name": "Harvard University",
+            "url": "https://www.harvard.edu"
+        },
+        "member": {
+            "@type": "Person",
+            "name": "Pavlos Protopapas",
+            "jobTitle": "Director",
+            "url": "https://stellardnn.org/people/pavlos-protopapas"
+        },
+        "knowsAbout": [
+            "Machine Learning",
+            "Neural Networks",
+            "Astronomy",
+            "Physics",
+            "Differential Equations"
+        ],
+        "publishingPrinciples": "https://stellardnn.org/publications",
+        "sameAs": [
+            "https://github.com/stellardnn",
+            "https://twitter.com/stellardnn"
+        ]
+    }
+    </script>
+
+    <!-- Research Projects structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "ResearchProject",
+                "name": "NeuroDiff HUB",
+                "description": "Neural network solutions for differential equations",
+                "url": "https://stellardnn.org/projects.html#NeuroDiffHUB"
+            },
+            {
+                "@type": "ResearchProject",
+                "name": "Astromer",
+                "description": "NLP techniques for astronomical lightcurves",
+                "url": "https://stellardnn.org/projects.html#Astromer"
+            },
+            {
+                "@type": "ResearchProject",
+                "name": "NNEHT",
+                "description": "Neural Networks for Event Horizon Telescope",
+                "url": "https://stellardnn.org/projects.html#NNEHT"
+            }
+        ]
+    }
+    </script>
 </head>
 
 <body>
@@ -31,19 +120,22 @@
     <!-- ========== END HEADER ========== -->
 
     <!-- ========== MAIN ========== -->
-    <main id="content" role="main">
+    <main id="content" role="main" itemscope itemtype="https://schema.org/ResearchOrganization">
         <!-- Hero Section -->
         <div class="container space-top-3 space-top-lg-4 space-bottom-2">
             <div class="w-lg-80 text-center mx-lg-auto">
                 <div class="mb-5 mb-md-11">
-                    <h1 class="display-4">StellarDNN</h1>
-                    <p class="lead">StellarDNN is a research lab, led by Pavlos Protopapas, that focuses on using machine learning techniques, 
-                          particularly neural networks and transformers, to study and analyze astronomical and physical phenomena.
-                          We use these techniques to classify celestial objects, solve differential equations, and extract important 
-                          features from data such as galaxy images or time series. By exploring the intersection of astronomy, physics, 
-                          machine learning, and statistics, the group aims to gain a deeper understanding of these phenomena and how 
-                          they can be characterized and studied.
-                  </p>
+                    <h1 class="display-4" itemprop="name">StellarDNN</h1>
+                    <p class="lead" itemprop="description">
+                        StellarDNN is a research lab at the School of Engineering and Applied Sciences (SEAS), 
+                        led by Pavlos Protopapas, that focuses on using machine learning 
+                        techniques, particularly neural networks and transformers, to study and analyze astronomical 
+                        and physical phenomena. We use these techniques to classify celestial objects, 
+                        solve differential equations, and extract important features from data such as galaxy images 
+                        or time series. By exploring the intersection of astronomy, physics, machine learning, and statistics, 
+                        the group aims to gain a deeper understanding of these phenomena 
+                        and how they can be characterized and studied.
+                    </p>
                 </div>
             </div>
 

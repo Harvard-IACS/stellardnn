@@ -93,11 +93,20 @@
                         <a class="d-block small font-weight-bold text-cap mb-2 " href="projects/neurodiff.html">NeuroDiffEq</a>
 
                         <h3 id='one-shot-transfer-learning-for-nonlinear-differential-equations-with-neural-networks'>One-Shot Transfer Learning for Nonlinear Differential Equations with Neural Networks</h2>
-                    <p>The ability to rapidly adapt neural networks for solving various differential equations holds immense potential. Achieving &quot;one-shot transfer learning&quot; would pave the way for foundational models applicable to entire families of differential equations, encompassing both ordinary (ODEs) and partial differential equations (PDEs). Such models could efficiently handle diverse initial conditions, forcing functions, and other parameters, offering a universally reusable solution framework.</p>
+                    <p>The ability to rapidly adapt neural networks for solving various differential equations holds 
+                        immense potential. Achieving &quot;one-shot transfer learning&quot; would pave the way for 
+                        foundational models applicable to entire families of differential equations, encompassing both 
+                        ordinary (ODEs) and partial differential equations (PDEs). Such models could efficiently handle 
+                        diverse initial conditions, forcing functions, and other parameters, offering a universally 
+                        reusable solution framework.</p>
                     <p><strong>Background and Prior Work:</strong></p>
-                    <p>Our research has made significant strides in this direction. We previously demonstrated one-shot transfer learning for linear equations [1,2]. Subsequently, we built upon this success by employing perturbation methods to achieve iterative one-shot transfer learning for simple polynomial nonlinearities in differential equations [3].</p>
+                    <p>Our research has made significant strides in this direction. We previously demonstrated one-shot 
+                        transfer learning for linear equations [1,2]. Subsequently, we built upon this success by employing 
+                        perturbation methods to achieve iterative one-shot transfer learning for simple polynomial 
+                        nonlinearities in differential equations [3].</p>
                     <p><strong>Project Goals:</strong></p>
-                    <p>This project aims to extend our prior work by tackling non-polynomial nonlinearities in differential equations. While our prior work utilized the homotopy perturbation method, its limited convergence regions pose a challenge. Here, we propose exploring alternative expansion techniques, such as Pade approximations [3], as a means to effectively handle a broader range of nonlinearities.</p>
+                    <p>This project aims to extend our prior work by tackling non-polynomial nonlinearities in differential equations. While our prior work utilized the homotopy perturbation method, its limited convergence regions pose a challenge. 
+                        Here, we propose exploring alternative expansion techniques, such as Pade approximations [4], as a means to effectively handle a broader range of nonlinearities.</p>
                     <p><strong>Methodology:</strong></p>
                     <ol>
                     <li><strong>Exploration of Expansion Techniques:</strong> We will delve into Pade approximations and potentially other expansion methods suitable for representing diverse nonlinearities in differential equations.</li>
@@ -124,39 +133,65 @@
 
                     <div class="card-body ">
 
-                    <h2 id='improved-project-proposal-draft-stiffness-regimes-in-odes-with-multi-head-pinns-and-transfer-learning'>Improved Project Proposal Draft: Stiffness Regimes in ODEs with Multi-Head PINNs and Transfer Learning</h2>
-                        <h3 id='introduction'>Introduction</h3>
-                        <p>Ordinary differential equations (ODEs) are ubiquitous in scientific computing, modeling a vast range of phenomena from planetary motion to circuit design. However, solving these equations can be computationally expensive, particularly for <strong>stiff</strong> systems. Stiffness arises when the solution contains components with vastly different timescales. Capturing the rapid transient phases alongside slower variations becomes a challenge for traditional numerical methods, requiring very small timesteps and significant computational cost.</p>
-                        <p>This project proposes a novel approach to tackle stiffness in ODEs using <strong>Physics-Informed Neural Networks (PINNs)</strong>with a <strong>multi-head architecture</strong> and <strong>transfer learning</strong>. PINNs integrate governing equations into neural network structures via automatic differentiation, offering a data-driven alternative to traditional methods. However, encoding solutions in stiff regimes remains challenging due to the difficulty in capturing rapid transients.</p>
-                        <h3 id='proposed-methodology'>Proposed Methodology</h3>
-                        <p>This project extends previous PINN methodologies by leveraging transfer learning. We propose the following approach:</p>
+
+
+                    <h3>Future Directions in Stiffness Modeling: Expanding Multi-Head PINNs</h3>
+
+                        <p>Ordinary differential equations (ODEs) are fundamental in modeling a vast range of physical, 
+                            biological, and engineering systems. However, solving these equations, particularly for stiff 
+                            systems, remains a significant computational challenge. Stiffness arises when solutions 
+                            evolve on vastly different timescales, requiring specialized numerical methods to capture 
+                            rapid transients and slow dynamics simultaneously. Traditional solvers like Runge-Kutta 
+                            methods often struggle with efficiency and stability, necessitating extremely small time 
+                            steps for stiff systems. This inefficiency is amplified when exploring varying initial 
+                            conditions or force functions within stiff regimes.</p>
+
+                        <p>In this context, Physics-Informed Neural Networks (PINNs) offer a promising alternative. 
+                            By integrating governing equations into neural network structures via automatic differentiation, 
+                            PINNs can approximate solutions directly without traditional mesh-based discretization. 
+                            Building on this foundation, this work introduces a novel multi-head PINN architecture and 
+                            leverages transfer learning to address the unique challenges of stiffness. These methods 
+                            aim to improve computational efficiency and broaden the applicability of PINNs across diverse 
+                            stiffness regimes.</p>
+
+                        <h4>Previous Work</h4>
+
+                        <p>In our prior work [1], we proposed a novel approach to solving stiff ODEs using Physics-Informed 
+                            Neural Networks (PINNs) with a multi-head architecture and transfer learning. By integrating 
+                            governing equations directly into neural networks through automatic differentiation, 
+                            PINNs provide an alternative to traditional numerical solvers.</p>
+
+                        <p>Our method introduced a multi-head architecture, where each “head” specializes in a specific 
+                            stiffness regime. The network was first trained on non-stiff regimes, then fine-tuned for 
+                            stiff systems using transfer learning to leverage pre-trained weights. This strategy significantly 
+                            reduced computational costs compared to methods like RK45 and Radau, particularly when exploring 
+                            varying initial conditions or force functions.</p>
+
+                        <p>We validated the approach on benchmark linear and nonlinear ODEs with varying stiffness ratios, 
+                            demonstrating improvements in accuracy and execution time over vanilla PINNs and 
+                            traditional solvers.</p>
+
+                        <h4>Future Work</h4>
+
+                        <p>Building on the success of this project, we aim to extend the applicability of the proposed 
+                            approach in the following directions:</p>
+
                         <ol>
-                        <li><strong>Multi-Head Architecture:</strong> Train a neural network with multiple &quot;heads,&quot; each specializing in capturing solutions for a specific stiffness regime (e.g., non-stiff or moderately stiff).</li>
-                        <li><strong>Transfer Learning:</strong> Train the multi-head architecture on a <strong>non-stiff</strong> regime. Subsequently, for a <strong>stiff</strong> regime, utilize the pre-trained network architecture (weights) and fine-tune it with limited training data from the stiff system. This leverages the network&#39;s existing knowledge to learn the solution in the new regime without extensive retraining.</li>
-
+                        <li><strong>Extension to Stiff PDEs:</strong> Expand the use of the multi-head architecture and transfer learning to partial differential equations (PDEs) with stiff dynamics. This includes addressing complex problems like the one-dimensional advection-reaction system, a benchmark in atmospheric modeling [2, 3], and extending to systems relevant in fluid dynamics and materials science.</li>
+                        <li><strong>Broadening Stiffness Regime Coverage:</strong> Investigate the effectiveness of the multi-head architecture across diverse stiffness types, such as boundary layer stiffness, oscillatory stiffness, and thermal runaway stiffness. This work aims to generalize the methodology for applicability to various domains.</li>
+                        <li><strong>Applications in Astronomy and Physics:</strong> Explore the use of this framework for astrophysical simulations, such as modeling stellar interiors, planetary atmospheres, or accretion disk dynamics, where stiffness arises from coupled thermodynamic and radiative processes. Similarly, in physics, apply the method to problems like plasma dynamics or high-energy particle interactions, where disparate timescales and sharp gradients are prevalent.</li>
+                        <li><strong>Other High-Impact Domains:</strong> Extend the approach to industrial applications, including chemical reaction networks, biological systems, and climate modeling, which often involve stiff systems and require efficient, accurate solvers.</li>
                         </ol>
-                        <h3 id='advantages'>Advantages</h3>
-                        <ul>
-                        <li><strong>Reduced Training Complexity:</strong> Transfer learning from a less stiff regime avoids the complications associated with training directly in a stiff system, potentially leading to faster convergence and improved accuracy.</li>
-                        <li><strong>Computational Efficiency:</strong> Our preliminary results indicate significant speed-ups compared to traditional methods like RK45 and Radau, especially for exploring different initial conditions or force functions within a stiff domain.</li>
-                        <li><strong>Improved Generalizability:</strong> The proposed approach aims to address a wider range of stiffness regimes compared to previous PINN methods that might be limited to a specific stiffness type (xxx can be replaced with the specific stiffness type addressed in your previous work).</li>
 
-                        </ul>
-                        <h3 id='validation-and-testing'>Validation and Testing</h3>
-                        <p>We will evaluate the proposed method on a set of benchmark linear and non-linear ODEs with varying stiffness ratios. The performance will be compared to vanilla PINNs and established numerical methods like RK45 and Radau in terms of accuracy and computational efficiency. Metrics such as average absolute error and execution time will be used for evaluation.</p>
-                        <h3 id='future-work'>Future Work</h3>
-                        <p>Building upon the success of this project, future research directions include:</p>
-                        <ul>
-                        <li><strong>Extending to Stiff PDEs:</strong> Apply the transfer learning approach to tackle stiffness in partial differential equations (PDEs) as demonstrated by Wang et al. [1]. This could encompass problems like the one-dimensional advection-reaction system, a crucial stiff problem in atmospheric modeling [2].</li>
-                        <li><strong>Addressing Diverse Stiffness Types:</strong> Explore the effectiveness of the multi-head architecture in handling a broader range of stiffness behaviors compared to the specific type addressed in our previous work.</li>
+                        <h3>References</h3>
 
-                        </ul>
-                        <h3 id='references'>References</h3>
                         <ol>
-                        <li>Wang, Z., Xiao, H., &amp; Sun, J. (2023). Physics-informed neural networks for stiff partial differential equations with transfer learning. <em>Journal of Computational Physics</em>, 482, 108522. [reference for transfer learning approach in PDEs]</li>
-                        <li>Brasseur, G. P., &amp; Jacob, D. J. (2017). <em>Atmospheric chemistry and global change</em>. Oxford University Press. [reference for advection-reaction system as a stiff problem]</li>
-
+                        <li>Emilien Sellier and Pavlos Protopapas, submitted to AISTATS</li>
+                        <li><a href="https://arxiv.org/pdf/2205.07731"> Physics-informed neural networks for stiff partial differential equations with transfer learning. </a></li>
+                        <li>Brasseur, G. P., & Jacob, D. J. (2017). Atmospheric chemistry and global change. Oxford University Press.</li>
                         </ol>
+
+
                     </div>
                     </article>
                 <!-- End Blog Card -->

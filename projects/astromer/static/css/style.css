@@ -91,7 +91,7 @@ p {
   color: #2e363f;
   font-size: 20px;
   line-height: 2rem;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 button {
@@ -137,7 +137,7 @@ li {
   margin-left: 10px;
   font-family: "Kumbh Sans",sans-serif;
   list-style-type: none;
-  text-align: center;
+  /*text-align: center;*/
   color: #404c58;
 
 

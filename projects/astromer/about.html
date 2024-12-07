@@ -47,128 +47,157 @@
 
   </header>
 
-<div class="top-bar">
+  <div class="top-bar">
+    <div class="container">
+      <h1>About ASTROMER</h1>
+    </div>
+  </div>
   <div class="container">
-    <h1>About ASTROMER</h1>
-  </div>
-</div>
-<div class="container">
-  <h3>ASTROMER Architecture</h3>
-  <p>ASTROMER's architecture is based on the Transformer architecture proposed in Vaswani (2017), with an
-    encoder-decoder Architecture.</p>
-  <br>
-  <div class="container about_astro"><img class="mx-auto about-astromer" src="static/img/astromer-arch.png" width="50%"></div>
-  <br>
-  <div class="container hidden-mobile">
-    <h2>Pre-trained Weights</h2>
-    <p>You can easily download the pre-trained weights of ASTROMER's model:</p>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Version tag</th>
-          <th scope="col">Pretraining Data</th>
-          <th scope="col">Description</th>
-          <th scope="col">RMSE/R-Square</th>
-          <th scope="col">Link</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">v0</th>
-          <td>MACHO</td>
-          <td>Paper's model</td>
-          <td>0.147/0.80</td>
-          <td><a href="https://github.com/astromer-science/weights/raw/main/macho_a0.zip">Download</a></td>
-        </tr>
-        <tr>
-          <th scope="row">v1*</th>
-          <td>MACHO</td>
-          <td>Mask token and residual connections added</td>
-          <td>0.113/0.72</td>
-          <td><a href="https://github.com/astromer-science/weights/raw/main/macho_a1.zip">Download</a></td>
-        </tr>
-      </tbody>
-    </table>
-    <p>(*) Best performance up-to-date</p>
-
-  </div>
-  <br />
-
-  <div class="container show-mobile">
-    <h2>Pre-trained Weights</h2>
-    <p>You can easily download the pre-trained weights of ASTROMER's model:</p>
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-            aria-expanded="true" aria-controls="collapseOne">
-            v0. MACHO
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>Description:</strong> Paper's model
-            <br>
-            <strong>Test RMSE:</strong> 0.147
-            <br>
-            <strong>Test R-Square:</strong> 0.80
-            <br>
-            <strong>Link:</strong> <a
-              href="https://github.com/astromer-science/weights/raw/main/macho_a0.zip">Download</a>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            v1. MACHO
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>Description:</strong> Mask token and residual connections added
-            <br>
-            <strong>Test RMSE:</strong> 0.113
-            <br>
-            <strong>Test R-Square:</strong> 0.72
-            <br>
-            <strong>Link:</strong> <a
-              href="https://github.com/astromer-science/weights/raw/main/macho_a1.zip">Download</a>
-          </div>
-        </div>
-      </div>
+    <h3>ASTROMER Architecture</h3>
+    <p>ASTROMER's architecture is based on the Transformer architecture proposed in Vaswani (2017), with an
+      encoder-decoder Architecture.</p>
+    <br>
+    <div class="container about_astro"><img class="mx-auto about-astromer" src="static/img/astromer-arch.png"
+        width="50%"></div>
+    <br>
+    <div class="container hidden-mobile">
+      <h2>Pre-trained Weights</h2>
+      <p>You can easily download the pre-trained weights of ASTROMER's model:</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Version tag</th>
+            <th scope="col">Pretraining Data</th>
+            <th scope="col">Description</th>
+            <th scope="col">RMSE/R-Square</th>
+            <th scope="col">Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">v0</th>
+            <td>MACHO</td>
+            <td>Paper's model</td>
+            <td>0.147/0.80</td>
+            <td><a href="https://github.com/astromer-science/weights/raw/main/macho_a0.zip">Download</a></td>
+          </tr>
+          <tr>
+            <th scope="row">v1*</th>
+            <td>MACHO</td>
+            <td>Mask token and residual connections added</td>
+            <td>0.113/0.72</td>
+            <td><a href="https://github.com/astromer-science/weights/raw/main/macho_a1.zip">Download</a></td>
+          </tr>
+        </tbody>
+      </table>
       <p>(*) Best performance up-to-date</p>
+
+    </div>
+    <br />
+
+    <div class="container show-mobile">
+      <h2>Pre-trained Weights</h2>
+      <p>You can easily download the pre-trained weights of ASTROMER's model:</p>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              v0. MACHO
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Description:</strong> Paper's model
+              <br>
+              <strong>Test RMSE:</strong> 0.147
+              <br>
+              <strong>Test R-Square:</strong> 0.80
+              <br>
+              <strong>Link:</strong> <a
+                href="https://github.com/astromer-science/weights/raw/main/macho_a0.zip">Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              v1. MACHO
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Description:</strong> Mask token and residual connections added
+              <br>
+              <strong>Test RMSE:</strong> 0.113
+              <br>
+              <strong>Test R-Square:</strong> 0.72
+              <br>
+              <strong>Link:</strong> <a
+                href="https://github.com/astromer-science/weights/raw/main/macho_a1.zip">Download</a>
+            </div>
+          </div>
+        </div>
+        <p>(*) Best performance up-to-date</p>
+      </div>
+
     </div>
 
+    <h2>Contributing to ASTROMER</h2>
+    <p>If you train your model from scratch, you can share your pre-trained weights by submitting a pull request in the
+      <a href="https://github.com/astromer-science/weights">weights repository.</a></p>
+
+  </div>
+  <h2>More information</h2>
+  <div class="container">
+    <p>You can learn more about the project in the following links:</p>
+    <ul>
+      <li>
+        <a href="https://arxiv.org/abs/2411.01363">
+          <p>Transformer-Based Astronomical Time Series Model with Uncertainty Estimation for Detecting Misclassified
+            Instances (2024)
+        </a>. Martina Cádiz-Leyton, Guillermo Cabrera-Vives, Pavlos Protopapas, Daniel Moreno-Cartagena, Cristobal
+        Donoso-Oliva.</p>
+      </li>
+      <li>
+        <p><a href="https://arxiv.org/abs/2308.06404">
+            Positional Encodings for Light Curve Transformers: Playing with Positions and Attention (2023)</a>. Daniel
+          Moreno-Cartagena, Guillermo Cabrera-Vives, Pavlos Protopapas, Cristobal Donoso-Oliva, Manuel Pérez-Carrasco,
+          Martina Cádiz-Leyton. </p>
+      </li>
+      <li>
+        <p><a href="https://arxiv.org/abs/2205.01677">ASTROMER: A transformer-based embedding for the representation of
+            light curves (2022)</a>. C. Donoso-Oliva, I. Becker, P. Protopapas, G. Cabrera-Vives, Vishnu M., Harsh
+          Vardhan.
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class="container hidden-mobile">
+    <p align="center"><iframe
+        src="https://docs.google.com/presentation/d/e/2PACX-1vTTqWx5v1JDfjttF5hplAZAHMifvNdY0gaLz70vrMzMpf8KdJMWrKSWZCs9GWQW_HFw9tGFS6pR-rpl/embed?start=false&loop=false&delayms=3000"
+        frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
+        webkitallowfullscreen="true"></iframe></p>
+
+  </div>
+  <div class="container show-mobile">
+    <iframe
+      src="https://docs.google.com/presentation/d/e/2PACX-1vTTqWx5v1JDfjttF5hplAZAHMifvNdY0gaLz70vrMzMpf8KdJMWrKSWZCs9GWQW_HFw9tGFS6pR-rpl/embed?start=false&loop=false&delayms=3000"
+      frameborder="0" width="400" height="299" allowfullscreen="true" mozallowfullscreen="true"
+      webkitallowfullscreen="true"></iframe>
   </div>
 
-  <h2>Contributing to ASTROMER</h2>
-  <p>If you train your model from scratch, you can share your pre-trained weights by submitting a pull request on the <a
-      href="https://github.com/astromer-science/weights">weights repository.</a></p>
+  </div>
 
-</div>
-<h2>More information</h2>
-<p>You can learn more about the project in the following presentation:</p>
-<div class="container hidden-mobile">
-  <p align="center"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTTqWx5v1JDfjttF5hplAZAHMifvNdY0gaLz70vrMzMpf8KdJMWrKSWZCs9GWQW_HFw9tGFS6pR-rpl/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
-  
-</div>
-<div class="container show-mobile">
-  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTTqWx5v1JDfjttF5hplAZAHMifvNdY0gaLz70vrMzMpf8KdJMWrKSWZCs9GWQW_HFw9tGFS6pR-rpl/embed?start=false&loop=false&delayms=3000" 
-  frameborder="0" width="400" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-</div>
+  <br><br><br>
 
-</div>
-
-<br><br><br>
-  
   <footer>
     <div class="container">
       <br>
       <img class="footer-img" src="static/img/harvard_logo.png">
       <img class="footer-img" src="static/img/udec_logo.png">
-<br><br>
+      <br><br>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

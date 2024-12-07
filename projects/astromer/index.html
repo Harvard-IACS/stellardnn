@@ -1,129 +1,97 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
+<!DOCTYPE html>
+<html lang="en">
 
-Name       : Amaryllis
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20140131
-
--->
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
-
-<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  <link href="static/css/style.css" rel="stylesheet">
+  <link rel="icon" href="static/img/icon_white.png" type="image/x-icon">
+  <title>
+    ASTROMER: A pre-trained model for the representation of light curves
+  </title>
 </head>
+
 <body>
-<main-header root='./'></main-header>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="static/img/logo_white.png" alt="" width="200"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent" style="float: right;">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="tutorials.html">Tutorials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Astromer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://astromer.readthedocs.io/en/main/">Read the Docs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/astromer-science">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<div class="wrapper">
-	<!--  -->
-	<!-- FIRST PART -->
-	<!--  -->
-	<div id="welcome" class="container">
-		<div class="title">
-			<img src="images/astromer_logo.png" width="300" height="200" alt="" class="image" />
-			<h2>Get started</h2>
-		</div>
+  </header>
 
-		<p>
-			ASTROMER is a transformed-based model which was pre-trained on millions of light curves.
-			We use ASTROMER representation to create informative light curves embeddings.
-			the ASTROMER pre-trained encoder can be finetuned on other domains for solving downstream tasks.
-			Read <a href="#" rel="nofollow">the paper</a> for more information.
-		</p>
-		<p>Install our python package including all the functionalities</p>
-		<code>pip install ASTROMER</code>
-	</div>
-  <!--  -->
-	<!-- SECOND PART -->
-	<!--  -->
-	<div id="three-column" class="container">
-		<div id="welcome" class="container">
-			<div class="title">
-				<h1>Basic Tutorials</h1>
-			</div>
-			</div>
-		<div><span class="arrow-down"></span></div>
-		<!-- Prepare data -->
-		<div id="tbox1">
-			<a href="./index.html"><img src="images/prepare_data.png" alt="" class="image image-full" /></a>
-			<div class="title">
-				<h2>Prepare Data</h2>
-			</div>
-			<p> Either numpy or tf.records, here you will learn how to format your own
-				data to fit Astromer requirements</p>
-			<a href="./index.html" class="button">Learn More</a>
-		</div>
-		<!-- Finetuning -->
-		<div id="tbox2">
-			<a href="./index.html"><img src="images/finetuning.png" alt="" class="image image-full" /></a>
-			<div class="title">
-				<h2>Finetuning</h2>
-			</div>
-			<p>Finetune Astromer using your own dataset.</p>
-			<br><br><br>
-			<a href="./index.html" class="button">Learn More</a> </div>
-		<!-- pre-training on your own data -->
-		<div id="tbox3">
-			<a href="./index.html"><img src="images/pretraining.png" alt="" class="image image-full" /></a>
-			<div class="title">
-				<h2>Training</h2>
-			</div>
-			<p>Have a lot of samples? Here we teach you how to train ASTROMER from scratch.</p>
-			<br><br>
-			<a href="./index.html" class="button">Learn More</a> </div>>
-	</div>
+  <br>
+  <div class="space2 d-flex align-items-center">
+    <img src="static/img/ASTROMER.png" width="400px" class="mx-auto">
 
-	<!-- LINKS
-		href="./tutorials/Tutorial_numpy_tf_records_data_prep.html"
-		href="./tutorials/Tutorial_finetuning_astromer.html"
-		href="./tutorials/Tutorial_training_astromer.html"
-	  -->
-	<!-- THIRD PART -->
-	<!--  -->
-	<div id="portfolio" class="container">
-		<div id="welcome" class="container">
-			<div class="title">
-				<h1>Task Tutorials</h1>
-			</div>
-			</div>
-		<div class="column1">
-			<div class="box"> <a href="#"><img src="images/colab.png" alt="" class="image image-full" /></a>
-				<h3>Tutorial 1: Classification</h3>
-				<p>Classification of variable stars from Ogle's catalog
-					using the pre-trained model on MACHO dataset</p>
-				<a href="#" class="button button-small">Read more</a> </div>
-		</div>
+  </div>
 
-		<div class="column2">
-			<div class="box"> <a href="#"><img src="images/colab.png" alt="" class="image image-full" /></a>
-				<h3>Tutorial 2: Regression</h3>
-				<p>Predicting physical parameters from GAIA light curves representations.</p>
-				<a href="#" class="button button-small">Read more</a> </div>
-			</div>
-<!-- LINKS COLAB
-	href="./tutorials/Tutorial_classification_astromer.html"
+  <br>
+  <div class="container">
+    <h2>Get Started</h2>
+    <p>ASTROMER is a Transformer-based model that creates light curves representations. The learned representation can
+      be easily adapted to other surveys by re-training ASTROMER
+      on new sources. Read the <a href="https://arxiv.org/pdf/2205.01677.pdf">paper</a> for a better understanding.
+    </p>
+    <br>
+    <br>
+    <div style="text-align: center;">
+      <a href="tutorials.html"><button type="button" class="start-btn">View Tutorials ❯</button></a>
+      <a href="about.html"><button type="button" class="start-btn">About ASTROMER ✖</button></a>
+      <a href="https://astromer.readthedocs.io/en/main/"><button type="button" class="start-btn">Read the Docs ✒
+        </button> </a>
+    </div>
+  </div>
 
-  -->
+  <br />
 
-	</div>
+  <br>
+  <br>
 
-</div>
-<main-footer></main-footer>
+  <br><br><br>
 
-<script src="components/header.js"></script>
-<script src="components/footer.js"></script>
+  <footer>
+    <div class="container">
+      <br>
+      <img class="footer-img" src="static/img/harvard_logo.png">
+      <img class="footer-img" src="static/img/udec_logo.png">
 
+      <br><br>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

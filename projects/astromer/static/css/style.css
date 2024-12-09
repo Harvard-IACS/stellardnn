@@ -165,7 +165,7 @@ li {
 
 .card-team {
   max-width: 300px;
-  min-width: 148px;
+  min-width: 200px;
 } 
 
 .card-title {
@@ -311,6 +311,16 @@ BREAK POINTS
   .grid {
     display: block;
   }
+  
+}
+
+@media screen and (max-width:1300px) {
+
+  .card-team {
+    max-width: 150px;
+
+  } 
+  
 }
 /*.accordion-item {
   padding: auto;

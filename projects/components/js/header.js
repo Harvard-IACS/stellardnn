@@ -167,7 +167,7 @@ class Header extends HTMLElement {
                             <!-- Projects -->
                             <li class="hs-has-sub-menu navbar-nav-item">
                                 <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/projects.html">Projects</a>
+                                   href="/projects.html">Research</a>
                             </li>
                             <!-- End Projects -->
     
@@ -186,7 +186,7 @@ class Header extends HTMLElement {
                             <!-- Courses -->
                             <li class="hs-has-sub-menu navbar-nav-item">
                                 <a aria-expanded="false" aria-haspopup="true" class="hs-mega-menu-invoker nav-link"
-                                   href="/courses.html">Courses</a>
+                                   href="/courses.html">Education</a>
                             </li>
                             <!-- End Courses -->
     

@@ -269,7 +269,7 @@
                         
 
                         <h2 class="h3 ">Multi-Band Astromer</h2>
-                    <p>Multi-Band Astromer; Modeling Multi-band Lightcurves for Astronomical Surveys</p>
+                    <p>Modeling Multi-band Lightcurves for Astronomical Surveys</p>
                     <p>Astronomical surveys rely on collecting data across various wavelengths, known as bands. Each band captures light at a specific range within the electromagnetic spectrum. This multi-band approach provides rich information about celestial objects, enabling astronomers to infer properties like temperature, composition, and age.</p>
                     <p>Building robust models for astronomical lightcurves, which represent brightness variations over time, presents a unique challenge when dealing with multi-band data. A straightforward method, inspired by Astromer [1], involves feeding multi-band observations directly into a transformer-based encoder as a multi-dimensional input. However, telescopes often employ different physical filters for observations bands, leading to inconsistencies in data acquisition times. Traditional transformer architectures struggle with such asynchronous data.</p>
                     <p>This project aims to explore alternative approaches for effectively handling multi-band lightcurve data. We will investigate methods beyond the basic multi-dimensional input approach:</p>
@@ -309,18 +309,21 @@
                         <a class="d-block small font-weight-bold text-cap mb-2 " href="projects.html#NNETH">NNETH</a>
 
                         <h3>Computer Vision methods for the Event Horizon Telescope</h3>
+                        Introduction. 
+                        <p>  The Event Horizon Telescope (EHT) is an ambitious project that, simply speaking, aims to resolve images of black holes, thereby confirming or challenging theories about black holes, and potentially discovering other interesting phenomena. Because black holes serve as extreme laboratories for testing the underlying governing laws of the universe, this makes them a very interesting subject of study.
 
-                        <p> In 2019, the Event Horizon Telescope Collaboration released the first-ever 
-                            image of the M87* 
-                            supermassive black hole. Accurate parameterization of images like this 
-                            can provide new information 
-                            regarding the dynamics of matter close to a black hole. 
-                            Moreover, it can enable us to test theories of gravity 
-                            and deepen our understanding of the magnetized relativistic 
-                            jets created by the blackhole. 
-                            In these projects, we deploy deep learning, to parameterize and estimate the 
-                            physical parameters of M87*.   </p>
-
+                            In 2019, the EHT collaboration released the first image of a black hole, which was expected but still an amazing confirmation of theory and a thriump of science and engineering working together. One may argue it was one of the greatest discoveries ever made.
+                            
+                            Skipping the details of how the telescope is constructed and how it operates, at the end of all the herculean efforts by the EHT collaboration, the primary data products are "images" of black holes. So far, only two black holes have been imaged: M87* and Sgr A* . We use "images" in quotes because the actual product is a sample of the image in the frequency domain, which we call visibility data. From the visibility data, there is a direct but lossy way to produce the images that we have all seen.
+                            
+                            Images are visually appealing and can capture the imagination of everyone. Who hasn't been impressed with the first M87* image when it was released? However, to connect these observations with theoretical models, we need to characterize the black holes given these images.
+                            
+                            The good news is that despite black holes being very complex objects, all of this complexity is hidden inside the event horizon (the boundary beyond which we cannot see). A black hole can be characterized by just three parameters: mass, spin, and charge (often represented by electron density). This is known as the no-hair theorem. Consequently, our task is to determine the mass, spin, and electron density given an image as input.The mass of a black hole can often be estimated through various observational techniques, such as analyzing the motion of nearby stars or measuring the size of the black hole shadow in EHT images. However, accurately determining the spin remains a significant challenge. The charge is typically assumed to be negligible for astrophysical black holes.
+                            
+                            The problem statement, then, is simple: *given an input image, can we accurately estimate the spin? We propose to use deep learning methods to determine the spin and R-high for the black hole images of M87* and Sgr A*. 
+                            
+                            Using supervised machine learning requires training sets, which are not available in our case; we have no images of black holes with known spin values. Instead, we use simulations, or in other words, synthetic black holes. Since these are simulations, we know the spin. These simulations incorporate general relativity and magnetohydrodynamics (GRMHD simulations). While they are computationally expensive to run, they have been conducted by the EHT team and provided to us.The problem, then, is again simple: given a set of simulated images, we train a model and then use the trained model to predict the physical characteristics of the actual black hole images. </p>
+                            
                          
                     </div>
                 </article>

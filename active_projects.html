@@ -359,14 +359,65 @@
                          Below find the projects that we are looking for collabortors 
                         
                          <br/> <br/> <br/>
-                         <h4> Denoising Images in the visibility space </h4>
-                         Thought the use of probabilistic denoising models such as stable diffusion can be used to debluring or improve the images 
-                         with methods like InstructPix2Pix or variants of conditional stable diffusion since the actual data are in the visibility, this needs 
-                         to be done in the visibillity space. Extensions and adjustments need to be done for this to succedd
+
+                         <h4>Denoising Data in the Visibility Space Using InstructPix2Pix Models</h4>
+
+                            <p>
+                            The quality of reconstructed images in astrophysical observations, such as those from interferometric arrays like the Event Horizon Telescope (EHT), depends heavily on denoising and deblurring techniques. While methods like probabilistic denoising models (e.g., Stable Diffusion and its variants, including InstructPix2Pix) have demonstrated success in deblurring image-space data, their direct application to visibility-space data remains unexplored.
+                            </p>
+
+                            <p>
+                            This project proposes the adaptation and extension of InstructPix2Pix models for deblurring directly in the visibility space, where the raw observational data resides. The visibility space, being the Fourier domain representation of interferometric data, introduces unique challenges due to its complex structure and noise characteristics. A direct application of diffusion-based denoising models in this domain requires specialized adjustments, such as tailoring loss functions for the visibility space and preserving phase and amplitude coherence during model training.
+                            </p>
+
+                            <p><strong>Our approach will involve:</strong></p>
+                            <ul>
+                            <li><strong>Model Extension:</strong> Adapting the InstructPix2Pix framework to work with visibility-space inputs by designing conditional inputs that correspond to specific observational constraints.</li>
+                            <li><strong>Data Preparation:</strong> Generating synthetic training datasets in the visibility space that incorporate noise and blur artifacts to train the model effectively.</li>
+                            <li><strong>Evaluation:</strong> Validating the model's performance on simulated and real visibility data, comparing reconstructed images in the image space to those processed through standard pipelines.</li>
+                            </ul>
+
+                            <p>
+                            This project has the potential to significantly improve the fidelity of interferometric reconstructions by addressing noise and blur directly in the visibility space, setting the foundation for improved scientific insights from observational data.
+                            </p>
                          
                          <br/> <br/> <br/>
-                         <h4> Including Polarization  </h4>
-                        
+                         <h4> AI-Driven Polarized Imaging for Black Hole Characterization</h4>
+                         <p>The Event Horizon Telescope (EHT) has provided  polarized images of supermassive black holes, including M87* 
+                         and Sgr A*, offering insight into the magnetic fields and plasma dynamics surrounding these enigmatic objects. 
+                         These observations present an opportunity to extract critical parameters, such as black hole spin and accretion disk geometry. 
+                        </p>
+
+                        <p>
+                         This project aims to enhance black hole characterization by incorporating polarization data into deep learning models. 
+                         Polarization measurements, particularly the Stokes parameters (I, Q, U, and V), 
+                         reveal valuable information about the magnetic fields and plasma near black holes. 
+                         These data are crucial for understanding processes like relativistic jet formation and energy extraction, 
+                         which are linked to strongly magnetized and spinning black holes. Models that integrate polarization data 
+                         with total intensity observations can provide a more comprehensive understanding of black hole environments.
+                        </p>
+
+                        <p>
+                         The approach focuses on developing advanced neural network architectures capable of processing 
+                         multi-dimensional inputs, including polarization data. General Relativistic Magnetohydrodynamic (GRMHD) 
+                         simulations that incorporate multi-frequency polarization intensities will be used to train and validate the models. 
+                        </p>
+                         
+                         Key components of the project include:
+                         
+                             <ol>
+                                <li>Multi-Dimensional Neural Network Design: The project will adapt existing deep learning models to handle multi-dimensional inputs, such as polarization data. Specialized loss functions and enhanced input layers will be developed to process polarization features effectively.</li>
+                                <li>Feature Extraction and Integration: Techniques will be created to extract meaningful features from polarization data that correlate with black hole spin and accretion states. These features will help distinguish between physical models like the “magnetically arrested disk” (MAD) and “standard and normal evolution” (SANE) states.</li>
+                                <li>Noise Resilience: To ensure robustness against observational uncertainties, the models will be trained on synthetic data augmented with noise. This will make the models better suited to handle real-world EHT data, which is often noisy and incomplete.</li>
+                            </ol>
+
+                         The ultimate goal of the project is to provide joint estimates of black hole spin and magnetic field configurations, 
+                         enabling detailed mapping of regions where relativistic jets are launched. This research will address fundamental 
+                         questions about energy extraction from spinning black holes and the role of magnetic fields in these processes. 
+                         By integrating polarization data into machine learning frameworks, the project aims to maximize the scientific 
+                         insights derived from EHT observations and potentially lead to groundbreaking discoveries.
+
+
                          <br/> <br/> <br/>
                          <h4> Visual Transformers </h4>
                         In our previous work and works of others simple CNNs and RNNs have been deployed. 

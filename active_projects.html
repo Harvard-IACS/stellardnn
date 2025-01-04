@@ -302,29 +302,96 @@
                 <!-- End Blog Card -->
 
                 <!-- Start Blog Card -->
-                <article class="card mb-3 mb-sm-5 " id="NNEHT" onclick = "window.location.href='projects/nneht.html'" style="cursor:pointer">
+                 
+                <article class="card mb-3 mb-sm-5 " id="NNEHT" >
+                    <!-- onclick = "window.location.href='projects/nneht.html'" style="cursor:pointer" -->
                     <img style="width:100pt"  alt="Image Description " class="card-img-top " src="assets/general/img/home/NNEHT_logo.svg">
 
-                    <div class="card-body " style="cursor:pointer">
-                        <a class="d-block small font-weight-bold text-cap mb-2 " href="projects.html#NNETH">NNETH</a>
+                    <div class="card-body ">
+                        <a class="d-block small font-weight-bold text-cap mb-2 " href="projects.html#NNETH">NNETH </a>
 
                         <h3>Computer Vision methods for the Event Horizon Telescope</h3>
-                        Introduction. 
-                        <p>  The Event Horizon Telescope (EHT) is an ambitious project that, simply speaking, aims to resolve images of black holes, thereby confirming or challenging theories about black holes, and potentially discovering other interesting phenomena. Because black holes serve as extreme laboratories for testing the underlying governing laws of the universe, this makes them a very interesting subject of study.
+                     
+                        <p>  The Event Horizon Telescope (EHT) is an ambitious project that, simply speaking, aims to resolve images of 
+                            black holes, thereby confirming or challenging theories about black holes, and potentially discovering other 
+                            interesting phenomena. Because black holes serve as extreme laboratories for testing the underlying governing 
+                            laws of the universe, this makes them a very interesting subject of study. </p>
 
-                            In 2019, the EHT collaboration released the first image of a black hole, which was expected but still an amazing confirmation of theory and a thriump of science and engineering working together. One may argue it was one of the greatest discoveries ever made.
+                            <p>     In 2019, the EHT collaboration released the first image of a black hole, which was expected but still 
+                            an amazing confirmation of theory and a thriump of science and engineering working together. One may argue 
+                            it was one of the greatest discoveries ever made. </p>
+
+                            <p> 
+                            Skipping the details of how the telescope is constructed and how it operates, at the end 
+                            of all the herculean efforts by the EHT collaboration, the primary data products are "images" of black holes. 
+                            So far, only two black holes have been imaged: M87* and Sgr A* . We use "images" in quotes because the actual 
+                            product is a sample of the image in the frequency domain, which we call visibility data. 
+                            From the visibility data, there is a direct but lossy way to produce the images that we have all seen.</p>
                             
-                            Skipping the details of how the telescope is constructed and how it operates, at the end of all the herculean efforts by the EHT collaboration, the primary data products are "images" of black holes. So far, only two black holes have been imaged: M87* and Sgr A* . We use "images" in quotes because the actual product is a sample of the image in the frequency domain, which we call visibility data. From the visibility data, there is a direct but lossy way to produce the images that we have all seen.
+                            Images are visually appealing and can capture the imagination of everyone. Who hasn't been impressed with the 
+                            first M87* image when it was released? However, to connect these observations with theoretical models, 
+                            we need to characterize the black holes given these images. </p>
                             
-                            Images are visually appealing and can capture the imagination of everyone. Who hasn't been impressed with the first M87* image when it was released? However, to connect these observations with theoretical models, we need to characterize the black holes given these images.
+                            <p>
+                            The good news is that despite black holes being very complex objects, all of this complexity is 
+                            hidden inside the event horizon (the boundary beyond which we cannot see). A black hole can be characterized 
+                            by just three parameters: mass, spin, and charge (often represented by electron density). 
+                            This is known as the no-hair theorem. Consequently, our task is to determine the mass, spin, and 
+                            electron density given an image as input.The mass of a black hole can often be estimated through 
+                            various observational techniques, such as analyzing the motion of nearby stars or measuring the size of 
+                            the black hole shadow in EHT images. However, accurately determining the spin remains a significant challenge. 
+                            The charge is typically assumed to be negligible for astrophysical black holes.</p>
                             
-                            The good news is that despite black holes being very complex objects, all of this complexity is hidden inside the event horizon (the boundary beyond which we cannot see). A black hole can be characterized by just three parameters: mass, spin, and charge (often represented by electron density). This is known as the no-hair theorem. Consequently, our task is to determine the mass, spin, and electron density given an image as input.The mass of a black hole can often be estimated through various observational techniques, such as analyzing the motion of nearby stars or measuring the size of the black hole shadow in EHT images. However, accurately determining the spin remains a significant challenge. The charge is typically assumed to be negligible for astrophysical black holes.
+                            <p>
+                            The problem statement, then, is simple: given an input image, can we accurately estimate the spin? 
+                            We propose to use deep learning methods to determine the spin and R-high for the black hole images of 
+                            M87* and Sgr A*. </p>
                             
-                            The problem statement, then, is simple: *given an input image, can we accurately estimate the spin? We propose to use deep learning methods to determine the spin and R-high for the black hole images of M87* and Sgr A*. 
+                            <p>
+                            Using supervised machine learning requires training sets, which are not available in our case; 
+                            we have no images of black holes with known spin values. Instead, we use simulations, or in other words, 
+                            synthetic black holes. Since these are simulations, we know the spin. These simulations 
+                            incorporate general relativity and magnetohydrodynamics (GRMHD simulations). While they are computationally 
+                            expensive to run, they have been conducted by the EHT team and provided to us.The problem, then, 
+                            is again simple: given a set of simulated images, we train a model and then use the trained model to predict 
+                            the physical characteristics of the actual black hole images. </p>
                             
-                            Using supervised machine learning requires training sets, which are not available in our case; we have no images of black holes with known spin values. Instead, we use simulations, or in other words, synthetic black holes. Since these are simulations, we know the spin. These simulations incorporate general relativity and magnetohydrodynamics (GRMHD simulations). While they are computationally expensive to run, they have been conducted by the EHT team and provided to us.The problem, then, is again simple: given a set of simulated images, we train a model and then use the trained model to predict the physical characteristics of the actual black hole images. </p>
-                            
+                         Below find the projects that we are looking for collabortors 
+                        
+                         <br/> <br/> <br/>
+                         <h4> Denoising Images in the visibility space </h4>
+                         Thought the use of probabilistic denoising models such as stable diffusion can be used to debluring or improve the images 
+                         with methods like InstructPix2Pix or variants of conditional stable diffusion since the actual data are in the visibility, this needs 
+                         to be done in the visibillity space. Extensions and adjustments need to be done for this to succedd
                          
+                         <br/> <br/> <br/>
+                         <h4> Including Polarization  </h4>
+                        
+                         <br/> <br/> <br/>
+                         <h4> Visual Transformers </h4>
+                        In our previous work and works of others simple CNNs and RNNs have been deployed. 
+
+                        <br/> <br/> <br/>
+                        <h4> Optimnizing the antenna configuration based on the model performances</h4>
+
+                         <br/> <br/><br/> <br/>
+
+                         References: 
+                         <br/> <br/>
+                         [1] Generating Images of the M87* Black Hole Using GANs: <br/>
+                            <a href="https://doi.org/10.1093/mnras/stad3797">https://doi.org/10.1093/mnras/stad3797</a> <br/> <br/>
+
+                            [2] Deep Horizon: A machine learning network that recovers accreting black hole parameters: <br/>
+                            <a href="https://doi.org/10.1051/0004-6361/201937014">https://doi.org/10.1051/0004-6361/201937014</a> <br/> <br/>
+
+                            [3] Feature Extraction on Synthetic Black Hole Images: <br/>
+                            <a href="https://www.semanticscholar.org/paper/8e42b9a02bba6e15c0300d20dfa3ebc2ce4fa8bd">https://www.semanticscholar.org/paper/8e42b9a02bba6e15c0300d20dfa3ebc2ce4fa8bd</a> <br/> <br/>
+
+                            [4] Using Machine Learning to Link Black Hole Accretion Flows with Spatially Resolved Polarimetric Observables: <br/>
+                            <a href="https://doi.org/10.1093/mnras/stad466">https://doi.org/10.1093/mnras/stad466</a> <br/> <br/>
+
+                            [5] Classification of a black hole spin out of its shadow using support vector machines: <br/>
+                            <a href="https://doi.org/10.1103/PhysRevD.99.103002">https://doi.org/10.1103/PhysRevD.99.103002</a> <br/> <br/>
                     </div>
                 </article>
                 <!-- End Blog Card -->

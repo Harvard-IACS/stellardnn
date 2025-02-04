@@ -50,34 +50,58 @@
 
   </header>
 
-  <br>
-  <div class="space2 d-flex align-items-center">
-    <img src="static/img/ASTROMER.png" width="400px" class="mx-auto">
-
+  <div class="top-bar">
+    <div class="container">
+      <h1>Data</h1>
+    </div>
   </div>
-
-  <br>
   <div class="container">
-    <h2>Get Started</h2>
-    <p>ASTROMER is a Transformer-based model that creates light curves representations. The learned representation can
-      be easily adapted to other surveys by re-training ASTROMER
-      on new sources. Read the <a href="https://arxiv.org/pdf/2205.01677.pdf">paper</a> for a better understanding.
-    </p>
+    <h3>Dowload Data</h3>
+    <p>We provide open access to our pre-training data in both <code>.parquet</code> and <code>.record</code> formats. 
+        Raw light curves are stored in <code>.parquet</code> while <code>.record</code> is a preprocessed format ready for use with ASTROMER. 
+        Below, we provide links to download the data.</p>  
     <br>
-    <br>
-    <div style="text-align: center;">
-      <a href="tutorials.html"><button type="button" class="start-btn">View Tutorials ❯</button></a>
-      <a href="about.html"><button type="button" class="start-btn">About ASTROMER ✖</button></a>
-      <a href="data.html"><button type="button" class="start-btn">Data ✖</button></a>
-      <a href="https://astromer.readthedocs.io/en/main/"><button type="button" class="start-btn">Read the Docs ✒
-        </button> </a>
+
+  <div>
+  <div class="container">
+    <div class="column column-left">
+      <h2>Parquet Data</h2>
+      <div class="button-container">
+        <button id="unlabeledButton">Pretraining Data</button>
+        <div id="extraButtons" class="hidden">
+          <a href="https://drive.google.com/file/d/1MInBPl0mt4Eerq5zxQsPMgJU-CbwLc8u/view?usp=drive_link"><button>MACHO blue</button></a>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button id="labeledButton">Labeled Data</button>
+        <div id="extraButtons2" class="hidden">
+          <a href="https://drive.google.com/file/d/1PaZ7hVp_13WyilLZlWlWNOZhCEbsKopA/view?usp=sharing"> <button>Alcock</button> </a>
+          <a href="https://drive.google.com/file/d/125euwxpF0WY_oWq3jVtq9c5pNyUISAOO/view?usp=sharing"> <button>ATLAS</button> </a>
+          <a href="https://drive.google.com/file/d/1B8fgyPrNNR5FQdGwPAIWmMk87aL1RZRD/view?usp=sharing"> <button>OGLE-III</button> </a>
+        </div>
+      </div>
+   
+    <div class="column column-right">
+      <h2>Record Data</h2>   
+      <div class="button-container">
+       <button id="unlabeledButton2">Pretraining Data</button>
+        <div id="extraButtons3" class="hidden">
+          <a href=""><button>MACHO v1 blue</button></a>
+          <a href=""><button>MACHO v2 blue</button></a>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button id="labeledButton2">Labeled Data</button>
+        <div id="extraButtons4" class="hidden">
+          <a href="https://drive.google.com/file/d/1N4-n3OUAA0J2jFF6fO2MmbykzcxzLEuX/view?usp=sharing"> <button>Alcock</button> </a>
+          <a href="https://drive.google.com/file/d/1OnSF3EULdJpFY4MwRZLgmXa6DauziR8W/view?usp=sharing"> <button>ATLAS</button> </a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <br />
-
-  <br>
-  <br>
 
   <br><br><br>
 
@@ -86,10 +110,10 @@
       <br>
       <img class="footer-img" src="static/img/harvard_logo.png">
       <img class="footer-img" src="static/img/udec_logo.png">
-
       <br><br>
     </div>
   </footer>
+  <script src="static/js/extend.js"></sc
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>

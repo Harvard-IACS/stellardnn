@@ -326,3 +326,26 @@ BREAK POINTS
   padding: auto;
   margin: 0 0 0 0;
 } */
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#extraButtons3 {
+  margin-top: 10px;
+}
+#extraButtons4 {
+  margin-top: 10px;
+}
+#extraButtons2 {
+  margin-top: 10px;
+}
+#extraButtons {
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+

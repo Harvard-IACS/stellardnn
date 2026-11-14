@@ -36,3 +36,7 @@ Original upstream commit: `0c1924c`. Refresh branch: `codex/website-refresh-2026
 ## Publication follow-up
 
 The owner authorized production publication and requested cybersecurity research. Added primary-source links for calBERT, contrastBERT and sysBERT, plus their verified publication records; corrected the router-security preprint topic to Cybersecurity. The recent inventory now has 27 verified records. Site validation checks 19 pages and 457 internal references with no errors; JavaScript syntax and whitespace checks pass. Browser verification confirmed the research section and seven-record Cybersecurity filter.
+
+## Superseding owner instruction
+
+The owner requested the original appearance with information updates only. The visual refresh is superseded. All original HTML templates were restored from 0c1924c; only index, People, CV, Research, Publications and Courses received content changes. Original CSS, JavaScript, header/footer components and images remain unchanged. The pending biography deployment was canceled; the first refresh had completed and is corrected by the follow-up publication.

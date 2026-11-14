@@ -1,539 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width,initial-scale=1" name="viewport"/>
-  <title>
-   Machine learning for scientific discovery | StellarDNN
-  </title>
-  <meta content="Machine learning for scientific discovery at StellarDNN, the research group led by Pavlos Protopapas working across machine learning, physics, astronomy and cybersecurity." name="description"/>
-  <link href="https://www.stellardnn.org/" rel="canonical"/>
-  <meta content="Machine learning for scientific discovery | StellarDNN" property="og:title"/>
-  <meta content="Machine learning for scientific discovery at StellarDNN, the research group led by Pavlos Protopapas working across machine learning, physics, astronomy and cybersecurity." property="og:description"/>
-  <meta content="website" property="og:type"/>
-  <link href="assets/general/img/mark.svg" rel="icon" type="image/svg+xml"/>
-  <link href="assets/refresh.css" rel="stylesheet"/>
-  <script defer="" src="assets/refresh.js">
-  </script>
- </head>
- <body>
-  <a class="skip" href="#content">
-   Skip to content
-  </a>
-  <header class="site-header">
-   <a aria-label="StellarDNN home" class="brand" href="index.html">
-    <span aria-hidden="true" class="brand-mark">
-     ✳
-    </span>
-    Stellar
-    <span>
-     DNN
-    </span>
-   </a>
-   <button aria-controls="main-nav" aria-expanded="false" class="menu-toggle">
-    Menu
-    <span aria-hidden="true">
-     ☰
-    </span>
-   </button>
-   <nav aria-label="Main navigation" id="main-nav">
-    <a href="projects.html">
-     Research
-    </a>
-    <a href="publications.html">
-     Publications
-    </a>
-    <a href="people.html">
-     People
-    </a>
-    <a href="courses.html">
-     Education
-    </a>
-    <a href="contact_us.html">
-     Contact
-    </a>
-   </nav>
-  </header>
-  <main id="content">
-   <section class="hero">
-    <div class="hero-inner">
-     <div>
-      <p class="eyebrow">
-       StellarDNN / Harvard SEAS
-      </p>
-      <h1>
-       Learning from data.
-       <br/>
-       <em>
-        Across disciplines.
-       </em>
-      </h1>
-      <p class="hero-lede">
-       We develop machine learning methods across astronomy, physics and cybersecurity—from scientific time series and neural differential equations to behavioral malware detection.
-      </p>
-      <div class="actions">
-       <a class="button" href="projects.html">
-        Explore our research
-        <span aria-hidden="true">
-         ↗
-        </span>
-       </a>
-       <a class="button secondary" href="publications.html">
-        Read our publications
-        <span aria-hidden="true">
-         ↗
-        </span>
-       </a>
-      </div>
-      <p class="hero-note">
-       The research group of
-       <a href="people.html#Pavlos">
-        Pavlos Protopapas ↗
-       </a>
-      </p>
-     </div>
-     <div aria-label="Abstract illustration connecting observations, neural networks and physical models" class="hero-art" role="img">
-      <svg aria-hidden="true" viewbox="0 0 600 560">
-       <defs>
-        <radialgradient id="halo">
-         <stop stop-color="#3caca5" stop-opacity=".25">
-         </stop>
-         <stop offset="1" stop-color="#3caca5" stop-opacity="0">
-         </stop>
-        </radialgradient>
-        <pattern height="35" id="grid" patternunits="userSpaceOnUse" width="35">
-         <path d="M35 0H0V35" fill="none" stroke="#35505e" stroke-width=".6">
-         </path>
-        </pattern>
-       </defs>
-       <rect fill="url(#grid)" height="560" width="600">
-       </rect>
-       <circle cx="300" cy="280" fill="url(#halo)" r="245">
-       </circle>
-       <g fill="none" stroke="#617e88">
-        <ellipse cx="300" cy="280" rx="205" ry="105" transform="rotate(-30 300 280)">
-        </ellipse>
-        <ellipse cx="300" cy="280" rx="205" ry="105" transform="rotate(30 300 280)">
-        </ellipse>
-        <circle cx="300" cy="280" r="150" stroke-dasharray="3 9">
-        </circle>
-       </g>
-       <g fill="none" stroke="#70c8c1" stroke-width="1.3">
-        <path d="M100 370 Q200 70 490 190" opacity=".6">
-        </path>
-        <path d="M114 370 Q205 83 478 190" opacity=".6">
-        </path>
-        <path d="M128 370 Q210 96 466 190" opacity=".6">
-        </path>
-        <path d="M142 370 Q215 109 454 190" opacity=".6">
-        </path>
-        <path d="M156 370 Q220 122 442 190" opacity=".6">
-        </path>
-        <path d="M170 370 Q225 135 430 190" opacity=".6">
-        </path>
-        <path d="M184 370 Q230 148 418 190" opacity=".6">
-        </path>
-        <path d="M198 370 Q235 161 406 190" opacity=".6">
-        </path>
-        <path d="M212 370 Q240 174 394 190" opacity=".6">
-        </path>
-        <path d="M226 370 Q245 187 382 190" opacity=".6">
-        </path>
-        <path d="M240 370 Q250 200 370 190" opacity=".6">
-        </path>
-        <path d="M254 370 Q255 213 358 190" opacity=".6">
-        </path>
-        <path d="M268 370 Q260 226 346 190" opacity=".6">
-        </path>
-        <path d="M282 370 Q265 239 334 190" opacity=".6">
-        </path>
-        <path d="M296 370 Q270 252 322 190" opacity=".6">
-        </path>
-        <path d="M310 370 Q275 265 310 190" opacity=".6">
-        </path>
-        <path d="M324 370 Q280 278 298 190" opacity=".6">
-        </path>
-        <path d="M338 370 Q285 291 286 190" opacity=".6">
-        </path>
-        <path d="M352 370 Q290 304 274 190" opacity=".6">
-        </path>
-       </g>
-       <g fill="#e7b188">
-        <circle cx="130" cy="216" r="6">
-        </circle>
-        <circle cx="430" cy="351" r="6">
-        </circle>
-        <circle cx="300" cy="131" r="5">
-        </circle>
-        <circle cx="221" cy="374" r="5">
-        </circle>
-       </g>
-       <circle cx="300" cy="280" fill="#0d2634" r="35" stroke="#a7ddd4">
-       </circle>
-       <path d="M278 280h44m-22-22v44" stroke="#e7b188">
-       </path>
-       <g fill="#acc4cb" font-family="monospace" font-size="11" letter-spacing="2">
-        <text x="30" y="47">
-         OBSERVATION → REPRESENTATION
-        </text>
-        <text x="315" y="515">
-         STRUCTURE → DISCOVERY
-        </text>
-       </g>
-      </svg>
-      <span class="art-caption">
-       Astronomy × Physics × Cybersecurity
-      </span>
-     </div>
-    </div>
-   </section>
-   <section class="statement wrap">
-    <p class="eyebrow">
-     Our approach
-    </p>
-    <h2>
-     At the intersection of
-     <br/>
-     computation and discovery.
-    </h2>
-    <p>
-     We bring machine learning and statistics into astronomy, physics and cybersecurity. Our work connects new methods with domain knowledge, reusable software and practical education.
-    </p>
-   </section>
-   <section class="wrap section">
-    <div class="section-heading">
-     <div>
-      <p class="eyebrow">
-       Research directions
-      </p>
-      <h2>
-       Methods built around science.
-      </h2>
-     </div>
-     <a class="text-link" href="projects.html">
-      All research ↗
-     </a>
-    </div>
-    <div class="research-grid">
-     <a class="research-card" href="projects.html#NeuroDiffEq">
-      <span class="eyebrow">
-       01 / Scientific machine learning
-      </span>
-      <h3>
-       Physics in the learning loop
-      </h3>
-      <p>
-       Neural networks that solve differential equations, encode physical structure and quantify uncertainty. Work spans transfer learning, solution families and efficient training.
-      </p>
-      <span class="card-end">
-       Explore this direction
-       <span>
-        ↗
-       </span>
-      </span>
-     </a>
-     <a class="research-card" href="projects.html#Astromer">
-      <span class="eyebrow">
-       02 / Astronomy &amp; time series
-      </span>
-      <h3>
-       Learning the language of starlight
-      </h3>
-      <p>
-       Transformer representations of astronomical light curves, with work on transfer between surveys, limited-label classification and multiband time series.
-      </p>
-      <span class="card-end">
-       Explore this direction
-       <span>
-        ↗
-       </span>
-      </span>
-     </a>
-     <a class="research-card" href="projects.html#Cybersecurity">
-      <span class="eyebrow">
-       03 / Cybersecurity
-      </span>
-      <h3>
-       Learning the patterns of malicious behavior
-      </h3>
-      <p>
-       Language models and contrastive learning for behavioral malware detection, system-call analysis and security in IoT networks.
-      </p>
-      <span class="card-end">
-       Explore this direction
-       <span>
-        ↗
-       </span>
-      </span>
-     </a>
-     <a class="research-card" href="projects.html#ADSML">
-      <span class="eyebrow">
-       04 / Scientific information
-      </span>
-      <h3>
-       Making research more discoverable
-      </h3>
-      <p>
-       Language models and retrieval methods for scientific literature, including work with the SAO/NASA Astrophysics Data System.
-      </p>
-      <span class="card-end">
-       Explore this direction
-       <span>
-        ↗
-       </span>
-      </span>
-     </a>
-    </div>
-   </section>
-   <section class="publications-section">
-    <div class="wrap section">
-     <div class="section-heading">
-      <div>
-       <p class="eyebrow">
-        Selected recent work
-       </p>
-       <h2>
-        New questions. New results.
-       </h2>
-      </div>
-      <a class="text-link" href="publications.html">
-       Publication inventory ↗
-      </a>
-     </div>
-     <article class="publication" data-topic="Scientific discovery" data-type="Workshop paper" data-year="2026">
-      <div class="pub-year">
-       2026
-       <span>
-        Workshop paper
-       </span>
-       <span class="pub-topic">
-        Scientific discovery
-       </span>
-      </div>
-      <div>
-       <h3>
-        <a href="https://aclanthology.org/2026.wasp-1.8/">
-         Local Citation Recommendation Without Graph Signals
-         <span aria-hidden="true">
-          ↗
-         </span>
-        </a>
-       </h3>
-       <p>
-        Benjamin Basseri, Pavlos Protopapas, Kemeng Zhang, Alberto Accomazzi, Stephanie Jarmak; et al.
-       </p>
-       <details class="author-list">
-        <summary>
-         Full author list
-        </summary>
-        <p>
-         Benjamin Basseri, Pavlos Protopapas, Kemeng Zhang, Alberto Accomazzi, Stephanie Jarmak, Anna Kelbert
-        </p>
-       </details>
-       <p class="pub-venue">
-        Proceedings of the 4th Workshop on Artificial Intelligence for Scientific Publications, pp. 61–76
-       </p>
-       <div class="version-links">
-        <a href="https://arxiv.org/abs/2026.wasp-1.8">
-         Preprint ↗
-        </a>
-       </div>
-      </div>
-     </article>
-     <article class="publication" data-topic="Physics-informed learning" data-type="Preprint" data-year="2026">
-      <div class="pub-year">
-       2026
-       <span>
-        Preprint
-       </span>
-       <span class="pub-topic">
-        Physics-informed learning
-       </span>
-      </div>
-      <div>
-       <h3>
-        <a href="https://arxiv.org/abs/2611.02084">
-         Black Hole Love Numbers with Physics-Informed Neural Networks
-         <span aria-hidden="true">
-          ↗
-         </span>
-        </a>
-       </h3>
-       <p>
-        Maria J. Rodriguez, Luis Fernando Temoche, Pavlos Protopapas
-       </p>
-       <p class="pub-venue">
-        arXiv
-       </p>
-       <div class="version-links">
-       </div>
-      </div>
-     </article>
-     <article class="publication" data-topic="Astronomy" data-type="Preprint" data-year="2026">
-      <div class="pub-year">
-       2026
-       <span>
-        Preprint
-       </span>
-       <span class="pub-topic">
-        Astronomy
-       </span>
-      </div>
-      <div>
-       <h3>
-        <a href="https://arxiv.org/abs/2611.00150">
-         Contrastive Astromer: Two-Stage Contrastive Representation Learning for Astronomical Light Curve Classification
-         <span aria-hidden="true">
-          ↗
-         </span>
-        </a>
-       </h3>
-       <p>
-        Justin Minggan Wei, Pavlos Protopapas, Guillermo Cabrera-Vives
-       </p>
-       <p class="pub-venue">
-        arXiv
-       </p>
-       <div class="version-links">
-       </div>
-      </div>
-     </article>
-     <article class="publication" data-topic="Scientific discovery" data-type="Journal article" data-year="2026">
-      <div class="pub-year">
-       2026
-       <span>
-        Journal article
-       </span>
-       <span class="pub-topic">
-        Scientific discovery
-       </span>
-      </div>
-      <div>
-       <h3>
-        <a href="https://journals.aps.org/prxintelligence/abstract/10.1103/kk55-gc95">
-         Denario Project: Deep Knowledge Artificial Intelligence Agents for Scientific Discovery
-         <span aria-hidden="true">
-          ↗
-         </span>
-        </a>
-       </h3>
-       <p>
-        Francisco Villaescusa-Navarro, Boris Bolliet, Pablo Villanueva-Domingo, Adrian E. Bayer, Aidan Acquah; et al.
-       </p>
-       <details class="author-list">
-        <summary>
-         Full author list
-        </summary>
-        <p>
-         Francisco Villaescusa-Navarro, Boris Bolliet, Pablo Villanueva-Domingo, Adrian E. Bayer, Aidan Acquah, Chetana Amancharla, Almog Barzilay-Siegal, Pablo Bermejo, Camille Bilodeau, Pablo Cárdenas Ramírez, Miles Cranmer, Urbano L. França, ChangHoon Hahn, Yan-Fei Jiang, Raul Jimenez, Jun-Young Lee, Antonio Lerario, Osman Mamun, Thomas Meier, Anupam A. Ojha, Pavlos Protopapas, Shimanto Roy, David N. Spergel, Pedro Tarancón-Álvarez, Ujjwal Tiwari, Matteo Viel, Digvijay Wadekar, Chi Wang, Bonny Y. Wang, Licong Xu, Yossi Yovel, Shuwen Yue, Wen-Han Zhou, Qiyao Zhu, Jiajun Zou, Íñigo Zubeldia
-        </p>
-       </details>
-       <p class="pub-venue">
-        PRX Intelligence 1, 021001
-       </p>
-       <div class="version-links">
-        <a href="https://arxiv.org/abs/2510.26887">
-         Preprint ↗
-        </a>
-        <a href="https://doi.org/10.1103/kk55-gc95">
-         DOI ↗
-        </a>
-       </div>
-      </div>
-     </article>
-    </div>
-   </section>
-   <section class="wrap join section">
-    <div>
-     <p class="eyebrow">
-      Research &amp; education
-     </p>
-     <h2>
-      Ideas become stronger
-      <br/>
-      when they are shared.
-     </h2>
-    </div>
-    <div>
-     <p>
-      Explore our teaching materials, open software and research directions. For collaboration or student research enquiries, contact Pavlos directly.
-     </p>
-     <div class="actions">
-      <a class="button" href="courses.html">
-       Explore education
-       <span aria-hidden="true">
-        ↗
-       </span>
-      </a>
-      <a class="button secondary" href="contact_us.html">
-       Get in touch
-       <span aria-hidden="true">
-        ↗
-       </span>
-      </a>
-     </div>
-    </div>
-   </section>
-  </main>
-  <footer class="site-footer">
-   <div>
-    <a class="brand" href="index.html">
-     StellarDNN
-    </a>
-    <p>
-     Machine learning for scientific discovery.
-    </p>
-    <p>
-     Research led by Pavlos Protopapas
-     <br/>
-     Harvard John A. Paulson School of Engineering and Applied Sciences
-    </p>
-   </div>
-   <div>
-    <h2>
-     Explore
-    </h2>
-    <a href="projects.html">
-     Research
-    </a>
-    <a href="publications.html">
-     Publications
-    </a>
-    <a href="people.html">
-     People
-    </a>
-    <a href="courses.html">
-     Education
-    </a>
-    <a href="contact_us.html">
-     Contact
-    </a>
-   </div>
-   <div>
-    <h2>
-     Connect
-    </h2>
-    <a href="mailto:pavlos@seas.harvard.edu">
-     pavlos@seas.harvard.edu
-    </a>
-    <a href="https://seas.harvard.edu/person/pavlos-protopapas">
-     Harvard profile ↗
-    </a>
-    <a href="https://github.com/Harvard-IACS/stellardnn">
-     Website source ↗
-    </a>
-    <p>
-     150 Western Avenue
-     <br/>
-     Boston, MA 02134
-    </p>
-   </div>
-   <div class="footer-bottom">
-    StellarDNN · Research, software &amp; education
-    <span>
-     Content reviewed November 2026
-    </span>
-   </div>
-  </footer>
- </body>
+
+<head>
+    <!-- Title -->
+    <title>About StellarDNN |  StellarDNN research Lab</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <!-- Favicon -->
+    <link href="./favicon.ico" rel="shortcut icon">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link href="assets/front_v3_3/vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="assets/front_v3_3/vendor/hs-mega-menu/dist/hs-mega-menu.min.css" rel="stylesheet">
+    <link href="assets/front_v3_3/vendor/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet">
+
+    <!-- CSS Front Template -->
+    <link href="assets/front_v3_3/css/theme.min.css" rel="stylesheet">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="StellarDNN is a Harvard research lab focusing on machine learning applications in astronomy, physics and cybersecurity. Led by Pavlos Protopapas, we develop neural networks and transformers for astronomical analysis.">
+    <meta name="keywords" content="StellarDNN, Machine Learning, Astronomy, Physics, Neural Networks, Harvard, Research Lab, Pavlos Protopapas, NeuroDiffEQ, Astromer, NNEHT">
+    <meta name="author" content="StellarDNN Research Lab">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="StellarDNN | Machine Learning Research Lab">
+    <meta property="og:description" content="Harvard research lab applying machine learning to astronomy and physics, developing innovative solutions for astronomical analysis and physical simulations.">
+    <meta property="og:image" content="https://stellardnn.org/assets/general/img/home/stellardnn_social.jpg">
+    <meta property="og:url" content="https://stellardnn.org">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="StellarDNN | Machine Learning Research Lab">
+    <meta name="twitter:description" content="Harvard research lab applying machine learning to astronomy and physics.">
+    <meta name="twitter:image" content="https://stellardnn.org/assets/general/img/home/stellardnn_social.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://stellardnn.org">
+
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="assets/front_v3_3/css/theme.min.css" as="style">
+    <link rel="preload" href="assets/front_v3_3/vendor/bootstrap/dist/js/bootstrap.bundle.min.js" as="script">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ResearchOrganization",
+        "name": "StellarDNN",
+        "url": "https://stellardnn.org",
+        "logo": "https://stellardnn.org/assets/general/img/home/stellardnn_logo.png",
+        "description": "Research lab focusing on machine learning applications in astronomy and physics",
+        "parentOrganization": {
+            "@type": "Organization",
+            "name": "Harvard University",
+            "url": "https://www.harvard.edu"
+        },
+        "member": {
+            "@type": "Person",
+            "name": "Pavlos Protopapas",
+            "jobTitle": "Director",
+            "url": "https://stellardnn.org/people/pavlos-protopapas"
+        },
+        "knowsAbout": [
+            "Machine Learning",
+            "Neural Networks",
+            "Astronomy",
+            "Physics",
+            "Differential Equations"
+        ],
+        "publishingPrinciples": "https://stellardnn.org/publications",
+        "sameAs": [
+            "https://github.com/stellardnn",
+            "https://twitter.com/stellardnn"
+        ]
+    }
+    </script>
+
+    <!-- Research Projects structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "ResearchProject",
+                "name": "NeuroDiff HUB",
+                "description": "Neural network solutions for differential equations",
+                "url": "https://stellardnn.org/projects.html#NeuroDiffHUB"
+            },
+            {
+                "@type": "ResearchProject",
+                "name": "Astromer",
+                "description": "NLP techniques for astronomical lightcurves",
+                "url": "https://stellardnn.org/projects.html#Astromer"
+            },
+            {
+                "@type": "ResearchProject",
+                "name": "NNEHT",
+                "description": "Neural Networks for Event Horizon Telescope",
+                "url": "https://stellardnn.org/projects.html#NNEHT"
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- ========== HEADER ========== -->
+    <header-component></header-component>
+    <!-- ========== END HEADER ========== -->
+
+    <!-- ========== MAIN ========== -->
+    <main id="content" role="main" itemscope itemtype="https://schema.org/ResearchOrganization">
+        <!-- Hero Section -->
+        <div class="container space-top-3 space-top-lg-4 space-bottom-2">
+            <div class="w-lg-80 text-center mx-lg-auto">
+                <div class="mb-5 mb-md-11">
+                    <h1 class="display-4" itemprop="name">StellarDNN</h1>
+                    <p class="lead" itemprop="description">
+                        StellarDNN is a research lab at the School of Engineering and Applied Sciences (SEAS), 
+                        led by Pavlos Protopapas, that focuses on using machine learning 
+                        techniques, particularly neural networks and transformers, to study and analyze astronomical 
+                        and physical phenomena. We use these techniques to classify celestial objects, 
+                        solve differential equations, and extract important features from data such as galaxy images 
+                        or time series. By exploring the intersection of astronomy, physics, machine learning, and statistics, 
+                        the group aims to gain a deeper understanding of these phenomena 
+                        and how they can be characterized and studied.
+                    </p>
+
+                    <p> 
+                        <p class="lead">If you are seeking information on current research projects, 
+                            please view the list of open projects <a href="active_projects.html">here</a>.</p>
+                </div>
+            </div>
+
+            <div class="w-lg-80 text-center mx-lg-auto mb-5"><p class="lead">Our research also develops language models and contrastive learning methods for <a href="projects.html#Cybersecurity">cybersecurity</a>, including behavioral malware detection and security for routers and IoT networks.</p></div>
+<!-- Content -->
+            <div class="cbp" data-hs-cbp-options='{
+             "animationType": "quicksand",
+             "caption": "zoom",
+             "gapHorizontal": 40,
+             "gapVertical": 40,
+             "mediaQueries": [
+               {"width": 1500, "cols": 4},
+               {"width": 1100, "cols": 4},
+               {"width": 800, "cols": 3},
+               {"width": 480, "cols": 2},
+               {"width": 380, "cols": 1}
+             ]
+           }'>
+                <!-- Item -->
+                <div class="cbp-item rounded-lg branding">
+                    <a class="cbp-caption" href="projects.html#NeuroDiffHUB">
+                        <div class="cbp-caption-defaultWrap">
+                            <img alt="Image Description" class="rounded-lg" src="assets/general/img/home/neurodiffhub_logo.png">
+                            <!-- /assets/front_v3_3/img/900x900/img7.jpg -->
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="d-flex justify-content-end flex-column h-100 p-4">
+                                <span class="d-block small text-white-70 font-weight-bold text-cap">NeurodiffEQ</span>
+                                <span class="d-block h3 text-white mb-0">NeuroDiff HUB</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Item -->
+
+                <!-- Item -->
+                <div class="cbp-item rounded-lg product">
+                    <a class="cbp-caption" href="projects.html#NeuroDiffEq">
+                        <div class="cbp-caption-defaultWrap">
+                            <img alt="Image Description" class="rounded-lg" src="assets/general/img/home/diffeq_logo.png">
+                            <!-- /assets/front_v3_3/img/400x500/img12.jpg -->
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="d-flex justify-content-end flex-column h-100 p-4">
+                                <span class="d-block small text-white-70 font-weight-bold text-cap">NeurodiffEQ HUB</span>
+                                <span class="d-block h3 text-white mb-0">NeuroDiffEq</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Item -->
+
+                <!-- Item -->
+                <div class="cbp-item rounded-lg product branding">
+                    <a class="cbp-caption" href="projects.html#Astromer">
+                        <div class="cbp-caption-defaultWrap">
+                            <img alt="Image Description" class="rounded-lg"
+                            width="5px" src="projects/astromer/static/img/compact.svg">
+                  
+                            <!-- /assets/front_v3_3/img/400x500/img11.jpg -->
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="d-flex justify-content-end flex-column h-100 p-4">
+                                <span class="d-block small text-white-70 font-weight-bold text-cap">Astromer</span>
+                                <span class="d-block h3 text-white mb-0">NLP for Lightcurves</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Item -->
+
+                <!-- Item -->
+                <div class="cbp-item rounded-lg product illustration">
+                    <a class="cbp-caption" href="projects.html#NNEHT">
+                        <div class="cbp-caption-defaultWrap">
+                            <img alt="Image Description" width="300"  class="rounded-lg" src="assets/general/img/home/EHTNN_logo.png">
+                            <!-- /assets/front_v3_3/img/400x500/img21.jpg -->
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="d-flex justify-content-end flex-column h-100 p-4">
+                                <span class="d-block small text-white-70 font-weight-bold text-cap">Neural Network for Event Horizon Telescope</span>
+                                <span class="d-block h3 text-white mb-0">NNEHT</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Item -->
+
+                <!-- Item -->
+                <div class="cbp-item rounded-lg design illustration">
+                    <a class="cbp-caption" href="projects.html#Cosmology">
+                        <div class="cbp-caption-defaultWrap">
+                            <img alt="Image Description" class="rounded-lg" src="assets/general/img/home/COSMO_logo.png">
+                            <!-- /assets/front_v3_3/img/400x500/img10.jpg -->
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="d-flex justify-content-end flex-column h-100 p-4">
+                                <span class="d-block small text-white-70 font-weight-bold text-cap"> </span>
+                                <span class="d-block h3 text-white mb-0">Cosmology</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Item -->
+
+                <!-- Item -->
+                <div class="cbp-item rounded-lg product branding">
+                    <a class="cbp-caption" href="projects.html#RCTorch">
+                        <div class="cbp-caption-defaultWrap">
+                            <img alt="Image Description"   class="rounded-lg" src="assets/general/img/home/RCTORCH_logo.png">
+                            <!-- /assets/front_v3_3/img/400x500/img9.jpg -->
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="d-flex justify-content-end flex-column h-100 p-4">
+                                <span class="d-block small text-white-70 font-weight-bold text-cap">Reservoir Computing</span>
+                                <span class="d-block h3 text-white mb-0">RCTorch</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Item -->
+
+                <!-- Item -->
+                <div class="cbp-item rounded-lg product branding">
+                    <a class="cbp-caption" href="projects.html#ADSML">
+                        <div class="cbp-caption-defaultWrap">
+                            <img alt="Image Description" class="rounded-lg" src="assets/general/img/home/ADSML_logo.png">
+                            <!-- /assets/front_v3_3/img/400x500/img20.jpg -->
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="d-flex justify-content-end flex-column h-100 p-4">
+                                <span class="d-block small text-white-70 font-weight-bold text-cap">ADS ML</span>
+                                <span class="d-block h3 text-white mb-0">Machine Learning for ADS</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Item -->
+
+                <!-- Item -->
+                <div class="cbp-item rounded-lg branding">
+                    <a class="cbp-caption" href="projects.html#Other">
+                        <div class="cbp-caption-defaultWrap">
+                            <img alt="Image Description" class="rounded-lg" src="assets/general/img/home/OTHER_logo.png">
+                            <!-- /assets/front_v3_3/img/900x900/img6.jpg -->
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="d-flex justify-content-end flex-column h-100 p-4">
+                                <span class="d-block small text-white-70 font-weight-bold text-cap">Other Projects</span>
+                                <span class="d-block h3 text-white mb-0">Other Projects</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Item -->
+            </div>
+        </div>
+        <!-- End Hero Section -->
+
+        <!-- Stats Section -->
+        <div class="container space-top-lg-1 space-bottom-2 space-bottom-lg-3">
+            <div class="row justify-content-lg-center">
+                <div class="col-sm-4 col-lg-3 mb-7 mb-sm-0">
+                    <!-- Stats -->
+                    <div class="text-center">
+                        <span class="d-block display-4 font-size-md-down-4 text-dark text-uppercase mb-0">76+</span>
+                        <span>students</span>
+                    </div>
+                    <!-- End Stats -->
+                </div>
+
+                <div class="col-sm-4 col-lg-3 mb-7 mb-sm-0">
+                    <!-- Stats -->
+                    <div class="text-center">
+                        <span class="d-block display-4 font-size-md-down-4 text-dark text-uppercase mb-0">400+</span>
+                        <span>publications</span>
+                    </div>
+                    <!-- End Stats -->
+                </div>
+
+                <div class="col-sm-4 col-lg-3">
+                    <!-- Stats -->
+                    <div class="text-center">
+                        <span class="d-block display-4 font-size-md-down-4 text-dark text-uppercase mb-0">25&nbsp;</span>
+                        <span>people</span>
+                    </div>
+                    <!-- End Stats -->
+                </div>
+            </div>
+        </div>
+        <!-- End Stats Section -->
+
+        <!-- Divider -->
+        <div class="container">
+            <div class="w-lg-65 mx-lg-auto">
+                <hr class="my-0">
+            </div>
+        </div>
+        <!-- End Divider -->
+
+        <!-- About Section -->
+        <div class="container space-2 space-lg-3">
+            <div class="row justify-content-lg-between">
+                <div class="mb-5 mb-lg-0">
+                  <h2>Latest Publications</h2>
+                  <p><b> <a href="https://arxiv.org/pdf/2403.14763"> Gravitational duals from equations of state</b> </a>
+                    <br> Bea, Y., Jiménez, R., Mateos, D., Liu, S., Protopapas, P., Tarancón-Álvarez, P., Tejerina-Pérez, P.</p>
+                  <p><b> <a href="https://www.cs.drexel.edu/~mancors/papers/HICSS1-2023.pdf"> Behavioral Malware Detection using a Language Model Classifier Trained on sys2vec Embeddings</b> </a>
+                        <br> John Carter, Spiros Mancoridis, Pavlos Protopapas, Erick Galinkin</p>
+                  <p><b> <a href="https://arxiv.org/pdf/2311.15955"> Faster Bayesian inference with neural network bundles and new results for ΛCDM models</b> </a>
+                            <br> A.T. Chantada, S.J. Landau, P. Protopapas, C.G. Scóccola</p>
+                  <p><b> <a href="https://arxiv.org/pdf/2211.00214.pdf"> Transfer Learning with Physics-Informed Neural Networks for Efficient Simulation of Branched Flows</b> </a>
+					  <br>R Pellegrin, B Bullwinkel, M Mattheakis, P Protopapas </p>
+				  <p><b><a href="https://arxiv.org/pdf/2212.06965.pdf" > Error-Aware B-PINNs: Improving Uncertainty Quantification in Bayesian Physics-Informed Neural Networks</b> </a>
+					  <br> O Graf, P Flores, P Protopapas, K Pichara</p>
+				 
+
+					<p>&nbsp;</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- End About Section -->
+
+        <!-- Divider -->
+        <div class="container">
+            <div class="w-lg-65 mx-lg-auto">
+                <hr class="my-0">
+            </div>
+        </div>
+        <!-- End Divider -->
+
+        
+    </main>
+    <!-- ========== END MAIN ========== -->
+
+    <!-- ========== FOOTER ========== -->
+    <footer-component></footer-component>
+    <!-- ========== END FOOTER ========== -->
+
+    <!-- JS Global Compulsory  -->
+    <script src="assets/front_v3_3/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/front_v3_3/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="assets/front_v3_3/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="assets/front_v3_3/vendor/hs-header/dist/hs-header.min.js"></script>
+    <script src="assets/front_v3_3/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+    <script src="assets/front_v3_3/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+    <script src="assets/front_v3_3/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+    <script src="assets/front_v3_3/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+    <script src="assets/front_v3_3/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="assets/front_v3_3/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+
+    <!-- JS Front -->
+    <script src="assets/front_v3_3/js/theme.min.js"></script>
+    <!-- JS Plugins Init. -->
+    <script>
+        // INITIALIZATION OF CUBEPORTFOLIO
+        // =======================================================
+        $('.cbp').each(function() {
+            var cbp = $.HSCore.components.HSCubeportfolio.init($(this), {
+                layoutMode: 'mosaic',
+                filters: '#filterControls',
+                displayTypeSpeed: 0
+            });
+        });
+    </script>
+
+
+    <!-- IE Support -->
+    <script>
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/front_v3_3/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
+    </script>
+
+    <!-- JS -->
+    <script src="assets/common_components/js/header.js"></script>
+    <script src="assets/common_components/js/footer.js"></script>
+</body>
+
 </html>

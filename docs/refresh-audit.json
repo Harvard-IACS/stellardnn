@@ -1,0 +1,116 @@
+{
+  "newsroom.html": {
+    "title": "\n   Research updates | StellarDNN\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "contact_us.html": {
+    "title": "\n   Contact | StellarDNN\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "index.html": {
+    "title": "\n   Machine learning for scientific discovery | StellarDNN\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "people.html": {
+    "title": "\n   People | StellarDNN\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "people copy.html": {
+    "title": "\n   People directory | StellarDNN\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "NeuroDiffHub.html": {
+    "title": "\n   NeuroDiffHub | StellarDNN\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "courses.html": {
+    "title": "\n   Education | StellarDNN\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "projects.html": {
+    "title": "\n   Research | StellarDNN\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "CV.html": {
+    "title": "\n   Pavlos Protopapas | StellarDNN\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "active_projects.html": {
+    "title": "\n   Research ideas | StellarDNN\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "publications.html": {
+    "title": "\n   Publications | StellarDNN\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "work_with_us.html": {
+    "title": "\n   Work with us | StellarDNN\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "projects/nneht.html": {
+    "title": "\n   Black-hole imaging research | StellarDNN\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "projects/neurodiff.html": {
+    "title": "\n   NeuroDiffEq | StellarDNN\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "projects/astromer/team.html": {
+    "title": "ASTROMER collaborator archive | StellarDNN",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "projects/astromer/index.html": {
+    "title": "ASTROMER research & resources | StellarDNN",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "projects/astromer/about.html": {
+    "title": "About ASTROMER & legacy weights | StellarDNN",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "projects/astromer/data.html": {
+    "title": "ASTROMER datasets | StellarDNN",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "projects/astromer/tutorials.html": {
+    "title": "ASTROMER tutorials | StellarDNN",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  }
+}

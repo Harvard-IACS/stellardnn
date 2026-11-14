@@ -1,0 +1,596 @@
+[
+  {
+    "url": "http://www.astronomerstelegram.org/?read=2035",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://academic.oup.com/mnras/article/527/4/10965/7469481?login=false",
+    "status": "403",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://aclanthology.org/2026.wasp-1.8/",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/1706.03762",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2110.11286",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2205.01677",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2308.06404",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2311.14931",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2401.00060",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2411.01363",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2501.17281",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2502.02717",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2502.12177",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2506.00294",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2506.11637",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2507.22106",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2511.11137",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2601.00783",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2601.12093",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2605.01634",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2605.04502",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2606.19329",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2606.28603",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2606.30117",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2607.06348",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2607.23940",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2609.11628",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2611.00150",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/abs/2611.02084",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/pdf/2205.01677.pdf",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://arxiv.org/pdf/2205.07731",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://astromer.readthedocs.io/en/main/",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://astronomy.swin.edu.au/cosmos/D/Doppler+Shift",
+    "status": "000",
+    "result": "manual_review",
+    "detail": "curl: (28) Connection timed out after 12005 milliseconds\n"
+  },
+  {
+    "url": "https://colab.research.google.com/",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://colab.research.google.com/drive/1bRTgCPuJXKRfl9Oq5QkihQeFHfeYAh_T",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://colab.research.google.com/drive/1bh8ZCnCxGFTYZvxvWXJrzwqs94RAgd0F",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://colab.research.google.com/drive/1bkbsZQLDK9fbe-64EzQz7B7K1Saol9pS",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://cxc.harvard.edu/cgi-gen/cda/bibliography",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://drive.google.com/file/d/125euwxpF0WY_oWq3jVtq9c5pNyUISAOO/view?usp=sharing",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://drive.google.com/file/d/1B8fgyPrNNR5FQdGwPAIWmMk87aL1RZRD/view?usp=sharing",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://drive.google.com/file/d/1MInBPl0mt4Eerq5zxQsPMgJU-CbwLc8u/view?usp=drive_link",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://drive.google.com/file/d/1N4-n3OUAA0J2jFF6fO2MmbykzcxzLEuX/view?usp=sharing",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://drive.google.com/file/d/1OnSF3EULdJpFY4MwRZLgmXa6DauziR8W/view?usp=sharing",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://drive.google.com/file/d/1PaZ7hVp_13WyilLZlWlWNOZhCEbsKopA/view?usp=sharing",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://drive.google.com/file/d/1W7F5gy0FUM1--zxD0byCjY-p-OXynJyy/view?usp=sharing",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://drive.google.com/file/d/1m8eLFOJL0Zh2uI1mSjIpurBwjDHOlW8M/view?usp=sharing",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://dsondak.github.io",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Stefan\u2013Boltzmann_law",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://en.wikipedia.org/wiki/Stellar_classification",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://github.com/Harvard-IACS/2026-AC215",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://github.com/Harvard-IACS/stellardnn",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://github.com/NeuroDiffGym/neurodiffeq",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://github.com/astromer-science",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://github.com/astromer-science/weights",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://github.com/astromer-science/weights/raw/main/macho_a0.zip",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://github.com/astromer-science/weights/raw/main/macho_a1.zip",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://github.com/blindedjoy/RcTorch",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://harvard-iacs.github.io/CS109/",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://harvard-iacs.github.io/PINNS_course/",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://iopscience.iop.org/article/10.3847/1538-4357/aa6890",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://journals.aps.org/prxintelligence/abstract/10.1103/kk55-gc95",
+    "status": "403",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://link.aps.org/doi/10.1103/PhysRevD.107.063523",
+    "status": "403",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://openreview.net/forum?id=x2Mscu1b7H",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://orcid.org/0000-0002-8178-8463",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://p-kshitij.github.io",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://proceedings.mlr.press/v286/flores25a.html",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://scholar.google.com/citations?user=hlFnwxwAAAAJ&hl=en",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://seas.harvard.edu/person/pavlos-protopapas",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://ui.adsabs.harvard.edu/WIESP/",
+    "status": "202",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://ui.adsabs.harvard.edu/search/q=author%3A%22Protopapas%2C%20Pavlos%22&sort=date%20desc",
+    "status": "202",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://www.aanda.org/articles/aa/pdf/2023/02/aa43928-22.pdf",
+    "status": "403",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.annualreviews.org/doi/10.1146/annurev-astro-081817-051846",
+    "status": "403",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.arya-mohan.com",
+    "status": "000",
+    "result": "manual_review",
+    "detail": "curl: (6) Could not resolve host: www.arya-mohan.com\n"
+  },
+  {
+    "url": "https://www.arya-mohan.com/",
+    "status": "000",
+    "result": "manual_review",
+    "detail": "curl: (6) Could not resolve host: www.arya-mohan.com\n"
+  },
+  {
+    "url": "https://www.ceciliagarraffo.com",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://www.cosmos.esa.int/web/gaia",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://www.cs.drexel.edu/~spiros/",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://www.df.uba.ar/en/component/researchers/member/62",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://www.edx.org/learn/data-science/harvard-university-introduction-to-data-science-with-python",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://www.edx.org/learn/machine-learning/harvard-university-machine-learning-and-ai-with-python",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://www.linkedin.com/in/arazsharma/?originalSubdomain=in",
+    "status": "999",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.linkedin.com/in/guillermo-cabrera-vives-5963251b2/?originalSubdomain=cl",
+    "status": "999",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.linkedin.com/in/haitz-s\u00e1ez-de-oc\u00e1riz-borde-0933a9199/",
+    "status": "999",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.linkedin.com/in/harmit-raval/",
+    "status": "999",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.linkedin.com/in/iamanshika/",
+    "status": "999",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.linkedin.com/in/ignacio-becker-300253114/",
+    "status": "999",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.linkedin.com/in/karim-pichara-baksai-89903432/?locale=en_US",
+    "status": "999",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.linkedin.com/in/lakshaychawla13/",
+    "status": "999",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.linkedin.com/in/raphaelpierrepellegrin/?locale=fr_FR",
+    "status": "999",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.linkedin.com/in/shivasj/",
+    "status": "999",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.linkedin.com/in/tao-t-4404ba10a/",
+    "status": "999",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.linkedin.com/in/varshinireddy/",
+    "status": "999",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.linkedin.com/in/vishnu701/",
+    "status": "999",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.linkedin.com/in/yash-surange-589303171/",
+    "status": "999",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.linkedin.com/in/yuqing-pan/",
+    "status": "999",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.nature.com/articles/s42005-025-02248-1",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://www.sciencedirect.com/science/article/pii/S0377042799000424",
+    "status": "403",
+    "result": "manual_review",
+    "detail": ""
+  },
+  {
+    "url": "https://www.sdss.org/",
+    "status": "200",
+    "result": "reachable",
+    "detail": ""
+  },
+  {
+    "url": "https://www.worldscientific.com/worldscibooks/10.1142/q0561",
+    "status": "403",
+    "result": "manual_review",
+    "detail": ""
+  }
+]

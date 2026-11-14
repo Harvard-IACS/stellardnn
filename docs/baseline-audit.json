@@ -1,0 +1,191 @@
+{
+  "newsroom.html": {
+    "title": "About Agency | Front - Responsive Website Template",
+    "missing_local_targets": [
+      "./favicon.ico",
+      "assets/front_v3_3/img/100x100/img1.jpg",
+      "assets/front_v3_3/img/100x100/img11.jpg",
+      "assets/front_v3_3/img/100x100/img2.jpg",
+      "assets/front_v3_3/img/100x100/img3.jpg",
+      "assets/front_v3_3/img/100x100/img4.jpg",
+      "assets/front_v3_3/img/500x280/img1.jpg",
+      "assets/front_v3_3/img/500x280/img2.jpg",
+      "assets/front_v3_3/img/500x280/img3.jpg",
+      "assets/front_v3_3/img/500x280/img4.jpg",
+      "assets/front_v3_3/img/500x280/img5.jpg",
+      "assets/front_v3_3/img/500x280/img6.jpg",
+      "assets/front_v3_3/img/500x280/img7.jpg",
+      "assets/front_v3_3/img/500x280/img8.jpg",
+      "assets/front_v3_3/img/900x450/img2.jpg",
+      "assets/front_v3_3/img/mockups/img2.png",
+      "assets/front_v3_3/img/mockups/img3.png",
+      "blog-single-article.html"
+    ],
+    "placeholder_links": 65,
+    "h1_count": 1
+  },
+  "contact_us.html": {
+    "title": "About Agency | Front - Responsive Website Template",
+    "missing_local_targets": [
+      "./favicon.ico"
+    ],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "index.html": {
+    "title": "About StellarDNN |  StellarDNN research Lab",
+    "missing_local_targets": [
+      "./favicon.ico"
+    ],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "people.html": {
+    "title": "StellarDNN members  | Member Description",
+    "missing_local_targets": [
+      " ",
+      "./favicon.ico",
+      "assets/general/img/team/Blake.jpeg",
+      "g.dev/LakshayChawla",
+      "page-hire-us.html"
+    ],
+    "placeholder_links": 13,
+    "h1_count": 1
+  },
+  "people copy.html": {
+    "title": "StellarDNN members  | Member Description",
+    "missing_local_targets": [
+      "./favicon.ico",
+      "/assets/front_v3_3/img/100x100/img11.jpg",
+      "assets/front_v3_3/img/100x100/img11.jpg",
+      "blog-profile.html",
+      "page-hire-us.html"
+    ],
+    "placeholder_links": 70,
+    "h1_count": 1
+  },
+  "NeuroDiffHub.html": {
+    "title": "NeuroDiff",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "courses.html": {
+    "title": "Courses from StellarDNN | Course Descriptions and links",
+    "missing_local_targets": [
+      "./favicon.ico",
+      "assets/general/JA/AllTeachingActivities.pdf"
+    ],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "projects.html": {
+    "title": "StellarDNN projects | Project Descriptions",
+    "missing_local_targets": [
+      "./favicon.ico",
+      "assets/front_v3_3/vendor/bootstrap/dist/js/bootstrap.bundle.min.js ",
+      "assets/front_v3_3/vendor/hs-go-to/dist/hs-go-to.min.js ",
+      "assets/front_v3_3/vendor/hs-mega-menu/dist/hs-mega-menu.min.js ",
+      "assets/front_v3_3/vendor/jquery-validation/dist/jquery.validate.min.js ",
+      "assets/front_v3_3/vendor/jquery/dist/jquery.min.js "
+    ],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "CV.html": {
+    "title": "StellarDNN members  | Member Description",
+    "missing_local_targets": [
+      "./favicon.ico"
+    ],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "active_projects.html": {
+    "title": "StellarDNN projects | Project Descriptions",
+    "missing_local_targets": [
+      "./favicon.ico",
+      "assets/front_v3_3/vendor/bootstrap/dist/js/bootstrap.bundle.min.js ",
+      "assets/front_v3_3/vendor/hs-go-to/dist/hs-go-to.min.js ",
+      "assets/front_v3_3/vendor/hs-mega-menu/dist/hs-mega-menu.min.js ",
+      "assets/front_v3_3/vendor/jquery-validation/dist/jquery.validate.min.js ",
+      "assets/front_v3_3/vendor/jquery/dist/jquery.min.js ",
+      "assets/general/img/home/logo_astromer.png "
+    ],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "publications.html": {
+    "title": "StellarDNN publications | Publication list and links",
+    "missing_local_targets": [
+      "./favicon.ico",
+      "Pub/Ale2020.pdf",
+      "Pub/Chen2020.pdf",
+      "Pub/Protopapas2017.pdf"
+    ],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "work_with_us.html": {
+    "title": "About Agency | Front - Responsive Website Template",
+    "missing_local_targets": [
+      "./favicon.ico",
+      "./page-careers-single.html",
+      "assets/front_v3_3/img/1920x800/img2.jpg",
+      "assets/front_v3_3/img/750x750/img2.jpg",
+      "assets/front_v3_3/img/900x450/img13.jpg",
+      "assets/front_v3_3/img/900x450/img14.jpg",
+      "assets/front_v3_3/img/900x900/img1.jpg",
+      "assets/front_v3_3/img/mockups/img2.png",
+      "assets/front_v3_3/img/mockups/img3.png",
+      "page-contacts-agency.html"
+    ],
+    "placeholder_links": 42,
+    "h1_count": 1
+  },
+  "projects/nneht.html": {
+    "title": "About StellarDNN |  StellarDNN research Lab",
+    "missing_local_targets": [
+      "./favicon.ico"
+    ],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "projects/neurodiff.html": {
+    "title": "About StellarDNN |  StellarDNN research Lab",
+    "missing_local_targets": [
+      "./favicon.ico"
+    ],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "projects/astromer/team.html": {
+    "title": "\n    ASTROMER: A pre-trained model for the representation of light curves\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "projects/astromer/index.html": {
+    "title": "\n    ASTROMER: A pre-trained model for the representation of light curves\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 0
+  },
+  "projects/astromer/about.html": {
+    "title": "\n    ASTROMER: A pre-trained model for the representation of light curves\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "projects/astromer/data.html": {
+    "title": "\n    ASTROMER: A pre-trained model for the representation of light curves\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  },
+  "projects/astromer/tutorials.html": {
+    "title": "\n    ASTROMER: A pre-trained model for the representation of light curves\n  ",
+    "missing_local_targets": [],
+    "placeholder_links": 0,
+    "h1_count": 1
+  }
+}

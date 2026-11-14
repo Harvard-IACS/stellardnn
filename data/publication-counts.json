@@ -1,0 +1,224 @@
+{
+  "2026": {
+    "records": 20,
+    "papers": 19,
+    "types": {
+      "Workshop paper": 3,
+      "Preprint": 9,
+      "Journal article": 6,
+      "Conference paper": 1,
+      "Book": 1
+    }
+  },
+  "2025": {
+    "records": 7,
+    "papers": 7,
+    "types": {
+      "Preprint": 3,
+      "Conference paper": 3,
+      "Journal article": 1
+    }
+  },
+  "2024": {
+    "records": 8,
+    "papers": 8,
+    "types": {
+      "Preprint": 3,
+      "Journal article": 3,
+      "Conference paper": 2
+    }
+  },
+  "2023": {
+    "records": 8,
+    "papers": 8,
+    "types": {
+      "Preprint": 2,
+      "Conference paper": 2,
+      "Journal article": 4
+    }
+  },
+  "2022": {
+    "records": 15,
+    "papers": 15,
+    "types": {
+      "Preprint": 7,
+      "Journal article": 6,
+      "Conference paper": 2
+    }
+  },
+  "2021": {
+    "records": 10,
+    "papers": 10,
+    "types": {
+      "Preprint": 6,
+      "Journal article": 4
+    }
+  },
+  "2020": {
+    "records": 13,
+    "papers": 13,
+    "types": {
+      "Preprint": 6,
+      "Journal article": 5,
+      "Conference paper": 1,
+      "Book chapter": 1
+    }
+  },
+  "2019": {
+    "records": 7,
+    "papers": 7,
+    "types": {
+      "Journal article": 3,
+      "Preprint": 3,
+      "Book chapter": 1
+    }
+  },
+  "2018": {
+    "records": 8,
+    "papers": 8,
+    "types": {
+      "Preprint": 3,
+      "Journal article": 4,
+      "Conference paper": 1
+    }
+  },
+  "2017": {
+    "records": 2,
+    "papers": 2,
+    "types": {
+      "Preprint": 1,
+      "Journal article": 1
+    }
+  },
+  "2016": {
+    "records": 6,
+    "papers": 6,
+    "types": {
+      "Preprint": 1,
+      "Conference paper": 2,
+      "Journal article": 3
+    }
+  },
+  "2015": {
+    "records": 3,
+    "papers": 3,
+    "types": {
+      "Preprint": 2,
+      "Journal article": 1
+    }
+  },
+  "2014": {
+    "records": 5,
+    "papers": 5,
+    "types": {
+      "Journal article": 5
+    }
+  },
+  "2013": {
+    "records": 5,
+    "papers": 5,
+    "types": {
+      "Journal article": 4,
+      "Preprint": 1
+    }
+  },
+  "2012": {
+    "records": 6,
+    "papers": 6,
+    "types": {
+      "Journal article": 3,
+      "Preprint": 2,
+      "Book chapter": 1
+    }
+  },
+  "2011": {
+    "records": 5,
+    "papers": 5,
+    "types": {
+      "Journal article": 4,
+      "Conference paper": 1
+    }
+  },
+  "2010": {
+    "records": 8,
+    "papers": 8,
+    "types": {
+      "Journal article": 5,
+      "Conference paper": 1,
+      "Preprint": 1,
+      "Book chapter": 1
+    }
+  },
+  "2009": {
+    "records": 10,
+    "papers": 10,
+    "types": {
+      "Journal article": 8,
+      "Conference paper": 1,
+      "Book chapter": 1
+    }
+  },
+  "2008": {
+    "records": 2,
+    "papers": 2,
+    "types": {
+      "Journal article": 2
+    }
+  },
+  "2007": {
+    "records": 1,
+    "papers": 1,
+    "types": {
+      "Journal article": 1
+    }
+  },
+  "2006": {
+    "records": 1,
+    "papers": 1,
+    "types": {
+      "Journal article": 1
+    }
+  },
+  "2005": {
+    "records": 1,
+    "papers": 1,
+    "types": {
+      "Journal article": 1
+    }
+  },
+  "2004": {
+    "records": 1,
+    "papers": 1,
+    "types": {
+      "Journal article": 1
+    }
+  },
+  "1998": {
+    "records": 1,
+    "papers": 1,
+    "types": {
+      "Journal article": 1
+    }
+  },
+  "1997": {
+    "records": 3,
+    "papers": 3,
+    "types": {
+      "Journal article": 3
+    }
+  },
+  "1996": {
+    "records": 2,
+    "papers": 2,
+    "types": {
+      "Journal article": 2
+    }
+  },
+  "1994": {
+    "records": 1,
+    "papers": 1,
+    "types": {
+      "Journal article": 1
+    }
+  }
+}

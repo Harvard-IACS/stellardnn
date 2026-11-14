@@ -1,0 +1,32 @@
+[
+  {
+    "doi": "10.3390/su152316425",
+    "title": "How Sustainable Design and Awareness May Affect the Real Estate Market",
+    "reason": "Full-name match, but primary institutional identity not yet independently resolved; real-estate coauthor group differs from established astronomy/ML collaborators."
+  },
+  {
+    "doi": "10.20944/preprints202310.1104.v1",
+    "title": "How Sustainable Design May Affect the Real Estate Market",
+    "reason": "Full-name match, but primary institutional identity not yet independently resolved; real-estate coauthor group differs from established astronomy/ML collaborators."
+  },
+  {
+    "arxiv": "https://arxiv.org/abs/astro-ph/0509103",
+    "title": "Combined reconstruction of weak and strong lensing data with WSLAP",
+    "reason": "Initial-only author name without independently resolved identity in this pass."
+  },
+  {
+    "arxiv": "https://arxiv.org/abs/astro-ph/0412191",
+    "title": "Non-parametric mass reconstruction of A1689 from strong lensing data with SLAP",
+    "reason": "Initial-only author name without independently resolved identity in this pass."
+  },
+  {
+    "arxiv": "https://arxiv.org/abs/astro-ph/0408418",
+    "title": "Non-parametric inversion of strong lensing systems",
+    "reason": "Initial-only author name without independently resolved identity in this pass."
+  },
+  {
+    "arxiv": "https://arxiv.org/abs/hep-ph/9909426",
+    "title": "Two Skyrmion Dynamics with Omega Mesons",
+    "reason": "Initial-only author name without independently resolved identity in this pass."
+  }
+]

@@ -1,0 +1,397 @@
+{
+  "citations": [
+    "Bea, Y., Jim\u00e9nez, R., Mateos, D., Liu, S., Protopapas, P., Taranc\u00f3n-\u00c1lvarez, P., Tejerina-P\u00e9rez, P. \"Gravitational duals from equations of state.\" Journal of High Energy Physics, 2024(7), 87 (2024).",
+    "John Carter, Spiros Mancoridis, Pavlos Protopapas, Erick Galinkin. \"IoT Malware Data Augmentation using a Generative Adversarial Network.\" HICSS 2024: 7572-7581 (2024).",
+    "John Carter, Spiros Mancoridis, Pavlos Protopapas, Erick Galinkin. \"Behavioral Malware Detection using a Language Model Classifier Trained on sys2vec Embeddings.\" HICSS 2024: 7582-7591 (2024).",
+    "A.T. Chantada, S.J. Landau, P. Protopapas, C.G. Sc\u00f3ccola, C. Garraffo. \"Faster Bayesian inference with neural network bundles and new results for \u039bCDM models.\" Physical Review D 109 (12), 123514 (2024).",
+    "V.S. P\u00e9rez D\u00edaz, J. Ingram, V. Kashyap, J. Martinez Galarza, P. Protopapas. \"Enhancing Chandra-Gaia Crossmatching with Machine Learning.\" AAS/High Energy Astrophysics Division 21, 105.02 (2024).",
+    "A. Mohan, P. Protopapas, K. Kunnumkai, C. Garraffo, L. Blackburn, et al. \"Generating images of the M87* black hole using GANs.\" Monthly Notices of the Royal Astronomical Society 527 (4), 10965-10974 (2024).",
+    "A.T. Chantada, S.J. Landau, P. Protopapas, C.G. Sc\u00f3ccola, C. Garraffo. \"NN bundle method applied to cosmology: an improvement in computational times.\" arXiv preprint arXiv:2311.15955 (2023).",
+    "W. Lei, P. Protopapas, J. Parikh. \"One-Shot Transfer Learning for Nonlinear ODEs.\" arXiv preprint arXiv:2311.14931 (2023).",
+    "D. Moreno-Cartagena, G. Cabrera-Vives, P. Protopapas, C. Donoso-Oliva, et al. \"Positional Encodings for Light Curve Transformers: Playing with Positions and Attention.\" arXiv preprint arXiv:2308.06404 (2023).",
+    "J. Carter, S. Mancoridis, P. Protopapas. \"Optimal data sample length for system call traces for malware detection in an iot ecosystem.\" 2023 3rd International Conference on Electrical, Computer, Communications and Electronics Engineering.",
+    "S. Liu, X. Huang, P. Protopapas. \"Residual-based error bound for physics-informed neural networks.\" Uncertainty in Artificial Intelligence, 1284-1293 (2023).",
+    "A.T. Chantada, S.J. Landau, P. Protopapas, C.G. Sc\u00f3ccola, C. Garraffo. \"Cosmology-informed neural networks to solve the background dynamics of the Universe.\" Physical Review D 107 (6), 063523 (2023).",
+    "M. Mattheakis, H. Joy, P. Protopapas. \"Reservoir Computing for Solving Ordinary Differential Equations.\" International Journal on Artificial Intelligence Tools 32 (01), 2350030 (2023).",
+    "J. Astudillo, P. Protopapas, K. Pichara, I. Becker. \"A Reinforcement Learning\u2013Based Follow-up Framework.\" The Astronomical Journal 165 (3), 118 (2023).",
+    "C. Donoso-Oliva, I. Becker, P. Protopapas, G. Cabrera-Vives, M. Vishnu, et al. \"ASTROMER-A transformer-based embedding for the representation of light curves.\" Astronomy & Astrophysics 670, A54 (2023).",
+    "T.A.E. Ferreira, M. Mattheakis, P. Protopapas. \"A New Artificial Neuron Proposal with Trainable Simultaneous Local and Global Activation Function.\" arXiv:2101.06100 (2021).",
+    "D. Sondak, P. Protopapas. \"Learning a Reduced Basis of Dynamical Systems using an Autoencoder.\" arXiv:2011.07346 (2020).",
+    "R. Fang, D. Sondak, P. Protopapas, S. Succi. \"Neural network models for the anisotropic Reynolds stress tensor in turbulent channel flow.\" Journal of Turbulence 21(9-10), 525-543 (2020).",
+    "L. Zorich, K. Pichara, P. Protopapas. \"Streaming classification of variable stars.\" Monthly Notices of the Royal Astronomical Society 492(2), 2897-2909 (2020).",
+    "C. Flamant, P. Protopapas, D. Sondak. \"Solving Differential Equations Using Neural Network Solution Bundles.\" arXiv preprint arXiv:2006.14372 (2020).",
+    "F. Chen, D. Sondak, P. Protopapas, M. Mattheakis, S. Liu, D. Agarwal, M. Di Giovanni. \"NeuroDiffEq: A Python package for solving differential equations with neural networks.\" Journal of Open Source Software 5(46), 1931 (2020).",
+    "N. Astorga, P. Huijse, P. Protopapas, P. Est\u00e9vez. \"Matching Priors and Conditionals for Clustering.\" European Conference on Computer Vision, 658-677 (2020).",
+    "W. Wu, P. Protopapas, Z. Yang, P. Michalatos. \"Gender classification and bias mitigation in facial images.\" 12th ACM Conference on Web Science, 106-114 (2020).",
+    "H. Jin, M. Mattheakis, P. Protopapas. \"Unsupervised Neural Networks for Quantum Eigenvalue Problems.\" arXiv:2010.05075 (2020).",
+    "M. Mattheakis, D. Sondak, A.S. Dogra, P. Protopapas. \"Hamiltonian Neural Networks for solving differential equations.\" arXiv:2001.11107 (2020).",
+    "A. Paticchio, T. Scarlatti, M. Mattheakis, P. Protopapas, M. Brambilla. \"Semi-supervised Neural Networks solve an inverse problem for modeling Covid-19 spread.\" arXiv e-prints: 2020arXiv201005074P (2020).",
+    "D. Randle, P. Protopapas, D. Sondak. \"Unsupervised Learning of Solutions to Differential Equations with Generative Adversarial Networks.\" arXiv preprint arXiv:2007.11133 (2020).",
+    "R. Carrasco-Davis, G. Cabrera-Vives, F. F\u00f6rster, P.A. Estevez, P. Huijse, P. Protopapas, I. Reyes, J. Mart\u00ednez-Palomera, C. Donoso. \"Deep learning for image sequence classification of astronomical events.\" Publications of the Astronomical Society of the Pacific 131(1004), 108006 (2019).",
+    "M. Mattheakis, P. Protopapas, D. Sondak, M. Di Giovanni, E. Kaxiras. \"Physical symmetries embedded in neural networks.\" arXiv preprint arXiv:1904.08991 (2019).",
+    "M. P\u00e9rez-Carrasco, G. Cabrera-Vives, M. Martinez-Marin, P. Cerulo, R. Demarco, P. Protopapas, J. Godoy. \"Multiband galaxy morphologies for CLASH: a convolutional neural network transferred from CANDELS.\" Publications of the Astronomical Society of the Pacific 131(1004), 108002 (2019).",
+    "C. Pieringer, K. Pichara, M. Catel\u00e1n, P. Protopapas. \"An Algorithm for the Visualization of Relevant Patterns in Astronomical Light Curves.\" Monthly Notices of the Royal Astronomical Society 484(3), 3071-3077 (2019).",
+    "J. Astudillo, P. Protopapas, K. Pichara, P. Huijse. \"An Information Theory Approach on Deciding Spectroscopic Follow-ups.\" The Astronomical Journal 159(1), 16 (2019).",
+    "A. Bianchi, M.R. Vendra, P. Protopapas, M. Brambilla. \"Improving image classification robustness through selective CNN-filters fine-tuning.\" arXiv preprint arXiv:1904.03949 (2019).",
+    "B. Saldias-Fuentes, P. Protopapas. \"A Full Probabilistic Model for Yes/No Type Crowdsourcing in Multi-Class Classification.\" Proceedings of the 2019 SIAM International Conference on Data Mining, 756-764 (2019).",
+    "G. Ramponi, P. Protopapas, M. Brambilla, R. Janssen. \"T-cgan: Conditional generative adversarial network for data augmentation in noisy time series with irregular sampling.\" arXiv preprint arXiv:1811.08295 (2018).",
+    "J. Mart\u00ednez-Palomera, F. F\u00f6rster, P. Protopapas, J.C. Maureira, P. Lira, G. Cabrera-Vives, P. Huijse, L. Galbany, T. De Jaeger, S. Gonz\u00e1lez-Gait\u00e1n, G. Medina. \"The High Cadence Transit Survey (HiTS): Compilation and Characterization of Light-curve Catalogs.\" The Astronomical Journal 156(5), 186 (2018).",
+    "P. Huijse, P.A. Est\u00e9vez, F. F\u00f6rster, S.F. Daniel, A.J. Connolly, P. Protopapas, R. Carrasco, J.C. Pr\u00edncipe. \"Robust Period Estimation Using Mutual Information for Multiband Light Curves in the Synoptic Survey Era.\" The Astrophysical Journal Supplement Series 236(1), 12 (2018).",
+    "M. Belhaj, P. Protopapas, W. Pan. \"Deep variational transfer: Transfer learning through semi-supervised deep generative models.\" arXiv preprint arXiv:1812.03123 (2018).",
+    "J.R. Maat, N. Gianniotis, P. Protopapas. \"Efficient optimization of echo state networks for time series datasets.\" 2018 International Joint Conference on Neural Networks (IJCNN), 1-7 (2018).",
+    "N. Hoernle, K. Gal, B. Grosz, P. Protopapas, A. Rubin. \"Modeling the Effects of Students' Interactions with Immersive Simulations Using Markov Switching Systems.\" International Educational Data Mining Society (2018).",
+    "J.R. Mart\u00ednez-Galarza, P. Protopapas, H.A. Smith, E.F. Morales. \"Unraveling the Spectral Energy Distributions of Clustered YSOs.\" The Astrophysical Journal 864(1), 71 (2018).",
+    "P. Benavente, P. Protopapas, K. Pichara. \"Automatic survey-invariant classification of variable stars.\" The Astrophysical Journal 845(2), 147 (2017).",
+    "R Pellegrin, B Bullwinkel, M Mattheakis, P Protopapas. \"Transfer Learning with Physics-Informed Neural Networks for Efficient Simulation of Branched Flows\" (2023)",
+    "O Graf, P Flores, P Protopapas, K Pichara. \"Error-Aware B-PINNs: Improving Uncertainty Quantification in Bayesian Physics-Informed Neural Networks\" (2023)",
+    "Blake Bullwinkel, Dylan Randle, Pavlos Protopapas, David Sondak. \"Deqgan: Learning the loss function for pinns with generative adversarial networks\" (2023)",
+    "S Liu, X Huang, P Protopapas. \"Evaluating Error Bound for Physics-Informed Neural Networks on Linear Dynamical Systems\" (2023)",
+    "Hayden Joy, Marios Mattheakis, Pavlos Protopapas. \"RcTorch: a PyTorch Reservoir Computing Package with Automated Hyper-Parameter Optimization\" (2023)",
+    "F F\u00f6rster, G Cabrera-Vives, E Castillo-Navarrete, PA Est\u00e9vez, ... P Protopapas, et al. \"The automatic learning for the rapid classification of events (ALeRCE) alert broker\" (2021)",
+    "Castro, N., Protopapas, P. and Pichara, K., Uncertain classification of variable stars: handling observational GAPS and noise , 2017, The Astronomical Journal, 155(1), p.16",
+    "Protopapas, P., Recurrent Neural Network Applications for Astronomical Time Series , 2017, In American Astronomical Society Meeting Abstracts# 230 (Vol. 230, pp. 104-03).",
+    "Mackenzie, C., Pichara, K. and Protopapas, P., Clustering-based feature learning on variable stars , 2016, The Astrophysical Journal, 820(2), p.138",
+    "Pichara, K., Protopapas, P. and Le\u00f3n, D., Meta-classification for variable stars , 2016, The Astrophysical Journal, 819(1), p.18",
+    "Narasimhan, H., Pan, W., Kar, P., Protopapas, P. and Ramaswamy, H.G., December. Optimizing the multiclass F-measure via biconcave programming , 2016, In 2016 IEEE 16th international conference on data mining (ICDM) (pp. 1101-1106). IEEE",
+    "Nun, I., Protopapas, P., Sim, B. and Chen, W., Ensemble learning method for outlier detection and its application to astronomical light curves The Astronomical Journal, 152(3), p.71",
+    "Xia, X., Protopapas, P. and Doshi-Velez, F., Cost-Sensitive Batch Mode Active Learning: Designing Astronomical Observation by Optimizing Telescope Time and Telescope Choice In Proceedings of the 2016 SIAM International Conference on Data Mining (pp. 477-485). Society for Industrial and Applied Mathematics",
+    "Nun, I., Protopapas, P., Sim, B., Zhu, M., Dave, R., Castro, N. and Pichara, K., Fats: Feature analysis for time series , 2015, arXiv preprint arXiv:1506.00010",
+    "Protopapas, P., Huijse, P., Estevez, P.A., Zegers, P., Principe, J.C. and Marquette, J.B., A novel, fully automated pipeline for period estimation in the eros 2 data set , 2015, The Astrophysical Journal Supplement Series, 216(2), p.25",
+    "Yang, J.J., Wang, X., Protopapas, P. and Bornn, L., Fast and optimal nonparametric sequential design for astronomical observations , 2015, arXiv preprint arXiv:1501.02467",
+    "Kim, D.W., Protopapas, P., Bailer-Jones, C.A., Byun, Y.I., Chang, S.W., Marquette, J.B. and Shin, M.S., The EPOCH Project-I. Periodic variable stars in the EROS-2 LMC database , 2014, Astronomy & Astrophysics, 566, p.A43",
+    "Huijse, P., Estevez, P.A., Protopapas, P., Principe, J.C. and Zegers, P., Computational intelligence challenges and applications on large-scale astronomical time series databases , 2014, IEEE Computational Intelligence Magazine, 9(3), pp.27-39",
+    "Nun, I., Pichara, K., Protopapas, P. and Kim, D.W., Supervised detection of anomalous light curves in massive astronomical catalogs , 2014 The Astrophysical Journal, 793(1), p.23",
+    "Verde, L., Protopapas, P. and Jimenez, R., The expansion rate of the intermediate universe in light of Planck , 2014, Physics of the Dark Universe, 5, pp.307-314",
+    "Verde, L., Protopapas, P. and Jimenez, R., Planck and the local Universe: Quantifying the tension , 2013, Physics of the Dark Universe, 2(3), pp.166-175",
+    "Pichara, K. and Protopapas, P., Automatic classification of variable stars in catalogs with missing data , 2013, The Astrophysical Journal, 777(2), p.83",
+    "Chang, S.W., Protopapas, P., Kim, D.W. and Byun, Y.I., Statistical properties of Galactic \u03b4 Scuti stars: revisited , 2013, The Astronomical Journal, 145(5), p.132",
+    "Huijse, P., Estevez, P.A., Protopapas, P., Zegers, P. and Principe, J.C., An information theoretic algorithm for finding periodicities in stellar light curves , 2012, IEEE Transactions on Signal Processing, 60(10), pp.5135-5145",
+    "Pichara, K., Protopapas, P., Kim, D.W., Marquette, J.B. and Tisserand, P., An improved quasar detection method in EROS-2 and MACHO LMC data sets , 2012, Monthly Notices of the Royal Astronomical Society, 427(2), pp.1284-1297",
+    "Wang, Y., Khardon, R. and Protopapas, P., Nonparametric Bayesian estimation of periodic light curves 2012, The Astrophysical Journal, 756(1), p.67",
+    "Kim, D.W., Protopapas, P., Trichas, M., Rowan-Robinson, M., Khardon, R., Alcock, C. and Byun, Y.I., A Refined QSO Selection Method Using Diagnostics Tests: 663 QSO Candidates in the Large Magellanic Cloud The Astrophysical Journal, 747(2), p.107",
+    "Blocker, A.W. and Protopapas, P., Semi-parametric robust event detection for massive time-domain databases , 2012, In Statistical Challenges in Modern Astronomy V (pp. 177-187). Springer, New York, NY",
+    "Wang, Y., Khardon, R. and Protopapas, P., Infinite shift-invariant grouped multi-task learning for gaussian processes , 2012, arXiv preprint arXiv:1203.0970",
+    "Huijse, P., Est\u00e9vez, P.A., Protopapas, P., Zegers, P. and Pr\u00edncipe, J.C., Computational Challenges in Processing Very Large Astronomical Survey Databases , 2012, In 2012 9th Asia-Pacific Symposium on Information and Telecommunication Technologies (APSITT) (pp. 1-6). IEEE",
+    "Kim, D.W., Protopapas, P., Byun, Y.I., Alcock, C., Khardon, R. and Trichas, M., Quasi-stellar object selection algorithm using time variability and machine learning: Selection of 1620 quasi-stellar object candidates from MACHO Large Magellanic Cloud database ,2011, The Astrophysical Journal, 735(2), p.68",
+    "Huijse, P., Est\u00e9vez, P.A., Zegers, P., Pr\u00edncipe, J.C. and Protopapas, P., Period estimation in astronomical time series using slotted correntropy , 2011, IEEE Signal Processing Letters, 18(6), pp.371-374",
+    "Wang, Y., Khardon, R. and Protopapas, P., Nonparametric Bayesian estimation of periodic functions 2011, arXiv preprint arXiv:1111.1315",
+    "Fuentes, C.I., Holman, M.J., Trilling, D.E. and Protopapas, P., Trans-Neptunian objects with Hubble Space Telescope ACS/WFC 2011, The Astrophysical Journal, 722(2), p.1290",
+    "Wang, Y., Khardon, R. and Protopapas, P., Shift-invariant grouped multi-task learning for Gaussian processes , 2010, In Joint European Conference on Machine Learning and Knowledge Discovery in Databases (pp. 418-434). Springer, Berlin, Heidelberg",
+    "Est\u00e9vez, P.A., Huijse, P., Zegers, P., Principe, J.C. and Protopapas, P., Period detection in light curves from astronomical objects using correntropy , 2010, In The 2010 International Joint Conference on Neural Networks (IJCNN) (pp. 1-7). IEEE",
+    "U. Rebbapragada, P. Protopapas, C. Brodley, C. Alcock, Finding Anomalies in Periodic Time Series , Machine Learning, p. 281, vol. 74, ( 2009 )",
+    "S. Pember, C. Brodley, P. Protopapas, and A. Kilmer, Similarity Retrieval in Large Datasets using Rank Revealing QR , ICDM, Under review at IEEE PAMI, ( 2009 ).",
+    "Dan Preston, Pavlos Protopapas and Carla Brodley , Event Detection in Time Series , Proceedings of the Ninth SIAM International Conference on Data Mining, p. 61-72, ( 2009 )",
+    "Dan Preston, Pavlos Protopapas and Carla Brodley, Discovering Arbitrary Event Types in Time Series, SIAM Best of 09 SDM, ( 2009 )",
+    "Dae-Won Kim, Pavlos Protopapas, Charles Alcock, Yong-Ik Byun, Federica Bianco , Detection of Flare Stars in TAOS 2-year Data , The Astronomer's Telegram, vol. #2035, ( 2009 )",
+    "Gabriel Wachman, Roni Khardon, Pavlos Protopapas, Charles R. Alcock, Kernels for Periodic Time Series Arising in Astronomy , ECML PKDD, ( 2009 )",
+    "Dae-Won Kim, Pavlos Protopapas, Yong-Ik Byun, Charles Alcock and the TAOS collaboration, The TAOS Project Stellar Variability I. Detection of Low-Amplitude \u03b4 Scuti Stars and a Revised Catalog of All Known \u03b4 Scuti Stars, submitted to Astronomical Journal, ( 2009 )",
+    "J.~H. Wang, P. Protopapas, W. \u2013P. Chen, C. R. Alcock, W. S. Burgett, T. Dombeck, J. S. Morgan, P. A. Price, J. L. Tonry, Searching for sub-kilometer TNOs using Pan-STARRS video mode lightcurves: Preliminary study and evaluation using engineering data, submitted to Astronomical Journal, ( 2009 )",
+    "A. W. Blocker, P. Protopapas, C. R. Alcock , A Bayesian approach to the analysis of time symmetry in light curves: Reconsidering Scorpius X-1 occultations , The Astronomical Journal, Volume 138, Issue 2, pp. 568-578, ( 2009 )",
+    "F. Bianco, P. Protopapas, B. McLeod, C. R. Alcock, M. J. Holman, M. J. Lehner. A Search for Occultations of Bright Stars by Small Kuiper Belt Objects using Megacam on the MMT, The Astronomical Journal, Volume 138, Issue 2, pp. 568-578, ( 2009 )",
+    "D-W Kim, P. Protopapas, C. Alcock, B. Yong-Ik, F. Bianco, De-Trending Time Series for Astronomical Variability Surveys , Monthly Notices of the Royal Astronomical Society, Volume 397, Issue 2, pp. 558-568, (2008)",
+    "R. E. Schild, J. Lovegrove, P. Protopapas, Reverberation in the UV-Optical Continuum Brightness Fluctuations of MACHO Quasar , The Astronomical Journal, Volume 138, Issue 2, pp. 421-427, ( 2009 )",
+    "E. Morikawa, R. Dave, P. Protopapas, A Novel GUI Based Interactive Work Flow Application for Exploratory and Batch Processing of Light Curves, Astronomical Data Analysis Software and Systems XVII, 394, 357, ( 2008)",
+    "Lorenzo Faccioli, Charles Alcock, Kem Cook, Gabriel E. Prochter, Pavlos Protopapas, David Syphers, Eclipsing Binary Stars in the Large and Small Magellanic Clouds from the MACHO Project: The Sample , AJ, 134, 1963-1994, (2007)",
+    "Holman, Matthew J.; Protopapas, P.; Tholen, D. J., Searching for Solar System Wide Binaries with Pan-STARRS-1 , AAS, 39, 52, (2007)",
+    "Dave, R.; Protopapas, P.; Lehner, M., Virtual Astronomical Pipelines , Astronomical Data Analysis Software and Systems XVI ASP Conference Series, Vol. 376, proceedings of the conference held 15-18 October in Tucson, Arizona, USA. Edited by Richard A. Shaw, Frank Hill and David J. Bell., p.253, (2006)",
+    "J. M. Diego, M. Tegmark, P. Protopapas, H. B. Sadvik, Combined reconstruction of weak and strong lensing data with WSLAP , MNRAS, 375, 958-970, (2007)",
+    "Eamonn Keogh, Li Wei, Xiaopeng Xi, Michail Vlachos, Sang-Hee Lee, Pavlos Protopapas. Supporting, Exact Indexing of Shapes under Rotation Invariance with Arbitrary Representations and Distance Measures, VLDB: 882-893, ( 2006)",
+    "P. Protopapas, J. M. Giammarco, L. Faccioli, M. F. Struble, R. Dave , C. Alcock, Finding outlier light-curves in catalogs of periodic variable stars , MNRAS, 369, 677, ( 2006)",
+    "Pavlos Protopapas, Raul Jimenez , Charles Alcock , Fast identification of transits from light-curves , MNRAS, 362, 460, (2005)",
+    "J. M. Diego, H. B. Sadvik, P. Protopapas, M. Tegmark, N. Benitez, T. Broadhurst, Non-parametric mass reconstruction of A1689 from strong lensing data with SLAP , MNRAS, 362, 1247, (2005)",
+    "J. M. Diego, P. Protopapas, H. B. Sadvik, M. Tegmark, Non-parametric inversion of strong lensing systems , MNRAS, 360, 477, ( 2005)",
+    "A. Klein, P. Protopapas, S. G. Rohozi\u0144ski, K. Starosta, Kerman-Klein-D\u00f6nau-Frauendorf model for odd-odd nuclei: Formal theory , Physical Review C, vol. 69, Issue 3, id. 034338, (2005)",
+    "R. D. Amado, M. \u00c1. Hal\u00e1sz, P. Protopapas, Two Skyrmion dynamics with \u03c9 mesons , Physical Review D (Particles and Fields), Volume 61, Issue 7, ( 2000)",
+    "Y. Lu, P. Protopapas, R. D. Amado, Nucleon-antinucleon interaction from the Skyrme model. II. Beyond the product ansatz , Physical Review C, 57, 1983-1990, ( 1998)",
+    "P. Protopapas, A. Klein, Possible solution of the Coriolis attenuation problem , (1997) , Phys. Rev. C, 55, 1810-1818",
+    "P. Protopapas, A. Klein, Derivation and assessment of strong coupling core-particle model from the Kerman-Klein-D\u00f6nau-Frauendorf theory , (1997) , Physical Review C (Nuclear Physics), Volume 55, Issue 2, pp.699-713",
+    "P. Protopapas, A. Klein, Application of the Kerman-Klein Method to the Solution of a Spherical Shell Model for a Deformed Rare-Earth Nucleus , (1997) , Physical Review Letters, Volume 78, Issue 23, June 9, pp.4347-4350",
+    "P. Protopapas, A. Klein, N. R. Walet, Further application of a semimicroscopic core-particle coupling method to the properties of 155,157Gd and 159Dy , (1996) , Physical Review C (Nuclear Physics), Volume 53, Issue 4, April pp.1655-1659",
+    "P. Protopapas, A. Klein, N. R. Walet, Application of a semimicroscopic core-particle coupling method to the backbending in odd deformed nuclei , (1996) , Physical Review C (Nuclear Physics), Volume 54, Issue 2, pp.638-645",
+    "P. Protopapas, A. Klein, N. R. Walet, Calculation of the properties of the rotational bands of 155,157Gd , (1994), Physical Review C (Nuclear Physics), Volume 50, Issue 1, pp.245-256"
+  ],
+  "source_links": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "Pub/Tiago2021.pdf"
+    ],
+    [
+      "Pub/Sondak2020.pdf"
+    ],
+    [
+      "Pub/Rui2020.pdf"
+    ],
+    [
+      "Pub/Zorich2020.pdf"
+    ],
+    [
+      "Pub/Cedric2020.pdf"
+    ],
+    [],
+    [
+      "Pub/Nicolas2020.pdf"
+    ],
+    [
+      "Pub/Kali2020.pdf"
+    ],
+    [
+      "Pub/Henry2020.pdf"
+    ],
+    [],
+    [],
+    [
+      "Pub/Dylan2020.pdf"
+    ],
+    [
+      "Pub/Carrasco2019.pdf",
+      "Pub/Rodrigo2018.pdf"
+    ],
+    [
+      "Pub/Marios2019.pdf"
+    ],
+    [
+      "Pub/Manolo2019.pdf"
+    ],
+    [
+      "Pub/Cristian2019.pdf"
+    ],
+    [
+      "Pub/Astudillo2019.pdf"
+    ],
+    [
+      "Pub/Bianchi2019.pdf"
+    ],
+    [
+      "Pub/Belen2019.pdf"
+    ],
+    [
+      "Pub/Georgia2018.pdf"
+    ],
+    [
+      "Pub/Jorge2018.pdf"
+    ],
+    [
+      "Pub/Pablo2018.pdf"
+    ],
+    [
+      "Pub/Marouan2018.pdf"
+    ],
+    [
+      "Pub/Reinier2018.pdf"
+    ],
+    [
+      "Pub/Nick2018.pdf"
+    ],
+    [
+      "Pub/Rafael2018.pdf"
+    ],
+    [
+      "Pub/Patricio2017.pdf"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "Pub/Nicolas2017.pdf"
+    ],
+    [],
+    [
+      "Pub/Cristobal2016.pdf"
+    ],
+    [
+      "Pub/Karim2016.pdf"
+    ],
+    [
+      "Pub/Hari2016.pdf"
+    ],
+    [
+      "Pub/Isadora2016.pdf"
+    ],
+    [
+      "Pub/Xia2016.pdf"
+    ],
+    [
+      "Pub/Isadora2015.pdf"
+    ],
+    [
+      "Pub/Pavlos2015.pdf"
+    ],
+    [
+      "Pub/Yang2015.pdf"
+    ],
+    [
+      "Pub/daewon2014.pdf"
+    ],
+    [
+      "Pub/Pablo2014.pdf"
+    ],
+    [
+      "Pub/Isadora2014.pdf"
+    ],
+    [
+      "Pub/Licia2014.pdf"
+    ],
+    [
+      "Pub/Licia2013.pdf"
+    ],
+    [
+      "Pub/Karim2013.pdf"
+    ],
+    [
+      "Pub/Daewon2013.pdf"
+    ],
+    [
+      "Pub/Pablo2012.pdf"
+    ],
+    [
+      "Pub/Karim2012.pdf"
+    ],
+    [
+      "Pub/Roni2012.pdf"
+    ],
+    [
+      "Pub/Daewon2012.pdf"
+    ],
+    [
+      "Pub/Alex2012.pdf"
+    ],
+    [
+      "Pub/wang2012.pdf"
+    ],
+    [
+      "Pub/Pablo2012.pdf"
+    ],
+    [
+      "Pub/Daewon2011.pdf"
+    ],
+    [
+      "Pub/Pablos2011.pdf"
+    ],
+    [
+      "Pub/Wang2011.pdf"
+    ],
+    [
+      "Pub/Cesar2010.pdf"
+    ],
+    [
+      "Pub/Wang2010.pdf"
+    ],
+    [
+      "Pub/Pablos2010.pdf"
+    ],
+    [
+      "Pub/Umaa2009.pdf"
+    ],
+    [],
+    [
+      "Pub/prestondSIAM.pdf"
+    ],
+    [],
+    [
+      "http://www.astronomerstelegram.org/?read=2035"
+    ],
+    [
+      "Pub/Wachman2009.pdf"
+    ],
+    [
+      "Pub/DSC2009.pdf"
+    ],
+    [
+      "Pub/Wang2009.pdf"
+    ],
+    [
+      "Pub/Blocker2009.pdf"
+    ],
+    [
+      "Pub/Bianco2009.pdf"
+    ],
+    [
+      "Pub/DaeWon-Detrend.pdf"
+    ],
+    [
+      "Pub/Schild2009.pdf"
+    ],
+    [
+      "Pub/Morikawa2007.pdf"
+    ],
+    [
+      "Pub/Faccioli2007.pdf"
+    ],
+    [],
+    [
+      "Pub/Dave2007.pdf"
+    ],
+    [
+      "Pub/Diego2007.pdf"
+    ],
+    [
+      "Pub/Eamonn2008.pdf"
+    ],
+    [
+      "Pub/Giammarco2006.pdf"
+    ],
+    [
+      "Pub/Jimenez2005.pdf"
+    ],
+    [
+      "Pub/Diego2005b.pdf"
+    ],
+    [
+      "Pub/Diego2005.pdf"
+    ],
+    [
+      "Pub/PhysRevC.69.034338.pdf"
+    ],
+    [
+      "Pub/PhysRevD.61.074022.pdf"
+    ],
+    [
+      "Pub/PhysRevC.57.1983.pdf"
+    ],
+    [
+      "Pub/PhysRevC.55.1810.pdf"
+    ],
+    [
+      "Pub/PhysRevC.55.699.pdf"
+    ],
+    [
+      "Pub/PhysRevLett.78.4347.pdf"
+    ],
+    [
+      "Pub/PhysRevC.53.1655.pdf"
+    ],
+    [
+      "Pub/PhysRevC.54.638.pdf"
+    ],
+    [
+      "Pub/PhysRevC.50.245.pdf"
+    ]
+  ],
+  "excluded_author_not_visible": [
+    "M. Cresitello-Dittmar, J. McDowell, D. Tody, T. Budavari, M. Dolensky, et al. \"IVOA Spectrum Data Model Version 1.2.\" IVOA Recommendation 15 December 2023.",
+    "K. Ly, J. Kurlander, M. Holman, M. Payne, A. Heinze, P. Bernardinelli, et al. \"2010 RJ226.\" Minor Planet Electronic Circulars 2023.",
+    "T. Allen, F. Grezes, G. Shapurian, S. Blanco-Cuaresma, C. Grant, et al. \"ADS Machine Learning and Deep Learning Efforts.\" American Astronomical Society Meeting Abstracts 55 (2), 177.37 (2023).",
+    "M.J. Holman, M.J. Payne, W. Fraser, P. Lacerda, M.T. Bannister, M. Lackner, Y.T. Chen, H.W. Lin, K.W. Smith, R. Kokotanekova, D. Young. \"A dwarf planet class object in the 21:5 resonance with Neptune.\" The Astrophysical Journal Letters 855(1), L6 (2018).",
+    "Y.F. Jiang, P.J. Green, J.E. Greene, E. Morganson, Y. Shen, A. Pancoast, C.L. MacLeod, S.F. Anderson, W.N. Brandt, C.J. Grier, H.W. Rix. \"Detection of time lags between quasar continuum emission bands based on Pan-STARRS light curves.\" The Astrophysical Journal 836(2), 186 (2017).",
+    "Kim, R., Empirical Methods in Peer Prediction (Doctoral dissertation) [ pdf ]",
+    "Mishra, B.P., Principe, J.C., Estevez, P.A. and Protopapas, P., 2011, In 2011 IEEE International Workshop on Machine Learning for Signal Processing (pp. 1-6). IEEE [ pdf ]",
+    "Zhan et al. , First Results from the Taiwanese-American Occultation Survey (TAOS) , ApJL, 685, L157, ( 2008 ) [ pdf ]"
+  ]
+}

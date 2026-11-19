@@ -166,15 +166,8 @@ function setupSectionNav() {
 
     const readingLine = Math.min(160, window.innerHeight * 0.25);
     let current = available[0];
-    let currentTop = -Infinity;
     for (const entry of available) {
-      const top = entry.section.getBoundingClientRect().top;
-      if (top > readingLine) continue;
-      // Two projects can start on the same row in the wide Research grid.
-      if (top > currentTop || (top === currentTop && entry === linked)) {
-        current = entry;
-        currentTop = top;
-      }
+      if (entry.section.getBoundingClientRect().top <= readingLine) current = entry;
     }
     return current;
   }

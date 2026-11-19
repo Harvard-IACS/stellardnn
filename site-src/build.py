@@ -67,17 +67,6 @@ class SidebarLink:
 
 
 SECTION_NAVIGATION = {
-    "projects.html": (
-        SidebarLink("NeuroDiffHub", "#NeuroDiffHUB"),
-        SidebarLink("NeuroDiffEq", "#NeuroDiffEq"),
-        SidebarLink("ASTROMER model", "#Astromer"),
-        SidebarLink("Event Horizon Telescope", "#NNEHT", "Black holes"),
-        SidebarLink("Reservoir computing", "#RCTorch"),
-        SidebarLink("Cosmology", "#Cosmology"),
-        SidebarLink("ADSML", "#ADSML"),
-        SidebarLink("Cybersecurity", "#Cybersecurity"),
-        SidebarLink("Other projects", "#Other"),
-    ),
     "active_projects.html": (
         SidebarLink("NeuroDiffEq", "#NeuroDiffEq"),
         SidebarLink("ASTROMER projects", "#Astromer", "ASTROMER"),

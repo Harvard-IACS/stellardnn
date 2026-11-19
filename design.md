@@ -20,7 +20,7 @@ Templates supply a shared masthead and colophon. A page fragment starts with `<h
 - Use `.prose` or `.measure` for long continuous reading, `.columns` for two related columns, and `.media-split` for text and a large figure.
 - Use `.index-list` and `.index-row` for repeated entries, `.entry-meta` for secondary information, and `.jump-links` for links to page sections.
 - Use `.index-grid` for two-column research, roster, and course lists at 76rem and above. Each roster entry has a portrait or initials, a name, a title, a biography, and a row for verified profile links.
-- Interior content pages use the shared sidebar on the left at desktop sizes and across the top of the content on narrower screens. Its active item uses the crimson button color. On longer pages, the highlight follows the section in view.
+- Use the shared sidebar for section menus and related pages. It sits on the left at desktop sizes and across the top of the content on narrower screens. Its active item uses the crimson button color. On section menus, the highlight follows the section in view. The Research overview gives its project grid the full content width.
 - Use semantic `figure`, `figcaption`, `details`, `table`, and `time` elements where they describe the material. Use the shared `.button` for a primary action and text links for secondary actions.
 - In source fragments, internal routes begin with `/`. The renderer writes relative paths so the same output works at a domain root or a project subpath.
 

@@ -66,84 +66,103 @@ NAVIGATION = (
 @dataclass(frozen=True)
 class SidebarLink:
     label: str
-    href: str
+    section_id: str
     short_label: str = ""
 
 
 SECTION_NAVIGATION = {
     "active_projects.html": (
-        SidebarLink("NeuroDiffEq", "#NeuroDiffEq"),
-        SidebarLink("ASTROMER projects", "#Astromer", "ASTROMER"),
-        SidebarLink("Event Horizon Telescope", "#NNEHT", "Black holes"),
-        SidebarLink("Cosmology", "#Cosmology"),
-        SidebarLink("ADSML", "#ADSML"),
-        SidebarLink("Other projects", "#Other"),
+        SidebarLink("NeuroDiffEq", "NeuroDiffEq"),
+        SidebarLink("ASTROMER projects", "Astromer", "ASTROMER"),
+        SidebarLink("Event Horizon Telescope", "NNEHT", "Black holes"),
+        SidebarLink("Cosmology", "Cosmology"),
+        SidebarLink("ADSML", "ADSML"),
+        SidebarLink("Other projects", "Other"),
     ),
     "publications.html": (
-        SidebarLink("Recent publications", "#RecentPublications", "Recent"),
-        SidebarLink("Earlier publications", "#EarlierPublications", "Earlier"),
-        SidebarLink("Research archive", "#ResearchArchive", "Archive"),
+        SidebarLink("Recent publications", "RecentPublications", "Recent"),
+        SidebarLink("Earlier publications", "EarlierPublications", "Earlier"),
+        SidebarLink("Research archive", "ResearchArchive", "Archive"),
     ),
     "people.html": (
-        SidebarLink("Principal investigator", "#Pavlos", "PI"),
-        SidebarLink("Members", "#Members"),
-        SidebarLink("Collaborators", "#Collaborators"),
-        SidebarLink("Alumni", "#Alumni"),
+        SidebarLink("Principal investigator", "Pavlos", "PI"),
+        SidebarLink("Members", "Members"),
+        SidebarLink("Collaborators", "Collaborators"),
+        SidebarLink("Alumni", "Alumni"),
     ),
     "courses.html": (
-        SidebarLink("Courses", "#Courses"),
-        SidebarLink("HarvardX", "#HarvardX"),
-        SidebarLink("Workshops and summer schools", "#Workshops", "Workshops"),
-        SidebarLink("Teaching portfolio", "#TeachingPortfolio", "Portfolio"),
+        SidebarLink("Courses", "Courses"),
+        SidebarLink("HarvardX", "HarvardX"),
+        SidebarLink("Workshops and summer schools", "Workshops", "Workshops"),
+        SidebarLink("Teaching portfolio", "TeachingPortfolio", "Portfolio"),
     ),
     "CV.html": (
-        SidebarLink("Biography", "#Biography"),
-        SidebarLink("Education", "#education-heading"),
-        SidebarLink("Appointments", "#appointments-heading"),
-        SidebarLink("Teaching", "#teaching-heading"),
-        SidebarLink("Selected publication", "#publication-heading", "Publication"),
+        SidebarLink("Biography", "Biography"),
+        SidebarLink("Education", "education-heading"),
+        SidebarLink("Appointments", "appointments-heading"),
+        SidebarLink("Teaching", "teaching-heading"),
+        SidebarLink("Selected publication", "publication-heading", "Publication"),
     ),
     "people copy.html": (
-        SidebarLink("Members", "#archive-members-heading"),
-        SidebarLink("Alumni", "#archive-alumni-heading"),
+        SidebarLink("Members", "archive-members-heading"),
+        SidebarLink("Alumni", "archive-alumni-heading"),
+    ),
+    "contact_us.html": (
+        SidebarLink("General inquiries", "GeneralInquiries"),
+        SidebarLink("Visit", "map"),
+    ),
+    "work_with_us.html": (
+        SidebarLink("Research opportunities", "openRolesSection"),
+    ),
+    "newsroom.html": (
+        SidebarLink("Recent publications", "RecentLabPublications"),
     ),
     "projects/nneht.html": (
-        SidebarLink("Physical parameters", "#PhysicalParameters"),
-        SidebarLink("Generative networks", "#GenerativeNetworks"),
-        SidebarLink("Diffusion models", "#DiffusionModels"),
-        SidebarLink("Visibility data", "#VisibilityData"),
+        SidebarLink("Physical parameters", "PhysicalParameters"),
+        SidebarLink("Generative networks", "GenerativeNetworks"),
+        SidebarLink("Diffusion models", "DiffusionModels"),
+        SidebarLink("Visibility data", "VisibilityData"),
     ),
     "projects/neurodiff.html": (
-        SidebarLink("Differential equations", "#DifferentialEquations"),
-        SidebarLink("Related research", "#RelatedResearch"),
-        SidebarLink("NeuroDiffHub archive", "#NeuroDiffHub"),
+        SidebarLink("Differential equations", "DifferentialEquations"),
+        SidebarLink("Related research", "RelatedResearch"),
+        SidebarLink("NeuroDiffHub archive", "NeuroDiffHub"),
+    ),
+    "NeuroDiffHub.html": (
+        SidebarLink("Project history", "HubHistory"),
+        SidebarLink("Solver example", "SolverExample"),
+    ),
+    "projects/astromer/index.html": (
+        SidebarLink("Light-curve embeddings", "LightCurveEmbeddings"),
+        SidebarLink("Recent ASTROMER research", "RecentASTROMERResearch", "Recent research"),
+    ),
+    "projects/astromer/about.html": (
+        SidebarLink("Model architecture", "ModelArchitecture", "Architecture"),
+        SidebarLink("Pretrained weights", "accordionExample", "Weights"),
+        SidebarLink("Papers and presentation", "Papers", "Papers"),
+    ),
+    "projects/astromer/data.html": (
+        SidebarLink("Parquet files", "Parquet"),
+        SidebarLink("Record files", "Record"),
+    ),
+    "projects/astromer/tutorials.html": (
+        SidebarLink("Install ASTROMER", "Install"),
+        SidebarLink("Colab notebooks", "ColabNotebooks"),
+    ),
+    "projects/astromer/team.html": (
+        SidebarLink("Collaborators", "Collaborators"),
+        SidebarLink("Partner institutions", "PartnerInstitutions"),
     ),
 }
 
-ASTROMER_NAVIGATION = (
-    SidebarLink("Overview", "/projects/astromer/index.html"),
-    SidebarLink("Model and weights", "/projects/astromer/about.html"),
-    SidebarLink("Datasets", "/projects/astromer/data.html"),
-    SidebarLink("Tutorials", "/projects/astromer/tutorials.html"),
-    SidebarLink("Team", "/projects/astromer/team.html"),
-    SidebarLink("ASTROMER documentation", "https://astromer.readthedocs.io/en/main/"),
-    SidebarLink("ASTROMER on GitHub", "https://github.com/astromer-science"),
-)
-
-COLLABORATION_NAVIGATION = (
-    SidebarLink("Research opportunities", "/active_projects.html"),
-    SidebarLink("Work with us", "/work_with_us.html"),
-    SidebarLink("Contact", "/contact_us.html"),
-)
-
-UPDATES_NAVIGATION = (
-    SidebarLink("Lab updates", "/newsroom.html"),
-    SidebarLink("All publications", "/publications.html"),
-)
-
-NEURODIFF_NAVIGATION = (
-    SidebarLink("NeuroDiffEq overview", "/projects/neurodiff.html"),
-    SidebarLink("NeuroDiffHub archive", "/NeuroDiffHub.html"),
+ASTROMER_ACTIONS = (
+    ("Overview", "/projects/astromer/index.html"),
+    ("Model and weights", "/projects/astromer/about.html"),
+    ("Datasets", "/projects/astromer/data.html"),
+    ("Tutorials", "/projects/astromer/tutorials.html"),
+    ("Team", "/projects/astromer/team.html"),
+    ("Documentation", "https://astromer.readthedocs.io/en/main/"),
+    ("ASTROMER on GitHub", "https://github.com/astromer-science"),
 )
 
 # Fragments use site-root paths. Make them relative for a GitHub Pages project
@@ -227,26 +246,31 @@ def footer():
 </footer>""".strip()
 
 
+def with_astromer_actions(fragment, route):
+    heading, separator, content = fragment.partition("</header>")
+    if not separator:
+        raise ValueError(f"ASTROMER actions require a page header in {route}")
+
+    is_overview = route == "projects/astromer/index.html"
+    links = ASTROMER_ACTIONS
+    if is_overview:
+        links += (("ASTROMER opportunities", "/active_projects.html#Astromer"),)
+
+    items = []
+    for label, href in links:
+        style = "button" if is_overview and href == "/projects/astromer/tutorials.html" else "quiet-button"
+        current = ' aria-current="page"' if href == "/" + route else ""
+        items.append(f'    <a class="{style}" href="{escape(href, quote=True)}"{current}>{escape(label)}</a>')
+    actions = "\n".join(items)
+    return f"""{heading}  <nav class="page-actions" id="navbarSupportedContent" aria-label="ASTROMER pages and resources">
+{actions}
+  </nav>
+{separator}{content}"""
+
+
 def with_sidebar(fragment, route, page):
-    nav_id = ""
-    section_links = SECTION_NAVIGATION.get(route)
-    if section_links:
-        label = f"{page.title} sections"
-        links = section_links
-    elif route.startswith("projects/astromer/"):
-        label = "ASTROMER navigation"
-        links = ASTROMER_NAVIGATION
-        nav_id = ' id="navbarSupportedContent"'
-    elif route in {"contact_us.html", "work_with_us.html"}:
-        label = "Working with the lab"
-        links = COLLABORATION_NAVIGATION
-    elif route == "newsroom.html":
-        label = "Lab updates and publications"
-        links = UPDATES_NAVIGATION
-    elif route == "NeuroDiffHub.html":
-        label = "NeuroDiff research"
-        links = NEURODIFF_NAVIGATION
-    else:
+    links = SECTION_NAVIGATION.get(route)
+    if not links:
         return fragment
 
     heading, separator, content = fragment.partition("</header>")
@@ -256,22 +280,22 @@ def with_sidebar(fragment, route, page):
     items = []
     for link in links:
         text = escape(link.label)
-        attributes = ' aria-current="page"' if link.href == "/" + route else ""
+        attributes = ""
         if link.short_label:
             short = escape(link.short_label)
             accessible_label = escape(f"{link.label} ({link.short_label})", quote=True)
-            attributes += f' aria-label="{accessible_label}"'
+            attributes = f' aria-label="{accessible_label}"'
             text = (
                 f'<span class="section-nav-full-label">{text}</span>'
                 f'<span class="section-nav-short-label">{short}</span>'
             )
-        items.append(f'    <a href="{escape(link.href, quote=True)}"{attributes}>{text}</a>')
+        items.append(f'    <a href="#{escape(link.section_id, quote=True)}"{attributes}>{text}</a>')
     navigation = "\n".join(items)
-    scroll_nav = " data-section-nav" if section_links else ""
+    label = escape(f"{page.title} sections", quote=True)
     return f"""{heading}{separator}
 
 <div class="section-layout">
-  <nav class="section-nav"{scroll_nav}{nav_id} aria-label="{escape(label, quote=True)}">
+  <nav class="section-nav" data-section-nav aria-label="{label}">
 {navigation}
   </nav>
   <div class="section-content">
@@ -330,6 +354,8 @@ def render(route, page):
         fragment = fragment.replace("<!-- latest-publications -->", recent_entries(2))
     if route == "newsroom.html":
         fragment = fragment.replace("<!-- latest-publications -->", recent_entries(5, include_citation=True))
+    if route.startswith("projects/astromer/"):
+        fragment = with_astromer_actions(fragment, route)
     fragment = with_sidebar(fragment, route, page)
     trail = breadcrumbs(route)
     if trail:

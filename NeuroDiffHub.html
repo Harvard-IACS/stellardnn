@@ -11,8 +11,8 @@
   <link rel="canonical" href="https://www.stellardnn.org/NeuroDiffHub.html">
   <link rel="icon" href="assets/site/mark.svg" type="image/svg+xml">
   <script src="assets/site/mode.js"></script>
-  <link rel="stylesheet" href="assets/site/site.css?v=fa466e5cf2ea">
-  <script type="module" src="assets/site/site.js?v=43bab9f919c8"></script>
+  <link rel="stylesheet" href="assets/site/site.css?v=6cd5ea21e8b1">
+  <script type="module" src="assets/site/site.js?v=db227a52a49a"></script>
 </head>
 <body>
   <div class="site-stars" aria-hidden="true"></div>
@@ -59,17 +59,26 @@
 <header class="page-heading">
   <h1>NeuroDiffHub archive</h1>
   <p class="lede">An archived NeuroDiffEq companion for building and sharing neural network solvers.</p>
+  <div class="page-actions">
+    <a class="quiet-button" href="projects/neurodiff.html">NeuroDiffEq overview</a>
+    <a class="quiet-button" href="https://pypi.org/project/neurodiffeq/">NeuroDiffEq on PyPI</a>
+    <a class="quiet-button" href="https://github.com/NeuroDiffGym/neurodiffeq">NeuroDiffEq on GitHub</a>
+  </div>
 </header>
 
 <div class="section-layout">
-  <nav class="section-nav" aria-label="NeuroDiff research">
-    <a href="projects/neurodiff.html">NeuroDiffEq overview</a>
-    <a href="NeuroDiffHub.html" aria-current="page">NeuroDiffHub archive</a>
+  <nav class="section-nav" data-section-nav aria-label="NeuroDiffHub archive sections">
+    <a href="#HubHistory">Project history</a>
+    <a href="#SolverExample">Solver example</a>
   </nav>
   <div class="section-content">
-<section class="section prose">
+<section class="section prose" id="HubHistory">
   <h2>How NeuroDiffHub worked</h2>
   <p>NeuroDiffHub was built on NeuroDiffEq to build, train, and share solvers for differential equations. Its archive featured Araz Sharma’s heat equation example, <code>araz/heat_equation_rod1</code>.</p>
+</section>
+
+<section class="section prose" id="SolverExample">
+  <h2>Solver example</h2>
   <p>The project’s example loaded a pretrained one-dimensional solver, trained it further, and saved it to the hub.</p>
   <pre><code># Load the pretrained solver
 solver = Solver1D.load(name="project_name/equation_name")
@@ -79,10 +88,6 @@ solver.fit(max_epochs=1000)
 
 # Save the retrained solver
 solver.save(name="retrained_equation", save_to_hub=True)</code></pre>
-  <div class="link-group">
-    <a href="https://pypi.org/project/neurodiffeq/">NeuroDiffEq on PyPI</a>
-    <a href="https://github.com/NeuroDiffGym/neurodiffeq">NeuroDiffEq on GitHub</a>
-  </div>
 </section>
   </div>
 </div>

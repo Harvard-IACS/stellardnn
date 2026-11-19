@@ -11,8 +11,8 @@
   <link rel="canonical" href="https://www.stellardnn.org/projects/astromer/data.html">
   <link rel="icon" href="../../assets/site/mark.svg" type="image/svg+xml">
   <script src="../../assets/site/mode.js"></script>
-  <link rel="stylesheet" href="../../assets/site/site.css?v=fa466e5cf2ea">
-  <script type="module" src="../../assets/site/site.js?v=43bab9f919c8"></script>
+  <link rel="stylesheet" href="../../assets/site/site.css?v=6cd5ea21e8b1">
+  <script type="module" src="../../assets/site/site.js?v=db227a52a49a"></script>
 </head>
 <body>
   <div class="site-stars" aria-hidden="true"></div>
@@ -59,21 +59,25 @@
 <header class="page-heading">
   <h1>ASTROMER datasets</h1>
   <p class="lede">Download raw Parquet light curves or preprocessed Record files for ASTROMER.</p>
+  <nav class="page-actions" id="navbarSupportedContent" aria-label="ASTROMER pages and resources">
+    <a class="quiet-button" href="../../projects/astromer/index.html">Overview</a>
+    <a class="quiet-button" href="../../projects/astromer/about.html">Model and weights</a>
+    <a class="quiet-button" href="../../projects/astromer/data.html" aria-current="page">Datasets</a>
+    <a class="quiet-button" href="../../projects/astromer/tutorials.html">Tutorials</a>
+    <a class="quiet-button" href="../../projects/astromer/team.html">Team</a>
+    <a class="quiet-button" href="https://astromer.readthedocs.io/en/main/">Documentation</a>
+    <a class="quiet-button" href="https://github.com/astromer-science">ASTROMER on GitHub</a>
+  </nav>
 </header>
 
 <div class="section-layout">
-  <nav class="section-nav" id="navbarSupportedContent" aria-label="ASTROMER navigation">
-    <a href="../../projects/astromer/index.html">Overview</a>
-    <a href="../../projects/astromer/about.html">Model and weights</a>
-    <a href="../../projects/astromer/data.html" aria-current="page">Datasets</a>
-    <a href="../../projects/astromer/tutorials.html">Tutorials</a>
-    <a href="../../projects/astromer/team.html">Team</a>
-    <a href="https://astromer.readthedocs.io/en/main/">ASTROMER documentation</a>
-    <a href="https://github.com/astromer-science">ASTROMER on GitHub</a>
+  <nav class="section-nav" data-section-nav aria-label="ASTROMER datasets sections">
+    <a href="#Parquet">Parquet files</a>
+    <a href="#Record">Record files</a>
   </nav>
   <div class="section-content">
 <div class="section columns">
-  <section>
+  <section id="Parquet">
     <h2>Parquet (<code>.parquet</code>)</h2>
     <details id="extraButtons" open>
       <summary id="unlabeledButton">Pretraining data</summary>
@@ -90,7 +94,7 @@
       </ul>
     </details>
   </section>
-  <section>
+  <section id="Record">
     <h2>Record (<code>.record</code>)</h2>
     <details id="extraButtons3" open>
       <summary id="unlabeledButton2">Pretraining data</summary>

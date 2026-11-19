@@ -136,7 +136,7 @@ function setupNavigation() {
 }
 
 function setupSectionNav() {
-  const nav = document.querySelector(".section-nav");
+  const nav = document.querySelector("[data-section-nav]");
   if (!nav) return;
 
   function positionHighlight(link, scrollBehavior = "auto") {
@@ -152,14 +152,6 @@ function setupSectionNav() {
       nav.scrollTo({ left, top, behavior: reducedMotion.matches ? "auto" : scrollBehavior });
     }
   }
-
-  const currentPage = nav.querySelector('[aria-current="page"]');
-  if (currentPage) {
-    positionHighlight(currentPage);
-    window.addEventListener("resize", () => positionHighlight(currentPage));
-    return;
-  }
-  if (!nav.hasAttribute("data-section-nav")) return;
 
   const entries = [...nav.querySelectorAll('a[href^="#"]')].map((link) => ({
     link,
@@ -202,8 +194,13 @@ function setupSectionNav() {
 
     const readingLine = Math.min(160, window.innerHeight * 0.25);
     let current = available[0];
+    let latestTop = -Infinity;
     for (const entry of available) {
-      if (entry.section.getBoundingClientRect().top <= readingLine) current = entry;
+      const top = entry.section.getBoundingClientRect().top;
+      if (top <= readingLine && (top > latestTop || (top === latestTop && entry === linked))) {
+        current = entry;
+        latestTop = top;
+      }
     }
     return current;
   }

@@ -19,10 +19,11 @@ Templates supply a shared masthead and colophon. A page fragment starts with `<h
 - Put Lab updates in the main navigation. Use breadcrumbs above detail headings to show their parent pages. Link project names to their overviews and label links to research opportunities by purpose.
 - Use `.section` between major sections and `.section-head` when a heading shares a row with an action.
 - Use `.prose` or `.measure` for long continuous reading, `.columns` for two related columns, and `.media-split` for text and a large figure.
-- Use `.index-list` and `.index-row` for repeated entries, `.entry-meta` for secondary information, and `.jump-links` for links to page sections.
+- Use `.index-list` and `.index-row` for repeated entries and `.entry-meta` for secondary information.
 - Use `.index-grid` for two-column research, roster, and course lists at 76rem and above. Each roster entry has a portrait or initials, a name, a title, a biography, and a row for verified profile links.
-- Use the shared sidebar for section menus and related pages. It sits on the left at desktop sizes and across the top of the content on narrower screens. Its active item uses the crimson button color. On section menus, the highlight follows the section in view. The Research overview gives its project grid the full content width.
-- Use semantic `figure`, `figcaption`, `details`, `table`, and `time` elements where they describe the material. Use the shared `.button` for a primary action and text links for secondary actions.
+- Use the shared sidebar for links to sections on the same page. It sits on the left at desktop sizes and across the top of the content on narrower screens. The crimson highlight follows the section in view. The Research overview gives its project grid the full content width.
+- Put page-level links to related pages and resources in the heading below the title and introduction. Use `.page-actions` to group them, `.button` for the primary action, and `.quiet-button` for secondary actions. Keep references and other links with their content.
+- Use semantic `figure`, `figcaption`, `details`, `table`, and `time` elements where they describe the material.
 - In source fragments, internal routes begin with `/`. The renderer writes relative paths so the same output works at a domain root or a project subpath.
 
 ## Motion

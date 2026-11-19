@@ -2,6 +2,7 @@
 
 import argparse
 from dataclasses import dataclass
+from hashlib import sha256
 from html import escape
 import json
 import posixpath
@@ -146,6 +147,11 @@ def relative_urls(markup, route):
     prefix = posixpath.relpath(".", posixpath.dirname(route) or ".")
     prefix = "" if prefix == "." else prefix + "/"
     return ROOT_PATH_ATTR.sub(lambda match: match[1] + (prefix + match[2] or "./"), markup)
+
+
+def versioned_asset(path):
+    revision = sha256((ROOT / path.lstrip("/")).read_bytes()).hexdigest()[:12]
+    return f"{path}?v={revision}"
 
 
 def nav_links(active, route, *, include_home=True):
@@ -294,7 +300,12 @@ def render(route, page):
     title = escape(page.title if route == "index.html" else f"{page.title} | StellarDNN")
     description = escape(page.description, quote=True)
     canonical = SITE_URL + (route.replace(" ", "%20") if route != "index.html" else "")
-    home_script = '\n  <script type="module" src="/assets/site/black-hole.js"></script>' if route == "index.html" else ""
+    stylesheet = "/assets/site/site.css"
+    home_script = ""
+    if route == "index.html":
+        stylesheet = versioned_asset(stylesheet)
+        animation = versioned_asset("/assets/site/black-hole.js")
+        home_script = f'\n  <script type="module" src="{animation}"></script>'
     citation_stamp = '\n  <style>/* Hallmark · copy: verbatim · Retain the published article titles in the research archive. */</style>' if route == "publications.html" else ""
     document = f"""<!doctype html>
 <html lang="en">
@@ -309,7 +320,7 @@ def render(route, page):
   <link rel="canonical" href="{canonical}">
   <link rel="icon" href="/assets/site/mark.svg" type="image/svg+xml">
   <script src="/assets/site/mode.js"></script>
-  <link rel="stylesheet" href="/assets/site/site.css">{citation_stamp}
+  <link rel="stylesheet" href="{stylesheet}">{citation_stamp}
   <script type="module" src="/assets/site/site.js"></script>{home_script}
 </head>
 <body>

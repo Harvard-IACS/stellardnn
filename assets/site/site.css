@@ -1,4 +1,4 @@
-/* Hallmark · v2.0.0 · theme: StellarDNN research journal · genre: editorial · redesign: full · posture: restrained · modes: light+dark · hero: poster masthead (home), settled (index), stage (research) · signature: a ray-traced black hole */
+/* Hallmark · v2.0.0 · theme: StellarDNN research journal · genre: editorial · redesign: full · posture: restrained · modes: light+dark · hero: poster masthead (home), settled (index), stage (research) · signature: a black hole drawn in orbiting lines */
 /* Hallmark · pre-emit critique: contrast the masthead with the compact paper index. Keep the astronomical illustration inside the research column. */
 
 @import url("tokens.css");
@@ -467,15 +467,13 @@ details[open] > .disclosure {
 }
 
 .black-hole-exhibit {
-  margin-block-start: var(--space-lg);
+  margin-block-start: var(--space-xs);
 }
 
 .black-hole-display {
   display: grid;
   overflow: clip;
-  aspect-ratio: 2.05;
-  color: var(--color-plate-ink);
-  background: var(--color-plate);
+  aspect-ratio: 2.42;
 }
 
 .black-hole-display > * {
@@ -493,7 +491,7 @@ details[open] > .disclosure {
   display: grid;
   place-content: center;
   padding: var(--space-lg);
-  color: var(--color-plate-ink);
+  color: var(--color-muted);
   text-align: center;
   text-wrap: balance;
 }

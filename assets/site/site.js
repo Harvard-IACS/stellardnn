@@ -99,6 +99,71 @@ function setupNavigation() {
   });
 }
 
+function setupSectionNav() {
+  const nav = document.querySelector("[data-section-nav]");
+  if (!nav) return;
+
+  const entries = [...nav.querySelectorAll('a[href^="#"]')].map((link) => ({
+    link,
+    section: document.getElementById(link.getAttribute("href").slice(1)),
+  })).filter(({ section }) => section);
+  if (!entries.length) return;
+
+  let active;
+  let frame;
+
+  function setActive(entry, scrollBehavior = "auto") {
+    if (active !== entry) {
+      active?.link.removeAttribute("aria-current");
+      active = entry;
+      entry.link.setAttribute("aria-current", "location");
+    }
+
+    const { offsetLeft, offsetTop, offsetWidth } = entry.link;
+    nav.style.setProperty("--indicator-x", `${offsetLeft}px`);
+    nav.style.setProperty("--indicator-y", `${offsetTop}px`);
+    nav.style.setProperty("--indicator-width", offsetWidth);
+    nav.dataset.active = entry.section.id;
+
+    if (nav.scrollWidth > nav.clientWidth) {
+      const left = Math.min(offsetLeft, Math.max(nav.scrollLeft, offsetLeft + offsetWidth - nav.clientWidth));
+      if (left !== nav.scrollLeft) {
+        nav.scrollTo({ left, behavior: reducedMotion.matches ? "auto" : scrollBehavior });
+      }
+    }
+  }
+
+  function sectionInView() {
+    const { scrollHeight } = root;
+    if (scrollHeight > window.innerHeight && window.scrollY + window.innerHeight >= scrollHeight - 2) {
+      return entries[entries.length - 1];
+    }
+
+    const readingLine = Math.min(160, window.innerHeight * 0.25);
+    let current = entries[0];
+    for (const entry of entries) {
+      if (entry.section.getBoundingClientRect().top <= readingLine) current = entry;
+    }
+    return current;
+  }
+
+  function scheduleUpdate() {
+    if (frame) return;
+    frame = requestAnimationFrame(() => {
+      frame = undefined;
+      const entry = sectionInView();
+      if (entry !== active) setActive(entry, "smooth");
+    });
+  }
+
+  const linkedSection = entries.find(({ link }) => link.hash === location.hash);
+  setActive(linkedSection || sectionInView());
+  window.addEventListener("scroll", scheduleUpdate, { passive: true });
+  window.addEventListener("hashchange", scheduleUpdate);
+  window.addEventListener("pageshow", scheduleUpdate);
+  window.addEventListener("resize", () => setActive(sectionInView()));
+}
+
 function searchText(value) {
   return value.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLocaleLowerCase();
 }
@@ -164,4 +229,5 @@ function setupPublicationSearch() {
 
 setupTheme();
 setupNavigation();
+setupSectionNav();
 setupPublicationSearch();

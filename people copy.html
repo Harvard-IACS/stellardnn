@@ -18,12 +18,13 @@
   <a class="button skip-link" href="#content">Skip to content</a>
   <header class="site-header">
   <div class="site-container masthead">
-    <a class="wordmark" href="index.html" aria-label="Harvard SEAS, StellarDNN home">
+    <span class="wordmark">
       <span class="wordmark-shield"><img src="assets/site/seas-shield.png" width="400" height="300" alt=""></span>
       Harvard SEAS
-    </a>
+    </span>
     <nav class="primary-nav" aria-label="Main navigation">
-      <ul><li><a href="projects.html">Research</a></li>
+      <ul><li class="nav-home"><a href="index.html">Home</a></li>
+<li><a href="projects.html">Research</a></li>
 <li><a href="publications.html">Publications</a></li>
 <li><a href="people.html" aria-current="location">People</a></li>
 <li><a href="courses.html">Education</a></li>
@@ -31,7 +32,7 @@
     </nav>
     <details class="mobile-menu" data-mobile-menu>
       <summary>Menu <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
-      <nav aria-label="Main navigation"><ul class="mobile-links"><li><a href="projects.html">Research</a></li>
+      <nav aria-label="More pages"><ul class="mobile-links"><li><a href="projects.html">Research</a></li>
 <li><a href="publications.html">Publications</a></li>
 <li><a href="people.html" aria-current="location">People</a></li>
 <li><a href="courses.html">Education</a></li>
@@ -52,14 +53,16 @@
 
 <section class="section" aria-labelledby="archive-members-heading">
   <h2 id="archive-members-heading">Members in the earlier directory</h2>
-  <ul class="index-list people-list" role="list">
+  <ul class="index-list index-grid people-list" role="list">
     <li class="index-row person">
       <img class="person-photo" src="assets/general/img/team/ShivasJayaram.jpg" width="128" height="128" alt="" loading="lazy">
       <div class="person-content prose">
         <h3>Shivas Jayaram</h3>
         <p class="entry-meta">Deep learning researcher and practitioner</p>
-        <p>I teach deep learning courses on deploying models and building AI applications. Previously, I was co-founder and CTO of a deep learning startup.</p>
-        <p><a href="https://www.linkedin.com/in/shivasj/" aria-label="Shivas Jayaram on LinkedIn">LinkedIn</a></p>
+        <p class="person-description">I teach deep learning courses on deploying models and building AI applications. Previously, I was co-founder and CTO of a deep learning startup.</p>
+        <p class="person-links">
+          <a href="https://www.linkedin.com/in/shivasj/" aria-label="Shivas Jayaram on LinkedIn">LinkedIn</a>
+        </p>
       </div>
     </li>
     <li class="index-row person">
@@ -67,18 +70,26 @@
       <div class="person-content prose">
         <h3>Shuheng Liu</h3>
         <p class="entry-meta">Researcher</p>
-        <p>As the lead developer for <a href="https://github.com/NeuroDiffGym/neurodiffeq">NeuroDiffEq</a>, I’m passionate about computer science, software engineering, and mathematics. In my spare time, I’m a huge fan of kayaking, cooking, rock music, and everything fun!</p>
+        <p class="person-description">As the lead developer for <a href="https://github.com/NeuroDiffGym/neurodiffeq">NeuroDiffEq</a>, I’m passionate about computer science, software engineering, and mathematics. In my spare time, I’m a huge fan of kayaking, cooking, rock music, and everything fun!</p>
+        <p class="person-links person-empty"><span aria-hidden="true">−</span><span class="sr-only">Profile link unavailable</span></p>
       </div>
     </li>
-    <li class="index-row">
-      <div class="prose">
+    <li class="index-row person">
+      <span class="person-photo person-placeholder" aria-hidden="true">HO</span>
+      <div class="person-content prose">
         <h3>Hargun Oberoi</h3>
         <p class="entry-meta">Researcher</p>
+        <p class="person-description person-empty"><span aria-hidden="true">−</span><span class="sr-only">Description unavailable</span></p>
+        <p class="person-links person-empty"><span aria-hidden="true">−</span><span class="sr-only">Profile link unavailable</span></p>
       </div>
     </li>
-    <li class="index-row">
-      <div class="prose">
+    <li class="index-row person">
+      <span class="person-photo person-placeholder" aria-hidden="true">JP</span>
+      <div class="person-content prose">
         <h3>Joy Parikh</h3>
+        <p class="entry-meta person-empty"><span aria-hidden="true">−</span><span class="sr-only">Title unavailable</span></p>
+        <p class="person-description person-empty"><span aria-hidden="true">−</span><span class="sr-only">Description unavailable</span></p>
+        <p class="person-links person-empty"><span aria-hidden="true">−</span><span class="sr-only">Profile link unavailable</span></p>
       </div>
     </li>
     <li class="index-row person">
@@ -86,14 +97,17 @@
       <div class="person-content prose">
         <h3>Cristobal Donoso-Oliva</h3>
         <p class="entry-meta">Researcher</p>
-        <p>Applies time series analysis and deep learning to astronomy.</p>
+        <p class="person-description">Applies time series analysis and deep learning to astronomy.</p>
+        <p class="person-links person-empty"><span aria-hidden="true">−</span><span class="sr-only">Profile link unavailable</span></p>
       </div>
     </li>
-    <li class="index-row">
-      <div class="prose">
+    <li class="index-row person">
+      <span class="person-photo person-placeholder" aria-hidden="true">SV</span>
+      <div class="person-content prose">
         <h3>Sakthisree Venkatesan</h3>
         <p class="entry-meta">Researcher</p>
-        <p>Contributed to core development of <a href="http://dev.neurodiff.io/">NeuroDiffHub</a> and led campaigns on tech justice and intersectionality. The biography also describes an interest in building AI models, developing web applications, and solving problems.</p>
+        <p class="person-description">Contributed to core development of <a href="http://dev.neurodiff.io/">NeuroDiffHub</a> and led campaigns on tech justice and intersectionality. The biography also describes an interest in building AI models, developing web applications, and solving problems.</p>
+        <p class="person-links person-empty"><span aria-hidden="true">−</span><span class="sr-only">Profile link unavailable</span></p>
       </div>
     </li>
   </ul>
@@ -101,18 +115,23 @@
 
 <section class="section" aria-labelledby="archive-alumni-heading">
   <h2 id="archive-alumni-heading">Alumni in the earlier directory</h2>
-  <ul class="index-list people-list" role="list">
+  <ul class="index-list index-grid people-list" role="list">
     <li class="index-row person">
       <img class="person-photo" src="assets/general/img/team/DavidSondak.jpg" width="128" height="128" alt="" loading="lazy">
       <div class="person-content prose">
         <h3>David Sondak</h3>
         <p class="entry-meta">Researcher</p>
-        <p>I’m passionate about fluids and dogs. Apart from that, I’m a pretty simple person.</p>
+        <p class="person-description">I’m passionate about fluids and dogs. Apart from that, I’m a pretty simple person.</p>
+        <p class="person-links person-empty"><span aria-hidden="true">−</span><span class="sr-only">Profile link unavailable</span></p>
       </div>
     </li>
-    <li class="index-row">
-      <div class="prose">
+    <li class="index-row person">
+      <span class="person-photo person-placeholder" aria-hidden="true">M</span>
+      <div class="person-content prose">
         <h3>Maruan</h3>
+        <p class="entry-meta person-empty"><span aria-hidden="true">−</span><span class="sr-only">Title unavailable</span></p>
+        <p class="person-description person-empty"><span aria-hidden="true">−</span><span class="sr-only">Description unavailable</span></p>
+        <p class="person-links person-empty"><span aria-hidden="true">−</span><span class="sr-only">Profile link unavailable</span></p>
       </div>
     </li>
     <li class="index-row person">
@@ -120,12 +139,17 @@
       <div class="person-content prose">
         <h3>Marios Mattheakis</h3>
         <p class="entry-meta">Co-founder</p>
-        <p>I am passionate about physics, deep neural networks, and boxing. Other than that, I am normal.</p>
+        <p class="person-description">I am passionate about physics, deep neural networks, and boxing. Other than that, I am normal.</p>
+        <p class="person-links person-empty"><span aria-hidden="true">−</span><span class="sr-only">Profile link unavailable</span></p>
       </div>
     </li>
-    <li class="index-row">
-      <div class="prose">
+    <li class="index-row person">
+      <span class="person-photo person-placeholder" aria-hidden="true">ME</span>
+      <div class="person-content prose">
         <h3>Michael Emanuel</h3>
+        <p class="entry-meta person-empty"><span aria-hidden="true">−</span><span class="sr-only">Title unavailable</span></p>
+        <p class="person-description person-empty"><span aria-hidden="true">−</span><span class="sr-only">Description unavailable</span></p>
+        <p class="person-links person-empty"><span aria-hidden="true">−</span><span class="sr-only">Profile link unavailable</span></p>
       </div>
     </li>
   </ul>

@@ -26,7 +26,7 @@ class Page:
 
 
 PAGES = {
-    "index.html": Page("StellarDNN", "Machine learning for astronomy, physics, and cybersecurity at Harvard SEAS."),
+    "index.html": Page("StellarDNN", "Machine learning for astronomy, physics, and cybersecurity at Harvard SEAS.", "Home"),
     "projects.html": Page("Research", "Research directions and projects at StellarDNN.", "Research"),
     "active_projects.html": Page("Open projects", "Explore open StellarDNN research projects.", "Open projects"),
     "publications.html": Page("Publications", "Explore recent and earlier StellarDNN publications and download the bibliography.", "Publications"),
@@ -50,6 +50,7 @@ PAGES = {
 }
 
 NAVIGATION = (
+    ("Home", "/index.html"),
     ("Research", "/projects.html"),
     ("Publications", "/publications.html"),
     ("People", "/people.html"),
@@ -68,32 +69,36 @@ def relative_urls(markup, route):
     return ROOT_PATH_ATTR.sub(lambda match: match[1] + (prefix + match[2] or "./"), markup)
 
 
-def nav_links(active, route):
+def nav_links(active, route, *, include_home=True):
     links = []
     for label, url in NAVIGATION:
+        if label == "Home" and not include_home:
+            continue
         current = "page" if url == "/" + route else "location"
         attributes = f' aria-current="{current}"' if label == active else ""
         if label == "Open projects":
             attributes += ' class="open-projects"'
-        links.append(f'<li><a href="{url}"{attributes}>{label}</a></li>')
+        item_class = ' class="nav-home"' if label == "Home" else ""
+        links.append(f'<li{item_class}><a href="{url}"{attributes}>{label}</a></li>')
     return "\n".join(links)
 
 
 def header(active, route):
     links = nav_links(active, route)
+    mobile_links = nav_links(active, route, include_home=False)
     return f"""
 <header class="site-header">
   <div class="site-container masthead">
-    <a class="wordmark" href="/index.html" aria-label="Harvard SEAS, StellarDNN home">
+    <span class="wordmark">
       <span class="wordmark-shield"><img src="/assets/site/seas-shield.png" width="400" height="300" alt=""></span>
       Harvard SEAS
-    </a>
+    </span>
     <nav class="primary-nav" aria-label="Main navigation">
       <ul>{links}</ul>
     </nav>
     <details class="mobile-menu" data-mobile-menu>
       <summary>Menu <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
-      <nav aria-label="Main navigation"><ul class="mobile-links">{links}</ul></nav>
+      <nav aria-label="More pages"><ul class="mobile-links">{mobile_links}</ul></nav>
     </details>
     <button type="button" class="theme-toggle" data-mode-toggle aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode" hidden>
       <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13a8.7 8.7 0 0 1-10-10 9 9 0 1 0 10 10Z"/></svg>

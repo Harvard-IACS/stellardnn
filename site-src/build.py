@@ -45,7 +45,7 @@ PAGES = {
     "projects/cosmology.html": Page("Cosmology-informed neural networks", "Neural network solvers for cosmic expansion and cosmological inference.", "Research", parent="projects.html", breadcrumb="Cosmology overview"),
     "projects/adsml.html": Page("Astrophysics Data System machine learning", "Language models for astronomy literature and observatory bibliographies.", "Research", parent="projects.html", breadcrumb="ADSML overview"),
     "NeuroDiffHub.html": Page("NeuroDiffHub archive", "Archived StellarDNN project for building and sharing neural-network solutions to differential equations.", "Research", parent="projects/neurodiff.html"),
-    "projects/astromer/index.html": Page("ASTROMER", "A pretrained transformer model for astronomical light curves.", "Research", parent="projects.html", breadcrumb="ASTROMER overview"),
+    "projects/astromer/index.html": Page("ASTROMER", "A pretrained transformer model for astronomical light curves.", "Research", parent="projects.html"),
     "projects/astromer/about.html": Page("ASTROMER model and weights", "The ASTROMER architecture, pretrained weights, and contribution information.", "Research", parent="projects/astromer/index.html", breadcrumb="Model and weights"),
     "projects/astromer/data.html": Page("ASTROMER datasets", "Datasets and file formats for ASTROMER.", "Research", parent="projects/astromer/index.html", breadcrumb="Datasets"),
     "projects/astromer/team.html": Page("ASTROMER team", "Contributors to the ASTROMER project.", "Research", parent="projects/astromer/index.html", breadcrumb="Team"),
@@ -164,15 +164,67 @@ SECTION_NAVIGATION = {
     ),
 }
 
-ASTROMER_ACTIONS = (
-    ("Overview", "/projects/astromer/index.html"),
-    ("Model and weights", "/projects/astromer/about.html"),
-    ("Datasets", "/projects/astromer/data.html"),
-    ("Tutorials", "/projects/astromer/tutorials.html"),
-    ("Team", "/projects/astromer/team.html"),
-    ("Documentation", "https://astromer.readthedocs.io/en/main/"),
-    ("ASTROMER on GitHub", "https://github.com/astromer-science"),
+ASTROMER_OVERVIEW = "projects/astromer/index.html"
+ASTROMER_PAGES = (
+    ASTROMER_OVERVIEW,
+    "projects/astromer/about.html",
+    "projects/astromer/data.html",
+    "projects/astromer/tutorials.html",
+    "projects/astromer/team.html",
 )
+
+
+@dataclass(frozen=True)
+class PageAction:
+    label: str
+    href: str
+    primary: bool = False
+    download: bool = False
+
+
+ASTROMER_RESOURCES = (
+    PageAction("Documentation", "https://astromer.readthedocs.io/en/main/"),
+    PageAction("GitHub", "https://github.com/astromer-science"),
+)
+
+PAGE_ACTIONS = {
+    "projects.html": (PageAction("Research opportunities", "/active_projects.html", primary=True),),
+    "active_projects.html": (PageAction("Contact the lab", "/contact_us.html", primary=True),),
+    "publications.html": (
+        PageAction("Download reviewed bibliography (BibTeX)", "/publications.bib", download=True),
+        PageAction("Google Scholar", SCHOLAR_URL),
+        PageAction("Astrophysics Data System", ADS_URL),
+    ),
+    "CV.html": (
+        PageAction("Archived CV (2024 PDF)", "/assets/general/JA/CV_Protopapas.pdf"),
+        PageAction("Harvard profile", "https://seas.harvard.edu/person/pavlos-protopapas"),
+    ),
+    "courses.html": (PageAction("Teaching philosophy (PDF)", "/assets/general/JA/TeachingPhilosophy.pdf"),),
+    "contact_us.html": (PageAction("Work with us", "/work_with_us.html"),),
+    "work_with_us.html": (
+        PageAction("Research opportunities", "/active_projects.html", primary=True),
+        PageAction("Contact the lab", "/contact_us.html"),
+    ),
+    "newsroom.html": (PageAction("All publications", "/publications.html"),),
+    "projects/nneht.html": (
+        PageAction("Research opportunities", "/active_projects.html#NNEHT"),
+        PageAction("All lab publications", "/publications.html"),
+    ),
+    "projects/neurodiff.html": (
+        PageAction("Research opportunities", "/active_projects.html#NeuroDiffEq"),
+        PageAction("NeuroDiffEq on GitHub", "https://github.com/NeuroDiffGym/neurodiffeq"),
+    ),
+    "projects/cosmology.html": (PageAction("Research opportunities", "/active_projects.html#Cosmology"),),
+    "projects/adsml.html": (PageAction("Research opportunities", "/active_projects.html#ADSML"),),
+    "NeuroDiffHub.html": (
+        PageAction("NeuroDiffEq overview", "/projects/neurodiff.html"),
+        PageAction("NeuroDiffEq on PyPI", "https://pypi.org/project/neurodiffeq/"),
+        PageAction("NeuroDiffEq on GitHub", "https://github.com/NeuroDiffGym/neurodiffeq"),
+    ),
+    ASTROMER_OVERVIEW: (PageAction("Research opportunities", "/active_projects.html#Astromer"),),
+    "assets/OLD/index_sav.html": (PageAction("StellarDNN home", "/index.html", primary=True),),
+    "assets/OLD/projects_OLD.html": (PageAction("Explore research", "/projects.html", primary=True),),
+}
 
 # Fragments use site-root paths. Make them relative for a GitHub Pages project
 # subpath and for links from nested project pages.
@@ -227,6 +279,15 @@ def header(active, route):
 </header>""".strip()
 
 
+def external_link(label, href, *, button=False):
+    style = ' class="quiet-button external-button"' if button else ""
+    return (
+        f'<a{style} href="{escape(href, quote=True)}" rel="external">{escape(label)}'
+        '<span class="external-link-icon" aria-hidden="true">↗</span>'
+        '<span class="sr-only"> (external site)</span></a>'
+    )
+
+
 def footer():
     return f"""
 <footer class="site-container colophon">
@@ -248,33 +309,70 @@ def footer():
     <h2>Resources</h2>
     <ul>
       <li><a href="/publications.html">Publications</a></li>
-      <li><a href="{escape(SCHOLAR_URL, quote=True)}">Google Scholar</a></li>
-      <li><a href="{escape(ADS_URL, quote=True)}">Astrophysics Data System</a></li>
+      <li>{external_link("Google Scholar", SCHOLAR_URL)}</li>
+      <li>{external_link("Astrophysics Data System", ADS_URL)}</li>
     </ul>
   </nav>
 </footer>""".strip()
 
 
-def with_astromer_actions(fragment, route):
+def astromer_navigation(route):
+    items = []
+    for path in ASTROMER_PAGES:
+        label = "Overview" if path == ASTROMER_OVERVIEW else escape(PAGES[path].breadcrumb)
+        if path == route:
+            item = f'<span aria-current="page">{label}</span>'
+        else:
+            item = f'<a href="/{escape(path, quote=True)}">{label}</a>'
+        items.append(f"      <li>{item}</li>")
+    navigation = "\n".join(items)
+    return f"""  <nav class="project-nav" id="navbarSupportedContent" aria-label="ASTROMER pages">
+    <ul role="list">
+{navigation}
+    </ul>
+  </nav>"""
+
+
+def page_actions(actions):
+    local_links = []
+    external_links = []
+    for action in actions:
+        if action.href.startswith(("https://", "http://")):
+            external_links.append(f"      {external_link(action.label, action.href, button=True)}")
+        else:
+            style = "button" if action.primary else "quiet-button"
+            download = " download" if action.download else ""
+            href = escape(action.href, quote=True)
+            local_links.append(f'      <a class="{style}" href="{href}"{download}>{escape(action.label)}</a>')
+
+    groups = []
+    if local_links:
+        groups.append("\n".join(['    <div class="action-links">', *local_links, "    </div>"]))
+    if external_links:
+        groups.append("\n".join([
+            '    <div class="action-links" role="group" aria-label="External resources">',
+            *external_links,
+            "    </div>",
+        ]))
+    return "\n".join(['  <div class="page-actions">', *groups, "  </div>"])
+
+
+def with_heading_navigation(fragment, route):
+    actions = PAGE_ACTIONS.get(route, ())
+    controls = []
+    if route in ASTROMER_PAGES:
+        controls.append(astromer_navigation(route))
+        actions += ASTROMER_RESOURCES
+    if actions:
+        controls.append(page_actions(actions))
+    if not controls:
+        return fragment
+
     heading, separator, content = fragment.partition("</header>")
     if not separator:
-        raise ValueError(f"ASTROMER actions require a page header in {route}")
-
-    is_overview = route == "projects/astromer/index.html"
-    links = ASTROMER_ACTIONS
-    if is_overview:
-        links += (("Research opportunities", "/active_projects.html#Astromer"),)
-
-    items = []
-    for label, href in links:
-        style = "button" if is_overview and href == "/projects/astromer/tutorials.html" else "quiet-button"
-        current = ' aria-current="page"' if href == "/" + route else ""
-        items.append(f'    <a class="{style}" href="{escape(href, quote=True)}"{current}>{escape(label)}</a>')
-    actions = "\n".join(items)
-    return f"""{heading}  <nav class="page-actions" id="navbarSupportedContent" aria-label="ASTROMER pages and resources">
-{actions}
-  </nav>
-{separator}{content}"""
+        raise ValueError(f"Page navigation requires a header in {route}")
+    navigation = "\n".join(controls)
+    return f"{heading}{navigation}\n{separator}{content}"
 
 
 def with_sidebar(fragment, route, page):
@@ -325,10 +423,11 @@ def breadcrumbs(route):
         page = PAGES[path]
         label = escape(page.breadcrumb or page.title)
         separator = '<span class="breadcrumb-separator" aria-hidden="true">/</span>' if index else ""
+        wordmark = ' class="project-wordmark"' if path == ASTROMER_OVERVIEW else ""
         if path == route:
-            item = f'<span aria-current="page">{label}</span>'
+            item = f'<span{wordmark} aria-current="page">{label}</span>'
         else:
-            item = f'<a href="/{escape(path, quote=True)}">{label}</a>'
+            item = f'<a{wordmark} href="/{escape(path, quote=True)}">{label}</a>'
         crumbs.append(f"    <li>{separator}{item}</li>")
     items = "\n".join(crumbs)
     return f"""<nav class="breadcrumbs" aria-label="Breadcrumb">
@@ -363,8 +462,7 @@ def render(route, page):
         fragment = fragment.replace("<!-- latest-publications -->", recent_entries(2))
     if route == "newsroom.html":
         fragment = fragment.replace("<!-- latest-publications -->", recent_entries(5, include_citation=True))
-    if route.startswith("projects/astromer/"):
-        fragment = with_astromer_actions(fragment, route)
+    fragment = with_heading_navigation(fragment, route)
     fragment = with_sidebar(fragment, route, page)
     trail = breadcrumbs(route)
     if trail:

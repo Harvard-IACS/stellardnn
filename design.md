@@ -16,16 +16,22 @@ The editorial research-journal direction uses the approved StellarDNN homepage c
 Templates supply a shared masthead and colophon. A page fragment starts with `<header class="page-heading">`, an `h1`, and an optional `p.lede`. The homepage has its own masthead.
 
 - The top-left branding pairs the engineering shield with the short Harvard SEAS label. Home stays visible in the masthead at every width. The shield artwork comes from [Harvard’s official school shield gallery](https://www.harvard.edu/about/history/shields/).
-- Put Lab updates in the main navigation. Use breadcrumbs above detail headings to show their parent pages.
-- Put the Research opportunities directory under Research. From the Research grid, link project names to their overviews. Put a shared “Research opportunities” button below the title and introduction on each project overview with opportunities.
+- Keep the masthead order the same at all sizes. The order is Home, Research, Publications, Lab updates, People, and Education.
+- Put the Research opportunities directory under Research. From the Research grid, link project names to their overviews. Give each project overview with opportunities the same “Research opportunities” action.
 - Use `.section` between major sections and `.section-head` when a heading shares a row with an action.
 - Use `.prose` or `.measure` for long continuous reading, `.columns` for two related columns, and `.media-split` for text and a large figure.
 - Use `.index-list` and `.index-row` for repeated entries and `.entry-meta` for secondary information.
 - Use `.index-grid` for two-column research, roster, and course lists at 76rem and above. Each roster entry has a portrait or initials, a name, a title, a biography, and a row for verified profile links.
-- Use the shared sidebar for links to sections on the same page. It sits on the left at desktop sizes and across the top of the content on narrower screens. The crimson highlight follows the section in view. The Research overview gives its project grid the full content width.
-- Put page-level links to related pages and resources in the heading below the title and introduction. Use `.page-actions` to group them, `.button` for the primary action, and `.quiet-button` for secondary actions. Keep references and other links with their content.
 - Use semantic `figure`, `figcaption`, `details`, `table`, and `time` elements where they describe the material.
 - In source fragments, internal routes begin with `/`. The renderer writes relative paths so the same output works at a domain root or a project subpath.
+
+## Navigation order
+
+1. Put breadcrumbs above detail page titles. Link each ancestor and show the current page as plain text.
+2. Put sibling pages below the title and introduction in `.project-nav`. Keep their order across every page in the group and mark the current page with the crimson underline. ASTROMER uses Overview, Model and weights, Datasets, Tutorials, then Team.
+3. Put on-site actions in `.page-actions` after the project navigation. Put the primary action first, followed by related pages or named local downloads. A cross-page link can include the target section in its URL.
+4. Put off-site resources after on-site actions. Use outlined buttons with an outward arrow for heading actions and mark outside links in the footer resource list. Use the current tab as the default for all links. Keep citations and contextual links with the content they support.
+5. Put `.section-nav` with the page content. It uses same-page fragments in reading order and scrolls to the selected section. The crimson highlight follows the section in view. The sidebar sits on the left at desktop sizes and across the top on narrower screens. The Research overview uses the full width for its project grid.
 
 ## Motion
 
@@ -35,4 +41,4 @@ The same starfield sits behind every page and fades at the edges of the viewport
 
 ## Source
 
-The shared design tokens live in `assets/site/tokens.css`. Editable page bodies live in `site-src/content/`. The renderer generates the published static HTML from those sources.
+The shared design tokens live in `assets/site/tokens.css`. Editable page bodies live in `site-src/content/`. Set heading actions and project navigation in `site-src/build.py`, which generates the published static HTML.

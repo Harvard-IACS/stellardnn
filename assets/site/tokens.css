@@ -34,7 +34,7 @@
   --text-h2: 1.953125rem;
   --text-section: clamp(2rem, 2.5vw + 1rem, 3.5rem);
   --text-title: clamp(2.5rem, 5.8vw, 5.25rem);
-  --text-display: clamp(3.5rem, 12.35vw, 15rem);
+  --text-display: clamp(3.5rem, 12.35vw, 13.25rem);
   --space-3xs: 2px;
   --space-2xs: 4px;
   --space-xs: 8px;
@@ -47,7 +47,7 @@
   --space-4xl: 144px;
   --gutter: clamp(var(--space-lg), 4.75vw, var(--space-2xl));
   --column-gap: clamp(var(--space-lg), 4vw, var(--space-xl));
-  --container: 120rem;
+  --container: 100rem;
   --measure: 68ch;
   --rule: 1px;
   --radius: 0px;

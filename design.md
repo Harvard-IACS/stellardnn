@@ -7,16 +7,19 @@ The editorial research-journal direction uses the approved StellarDNN homepage c
 - The light surface is a cool gray. Dark mode uses near-black with cool charcoal layers. Oxblood carries actions and interactive emphasis.
 - Use `--font-display` for headings and `--font-body` for navigation, captions, metadata, and copy. Use the mono face for code.
 - Use the shared Hallmark scale from [tokens.css](assets/site/tokens.css). Display titles are fluid. Body text starts at 16 pixels.
-- Cap the site at 120rem. The masthead and publication spread grow at desktop sizes, while long-form text uses a 68ch reading measure. Use one gutter and column-gap scale with hairline rules for indexes and whitespace between sections.
+- Cap the site at 100rem. The masthead and publication spread grow at desktop sizes, and long-form text uses a 68ch reading measure.
+- Use a single rule below the page introduction and above the colophon. Separate sections with whitespace. Reserve inner rules for the gaps between entries in long indexes.
 - Keep the old route names, anchors, attribution, and verified research material. Limit new visitor-facing copy to the navigation or an action that the new interface needs.
 
 ## Page structure
 
 Templates supply a shared masthead and colophon. A page fragment starts with `<header class="page-heading">`, an `h1`, and an optional `p.lede`. The homepage has its own masthead.
 
+- The top-left link pairs the engineering shield with the short Harvard SEAS label. The shield artwork comes from [Harvard’s official school shield gallery](https://www.harvard.edu/about/history/shields/).
 - Use `.section` between major sections and `.section-head` when a heading shares a row with an action.
 - Use `.prose` or `.measure` for long continuous reading, `.columns` for two related columns, and `.media-split` for text and a large figure.
 - Use `.index-list` and `.index-row` for repeated entries, `.entry-meta` for secondary information, and `.jump-links` for links to page sections.
+- Add `.people-list` to roster lists so portraits and bios flow into two columns at 76rem and above.
 - Use semantic `figure`, `figcaption`, `details`, `table`, and `time` elements where they describe the material. Use the shared `.button` for a primary action and text links for secondary actions.
 - In source fragments, internal routes begin with `/`. The renderer writes relative paths so the same output works at a domain root or a project subpath.
 

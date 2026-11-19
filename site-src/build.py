@@ -24,6 +24,8 @@ class Page:
     description: str
     active: str = ""
     source: str = ""
+    parent: str = ""
+    breadcrumb: str = ""
 
 
 PAGES = {
@@ -32,20 +34,20 @@ PAGES = {
     "active_projects.html": Page("Research opportunities", "Explore StellarDNN research projects and opportunities to collaborate.", "Research opportunities"),
     "publications.html": Page("Publications", "Explore recent and earlier StellarDNN publications and download the bibliography.", "Publications"),
     "people.html": Page("People", "Meet the principal investigator, members, collaborators, and alumni of StellarDNN.", "People"),
-    "CV.html": Page("Pavlos Protopapas", "Biography, education, appointments, and teaching of Pavlos Protopapas.", "People"),
-    "people copy.html": Page("People archive", "Biographical material from the earlier StellarDNN roster.", "People", "people-archive.html"),
+    "CV.html": Page("Pavlos Protopapas", "Biography, education, appointments, and teaching of Pavlos Protopapas.", "People", parent="people.html"),
+    "people copy.html": Page("Earlier people directory", "Biographical material from the earlier StellarDNN roster.", "People", "people-archive.html", parent="people.html"),
     "courses.html": Page("Education", "Teaching, courses, and educational outreach from StellarDNN.", "Education"),
     "contact_us.html": Page("Contact", "Contact StellarDNN at Harvard’s Science and Engineering Complex."),
-    "work_with_us.html": Page("Work with us", "Explore research opportunities and contact the StellarDNN group.", "Research opportunities"),
-    "newsroom.html": Page("Lab updates", "Recent publications and research updates from StellarDNN."),
-    "projects/nneht.html": Page("Neural networks for the Event Horizon Telescope", "StellarDNN projects on black hole imaging and Event Horizon Telescope data.", "Research"),
-    "projects/neurodiff.html": Page("NeuroDiff", "Neural network methods for solving differential equations.", "Research"),
-    "NeuroDiffHub.html": Page("NeuroDiffHub", "Archived StellarDNN project for building and sharing neural-network solutions to differential equations.", "Research"),
-    "projects/astromer/index.html": Page("ASTROMER", "A pretrained transformer model for astronomical light curves.", "Research"),
-    "projects/astromer/about.html": Page("About ASTROMER", "The ASTROMER architecture, pretrained weights, and contribution information.", "Research"),
-    "projects/astromer/data.html": Page("ASTROMER data", "Datasets and file formats for ASTROMER.", "Research"),
-    "projects/astromer/team.html": Page("ASTROMER team", "Contributors to the ASTROMER project.", "Research"),
-    "projects/astromer/tutorials.html": Page("ASTROMER tutorials", "Installation and introductory notebooks for ASTROMER.", "Research"),
+    "work_with_us.html": Page("Work with us", "Explore research opportunities and contact the StellarDNN group.", "Research opportunities", parent="active_projects.html"),
+    "newsroom.html": Page("Lab updates", "Recent publications and research updates from StellarDNN.", "Lab updates"),
+    "projects/nneht.html": Page("Event Horizon Telescope imaging", "StellarDNN projects on black hole imaging and Event Horizon Telescope data.", "Research", parent="projects.html"),
+    "projects/neurodiff.html": Page("NeuroDiffEq", "Neural network methods for solving differential equations.", "Research", parent="projects.html"),
+    "NeuroDiffHub.html": Page("NeuroDiffHub archive", "Archived StellarDNN project for building and sharing neural-network solutions to differential equations.", "Research", parent="projects/neurodiff.html"),
+    "projects/astromer/index.html": Page("ASTROMER", "A pretrained transformer model for astronomical light curves.", "Research", parent="projects.html", breadcrumb="ASTROMER overview"),
+    "projects/astromer/about.html": Page("ASTROMER model and weights", "The ASTROMER architecture, pretrained weights, and contribution information.", "Research", parent="projects/astromer/index.html", breadcrumb="Model and weights"),
+    "projects/astromer/data.html": Page("ASTROMER datasets", "Datasets and file formats for ASTROMER.", "Research", parent="projects/astromer/index.html", breadcrumb="Datasets"),
+    "projects/astromer/team.html": Page("ASTROMER team", "Contributors to the ASTROMER project.", "Research", parent="projects/astromer/index.html", breadcrumb="Team"),
+    "projects/astromer/tutorials.html": Page("ASTROMER tutorials", "Installation and introductory notebooks for ASTROMER.", "Research", parent="projects/astromer/index.html", breadcrumb="Tutorials"),
     "assets/OLD/index_sav.html": Page("StellarDNN archive", "Continue to the StellarDNN homepage.", source="archive-home.html"),
     "assets/OLD/projects_OLD.html": Page("Research archive", "Continue to the StellarDNN research index.", "Research", "archive-research.html"),
 }
@@ -54,6 +56,7 @@ NAVIGATION = (
     ("Home", "/index.html"),
     ("Research", "/projects.html"),
     ("Publications", "/publications.html"),
+    ("Lab updates", "/newsroom.html"),
     ("People", "/people.html"),
     ("Education", "/courses.html"),
     ("Research opportunities", "/active_projects.html"),
@@ -113,29 +116,34 @@ SECTION_NAVIGATION = {
     "projects/neurodiff.html": (
         SidebarLink("Differential equations", "#DifferentialEquations"),
         SidebarLink("Related research", "#RelatedResearch"),
+        SidebarLink("NeuroDiffHub archive", "#NeuroDiffHub"),
     ),
 }
 
 ASTROMER_NAVIGATION = (
     SidebarLink("Overview", "/projects/astromer/index.html"),
     SidebarLink("Model and weights", "/projects/astromer/about.html"),
-    SidebarLink("Data", "/projects/astromer/data.html"),
+    SidebarLink("Datasets", "/projects/astromer/data.html"),
     SidebarLink("Tutorials", "/projects/astromer/tutorials.html"),
     SidebarLink("Team", "/projects/astromer/team.html"),
-    SidebarLink("Documentation", "https://astromer.readthedocs.io/en/main/"),
-    SidebarLink("GitHub", "https://github.com/astromer-science"),
+    SidebarLink("ASTROMER documentation", "https://astromer.readthedocs.io/en/main/"),
+    SidebarLink("ASTROMER on GitHub", "https://github.com/astromer-science"),
 )
 
-LAB_NAVIGATION = (
-    SidebarLink("Lab updates", "/newsroom.html"),
+COLLABORATION_NAVIGATION = (
+    SidebarLink("Research opportunities", "/active_projects.html"),
     SidebarLink("Work with us", "/work_with_us.html"),
     SidebarLink("Contact", "/contact_us.html"),
 )
 
+UPDATES_NAVIGATION = (
+    SidebarLink("Lab updates", "/newsroom.html"),
+    SidebarLink("All publications", "/publications.html"),
+)
+
 NEURODIFF_NAVIGATION = (
-    SidebarLink("NeuroDiffHub", "/NeuroDiffHub.html"),
-    SidebarLink("NeuroDiffEq", "/projects/neurodiff.html"),
-    SidebarLink("NeuroDiffEq opportunities", "/active_projects.html#NeuroDiffEq"),
+    SidebarLink("NeuroDiffEq overview", "/projects/neurodiff.html"),
+    SidebarLink("NeuroDiffHub archive", "/NeuroDiffHub.html"),
 )
 
 # Fragments use site-root paths. Make them relative for a GitHub Pages project
@@ -212,7 +220,6 @@ def footer():
     <h2>Resources</h2>
     <ul>
       <li><a href="/publications.html">Publications</a></li>
-      <li><a href="/newsroom.html">Lab updates</a></li>
       <li><a href="{escape(SCHOLAR_URL, quote=True)}">Google Scholar</a></li>
       <li><a href="{escape(ADS_URL, quote=True)}">Astrophysics Data System</a></li>
     </ul>
@@ -230,9 +237,12 @@ def with_sidebar(fragment, route, page):
         label = "ASTROMER navigation"
         links = ASTROMER_NAVIGATION
         nav_id = ' id="navbarSupportedContent"'
-    elif route in {"contact_us.html", "work_with_us.html", "newsroom.html"}:
-        label = "Lab pages"
-        links = LAB_NAVIGATION
+    elif route in {"contact_us.html", "work_with_us.html"}:
+        label = "Working with the lab"
+        links = COLLABORATION_NAVIGATION
+    elif route == "newsroom.html":
+        label = "Lab updates and publications"
+        links = UPDATES_NAVIGATION
     elif route == "NeuroDiffHub.html":
         label = "NeuroDiff research"
         links = NEURODIFF_NAVIGATION
@@ -270,6 +280,31 @@ def with_sidebar(fragment, route, page):
 </div>"""
 
 
+def breadcrumbs(route):
+    trail = [route]
+    while PAGES[trail[-1]].parent:
+        trail.append(PAGES[trail[-1]].parent)
+    if len(trail) == 1:
+        return ""
+
+    crumbs = []
+    for index, path in enumerate(reversed(trail)):
+        page = PAGES[path]
+        label = escape(page.breadcrumb or page.title)
+        separator = '<span class="breadcrumb-separator" aria-hidden="true">/</span>' if index else ""
+        if path == route:
+            item = f'<span aria-current="page">{label}</span>'
+        else:
+            item = f'<a href="/{escape(path, quote=True)}">{label}</a>'
+        crumbs.append(f"    <li>{separator}{item}</li>")
+    items = "\n".join(crumbs)
+    return f"""<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol role="list">
+{items}
+  </ol>
+</nav>"""
+
+
 def recent_entries(limit, include_citation=False):
     records = json.loads((ROOT / "data" / "recent-publications.json").read_text(encoding="utf-8"))
     entries = []
@@ -296,6 +331,9 @@ def render(route, page):
     if route == "newsroom.html":
         fragment = fragment.replace("<!-- latest-publications -->", recent_entries(5, include_citation=True))
     fragment = with_sidebar(fragment, route, page)
+    trail = breadcrumbs(route)
+    if trail:
+        fragment = f"{trail}\n\n{fragment}"
 
     title = escape(page.title if route == "index.html" else f"{page.title} | StellarDNN")
     description = escape(page.description, quote=True)

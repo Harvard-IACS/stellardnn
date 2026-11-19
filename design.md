@@ -16,6 +16,7 @@ The editorial research-journal direction uses the approved StellarDNN homepage c
 Templates supply a shared masthead and colophon. A page fragment starts with `<header class="page-heading">`, an `h1`, and an optional `p.lede`. The homepage has its own masthead.
 
 - The top-left branding pairs the engineering shield with the short Harvard SEAS label. Home stays visible in the masthead at every width. The shield artwork comes from [Harvard’s official school shield gallery](https://www.harvard.edu/about/history/shields/).
+- Put Lab updates in the main navigation. Use breadcrumbs above detail headings to show their parent pages. Link project names to their overviews and label links to research opportunities by purpose.
 - Use `.section` between major sections and `.section-head` when a heading shares a row with an action.
 - Use `.prose` or `.measure` for long continuous reading, `.columns` for two related columns, and `.media-split` for text and a large figure.
 - Use `.index-list` and `.index-row` for repeated entries, `.entry-meta` for secondary information, and `.jump-links` for links to page sections.

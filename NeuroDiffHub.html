@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NeuroDiffHub | StellarDNN</title>
+  <title>NeuroDiffHub archive | StellarDNN</title>
   <meta name="description" content="Archived StellarDNN project for building and sharing neural-network solutions to differential equations.">
-  <meta property="og:title" content="NeuroDiffHub | StellarDNN">
+  <meta property="og:title" content="NeuroDiffHub archive | StellarDNN">
   <meta property="og:description" content="Archived StellarDNN project for building and sharing neural-network solutions to differential equations.">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://www.stellardnn.org/NeuroDiffHub.html">
   <link rel="icon" href="assets/site/mark.svg" type="image/svg+xml">
   <script src="assets/site/mode.js"></script>
-  <link rel="stylesheet" href="assets/site/site.css?v=2874cbd200c9">
+  <link rel="stylesheet" href="assets/site/site.css?v=fa466e5cf2ea">
   <script type="module" src="assets/site/site.js?v=43bab9f919c8"></script>
 </head>
 <body>
@@ -27,6 +27,7 @@
       <ul><li class="nav-home"><a href="index.html">Home</a></li>
 <li><a href="projects.html" aria-current="location">Research</a></li>
 <li><a href="publications.html">Publications</a></li>
+<li><a href="newsroom.html">Lab updates</a></li>
 <li><a href="people.html">People</a></li>
 <li><a href="courses.html">Education</a></li>
 <li><a href="active_projects.html">Research opportunities</a></li></ul>
@@ -35,6 +36,7 @@
       <summary>Menu <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
       <nav aria-label="More pages"><ul class="mobile-links"><li><a href="projects.html" aria-current="location">Research</a></li>
 <li><a href="publications.html">Publications</a></li>
+<li><a href="newsroom.html">Lab updates</a></li>
 <li><a href="people.html">People</a></li>
 <li><a href="courses.html">Education</a></li>
 <li><a href="active_projects.html">Research opportunities</a></li></ul></nav>
@@ -46,20 +48,27 @@
   </div>
 </header>
   <main class="site-container" id="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol role="list">
+    <li><a href="projects.html">Research</a></li>
+    <li><span class="breadcrumb-separator" aria-hidden="true">/</span><a href="projects/neurodiff.html">NeuroDiffEq</a></li>
+    <li><span class="breadcrumb-separator" aria-hidden="true">/</span><span aria-current="page">NeuroDiffHub archive</span></li>
+  </ol>
+</nav>
+
 <header class="page-heading">
-  <h1>NeuroDiffHub</h1>
-  <p class="lede">A project for building and sharing neural-network solutions to differential equations.</p>
+  <h1>NeuroDiffHub archive</h1>
+  <p class="lede">An archived NeuroDiffEq companion for building and sharing neural network solvers.</p>
 </header>
 
 <div class="section-layout">
   <nav class="section-nav" aria-label="NeuroDiff research">
-    <a href="NeuroDiffHub.html" aria-current="page">NeuroDiffHub</a>
-    <a href="projects/neurodiff.html">NeuroDiffEq</a>
-    <a href="active_projects.html#NeuroDiffEq">NeuroDiffEq opportunities</a>
+    <a href="projects/neurodiff.html">NeuroDiffEq overview</a>
+    <a href="NeuroDiffHub.html" aria-current="page">NeuroDiffHub archive</a>
   </nav>
   <div class="section-content">
 <section class="section prose">
-  <h2>Archived project</h2>
+  <h2>How NeuroDiffHub worked</h2>
   <p>NeuroDiffHub was built on NeuroDiffEq to build, train, and share solvers for differential equations. Its archive featured Araz Sharma’s heat equation example, <code>araz/heat_equation_rod1</code>.</p>
   <p>The project’s example loaded a pretrained one-dimensional solver, trained it further, and saved it to the hub.</p>
   <pre><code># Load the pretrained solver
@@ -71,10 +80,8 @@ solver.fit(max_epochs=1000)
 # Save the retrained solver
 solver.save(name="retrained_equation", save_to_hub=True)</code></pre>
   <div class="link-group">
-    <a href="projects.html#NeuroDiffHUB">NeuroDiffHub research</a>
-    <a href="projects/neurodiff.html">NeuroDiff project</a>
     <a href="https://pypi.org/project/neurodiffeq/">NeuroDiffEq on PyPI</a>
-    <a href="https://github.com/NeuroDiffGym/neurodiffeq">NeuroDiffEq source</a>
+    <a href="https://github.com/NeuroDiffGym/neurodiffeq">NeuroDiffEq on GitHub</a>
   </div>
 </section>
   </div>
@@ -99,7 +106,6 @@ solver.save(name="retrained_equation", save_to_hub=True)</code></pre>
     <h2>Resources</h2>
     <ul>
       <li><a href="publications.html">Publications</a></li>
-      <li><a href="newsroom.html">Lab updates</a></li>
       <li><a href="https://scholar.google.com/citations?user=hlFnwxwAAAAJ&amp;hl=en">Google Scholar</a></li>
       <li><a href="https://ui.adsabs.harvard.edu/search/q=(%20author%3A%22protopapas%2C%20p%22%20AND%20year%3A1991-)&amp;sort=date%20desc%2C%20bibcode%20desc&amp;p_=0">Astrophysics Data System</a></li>
     </ul>

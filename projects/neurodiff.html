@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NeuroDiff | StellarDNN</title>
+  <title>NeuroDiffEq | StellarDNN</title>
   <meta name="description" content="Neural network methods for solving differential equations.">
-  <meta property="og:title" content="NeuroDiff | StellarDNN">
+  <meta property="og:title" content="NeuroDiffEq | StellarDNN">
   <meta property="og:description" content="Neural network methods for solving differential equations.">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://www.stellardnn.org/projects/neurodiff.html">
   <link rel="icon" href="../assets/site/mark.svg" type="image/svg+xml">
   <script src="../assets/site/mode.js"></script>
-  <link rel="stylesheet" href="../assets/site/site.css?v=2874cbd200c9">
+  <link rel="stylesheet" href="../assets/site/site.css?v=fa466e5cf2ea">
   <script type="module" src="../assets/site/site.js?v=43bab9f919c8"></script>
 </head>
 <body>
@@ -27,6 +27,7 @@
       <ul><li class="nav-home"><a href="../index.html">Home</a></li>
 <li><a href="../projects.html" aria-current="location">Research</a></li>
 <li><a href="../publications.html">Publications</a></li>
+<li><a href="../newsroom.html">Lab updates</a></li>
 <li><a href="../people.html">People</a></li>
 <li><a href="../courses.html">Education</a></li>
 <li><a href="../active_projects.html">Research opportunities</a></li></ul>
@@ -35,6 +36,7 @@
       <summary>Menu <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
       <nav aria-label="More pages"><ul class="mobile-links"><li><a href="../projects.html" aria-current="location">Research</a></li>
 <li><a href="../publications.html">Publications</a></li>
+<li><a href="../newsroom.html">Lab updates</a></li>
 <li><a href="../people.html">People</a></li>
 <li><a href="../courses.html">Education</a></li>
 <li><a href="../active_projects.html">Research opportunities</a></li></ul></nav>
@@ -46,16 +48,27 @@
   </div>
 </header>
   <main class="site-container" id="content">
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol role="list">
+    <li><a href="../projects.html">Research</a></li>
+    <li><span class="breadcrumb-separator" aria-hidden="true">/</span><span aria-current="page">NeuroDiffEq</span></li>
+  </ol>
+</nav>
+
 <header class="page-heading">
   <h1>NeuroDiffEq</h1>
   <p class="lede">An open-source Python package for solving differential equations with neural networks.</p>
-  <a class="button" href="https://github.com/NeuroDiffGym/neurodiffeq">View the source code</a>
+  <div class="link-group">
+    <a class="button" href="https://github.com/NeuroDiffGym/neurodiffeq">NeuroDiffEq on GitHub</a>
+    <a href="../active_projects.html#NeuroDiffEq">NeuroDiffEq opportunities</a>
+  </div>
 </header>
 
 <div class="section-layout">
-  <nav class="section-nav" data-section-nav aria-label="NeuroDiff sections">
+  <nav class="section-nav" data-section-nav aria-label="NeuroDiffEq sections">
     <a href="#DifferentialEquations">Differential equations</a>
     <a href="#RelatedResearch">Related research</a>
+    <a href="#NeuroDiffHub">NeuroDiffHub archive</a>
   </nav>
   <div class="section-content">
 <section class="section prose" id="DifferentialEquations">
@@ -87,7 +100,6 @@
         <p>Related work by Arya Mohan and Pavlos Protopapas investigates transfer learning. The lab’s broader research studies how to reuse trained neural networks for new initial conditions and parameters across families of differential equations.</p>
         <ul>
           <li><a href="https://arxiv.org/abs/2110.11286">One-Shot Transfer Learning of Physics-Informed Neural Networks</a></li>
-          <li><a href="../active_projects.html#NeuroDiffEq">NeuroDiffEq opportunities</a></li>
         </ul>
       </div>
     </article>
@@ -103,12 +115,14 @@
       </div>
     </article>
   </div>
+  <p><a href="../publications.html#RecentPublications">All recent lab publications</a></p>
 </section>
 
-<nav class="jump-links" aria-label="Related research">
-  <a href="../NeuroDiffHub.html">NeuroDiffHub</a>
-  <a href="../publications.html#RecentPublications">Recent publications</a>
-</nav>
+<section class="section prose" id="NeuroDiffHub">
+  <h2>NeuroDiffHub archive</h2>
+  <p>NeuroDiffHub was designed as a central repository for neural network solutions to differential equations. Its web application let researchers search for equations, and its API provided tools to save and load solutions.</p>
+  <p><a href="../NeuroDiffHub.html">Read the NeuroDiffHub archive</a></p>
+</section>
   </div>
 </div>
   </main>
@@ -131,7 +145,6 @@
     <h2>Resources</h2>
     <ul>
       <li><a href="../publications.html">Publications</a></li>
-      <li><a href="../newsroom.html">Lab updates</a></li>
       <li><a href="https://scholar.google.com/citations?user=hlFnwxwAAAAJ&amp;hl=en">Google Scholar</a></li>
       <li><a href="https://ui.adsabs.harvard.edu/search/q=(%20author%3A%22protopapas%2C%20p%22%20AND%20year%3A1991-)&amp;sort=date%20desc%2C%20bibcode%20desc&amp;p_=0">Astrophysics Data System</a></li>
     </ul>

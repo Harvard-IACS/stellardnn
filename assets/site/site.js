@@ -2,6 +2,42 @@ const root = document.documentElement;
 const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
 const systemTheme = matchMedia("(prefers-color-scheme: dark)");
 
+function setupStarfield() {
+  const field = document.querySelector(".site-stars");
+  if (!field) return;
+
+  const flares = [[17, 14], [46, 12], [68, 20], [31, 34], [74, 47], [26, 66], [56, 77], [84, 72], [64, 54]];
+  const starsPerFlare = 13;
+  const stars = document.createDocumentFragment();
+  const seconds = Date.now() / 1000;
+  let seed = 314;
+
+  // Reuse the same positions and pulse timing on every page.
+  function between(min, max) {
+    seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+    return min + (max - min) * (seed / 0x100000000);
+  }
+
+  for (let index = 0; index < flares.length * starsPerFlare; index++) {
+    const flare = index % starsPerFlare === 0;
+    const [x, y] = flare ? flares[index / starsPerFlare] : [between(2, 98), between(2, 98)];
+    const size = flare ? between(2.2, 2.9) : between(1.25, 2.6);
+    const peak = flare ? between(0.64, 0.86) : between(0.27, 0.58);
+    const period = Number(between(3.4, 7.2).toFixed(2));
+    const phase = -(seconds + between(0, period)) % period;
+    const star = document.createElement("span");
+    star.className = flare ? "site-star site-star-flare" : "site-star";
+    star.style.setProperty("--star-x", `${x.toFixed(1)}%`);
+    star.style.setProperty("--star-y", `${y.toFixed(1)}%`);
+    star.style.setProperty("--star-size", `${size.toFixed(1)}px`);
+    star.style.setProperty("--star-peak", peak.toFixed(2));
+    star.style.setProperty("--star-period", `${period}s`);
+    star.style.setProperty("--star-phase", `${phase.toFixed(2)}s`);
+    stars.append(star);
+  }
+  field.append(stars);
+}
+
 function setupTheme() {
   const button = document.querySelector("[data-mode-toggle]");
   if (!button) return;
@@ -264,6 +300,7 @@ function setupPublicationSearch(refreshSectionNav) {
   });
 }
 
+setupStarfield();
 setupTheme();
 setupNavigation();
 setupPublicationSearch(setupSectionNav());

@@ -7,7 +7,6 @@ from html import escape
 import json
 import posixpath
 from pathlib import Path
-from random import Random
 import re
 
 
@@ -271,25 +270,6 @@ def with_sidebar(fragment, route, page):
 </div>"""
 
 
-def masthead_stars():
-    scatter = Random(314)
-    flares = ((17, 20), (31, 73), (46, 19), (58, 76), (66, 24), (69, 69), (83, 27))
-    stars = []
-    for index in range(73):
-        flare = index % 11 == 0
-        x, y = flares[index // 11] if flare else (scatter.uniform(2, 98), scatter.uniform(4, 96))
-        size = scatter.uniform(2.2, 2.9) if flare else scatter.uniform(1.25, 2.6)
-        peak = scatter.uniform(0.76, 0.94) if flare else scatter.uniform(0.34, 0.65)
-        duration = scatter.uniform(3.4, 7.2)
-        style = (
-            f"--star-x:{x:.1f}%;--star-y:{y:.1f}%;--star-size:{size:.1f}px;--star-peak:{peak:.2f};"
-            f"--star-period:{duration:.2f}s;--star-phase:{-scatter.uniform(0, duration):.2f}s"
-        )
-        classes = "hero-star hero-star-flare" if flare else "hero-star"
-        stars.append(f'    <span class="{classes}" style="{style}"></span>')
-    return "\n".join(stars)
-
-
 def recent_entries(limit, include_citation=False):
     records = json.loads((ROOT / "data" / "recent-publications.json").read_text(encoding="utf-8"))
     entries = []
@@ -312,7 +292,6 @@ def recent_entries(limit, include_citation=False):
 def render(route, page):
     fragment = (CONTENT / (page.source or route)).read_text(encoding="utf-8").strip()
     if route == "index.html":
-        fragment = fragment.replace("<!-- masthead stars -->", masthead_stars())
         fragment = fragment.replace("<!-- latest-publications -->", recent_entries(2))
     if route == "newsroom.html":
         fragment = fragment.replace("<!-- latest-publications -->", recent_entries(5, include_citation=True))
@@ -321,10 +300,10 @@ def render(route, page):
     title = escape(page.title if route == "index.html" else f"{page.title} | StellarDNN")
     description = escape(page.description, quote=True)
     canonical = SITE_URL + (route.replace(" ", "%20") if route != "index.html" else "")
-    stylesheet = "/assets/site/site.css"
+    stylesheet = versioned_asset("/assets/site/site.css")
+    site_script = versioned_asset("/assets/site/site.js")
     home_script = ""
     if route == "index.html":
-        stylesheet = versioned_asset(stylesheet)
         animation = versioned_asset("/assets/site/black-hole.js")
         home_script = f'\n  <script type="module" src="{animation}"></script>'
     citation_stamp = '\n  <style>/* Hallmark · copy: verbatim · Retain the published article titles in the research archive. */</style>' if route == "publications.html" else ""
@@ -342,9 +321,10 @@ def render(route, page):
   <link rel="icon" href="/assets/site/mark.svg" type="image/svg+xml">
   <script src="/assets/site/mode.js"></script>
   <link rel="stylesheet" href="{stylesheet}">{citation_stamp}
-  <script type="module" src="/assets/site/site.js"></script>{home_script}
+  <script type="module" src="{site_script}"></script>{home_script}
 </head>
 <body>
+  <div class="site-stars" aria-hidden="true"></div>
   <a class="button skip-link" href="#content">Skip to content</a>
   {header(page.active, route)}
   <main class="site-container" id="content">

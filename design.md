@@ -28,7 +28,7 @@ Templates supply a shared masthead and colophon. A page fragment starts with `<h
 
 Motion uses Hallmark's 120, 220, and 420 millisecond durations and shared easing. Navigation and state changes use short transitions. Focus appears instantly. Reduced-motion mode shows each final state immediately.
 
-Stars pulse behind the homepage masthead and fade toward its edges. The black hole uses transparent line art with moving highlights that follow the disk and the lensing arcs. The highlights use stronger ink on the light surface. Visitors can pause the black hole, and both animations start still with reduced motion enabled. Published figures remain part of the research record in their original form.
+The same starfield sits behind every page and fades at the edges of the viewport. Stars keep their positions during scrolling and their pulse timing across page changes. The black hole uses transparent line art with moving highlights that follow the disk and the lensing arcs. The highlights use stronger ink on the light surface. Visitors can pause the black hole, and both animations start still with reduced motion enabled. Published figures remain part of the research record in their original form.
 
 ## Source
 

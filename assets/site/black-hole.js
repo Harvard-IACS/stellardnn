@@ -46,9 +46,13 @@ function strokeOrbit(context, radius, from, to, segments) {
 
 function readPalette(exhibit) {
   const style = getComputedStyle(exhibit);
+  const accent = style.getPropertyValue("--color-accent").trim();
+  const dark = style.colorScheme === "dark";
   return {
     ink: style.getPropertyValue("--color-ink").trim(),
-    accent: style.getPropertyValue("--color-accent").trim(),
+    accent,
+    traceInk: dark ? accent : style.getPropertyValue("--color-button-hover").trim(),
+    traceContrast: dark ? 1 : 1.43,
   };
 }
 
@@ -124,18 +128,19 @@ function makeLineArt(canvas) {
     context.drawImage(contourCanvas, 0, 0);
     context.save();
     orient(context);
+    const { accent, traceInk, traceContrast } = palette;
     for (const { contour, phase, length } of highlights) {
       const { radius, fraction } = contours[contour];
       const end = phase + elapsed * (0.82 / radius ** 0.95);
-      const start = end - length;
+      const start = end - length * (1 + (traceContrast - 1) * 0.45);
       const beam = context.createLinearGradient(...orbitPoint(radius, start), ...orbitPoint(radius, end));
       beam.addColorStop(0, "transparent");
-      beam.addColorStop(0.53, palette.accent);
-      beam.addColorStop(0.74, palette.accent);
+      beam.addColorStop(0.53, accent);
+      beam.addColorStop(0.74, traceInk);
       beam.addColorStop(1, "transparent");
       context.strokeStyle = beam;
-      context.lineWidth = (1.55 - fraction * 0.48) * strokeUnit;
-      context.globalAlpha = 0.87 - fraction * 0.32;
+      context.lineWidth = (1.55 - fraction * 0.48) * strokeUnit * traceContrast;
+      context.globalAlpha = Math.min(1, (0.87 - fraction * 0.32) * traceContrast);
       strokeOrbit(context, radius, start, end, 18);
     }
     context.restore();

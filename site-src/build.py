@@ -31,17 +31,19 @@ class Page:
 PAGES = {
     "index.html": Page("StellarDNN", "Machine learning for astronomy, physics, and cybersecurity at Harvard SEAS.", "Home"),
     "projects.html": Page("Research", "Research directions and projects at StellarDNN.", "Research"),
-    "active_projects.html": Page("Research opportunities", "Explore StellarDNN research projects and opportunities to collaborate.", "Research opportunities"),
+    "active_projects.html": Page("Research opportunities", "Explore StellarDNN research projects and opportunities to collaborate.", "Research", parent="projects.html"),
     "publications.html": Page("Publications", "Explore recent and earlier StellarDNN publications and download the bibliography.", "Publications"),
     "people.html": Page("People", "Meet the principal investigator, members, collaborators, and alumni of StellarDNN.", "People"),
     "CV.html": Page("Pavlos Protopapas", "Biography, education, appointments, and teaching of Pavlos Protopapas.", "People", parent="people.html"),
     "people copy.html": Page("Earlier people directory", "Biographical material from the earlier StellarDNN roster.", "People", "people-archive.html", parent="people.html"),
     "courses.html": Page("Education", "Teaching, courses, and educational outreach from StellarDNN.", "Education"),
     "contact_us.html": Page("Contact", "Contact StellarDNN at Harvard’s Science and Engineering Complex."),
-    "work_with_us.html": Page("Work with us", "Explore research opportunities and contact the StellarDNN group.", "Research opportunities", parent="active_projects.html"),
+    "work_with_us.html": Page("Work with us", "Explore research opportunities and contact the StellarDNN group.", "Research", parent="active_projects.html"),
     "newsroom.html": Page("Lab updates", "Recent publications and research updates from StellarDNN.", "Lab updates"),
     "projects/nneht.html": Page("Event Horizon Telescope imaging", "StellarDNN projects on black hole imaging and Event Horizon Telescope data.", "Research", parent="projects.html"),
     "projects/neurodiff.html": Page("NeuroDiffEq", "Neural network methods for solving differential equations.", "Research", parent="projects.html"),
+    "projects/cosmology.html": Page("Cosmology-informed neural networks", "Neural network solvers for cosmic expansion and cosmological inference.", "Research", parent="projects.html", breadcrumb="Cosmology overview"),
+    "projects/adsml.html": Page("Astrophysics Data System machine learning", "Language models for astronomy literature and observatory bibliographies.", "Research", parent="projects.html", breadcrumb="ADSML overview"),
     "NeuroDiffHub.html": Page("NeuroDiffHub archive", "Archived StellarDNN project for building and sharing neural-network solutions to differential equations.", "Research", parent="projects/neurodiff.html"),
     "projects/astromer/index.html": Page("ASTROMER", "A pretrained transformer model for astronomical light curves.", "Research", parent="projects.html", breadcrumb="ASTROMER overview"),
     "projects/astromer/about.html": Page("ASTROMER model and weights", "The ASTROMER architecture, pretrained weights, and contribution information.", "Research", parent="projects/astromer/index.html", breadcrumb="Model and weights"),
@@ -59,7 +61,6 @@ NAVIGATION = (
     ("Lab updates", "/newsroom.html"),
     ("People", "/people.html"),
     ("Education", "/courses.html"),
-    ("Research opportunities", "/active_projects.html"),
 )
 
 
@@ -127,6 +128,14 @@ SECTION_NAVIGATION = {
         SidebarLink("Differential equations", "DifferentialEquations"),
         SidebarLink("Related research", "RelatedResearch"),
         SidebarLink("NeuroDiffHub archive", "NeuroDiffHub"),
+    ),
+    "projects/cosmology.html": (
+        SidebarLink("Cosmic expansion", "CosmicExpansion"),
+        SidebarLink("Related research", "RelatedResearch"),
+    ),
+    "projects/adsml.html": (
+        SidebarLink("astroBERT", "AstroBERT"),
+        SidebarLink("Bibliography curation", "BibliographyCuration"),
     ),
     "NeuroDiffHub.html": (
         SidebarLink("Project history", "HubHistory"),
@@ -254,7 +263,7 @@ def with_astromer_actions(fragment, route):
     is_overview = route == "projects/astromer/index.html"
     links = ASTROMER_ACTIONS
     if is_overview:
-        links += (("ASTROMER opportunities", "/active_projects.html#Astromer"),)
+        links += (("Research opportunities", "/active_projects.html#Astromer"),)
 
     items = []
     for label, href in links:

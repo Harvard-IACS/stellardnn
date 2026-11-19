@@ -100,8 +100,30 @@ function setupNavigation() {
 }
 
 function setupSectionNav() {
-  const nav = document.querySelector("[data-section-nav]");
+  const nav = document.querySelector(".section-nav");
   if (!nav) return;
+
+  function positionHighlight(link, scrollBehavior = "auto") {
+    const { offsetLeft, offsetTop, offsetWidth, offsetHeight } = link;
+    nav.style.setProperty("--indicator-x", `${offsetLeft}px`);
+    nav.style.setProperty("--indicator-y", `${offsetTop}px`);
+    nav.style.setProperty("--indicator-width", offsetWidth);
+    nav.style.setProperty("--indicator-height", offsetHeight);
+
+    const left = Math.min(offsetLeft, Math.max(nav.scrollLeft, offsetLeft + offsetWidth - nav.clientWidth));
+    const top = Math.min(offsetTop, Math.max(nav.scrollTop, offsetTop + offsetHeight - nav.clientHeight));
+    if (left !== nav.scrollLeft || top !== nav.scrollTop) {
+      nav.scrollTo({ left, top, behavior: reducedMotion.matches ? "auto" : scrollBehavior });
+    }
+  }
+
+  const currentPage = nav.querySelector('[aria-current="page"]');
+  if (currentPage) {
+    positionHighlight(currentPage);
+    window.addEventListener("resize", () => positionHighlight(currentPage));
+    return;
+  }
+  if (!nav.hasAttribute("data-section-nav")) return;
 
   const entries = [...nav.querySelectorAll('a[href^="#"]')].map((link) => ({
     link,
@@ -110,41 +132,60 @@ function setupSectionNav() {
   if (!entries.length) return;
 
   let active;
+  let available;
   let frame;
 
   function setActive(entry, scrollBehavior = "auto") {
     if (active !== entry) {
       active?.link.removeAttribute("aria-current");
       active = entry;
-      entry.link.setAttribute("aria-current", "location");
+      active?.link.setAttribute("aria-current", "location");
     }
 
-    const { offsetLeft, offsetTop, offsetWidth } = entry.link;
-    nav.style.setProperty("--indicator-x", `${offsetLeft}px`);
-    nav.style.setProperty("--indicator-y", `${offsetTop}px`);
-    nav.style.setProperty("--indicator-width", offsetWidth);
+    if (!entry) {
+      delete nav.dataset.active;
+      return;
+    }
+    positionHighlight(entry.link, scrollBehavior);
     nav.dataset.active = entry.section.id;
+  }
 
-    if (nav.scrollWidth > nav.clientWidth) {
-      const left = Math.min(offsetLeft, Math.max(nav.scrollLeft, offsetLeft + offsetWidth - nav.clientWidth));
-      if (left !== nav.scrollLeft) {
-        nav.scrollTo({ left, behavior: reducedMotion.matches ? "auto" : scrollBehavior });
-      }
-    }
+  function linkedSection() {
+    const target = document.getElementById(location.hash.slice(1));
+    if (target) return available.find(({ section }) => section.contains(target));
   }
 
   function sectionInView() {
-    const { scrollHeight } = root;
-    if (scrollHeight > window.innerHeight && window.scrollY + window.innerHeight >= scrollHeight - 2) {
-      return entries[entries.length - 1];
+    const linked = linkedSection();
+    const atEnd = window.scrollY + window.innerHeight >= root.scrollHeight - 2;
+    if (atEnd) {
+      const top = linked?.section.getBoundingClientRect().top;
+      if (top >= 0 && top < window.innerHeight) return linked;
+      if (window.scrollY > 0) return available.at(-1);
     }
 
     const readingLine = Math.min(160, window.innerHeight * 0.25);
-    let current = entries[0];
-    for (const entry of entries) {
-      if (entry.section.getBoundingClientRect().top <= readingLine) current = entry;
+    let current = available[0];
+    let currentTop = -Infinity;
+    for (const entry of available) {
+      const top = entry.section.getBoundingClientRect().top;
+      if (top > readingLine) continue;
+      // Two projects can start on the same row in the wide Research grid.
+      if (top > currentTop || (top === currentTop && entry === linked)) {
+        current = entry;
+        currentTop = top;
+      }
     }
     return current;
+  }
+
+  function refresh() {
+    available = entries.filter(({ link, section }) => {
+      link.hidden = Boolean(section.closest("[hidden]"));
+      return !link.hidden;
+    });
+    nav.hidden = !available.length;
+    setActive(sectionInView());
   }
 
   function scheduleUpdate() {
@@ -156,19 +197,21 @@ function setupSectionNav() {
     });
   }
 
-  const linkedSection = entries.find(({ link }) => link.hash === location.hash);
-  setActive(linkedSection || sectionInView());
+  refresh();
+  const linked = linkedSection();
+  if (linked) setActive(linked);
   window.addEventListener("scroll", scheduleUpdate, { passive: true });
   window.addEventListener("hashchange", scheduleUpdate);
   window.addEventListener("pageshow", scheduleUpdate);
   window.addEventListener("resize", () => setActive(sectionInView()));
+  return refresh;
 }
 
 function searchText(value) {
   return value.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLocaleLowerCase();
 }
 
-function setupPublicationSearch() {
+function setupPublicationSearch(refreshSectionNav) {
   const form = document.querySelector("[data-publication-search]");
   if (!form) return;
 
@@ -214,6 +257,7 @@ function setupPublicationSearch() {
     status.textContent = tokens.length
       ? `${count} matching ${count === 1 ? "entry" : "entries"}`
       : "";
+    refreshSectionNav?.();
   }
 
   form.hidden = false;
@@ -229,5 +273,4 @@ function setupPublicationSearch() {
 
 setupTheme();
 setupNavigation();
-setupSectionNav();
-setupPublicationSearch();
+setupPublicationSearch(setupSectionNav());

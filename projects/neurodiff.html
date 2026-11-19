@@ -28,7 +28,7 @@
 <li><a href="../publications.html">Publications</a></li>
 <li><a href="../people.html">People</a></li>
 <li><a href="../courses.html">Education</a></li>
-<li><a href="../active_projects.html" class="open-projects">Open projects</a></li></ul>
+<li><a href="../active_projects.html">Active research</a></li></ul>
     </nav>
     <details class="mobile-menu" data-mobile-menu>
       <summary>Menu <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
@@ -36,7 +36,7 @@
 <li><a href="../publications.html">Publications</a></li>
 <li><a href="../people.html">People</a></li>
 <li><a href="../courses.html">Education</a></li>
-<li><a href="../active_projects.html" class="open-projects">Open projects</a></li></ul></nav>
+<li><a href="../active_projects.html">Active research</a></li></ul></nav>
     </details>
     <button type="button" class="theme-toggle" data-mode-toggle aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode" hidden>
       <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13a8.7 8.7 0 0 1-10-10 9 9 0 1 0 10 10Z"/></svg>
@@ -51,7 +51,13 @@
   <a class="button" href="https://github.com/NeuroDiffGym/neurodiffeq">View the source code</a>
 </header>
 
-<section class="section prose">
+<div class="section-layout">
+  <nav class="section-nav" data-section-nav aria-label="NeuroDiff sections">
+    <a href="#DifferentialEquations">Differential equations</a>
+    <a href="#RelatedResearch">Related research</a>
+  </nav>
+  <div class="section-content">
+<section class="section prose" id="DifferentialEquations">
   <h2>Solving differential equations</h2>
   <p>Many differential equations in science and engineering are difficult to solve analytically. Physics-informed neural networks train on the equations and their conditions to approximate continuous solutions. NeuroDiffEq gives researchers a common library for developing and using these solvers.</p>
   <ul>
@@ -61,7 +67,7 @@
   </ul>
 </section>
 
-<section class="section">
+<section class="section" id="RelatedResearch">
   <h2>Related research</h2>
   <div class="index-list">
     <article class="index-row">
@@ -80,7 +86,7 @@
         <p>Related work by Arya Mohan and Pavlos Protopapas investigates transfer learning. The lab’s broader research studies how to reuse trained neural networks for new initial conditions and parameters across families of differential equations.</p>
         <ul>
           <li><a href="https://arxiv.org/abs/2110.11286">One-Shot Transfer Learning of Physics-Informed Neural Networks</a></li>
-          <li><a href="../active_projects.html#NeuroDiffEq">Active differential equation projects</a></li>
+          <li><a href="../active_projects.html#NeuroDiffEq">Active differential equation research</a></li>
         </ul>
       </div>
     </article>
@@ -102,6 +108,8 @@
   <a href="../NeuroDiffHub.html">NeuroDiffHub</a>
   <a href="../publications.html#RecentPublications">Recent publications</a>
 </nav>
+  </div>
+</div>
   </main>
   <footer class="site-container colophon">
   <div>

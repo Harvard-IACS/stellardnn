@@ -28,14 +28,14 @@ class Page:
 PAGES = {
     "index.html": Page("StellarDNN", "Machine learning for astronomy, physics, and cybersecurity at Harvard SEAS.", "Home"),
     "projects.html": Page("Research", "Research directions and projects at StellarDNN.", "Research"),
-    "active_projects.html": Page("Open projects", "Explore open StellarDNN research projects.", "Open projects"),
+    "active_projects.html": Page("Active research", "Explore active StellarDNN research and opportunities to collaborate.", "Active research"),
     "publications.html": Page("Publications", "Explore recent and earlier StellarDNN publications and download the bibliography.", "Publications"),
     "people.html": Page("People", "Meet the principal investigator, members, collaborators, and alumni of StellarDNN.", "People"),
     "CV.html": Page("Pavlos Protopapas", "Biography, education, appointments, and teaching of Pavlos Protopapas.", "People"),
     "people copy.html": Page("People archive", "Biographical material from the earlier StellarDNN roster.", "People", "people-archive.html"),
     "courses.html": Page("Education", "Teaching, courses, and educational outreach from StellarDNN.", "Education"),
     "contact_us.html": Page("Contact", "Contact StellarDNN at Harvard’s Science and Engineering Complex."),
-    "work_with_us.html": Page("Work with us", "Explore open projects and contact the StellarDNN research group.", "Open projects"),
+    "work_with_us.html": Page("Work with us", "Explore active research and contact the StellarDNN group.", "Active research"),
     "newsroom.html": Page("Lab updates", "Recent publications and research updates from StellarDNN."),
     "projects/nneht.html": Page("Neural networks for the Event Horizon Telescope", "StellarDNN projects on black hole imaging and Event Horizon Telescope data.", "Research"),
     "projects/neurodiff.html": Page("NeuroDiff", "Neural network methods for solving differential equations.", "Research"),
@@ -55,7 +55,97 @@ NAVIGATION = (
     ("Publications", "/publications.html"),
     ("People", "/people.html"),
     ("Education", "/courses.html"),
-    ("Open projects", "/active_projects.html"),
+    ("Active research", "/active_projects.html"),
+)
+
+
+@dataclass(frozen=True)
+class SidebarLink:
+    label: str
+    href: str
+    short_label: str = ""
+
+
+SECTION_NAVIGATION = {
+    "projects.html": (
+        SidebarLink("NeuroDiffHub", "#NeuroDiffHUB"),
+        SidebarLink("NeuroDiffEq", "#NeuroDiffEq"),
+        SidebarLink("ASTROMER model", "#Astromer"),
+        SidebarLink("Event Horizon Telescope", "#NNEHT", "Black holes"),
+        SidebarLink("Reservoir computing", "#RCTorch"),
+        SidebarLink("Cosmology", "#Cosmology"),
+        SidebarLink("ADSML", "#ADSML"),
+        SidebarLink("Cybersecurity", "#Cybersecurity"),
+        SidebarLink("Other projects", "#Other"),
+    ),
+    "active_projects.html": (
+        SidebarLink("NeuroDiffEq", "#NeuroDiffEq"),
+        SidebarLink("ASTROMER projects", "#Astromer", "ASTROMER"),
+        SidebarLink("Event Horizon Telescope", "#NNEHT", "Black holes"),
+        SidebarLink("Cosmology", "#Cosmology"),
+        SidebarLink("ADSML", "#ADSML"),
+        SidebarLink("Other projects", "#Other"),
+    ),
+    "publications.html": (
+        SidebarLink("Recent publications", "#RecentPublications", "Recent"),
+        SidebarLink("Earlier publications", "#EarlierPublications", "Earlier"),
+        SidebarLink("Research archive", "#ResearchArchive", "Archive"),
+    ),
+    "people.html": (
+        SidebarLink("Principal investigator", "#Pavlos", "PI"),
+        SidebarLink("Members", "#Members"),
+        SidebarLink("Collaborators", "#Collaborators"),
+        SidebarLink("Alumni", "#Alumni"),
+    ),
+    "courses.html": (
+        SidebarLink("Courses", "#Courses"),
+        SidebarLink("HarvardX", "#HarvardX"),
+        SidebarLink("Workshops and summer schools", "#Workshops", "Workshops"),
+        SidebarLink("Teaching portfolio", "#TeachingPortfolio", "Portfolio"),
+    ),
+    "CV.html": (
+        SidebarLink("Biography", "#Biography"),
+        SidebarLink("Education", "#education-heading"),
+        SidebarLink("Appointments", "#appointments-heading"),
+        SidebarLink("Teaching", "#teaching-heading"),
+        SidebarLink("Selected publication", "#publication-heading", "Publication"),
+    ),
+    "people copy.html": (
+        SidebarLink("Members", "#archive-members-heading"),
+        SidebarLink("Alumni", "#archive-alumni-heading"),
+    ),
+    "projects/nneht.html": (
+        SidebarLink("Physical parameters", "#PhysicalParameters"),
+        SidebarLink("Generative networks", "#GenerativeNetworks"),
+        SidebarLink("Diffusion models", "#DiffusionModels"),
+        SidebarLink("Visibility data", "#VisibilityData"),
+    ),
+    "projects/neurodiff.html": (
+        SidebarLink("Differential equations", "#DifferentialEquations"),
+        SidebarLink("Related research", "#RelatedResearch"),
+    ),
+}
+
+ASTROMER_NAVIGATION = (
+    SidebarLink("Overview", "/projects/astromer/index.html"),
+    SidebarLink("Model and weights", "/projects/astromer/about.html"),
+    SidebarLink("Data", "/projects/astromer/data.html"),
+    SidebarLink("Tutorials", "/projects/astromer/tutorials.html"),
+    SidebarLink("Team", "/projects/astromer/team.html"),
+    SidebarLink("Documentation", "https://astromer.readthedocs.io/en/main/"),
+    SidebarLink("GitHub", "https://github.com/astromer-science"),
+)
+
+LAB_NAVIGATION = (
+    SidebarLink("Lab updates", "/newsroom.html"),
+    SidebarLink("Work with us", "/work_with_us.html"),
+    SidebarLink("Contact", "/contact_us.html"),
+)
+
+NEURODIFF_NAVIGATION = (
+    SidebarLink("NeuroDiffHub", "/NeuroDiffHub.html"),
+    SidebarLink("NeuroDiffEq", "/projects/neurodiff.html"),
+    SidebarLink("Active differential equation research", "/active_projects.html#NeuroDiffEq"),
 )
 
 # Fragments use site-root paths. Make them relative for a GitHub Pages project
@@ -76,8 +166,6 @@ def nav_links(active, route, *, include_home=True):
             continue
         current = "page" if url == "/" + route else "location"
         attributes = f' aria-current="{current}"' if label == active else ""
-        if label == "Open projects":
-            attributes += ' class="open-projects"'
         item_class = ' class="nav-home"' if label == "Home" else ""
         links.append(f'<li{item_class}><a href="{url}"{attributes}>{label}</a></li>')
     return "\n".join(links)
@@ -137,6 +225,56 @@ def footer():
 </footer>""".strip()
 
 
+def with_sidebar(fragment, route, page):
+    nav_id = ""
+    section_links = SECTION_NAVIGATION.get(route)
+    if section_links:
+        label = f"{page.title} sections"
+        links = section_links
+    elif route.startswith("projects/astromer/"):
+        label = "ASTROMER navigation"
+        links = ASTROMER_NAVIGATION
+        nav_id = ' id="navbarSupportedContent"'
+    elif route in {"contact_us.html", "work_with_us.html", "newsroom.html"}:
+        label = "Lab pages"
+        links = LAB_NAVIGATION
+    elif route == "NeuroDiffHub.html":
+        label = "NeuroDiff research"
+        links = NEURODIFF_NAVIGATION
+    else:
+        return fragment
+
+    heading, separator, content = fragment.partition("</header>")
+    if not separator or not content.strip():
+        raise ValueError(f"A sidebar requires a page header and content in {route}")
+
+    items = []
+    for link in links:
+        text = escape(link.label)
+        attributes = ' aria-current="page"' if link.href == "/" + route else ""
+        if link.short_label:
+            short = escape(link.short_label)
+            accessible_label = escape(f"{link.label} ({link.short_label})", quote=True)
+            attributes += f' aria-label="{accessible_label}"'
+            text = (
+                f'<span class="section-nav-full-label">{text}</span>'
+                f'<span class="section-nav-short-label">{short}</span>'
+            )
+        items.append(f'    <a href="{escape(link.href, quote=True)}"{attributes}>{text}</a>')
+    navigation = "\n".join(items)
+    scroll_nav = " data-section-nav" if section_links else ""
+    return f"""{heading}{separator}
+
+<div class="section-layout">
+  <nav class="section-nav"{scroll_nav}{nav_id} aria-label="{escape(label, quote=True)}">
+{navigation}
+  </nav>
+  <div class="section-content">
+{content.strip()}
+  </div>
+</div>"""
+
+
 def recent_entries(limit, include_citation=False):
     records = json.loads((ROOT / "data" / "recent-publications.json").read_text(encoding="utf-8"))
     entries = []
@@ -162,6 +300,7 @@ def render(route, page):
         fragment = fragment.replace("<!-- latest-publications -->", recent_entries(2))
     if route == "newsroom.html":
         fragment = fragment.replace("<!-- latest-publications -->", recent_entries(5, include_citation=True))
+    fragment = with_sidebar(fragment, route, page)
 
     title = escape(page.title if route == "index.html" else f"{page.title} | StellarDNN")
     description = escape(page.description, quote=True)

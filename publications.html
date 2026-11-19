@@ -29,7 +29,7 @@
 <li><a href="publications.html" aria-current="page">Publications</a></li>
 <li><a href="people.html">People</a></li>
 <li><a href="courses.html">Education</a></li>
-<li><a href="active_projects.html" class="open-projects">Open projects</a></li></ul>
+<li><a href="active_projects.html">Active research</a></li></ul>
     </nav>
     <details class="mobile-menu" data-mobile-menu>
       <summary>Menu <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
@@ -37,7 +37,7 @@
 <li><a href="publications.html" aria-current="page">Publications</a></li>
 <li><a href="people.html">People</a></li>
 <li><a href="courses.html">Education</a></li>
-<li><a href="active_projects.html" class="open-projects">Open projects</a></li></ul></nav>
+<li><a href="active_projects.html">Active research</a></li></ul></nav>
     </details>
     <button type="button" class="theme-toggle" data-mode-toggle aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode" hidden>
       <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13a8.7 8.7 0 0 1-10-10 9 9 0 1 0 10 10Z"/></svg>
@@ -49,14 +49,16 @@
 <header class="page-heading">
   <h1>Publications</h1>
   <p class="lede">Explore Pavlos Protopapas’s publications through <a href="https://scholar.google.com/citations?user=hlFnwxwAAAAJ&amp;hl=en">Google Scholar</a> or <a href="https://ui.adsabs.harvard.edu/search/q=(%20author%3A%22protopapas%2C%20p%22%20AND%20year%3A1991-)&amp;sort=date%20desc%2C%20bibcode%20desc&amp;p_=0">Astrophysics Data System</a>.</p>
-  <nav class="jump-links" aria-label="Publication sections">
-    <a href="#RecentPublications">Recent publications</a>
-    <a href="#EarlierPublications">Earlier publications</a>
-    <a href="#ResearchArchive">Research archive</a>
-    <a href="publications.bib" download>Download reviewed bibliography (BibTeX)</a>
-  </nav>
+  <p><a href="publications.bib" download>Download reviewed bibliography (BibTeX)</a></p>
 </header>
 
+<div class="section-layout">
+  <nav class="section-nav" data-section-nav aria-label="Publications sections">
+    <a href="#RecentPublications" aria-label="Recent publications (Recent)"><span class="section-nav-full-label">Recent publications</span><span class="section-nav-short-label">Recent</span></a>
+    <a href="#EarlierPublications" aria-label="Earlier publications (Earlier)"><span class="section-nav-full-label">Earlier publications</span><span class="section-nav-short-label">Earlier</span></a>
+    <a href="#ResearchArchive" aria-label="Research archive (Archive)"><span class="section-nav-full-label">Research archive</span><span class="section-nav-short-label">Archive</span></a>
+  </nav>
+  <div class="section-content">
 <form class="index-search" data-publication-search role="search" hidden>
   <label for="publication-query">Search publications</label>
   <input id="publication-query" name="q" type="search" />
@@ -1729,6 +1731,8 @@
     </li>
   </ul>
 </section>
+  </div>
+</div>
   </main>
   <footer class="site-container colophon">
   <div>

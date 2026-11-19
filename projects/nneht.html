@@ -28,7 +28,7 @@
 <li><a href="../publications.html">Publications</a></li>
 <li><a href="../people.html">People</a></li>
 <li><a href="../courses.html">Education</a></li>
-<li><a href="../active_projects.html" class="open-projects">Open projects</a></li></ul>
+<li><a href="../active_projects.html">Active research</a></li></ul>
     </nav>
     <details class="mobile-menu" data-mobile-menu>
       <summary>Menu <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
@@ -36,7 +36,7 @@
 <li><a href="../publications.html">Publications</a></li>
 <li><a href="../people.html">People</a></li>
 <li><a href="../courses.html">Education</a></li>
-<li><a href="../active_projects.html" class="open-projects">Open projects</a></li></ul></nav>
+<li><a href="../active_projects.html">Active research</a></li></ul></nav>
     </details>
     <button type="button" class="theme-toggle" data-mode-toggle aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode" hidden>
       <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13a8.7 8.7 0 0 1-10-10 9 9 0 1 0 10 10Z"/></svg>
@@ -50,7 +50,15 @@
   <p class="lede">Deep learning for Event Horizon Telescope observations and black hole simulations.</p>
 </header>
 
-<section class="section media-split">
+<div class="section-layout">
+  <nav class="section-nav" data-section-nav aria-label="Neural networks for the Event Horizon Telescope sections">
+    <a href="#PhysicalParameters">Physical parameters</a>
+    <a href="#GenerativeNetworks">Generative networks</a>
+    <a href="#DiffusionModels">Diffusion models</a>
+    <a href="#VisibilityData">Visibility data</a>
+  </nav>
+  <div class="section-content">
+<section class="section media-split" id="PhysicalParameters">
   <div class="prose">
     <h2>Estimating physical parameters of M87*</h2>
     <p class="entry-meta">Tao Tsui and colleagues</p>
@@ -62,7 +70,7 @@
   </figure>
 </section>
 
-<section class="section media-split">
+<section class="section media-split" id="GenerativeNetworks">
   <div class="prose">
     <h2>Generating M87* images with adversarial networks</h2>
     <p class="entry-meta"><a href="https://www.arya-mohan.com/">Arya Mohan</a> and colleagues</p>
@@ -75,7 +83,7 @@
   </figure>
 </section>
 
-<section class="section media-split">
+<section class="section media-split" id="DiffusionModels">
   <div class="prose">
     <h2>Reconstructing M87* images with diffusion models</h2>
     <p class="entry-meta"><a href="https://www.linkedin.com/in/yuqing-pan/">Yuqing Pan</a> and colleagues</p>
@@ -87,7 +95,7 @@
   </figure>
 </section>
 
-<section class="section media-split">
+<section class="section media-split" id="VisibilityData">
   <div class="prose">
     <h2>Estimating M87* parameters from visibility data</h2>
     <p class="entry-meta">Franc O and colleagues</p>
@@ -100,9 +108,11 @@
 </section>
 
 <nav class="jump-links" aria-label="Related research">
-  <a href="../active_projects.html#NNEHT">Active Event Horizon Telescope projects</a>
+  <a href="../active_projects.html#NNEHT">Active Event Horizon Telescope research</a>
   <a href="../publications.html">Research publications</a>
 </nav>
+  </div>
+</div>
   </main>
   <footer class="site-container colophon">
   <div>

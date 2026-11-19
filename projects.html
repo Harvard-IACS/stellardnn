@@ -28,7 +28,7 @@
 <li><a href="publications.html">Publications</a></li>
 <li><a href="people.html">People</a></li>
 <li><a href="courses.html">Education</a></li>
-<li><a href="active_projects.html" class="open-projects">Open projects</a></li></ul>
+<li><a href="active_projects.html">Active research</a></li></ul>
     </nav>
     <details class="mobile-menu" data-mobile-menu>
       <summary>Menu <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
@@ -36,7 +36,7 @@
 <li><a href="publications.html">Publications</a></li>
 <li><a href="people.html">People</a></li>
 <li><a href="courses.html">Education</a></li>
-<li><a href="active_projects.html" class="open-projects">Open projects</a></li></ul></nav>
+<li><a href="active_projects.html">Active research</a></li></ul></nav>
     </details>
     <button type="button" class="theme-toggle" data-mode-toggle aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode" hidden>
       <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13a8.7 8.7 0 0 1-10-10 9 9 0 1 0 10 10Z"/></svg>
@@ -48,10 +48,23 @@
 <header class="page-heading">
   <h1>Research</h1>
   <p class="lede">Machine learning research in astronomy, physics, and cybersecurity.</p>
-  <a class="button" href="active_projects.html">Explore active projects</a>
+  <a class="button" href="active_projects.html">Explore active research</a>
 </header>
 
-<div class="index-list project-index">
+<div class="section-layout">
+  <nav class="section-nav" data-section-nav aria-label="Research sections">
+    <a href="#NeuroDiffHUB">NeuroDiffHub</a>
+    <a href="#NeuroDiffEq">NeuroDiffEq</a>
+    <a href="#Astromer">ASTROMER model</a>
+    <a href="#NNEHT" aria-label="Event Horizon Telescope (Black holes)"><span class="section-nav-full-label">Event Horizon Telescope</span><span class="section-nav-short-label">Black holes</span></a>
+    <a href="#RCTorch">Reservoir computing</a>
+    <a href="#Cosmology">Cosmology</a>
+    <a href="#ADSML">ADSML</a>
+    <a href="#Cybersecurity">Cybersecurity</a>
+    <a href="#Other">Other projects</a>
+  </nav>
+  <div class="section-content">
+<div class="section index-grid project-index">
   <article class="index-row" id="NeuroDiffHUB">
     <div class="entry-meta"><img src="assets/general/img/home/neurodiffhub_logo.png" width="76" height="76" alt="" loading="lazy"></div>
     <div class="prose">
@@ -130,6 +143,8 @@
       <p><a href="publications.html">Browse research publications</a></p>
     </div>
   </article>
+</div>
+  </div>
 </div>
   </main>
   <footer class="site-container colophon">

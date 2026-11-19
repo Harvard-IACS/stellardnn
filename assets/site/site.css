@@ -253,7 +253,7 @@ address {
   text-decoration-color: transparent;
 }
 
-:is(.primary-nav, .mobile-links) a:is(:hover, [aria-current], .open-projects) {
+:is(.primary-nav, .mobile-links) a:is(:hover, [aria-current]) {
   color: var(--color-accent);
   text-decoration-color: currentColor;
 }
@@ -642,6 +642,12 @@ details[open] > .disclosure {
   gap: var(--space-lg);
 }
 
+.project-index .index-row > .entry-meta:first-child img {
+  inline-size: min(100%, 9rem);
+  block-size: 5rem;
+  object-position: left center;
+}
+
 .index-list .entry-meta time,
 .journal-publications time {
   font-variant-numeric: tabular-nums;
@@ -691,12 +697,13 @@ details[open] > .disclosure {
   inset-block-start: 0;
   inset-inline-start: 0;
   inline-size: 1px;
-  block-size: var(--control-height);
-  background: var(--color-selection);
+  block-size: 1px;
+  background: var(--color-button);
   opacity: 0;
   content: "";
   pointer-events: none;
-  transform: translate(var(--indicator-x, 0px), var(--indicator-y, 0px)) scaleX(var(--indicator-width, 1));
+  transform: translate(var(--indicator-x, 0px), var(--indicator-y, 0px))
+    scale(var(--indicator-width, 1), var(--indicator-height, 1));
   transform-origin: left top;
   transition: transform var(--dur-short) var(--ease-out), opacity var(--dur-micro) var(--ease-out);
 }
@@ -714,6 +721,7 @@ details[open] > .disclosure {
   padding-inline: var(--space-sm);
   color: inherit;
   font-size: var(--text-sm);
+  line-height: 1.25;
   text-decoration: none;
   white-space: nowrap;
   transition: color var(--dur-short) var(--ease-out), background-color var(--dur-short) var(--ease-out);
@@ -724,7 +732,12 @@ details[open] > .disclosure {
 }
 
 .section-nav a[aria-current="location"] {
-  color: var(--color-selection-ink);
+  color: var(--color-button-ink);
+}
+
+.section-nav a[aria-current="page"] {
+  color: var(--color-button-ink);
+  background: var(--color-button);
 }
 
 .section-nav a:not([aria-current]):hover {
@@ -736,8 +749,8 @@ details[open] > .disclosure {
   outline-offset: calc(-1 * var(--space-2xs));
 }
 
-.people-sections > .section {
-  scroll-margin-block-start: calc(var(--control-height) + var(--space-lg));
+.section-content :where([id]) {
+  scroll-margin-block-start: calc(var(--control-height) + var(--space-xl));
 }
 
 .jump-links,
@@ -1006,23 +1019,38 @@ main.site-container {
 }
 
 @media (min-width: 64rem) {
-  .people-layout {
+  .section-layout {
     display: grid;
     grid-template-columns: minmax(0, clamp(11rem, 14vw, 13rem)) minmax(0, 1fr);
     gap: var(--column-gap);
+  }
+
+  .section-content {
+    grid-column: 2;
   }
 
   .section-nav {
     inset-block-start: var(--space-lg);
     align-self: start;
     flex-direction: column;
+    max-block-size: calc(100dvh - var(--space-lg) * 2);
     margin-block-start: var(--space-xl);
     padding: 0;
-    overflow: visible;
+    overflow: auto;
   }
 
-  .people-sections > .section {
+  .section-nav a {
+    padding-block: var(--space-xs);
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+
+  .section-content :where([id]) {
     scroll-margin-block-start: var(--space-lg);
+  }
+
+  .section-content > .index-search {
+    margin-block-start: var(--space-xl);
   }
 }
 
@@ -1035,6 +1063,11 @@ main.site-container {
 
   .index-grid > .index-row {
     padding-block: 0;
+  }
+
+  .project-index .index-row {
+    grid-template-columns: minmax(0, 5rem) minmax(0, 1fr);
+    gap: var(--space-md);
   }
 }
 

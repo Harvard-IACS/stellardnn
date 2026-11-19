@@ -1,140 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta charset="UTF-8" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
-  <link href="static/css/style.css" rel="stylesheet">
-  <link rel="icon" href="static/img/icon_white.png" type="image/x-icon">
-
-  <title>
-    ASTROMER: A pre-trained model for the representation of light curves
-  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASTROMER tutorials | StellarDNN</title>
+  <meta name="description" content="Installation and introductory notebooks for ASTROMER.">
+  <meta property="og:title" content="ASTROMER tutorials | StellarDNN">
+  <meta property="og:description" content="Installation and introductory notebooks for ASTROMER.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.stellardnn.org/projects/astromer/tutorials.html">
+  <link rel="icon" href="../../assets/site/mark.svg" type="image/svg+xml">
+  <script src="../../assets/site/mode.js"></script>
+  <link rel="stylesheet" href="../../assets/site/site.css">
+  <script type="module" src="../../assets/site/site.js"></script>
 </head>
-
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="static/img/logo_white.png" alt="" width="200"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent" style="float: right;">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="tutorials.html">Tutorials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Astromer</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="team.html">Our Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://astromer.readthedocs.io/en/main/">Read the Docs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/astromer-science">GitHub</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+  <a class="button skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+  <div class="site-container masthead">
+    <a class="wordmark" href="../../index.html" aria-label="Harvard SEAS, StellarDNN home">Harvard SEAS</a>
+    <nav class="primary-nav" aria-label="Main navigation">
+      <ul><li><a href="../../projects.html" aria-current="location">Research</a></li>
+<li><a href="../../publications.html">Publications</a></li>
+<li><a href="../../people.html">People</a></li>
+<li><a href="../../courses.html">Education</a></li>
+<li><a href="../../active_projects.html" class="open-projects">Open projects</a></li></ul>
     </nav>
+    <details class="mobile-menu" data-mobile-menu>
+      <summary>Menu <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <nav aria-label="Main navigation"><ul class="mobile-links"><li><a href="../../projects.html" aria-current="location">Research</a></li>
+<li><a href="../../publications.html">Publications</a></li>
+<li><a href="../../people.html">People</a></li>
+<li><a href="../../courses.html">Education</a></li>
+<li><a href="../../active_projects.html" class="open-projects">Open projects</a></li></ul></nav>
+    </details>
+    <button type="button" class="theme-toggle" data-mode-toggle aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode" hidden>
+      <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13a8.7 8.7 0 0 1-10-10 9 9 0 1 0 10 10Z"/></svg>
+      <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+    </button>
+  </div>
+</header>
+  <main class="site-container" id="content">
+<header class="page-heading">
+  <h1>ASTROMER tutorials</h1>
+  <p class="lede">Prepare light curves, use the pretrained weights, and classify astronomical objects.</p>
+</header>
 
-  </header>
-<div class="top-bar">
-    <div class="container">
-        <h1>Tutorials</h1>
-    </div>
-</div>
-<br>
-<div class="container">
-    <h2>Install ASTROMER</h2>
-    <p>ASTROMER is tested and supported on the following 64-bit systems:</p>
-    <li style="font-size:18px; color: var(--pop-color)">Python 3.8-3.10</li>
-    <br>
-    <p>Install our python library including all the functionalities:</p>
-    <p class="code">pip install ASTROMER</p>
-</div>
-<div class="container">
-    <h2>Explore ASTROMER</h2>
+<nav class="jump-links" id="navbarSupportedContent" aria-label="ASTROMER navigation">
+  <a href="../../projects/astromer/index.html">Overview</a>
+  <a href="../../projects/astromer/about.html">Model and weights</a>
+  <a href="../../projects/astromer/data.html">Data</a>
+  <a href="../../projects/astromer/tutorials.html" aria-current="page">Tutorials</a>
+  <a href="../../projects/astromer/team.html">Team</a>
+  <a href="https://astromer.readthedocs.io/en/main/">Documentation</a>
+  <a href="https://github.com/astromer-science">GitHub</a>
+</nav>
 
-    <p>Learn to use ASTROMER following the tutorials stored in these <a href="https://colab.research.google.com/">Google Colaboratory</a> notebooks.</p>
-    <div class="row">
-        <div class="col sm-6 d-flex align-items-stretch text-center"></div>
-        <div class="col sm-6 d-flex align-items-stretch text-center"></div>
+<section class="section prose">
+  <h2>Install ASTROMER</h2>
+  <p>The original package was tested on 64-bit Python 3.8 to 3.10.</p>
+  <pre><code>pip install ASTROMER</code></pre>
+</section>
 
-    </div>    
-    <div class="row">
-        <div class="col sm-4 d-flex align-items-stretch text-center">
-            <div class="card">
-                <div class="card-body rounded-9">
-                    <h5 class="card-title">Tutorial 1: Prepare the data</h5>
-                    <br>
-                    <p class="card-text">Here you will learn how to format our available data
-                        to fit ASTROMER's requirements.</p>
-                        <br><br>
-                        <div class="card-btn"><a href="https://colab.research.google.com/drive/1bRTgCPuJXKRfl9Oq5QkihQeFHfeYAh_T"><button class="button-act">Learn more</button></a></div>
-                    </div>
-            </div>
-        </div>
-
-        <div class="col sm-4 d-flex align-items-stretch text-center text-center">
-            <div class="card">
-                <div class="card-body rounded-9">
-                    <h5 class="card-title">Tutorial 2: Classification using MACHO Catalog</h5>
-                    <br>
-                    <p class="card-text"> Use the pre-trained weights to classify light curves from the Massive Compact Halo Object
-                        survey with a Tensorflow model.
-                    </p>
-                    <br><br>
-
-                    <div class="card-btn"><a href="https://colab.research.google.com/drive/1bh8ZCnCxGFTYZvxvWXJrzwqs94RAgd0F"><button class="button-act">Learn more</button></a></div>
-                </div>
-            </div>
-        </div>
-        <div class="col sm-4 d-flex align-items-stretch text-center">
-            <div class="card">
-                <div class="card-body rounded-9">
-                    <h5 class="card-title">Tutorial 3: Classification using ALeRCE broker</h5>
-                    <br>
-                    <p class="card-text">Learn to extract the embeddings of ASTROMER to classify light curves from the Zwicky Transient Facility (ZTF) using a Random Forest classifier.</p>
-                        <br><br>
-                        <div class="card-btn"><a href="https://colab.research.google.com/drive/1bkbsZQLDK9fbe-64EzQz7B7K1Saol9pS"><button class="button-act">Learn more</button></a></div>
-                    </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<br />
-<br />
-
-
-</div>
-<br><br><br>
-  
-  <footer>
-    <div class="container">
-      <br>
-      <img class="footer-img" src="static/img/harvard_logo.png">
-      <img class="footer-img" src="static/img/udec_logo.png">
-
-<br><br>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
+<section class="section">
+  <h2>Colab notebooks</h2>
+  <p>Run these tutorials in <a href="https://colab.research.google.com/">Google Colab</a>.</p>
+  <ol class="index-list tutorial-list">
+    <li class="index-row">
+      <div>
+        <h3><a href="https://colab.research.google.com/drive/1bRTgCPuJXKRfl9Oq5QkihQeFHfeYAh_T">Prepare the data</a></h3>
+        <p>Format the available light-curve data for ASTROMER.</p>
+      </div>
+    </li>
+    <li class="index-row">
+      <div>
+        <h3><a href="https://colab.research.google.com/drive/1bh8ZCnCxGFTYZvxvWXJrzwqs94RAgd0F">Classify light curves from the MACHO catalog</a></h3>
+        <p>Use the pretrained weights with a TensorFlow model to classify light curves from the Massive Compact Halo Object survey.</p>
+      </div>
+    </li>
+    <li class="index-row">
+      <div>
+        <h3><a href="https://colab.research.google.com/drive/1bkbsZQLDK9fbe-64EzQz7B7K1Saol9pS">Classify light curves with the ALeRCE broker</a></h3>
+        <p>Extract ASTROMER embeddings for Zwicky Transient Facility light curves and classify them with a random forest.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+  </main>
+  <footer class="site-container colophon">
+  <div>
+    <a class="colophon-title" href="../../index.html">StellarDNN</a>
+    <p class="fine-print">Harvard John A. Paulson School of Engineering and Applied Sciences</p>
+    <address><a href="https://goo.gl/maps/GMKQnV4LsEbwrw2i8">Science and Engineering Complex<br>150 Western Ave, Boston, MA 02134</a></address>
+  </div>
+  <nav aria-label="People and lab">
+    <h2>Lab</h2>
+    <ul>
+      <li><a href="../../people.html#Members">Members</a></li>
+      <li><a href="../../people.html#Collaborators">Collaborators</a></li>
+      <li><a href="../../people.html#Alumni">Alumni</a></li>
+      <li><a href="../../contact_us.html">Contact</a></li>
+    </ul>
+  </nav>
+  <nav aria-label="Research resources">
+    <h2>Resources</h2>
+    <ul>
+      <li><a href="../../publications.html">Publications</a></li>
+      <li><a href="../../newsroom.html">Lab updates</a></li>
+      <li><a href="https://scholar.google.com/citations?user=hlFnwxwAAAAJ&amp;hl=en">Google Scholar</a></li>
+      <li><a href="https://ui.adsabs.harvard.edu/search/q=(%20author%3A%22protopapas%2C%20p%22%20AND%20year%3A1991-)&amp;sort=date%20desc%2C%20bibcode%20desc&amp;p_=0">Astrophysics Data System</a></li>
+    </ul>
+  </nav>
+</footer>
 </body>
-
 </html>

@@ -1,0 +1,99 @@
+/* Hallmark · v2.0.0 · system: StellarDNN research journal · modes: light+dark */
+/* The masthead carries the first screen. Research figures carry the detail pages. */
+
+:root {
+  color-scheme: light;
+  --color-paper: oklch(96.4% 0.006 110);
+  --color-paper-2: oklch(93.8% 0.008 110);
+  --color-paper-3: oklch(90.8% 0.01 110);
+  --color-ink: oklch(20% 0.011 35);
+  --color-ink-2: oklch(35% 0.016 42);
+  --color-muted: oklch(43% 0.013 52);
+  --color-rule: oklch(73% 0.011 97);
+  --color-rule-strong: oklch(51% 0.014 68);
+  --color-accent: oklch(43% 0.157 27);
+  --color-button: oklch(43% 0.157 27);
+  --color-button-hover: oklch(36% 0.139 27);
+  --color-button-ink: oklch(98% 0.006 27);
+  --color-focus: oklch(47% 0.176 27);
+  --color-plate: oklch(15% 0.014 45);
+  --color-plate-ink: oklch(94% 0.014 67);
+  --color-plate-muted: oklch(77% 0.023 67);
+  --color-figure-mat: oklch(98% 0.005 110);
+  --color-selection: oklch(86% 0.052 27);
+  --color-selection-ink: oklch(23% 0.034 27);
+
+  --font-display: "STIX Two Text", Baskerville, Georgia, serif;
+  --font-body: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  --font-code: ui-monospace, "SF Mono", Consolas, monospace;
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-body: 1rem;
+  --text-lead: 1.25rem;
+  --text-h3: 1.5625rem;
+  --text-h2: 1.953125rem;
+  --text-section: clamp(2rem, 2.5vw + 1rem, 3.5rem);
+  --text-title: clamp(2.5rem, 5.8vw, 5.25rem);
+  --text-display: clamp(3.5rem, 12.35vw, 10.75rem);
+  --space-3xs: 2px;
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+  --space-4xl: 144px;
+  --gutter: clamp(var(--space-lg), 4.75vw, var(--space-2xl));
+  --column-gap: clamp(var(--space-lg), 4vw, var(--space-xl));
+  --container: 76rem;
+  --measure: 68ch;
+  --rule: 1px;
+  --radius: 0px;
+  --control-height: 2.75rem;
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+[data-mode="dark"] {
+  color-scheme: dark;
+  --color-paper: oklch(17.4% 0.01 43);
+  --color-paper-2: oklch(21% 0.012 43);
+  --color-paper-3: oklch(25% 0.014 43);
+  --color-ink: oklch(94% 0.01 55);
+  --color-ink-2: oklch(84% 0.016 55);
+  --color-muted: oklch(72% 0.017 55);
+  --color-rule: oklch(36% 0.016 55);
+  --color-rule-strong: oklch(58% 0.016 55);
+  --color-accent: oklch(76% 0.119 27);
+  --color-button: oklch(47% 0.147 27);
+  --color-button-hover: oklch(52% 0.147 27);
+  --color-focus: oklch(79% 0.128 27);
+  --color-selection: oklch(34% 0.077 27);
+  --color-selection-ink: oklch(96% 0.014 27);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-mode]) {
+    color-scheme: dark;
+    --color-paper: oklch(17.4% 0.01 43);
+    --color-paper-2: oklch(21% 0.012 43);
+    --color-paper-3: oklch(25% 0.014 43);
+    --color-ink: oklch(94% 0.01 55);
+    --color-ink-2: oklch(84% 0.016 55);
+    --color-muted: oklch(72% 0.017 55);
+    --color-rule: oklch(36% 0.016 55);
+    --color-rule-strong: oklch(58% 0.016 55);
+    --color-accent: oklch(76% 0.119 27);
+    --color-button: oklch(47% 0.147 27);
+    --color-button-hover: oklch(52% 0.147 27);
+    --color-focus: oklch(79% 0.128 27);
+    --color-selection: oklch(34% 0.077 27);
+    --color-selection-ink: oklch(96% 0.014 27);
+  }
+}

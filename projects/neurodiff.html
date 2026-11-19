@@ -1,114 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <!-- Title -->
-    <title>About StellarDNN |  StellarDNN research Lab</title>
-
-    <!-- Required Meta Tags Always Come First -->
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-
-    <!-- Favicon -->
-    <link href="./favicon.ico" rel="shortcut icon">
-
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-
-    <!-- CSS Front Template -->
-    <link href="/assets/front_v3_3/css/theme.min.css" rel="stylesheet">
-    <link href="/assets/front_v3_3/css/projectstyles.css" rel="stylesheet">
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NeuroDiff | StellarDNN</title>
+  <meta name="description" content="Neural network methods for solving differential equations.">
+  <meta property="og:title" content="NeuroDiff | StellarDNN">
+  <meta property="og:description" content="Neural network methods for solving differential equations.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.stellardnn.org/projects/neurodiff.html">
+  <link rel="icon" href="../assets/site/mark.svg" type="image/svg+xml">
+  <script src="../assets/site/mode.js"></script>
+  <link rel="stylesheet" href="../assets/site/site.css">
+  <script type="module" src="../assets/site/site.js"></script>
 </head>
-
 <body>
-    <!-- ========== HEADER ========== -->
-    <header-component></header-component>
-    <!-- ========== END HEADER ========== -->
+  <a class="button skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+  <div class="site-container masthead">
+    <a class="wordmark" href="../index.html" aria-label="Harvard SEAS, StellarDNN home">Harvard SEAS</a>
+    <nav class="primary-nav" aria-label="Main navigation">
+      <ul><li><a href="../projects.html" aria-current="location">Research</a></li>
+<li><a href="../publications.html">Publications</a></li>
+<li><a href="../people.html">People</a></li>
+<li><a href="../courses.html">Education</a></li>
+<li><a href="../active_projects.html" class="open-projects">Open projects</a></li></ul>
+    </nav>
+    <details class="mobile-menu" data-mobile-menu>
+      <summary>Menu <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <nav aria-label="Main navigation"><ul class="mobile-links"><li><a href="../projects.html" aria-current="location">Research</a></li>
+<li><a href="../publications.html">Publications</a></li>
+<li><a href="../people.html">People</a></li>
+<li><a href="../courses.html">Education</a></li>
+<li><a href="../active_projects.html" class="open-projects">Open projects</a></li></ul></nav>
+    </details>
+    <button type="button" class="theme-toggle" data-mode-toggle aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode" hidden>
+      <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13a8.7 8.7 0 0 1-10-10 9 9 0 1 0 10 10Z"/></svg>
+      <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+    </button>
+  </div>
+</header>
+  <main class="site-container" id="content">
+<header class="page-heading">
+  <h1>NeuroDiffEq</h1>
+  <p class="lede">An open-source Python package for solving differential equations with neural networks.</p>
+  <a class="button" href="https://github.com/NeuroDiffGym/neurodiffeq">View the source code</a>
+</header>
 
-    <!-- ========== MAIN ========== -->
-    <main id="content" role="main">
-        <!-- Hero Section -->
-        <div class="container space-top-3 space-top-lg-4 space-bottom-2">
-            <!-- Content -->
-            <br><br>
-            <h1>NeuroDiff</h1>
+<section class="section prose">
+  <h2>Solving differential equations</h2>
+  <p>Many differential equations in science and engineering are difficult to solve analytically. Physics-informed neural networks train on the equations and their conditions to approximate continuous solutions. NeuroDiffEq gives researchers a common library for developing and using these solvers.</p>
+  <ul>
+    <li><a href="https://doi.org/10.21105/joss.01931">NeuroDiffEq: A Python package for solving differential equations with neural networks</a></li>
+    <li><a href="https://arxiv.org/abs/2502.12177">Recent advances in NeuroDiffEq</a></li>
+    <li><a href="https://pypi.org/project/neurodiffeq/">NeuroDiffEq on PyPI</a></li>
+  </ul>
+</section>
 
-                <br> <br>
+<section class="section">
+  <h2>Related research</h2>
+  <div class="index-list">
+    <article class="index-row">
+      <div>
+        <h3>Preserving physical symmetries</h3>
+        <p>Marios Mattheakis, Pavlos Protopapas, and colleagues study how to embed physical symmetries in neural networks and use Hamiltonian neural networks to solve equations of motion.</p>
+        <ul>
+          <li><a href="https://arxiv.org/abs/1904.08991">Physical Symmetries Embedded in Neural Networks</a></li>
+          <li><a href="https://doi.org/10.1103/physreve.105.065305">Hamiltonian neural networks for solving equations of motion</a></li>
+        </ul>
+      </div>
+    </article>
+    <article class="index-row">
+      <div>
+        <h3>Transfer learning for new conditions</h3>
+        <p>Related work by Arya Mohan and Pavlos Protopapas investigates transfer learning. The lab’s broader research studies how to reuse trained neural networks for new initial conditions and parameters across families of differential equations.</p>
+        <ul>
+          <li><a href="https://arxiv.org/abs/2110.11286">One-Shot Transfer Learning of Physics-Informed Neural Networks</a></li>
+          <li><a href="../active_projects.html#NeuroDiffEq">Active differential equation projects</a></li>
+        </ul>
+      </div>
+    </article>
+    <article class="index-row">
+      <div>
+        <h3>Training solvers for solution families</h3>
+        <p>We study solution bundles, residual-based error bounds, uncertainty quantification, and loss functions learned with generative adversarial networks.</p>
+        <ul>
+          <li><a href="https://arxiv.org/abs/2006.14372">Solving Differential Equations Using Neural Network Solution Bundles</a></li>
+          <li><a href="https://proceedings.mlr.press/v216/liu23b.html">Residual-based error bound for physics-informed neural networks</a></li>
+          <li><a href="https://arxiv.org/abs/2209.07081">DEQGAN: Learning the Loss Function for PINNs with Generative Adversarial Networks</a></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
 
-
-                <div class="main-container" >
-                    <div class="image-description-container">
-                        <div class="image-container">
-                            <img src="/assets/general/img/projects" class="image"  alt="Marios 1">
-                        </div>
-                    <div class="description" >
-                        <p class="proj-title">Marios work 1 
-
-                        </p>
-                        <p style="margin-bottom:auto;">Tao</p>
-                        <p style="margin-top:7px; margin-bottom: auto;">Taos work.</p>
-                        <a href="https://www.stellardnn.org/" class="link">Webpage</a>&nbsp;&nbsp;•&nbsp;&nbsp;
-                        <a href="https://www.stellardnn.org/" class="link">Paper</a>&nbsp;&nbsp;•&nbsp;&nbsp; 
-                        <a href="https://www.stellardnn.org/" class="link">Code</a> &nbsp;&nbsp;</p>
-                    </div>
-                    </div>
-                </div>
-
-                <br> <br>
-
-                <div class="main-container" >
-                    <div class="image-description-container">
-                        <div class="image-container">
-                            <img src="/assets/general/img/projects/" class="image"  alt="Real and Fake Blackholes">
-                        </div>
-                      <div class="description" >
-                        <p class="proj-title"> Transfer Learning </p>
-                        <p style="margin-bottom:auto;"> People: <a href="https://www.arya-mohan.com/">Arya Mohan</a>, Pavlos Protopapas</p>
-                        <p style="margin-top:7px; margin-bottom: auto;"></p>
-                        <!--a href="https://www.stellardnn.org/" class="link">Webpage</a-->
-                        <a href="" class="link">Paper</a>
-                        <a href="" class="link">Code</a> &nbsp;&nbsp;</p>
-                      </div>
-                    </div>
-                </div>
-        </div>
-        <!-- End Hero Section -->
-
-
-
-        <!-- Divider -->
-        <div class="container">
-            <div class="w-lg-65 mx-lg-auto">
-                <hr class="my-0">
-            </div>
-        </div>
-        <!-- End Divider -->
-
-
-
-        <!-- Divider -->
-        <div class="container">
-            <div class="w-lg-65 mx-lg-auto">
-                <hr class="my-0">
-            </div>
-        </div>
-        <!-- End Divider -->
-
-        
-    </main>
-    <!-- ========== END MAIN ========== -->
-
-    <!-- ========== FOOTER ========== -->
-    <footer-component></footer-component>
-    <!-- ========== END FOOTER ========== -->
-
-
-    <!-- JS -->
-    <script src="components/js/header.js"></script>
-    <script src="components/js/footer.js"></script>
+<nav class="jump-links" aria-label="Related research">
+  <a href="../NeuroDiffHub.html">NeuroDiffHub</a>
+  <a href="../publications.html#RecentPublications">Recent publications</a>
+</nav>
+  </main>
+  <footer class="site-container colophon">
+  <div>
+    <a class="colophon-title" href="../index.html">StellarDNN</a>
+    <p class="fine-print">Harvard John A. Paulson School of Engineering and Applied Sciences</p>
+    <address><a href="https://goo.gl/maps/GMKQnV4LsEbwrw2i8">Science and Engineering Complex<br>150 Western Ave, Boston, MA 02134</a></address>
+  </div>
+  <nav aria-label="People and lab">
+    <h2>Lab</h2>
+    <ul>
+      <li><a href="../people.html#Members">Members</a></li>
+      <li><a href="../people.html#Collaborators">Collaborators</a></li>
+      <li><a href="../people.html#Alumni">Alumni</a></li>
+      <li><a href="../contact_us.html">Contact</a></li>
+    </ul>
+  </nav>
+  <nav aria-label="Research resources">
+    <h2>Resources</h2>
+    <ul>
+      <li><a href="../publications.html">Publications</a></li>
+      <li><a href="../newsroom.html">Lab updates</a></li>
+      <li><a href="https://scholar.google.com/citations?user=hlFnwxwAAAAJ&amp;hl=en">Google Scholar</a></li>
+      <li><a href="https://ui.adsabs.harvard.edu/search/q=(%20author%3A%22protopapas%2C%20p%22%20AND%20year%3A1991-)&amp;sort=date%20desc%2C%20bibcode%20desc&amp;p_=0">Astrophysics Data System</a></li>
+    </ul>
+  </nav>
+</footer>
 </body>
-
 </html>

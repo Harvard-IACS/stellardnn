@@ -1,0 +1,206 @@
+<header class="page-heading">
+  <h1>Active projects</h1>
+  <p class="lede">We welcome students and collaborators to contribute to these research projects.</p>
+</header>
+
+<nav class="jump-links" aria-label="Project areas">
+  <a href="#NeuroDiffEq">NeuroDiffEq</a>
+  <a href="#Astromer">ASTROMER projects</a>
+  <a href="#NNEHT">Event Horizon Telescope</a>
+  <a href="#Cosmology">Cosmology</a>
+  <a href="#ADSML">ADSML</a>
+  <a href="#Other">Other projects</a>
+</nav>
+
+<section class="section" id="NeuroDiffEq">
+  <div class="section-head">
+    <h2>NeuroDiffEq</h2>
+    <a href="/projects/neurodiff.html">Software and research</a>
+  </div>
+
+  <article class="prose">
+    <h3 id="one-shot-transfer-learning-for-nonlinear-differential-equations-with-neural-networks">One-shot transfer learning for nonlinear differential equations</h3>
+    <p>One-shot transfer learning could make one neural model reusable across families of ordinary and partial differential equations (ODEs and PDEs) with different initial conditions, forcing functions, and other parameters.</p>
+    <p>We previously demonstrated one-shot transfer learning for linear equations. We then used homotopy perturbation to achieve iterative one-shot transfer learning for simple polynomial nonlinearities.</p>
+    <p>This project aims to handle non-polynomial nonlinearities. Homotopy perturbation converges over limited regions, so we will study Padé approximations and other expansions that may work over a wider range.</p>
+    <ol>
+      <li>Identify expansion techniques that represent different nonlinearities.</li>
+      <li>Integrate the chosen expansion into a neural network that can learn the structure of the solutions.</li>
+      <li>Benchmark the model on a range of ordinary and partial differential equations.</li>
+      <li>Test the method on a real-world problem with non-polynomial nonlinearities.</li>
+    </ol>
+    <h4>References</h4>
+    <ol>
+      <li><a href="https://arxiv.org/abs/2110.11286">One-Shot Transfer Learning of Physics-Informed Neural Networks</a>.</li>
+      <li><a href="https://openreview.net/forum?id=x2Mscu1b7H">Generalized One-Shot Transfer Learning of Linear Ordinary and Partial Differential Equations</a>.</li>
+      <li><a href="https://arxiv.org/abs/2311.14931">One-Shot Transfer Learning for Nonlinear ODEs</a>.</li>
+      <li><a href="https://www.sciencedirect.com/science/article/pii/S0377042799000424">Algebraic approximants and the numerical solution of parabolic equations</a>.</li>
+    </ol>
+  </article>
+
+  <article class="prose">
+    <h3>Extending multi-head PINNs to stiff systems</h3>
+    <p>Stiff ordinary differential equations describe systems with dynamics on very different timescales. A solver must capture fast transients and slow changes at the same time. Traditional methods such as Runge-Kutta often need very small time steps, which makes it expensive to evaluate many initial conditions or forcing functions.</p>
+    <p>Physics-informed neural networks (PINNs) use automatic differentiation to incorporate the governing equations into training. They approximate solutions without a traditional mesh-based discretization.</p>
+    <h4>Previous work</h4>
+    <p>We designed a multi-head PINN whose heads specialize in different stiffness regimes. We first trained the network on non-stiff problems and then reused its learned weights to fine-tune it on stiff problems. On linear and nonlinear benchmarks with different stiffness ratios, the approach improved accuracy and run time over standard PINNs and reduced computation compared with RK45 and Radau, especially when varying initial conditions or forcing functions.</p>
+    <h4>Future work</h4>
+    <ul>
+      <li>Extend transfer learning to stiff partial differential equations, including the one-dimensional advection-reaction benchmark from atmospheric modeling and systems in fluid dynamics and materials science.</li>
+      <li>Evaluate the method on boundary-layer stiffness, oscillatory stiffness, and thermal runaway.</li>
+      <li>Study stellar interiors, planetary atmospheres, accretion disks, plasma dynamics, and high-energy particle interactions, where coupled processes span different timescales.</li>
+      <li>Explore applications in chemical reaction networks, biological systems, and climate models.</li>
+    </ul>
+    <h4>References</h4>
+    <ol>
+      <li>Emilien Seiler, Wanzhou Lei, and Pavlos Protopapas. <a href="https://arxiv.org/abs/2501.17281">Stiff Transfer Learning for Physics-Informed Neural Networks</a>.</li>
+      <li><a href="https://arxiv.org/pdf/2205.07731">Physics-informed neural networks for stiff partial differential equations with transfer learning</a>.</li>
+      <li>G. P. Brasseur and D. J. Jacob. <cite>Atmospheric Chemistry and Global Change</cite>. Oxford University Press, 2017.</li>
+    </ol>
+  </article>
+</section>
+
+<section class="section" id="Astromer">
+  <div class="section-head">
+    <h2>ASTROMER</h2>
+    <a href="/projects/astromer/index.html">Model and datasets</a>
+  </div>
+
+  <article class="prose">
+    <h3>Spectromer</h3>
+    <p>Spectromer aims to build a foundation model for astronomical spectra. A spectrum records light intensity by wavelength. An optical spectrum can contain hundreds to thousands of measurements over wavelength bins that span roughly 400 to 1,000 nanometers.</p>
+    <p>Stellar spectra include a continuum related to the object’s temperature and absorption and emission lines. These features help estimate temperature, mass, age, and elemental abundances. Doppler shifts of spectral lines also help measure velocities and infer cosmological properties. Spectral features are used to classify stars, galaxies, and active galactic nuclei and to study variable objects.</p>
+    <p>Spectroscopy usually requires longer exposures and more specialized equipment than imaging. Surveys such as the Sloan Digital Sky Survey and Gaia have nevertheless made millions of spectra available for study.</p>
+    <p>We plan to adapt ASTROMER’s time-series methods to spectra. We will pretrain a transformer on millions of spectra with training tasks inspired by masked language modeling and next-sentence prediction, adapted to continuous data. We will evaluate the embeddings by fine-tuning the model for regression and classification. The project plans to release pretrained weights and use cloud infrastructure for training and deployment, with version control for data and code.</p>
+    <h4>References</h4>
+    <ol>
+      <li><a href="https://en.wikipedia.org/wiki/Stefan–Boltzmann_law">Stefan-Boltzmann law</a>.</li>
+      <li><a href="https://www.annualreviews.org/doi/10.1146/annurev-astro-081817-051846">Spectroscopic analysis of stellar properties</a>.</li>
+      <li><a href="https://astronomy.swin.edu.au/cosmos/D/Doppler+Shift">Doppler shift and spectral lines</a>.</li>
+      <li><a href="https://www.sdss.org/">Sloan Digital Sky Survey</a>.</li>
+      <li><a href="https://www.cosmos.esa.int/web/gaia">Gaia mission</a>.</li>
+      <li><a href="https://en.wikipedia.org/wiki/Stellar_classification">Harvard stellar classification system</a>.</li>
+      <li><a href="https://iopscience.iop.org/article/10.3847/1538-4357/aa6890">Spectroscopic classification of celestial objects</a>.</li>
+      <li><a href="https://www.aanda.org/articles/aa/pdf/2023/02/aa43928-22.pdf">ASTROMER: A transformer-based embedding for the representation of light curves</a>.</li>
+    </ol>
+  </article>
+
+  <article class="prose">
+    <h3>Multi-band ASTROMER</h3>
+    <p>Surveys observe astronomical objects through filters at different wavelengths, or bands. The resulting light curves help estimate temperature, composition, and age. Telescopes often observe each band at different times, which makes it hard to give all the measurements to a single transformer encoder as a time-aligned input.</p>
+    <ul>
+      <li>Train a separate transformer encoder for each band. Combine the resulting embeddings when performing a downstream task such as classification or regression.</li>
+      <li>Explore attention layers that let the transformer learn relationships between bands observed at different times.</li>
+    </ul>
+    <p>We plan to build an input pipeline that can format multi-band data from different surveys. Public datasets such as Gaia DR3 and ZTF DR20 can support fine-tuning. The models could classify variable objects such as pulsating stars and eclipsing binaries or predict physical properties such as temperature, mass, or distance through redshift estimation.</p>
+    <p>Future work could add spectroscopic data, evaluate self-attention designed for asynchronous measurements, and test the models on survey data.</p>
+    <h4>References</h4>
+    <ol>
+      <li><a href="https://www.aanda.org/articles/aa/pdf/2023/02/aa43928-22.pdf">ASTROMER: A transformer-based embedding for the representation of light curves</a>.</li>
+      <li>Vaswani and colleagues. <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a>.</li>
+    </ol>
+  </article>
+</section>
+
+<section class="section" id="NNEHT">
+  <div class="section-head">
+    <h2>Event Horizon Telescope imaging</h2>
+    <a href="/projects/nneht.html">NN-EHT research</a>
+  </div>
+  <div class="prose">
+    <p>The Event Horizon Telescope (EHT) resolves emission around black holes and provides a way to test the physics of these extreme environments. The collaboration released the first image of a black hole, M87*, in 2019 and has also imaged Sgr A*. The telescope samples a black hole’s image in the frequency domain. These measurements are called visibilities, and reconstruction can lose some of the information they contain.</p>
+    <p>The no-hair theorem describes a black hole in terms of mass, spin, and electric charge. Astrophysical black holes are usually assumed to have negligible charge. Mass can be estimated from nearby stellar motions or the size of the black hole shadow, while spin is difficult to measure. We aim to use deep learning to estimate spin and the simulation parameter R-high for M87* and Sgr A*.</p>
+    <p>We train on general relativistic magnetohydrodynamic (GRMHD) simulations provided by the EHT team. The simulated images provide known parameters for training a model that can then estimate the parameters of an observed black hole.</p>
+  </div>
+
+  <article class="prose">
+    <h3>Denoising visibilities with InstructPix2Pix</h3>
+    <p>Denoising and deblurring improve the images reconstructed from interferometric observations. InstructPix2Pix and other diffusion-based methods have been used to deblur images. This project adapts them to work directly on Fourier-domain visibility data, where the noise has different properties and the model must preserve both phase and amplitude.</p>
+    <ol>
+      <li>Design conditional inputs and loss functions that account for visibility-space constraints.</li>
+      <li>Generate synthetic visibility data with noise and blur artifacts for training.</li>
+      <li>Validate on simulated and observed data, then compare reconstructed images with those from standard pipelines.</li>
+    </ol>
+  </article>
+
+  <article class="prose">
+    <h3>Polarized imaging for black hole characterization</h3>
+    <p>Polarized EHT images of M87* and Sgr A* provide information about magnetic fields and plasma. We plan to combine total intensity and polarization measurements (the Stokes parameters I, Q, U, and V) to estimate black hole spin and study the configuration of the accretion flow.</p>
+    <p>We will train and validate models on GRMHD simulations that include polarization intensities at multiple frequencies.</p>
+    <ol>
+      <li>Adapt neural networks to multidimensional inputs, with input layers and loss functions designed for polarized data.</li>
+      <li>Extract features linked to spin and accretion and use them to distinguish magnetically arrested disk (MAD) simulations from standard and normal evolution (SANE) simulations.</li>
+      <li>Add noise to synthetic training data to help the models handle noisy and incomplete observations.</li>
+    </ol>
+    <p>The goal is to estimate spin and magnetic field configurations together, map regions where relativistic jets originate, and study how jets extract energy from spinning black holes.</p>
+  </article>
+
+  <div class="prose">
+    <h3>Vision transformers</h3>
+    <p>Previous work used convolutional and recurrent neural networks. This direction explores vision transformers for black hole imaging.</p>
+    <h3>Antenna configuration</h3>
+    <p>Use model performance to guide the choice of antenna configuration.</p>
+    <h3>References</h3>
+    <ol>
+      <li><a href="https://doi.org/10.1093/mnras/stad3797">Generating images of the M87* black hole using GANs</a>.</li>
+      <li><a href="https://doi.org/10.1051/0004-6361/201937014">Deep Horizon: A machine learning network that recovers accreting black hole parameters</a>.</li>
+      <li><a href="https://www.semanticscholar.org/paper/8e42b9a02bba6e15c0300d20dfa3ebc2ce4fa8bd">Feature Extraction on Synthetic Black Hole Images</a>.</li>
+      <li><a href="https://doi.org/10.1093/mnras/stad466">Using Machine Learning to Link Black Hole Accretion Flows with Spatially Resolved Polarimetric Observables</a>.</li>
+      <li><a href="https://doi.org/10.1103/PhysRevD.99.103002">Classification of a black hole spin out of its shadow using support vector machines</a>.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="Cosmology">
+  <div class="section-head">
+    <h2>Cosmology-informed neural networks</h2>
+    <a href="/projects.html#Cosmology">Research overview</a>
+  </div>
+  <article class="prose">
+    <h3 id="studies-of-alternative-cosmological-models-with-artificial-neural-networks">Studies of alternative cosmological models with artificial neural networks</h3>
+    <p>The physical mechanism driving the accelerated expansion of the universe remains an open question. The standard cosmological model explains the observed expansion, and models based on alternatives to general relativity provide other explanations to test against observations. Such tests require solving coupled differential equations, which can be computationally expensive.</p>
+    <p>Unsupervised neural solvers train directly on the equations. The resulting solutions are continuous, differentiable, and compact to store. A neural network solution bundle extends this approach to a continuous range of model parameters and initial or boundary conditions. Once trained, the network can be reused across that range. This reduces repeated numerical integration in Markov chain inference. The approach is implemented in <a href="/projects/neurodiff.html">NeuroDiffEq</a>.</p>
+    <p>We applied solution bundles to the background dynamics of four cosmological models and reduced the time required for parameter inference. Subsequent work used a second solution bundle to compute a costly integral. Luca Gomez Bachar’s undergraduate thesis applied a similar method to the matter perturbation equation.</p>
+    <p>The proposed thesis project will estimate uncertainty in the neural network solutions. Earlier work compared the networks’ results with numerical methods. We will focus on the matter perturbation equation, which can be expressed as two ordinary differential equations, and adapt residual-based error estimates from related work.</p>
+    <p>The project is a collaboration with Professor Susana Landau’s group in Argentina. The group meets remotely once a week.</p>
+    <h4>References</h4>
+    <ol>
+      <li>I. E. Lagaris, A. Likas, and D. I. Fotiadis. <cite>IEEE Transactions on Neural Networks</cite> 9, pages 987 to 1000 (1998).</li>
+      <li>C. Flamant, P. Protopapas, and D. Sondak. <a href="https://arxiv.org/abs/2006.14372">Solving Differential Equations Using Neural Network Solution Bundles</a> (2020).</li>
+      <li>F. Chen, D. Sondak, P. Protopapas, M. Mattheakis, S. Liu, D. Agarwal, and M. Di Giovanni. <a href="https://doi.org/10.21105/joss.01931">NeuroDiffEq</a>. <cite>Journal of Open Source Software</cite> 5, 1931 (2020).</li>
+      <li>A. T. Chantada, S. J. Landau, P. Protopapas, C. G. Scóccola, and C. Garraffo. <a href="https://link.aps.org/doi/10.1103/PhysRevD.107.063523">Cosmology-informed neural networks to solve the background dynamics of the Universe</a>. <cite>Physical Review D</cite> 107, 063523 (2023).</li>
+      <li>A. T. Chantada, S. J. Landau, P. Protopapas, C. G. Scóccola, and C. Garraffo. <a href="https://arxiv.org/abs/2311.15955">Faster Bayesian inference with neural network bundles</a> (2023 preprint).</li>
+      <li>S. Liu, X. Huang, and P. Protopapas. <a href="https://arxiv.org/abs/2306.03786">Residual-based error bound for physics-informed neural networks</a> (2023).</li>
+    </ol>
+  </article>
+</section>
+
+<section class="section" id="ADSML">
+  <div class="section-head">
+    <h2>ADSML</h2>
+    <a href="/projects.html#ADSML">Research overview</a>
+  </div>
+  <article class="prose">
+    <h3 id="llms-for-bibliography-curation">Language models for bibliography curation</h3>
+    <h4 id="introduction-and-motivation">Introduction and motivation</h4>
+    <p>Observatory bibliographies link publications to the data they use. The connections help measure an observatory’s scientific impact and let researchers find the data needed to review or reproduce previous work. Creating the links requires specialists to search the literature for instrument names, acronyms, and dataset identifiers and determine how each paper used the observations. <a href="https://arxiv.org/abs/2401.00060">Observatory Bibliographers Collaboration, 2024</a>.</p>
+    <p>We study how language models can help data curators make this process simpler and more consistent.</p>
+    <h4 id="typical-curation-process">Typical curation process</h4>
+    <ol>
+      <li>Search the full text in ADS for instrument or telescope names and aliases. Searches for Chandra X-ray Observatory papers can include “Chandra,” “CXC,” “CXO,” and “AXAF.”</li>
+      <li>Resolve ambiguous mentions. For example, “Chandra” can refer to a person, a ground-based telescope, or a space telescope.</li>
+      <li>Find evidence that the study used data from the telescope or archive. The paper may list dataset identifiers or imply data use through its analysis and results. Extract dataset identifiers when available.</li>
+      <li>Record the type of data and instrument when the paper identifies them. Chandra instruments include ACIS, HRC, HETG, LETG, HRMA, PCAD, and EPHIN.</li>
+      <li>Classify the paper’s connection to the archive. The Chandra bibliography distinguishes direct use of Chandra data, references to published results, predictions of Chandra results, studies of Chandra software or operations or instrumentation, and general references.</li>
+    </ol>
+    <p>The shared task uses open-access papers and annotated bibliographies to train and evaluate assistants that can disambiguate mentions, classify papers, and extract dataset identifiers.</p>
+    <h4 id="call-for-contributions">2024 call for contributions</h4>
+    <p>The <a href="https://ui.adsabs.harvard.edu/WIESP/">WIESP Shared Task Challenge</a> requested full-text, liberally licensed papers from ADS, classified entries from the <a href="https://cxc.harvard.edu/cgi-gen/cda/bibliography">Chandra Archive bibliography</a>, and labeled data from other observatories. The project identified MAST, HEASARC, NASA HPD, and ESA as potential sources.</p>
+    <p>The project works with the ADS group led by Alberto Accomazzi and Raffaele D’Abrusco, with weekly remote meetings.</p>
+  </article>
+</section>
+
+<section class="section prose" id="Other">
+  <h2>Other projects</h2>
+  <p>Our other astronomy and physics research includes StellarNet, eigenvalue problems, and using autoencoders to learn representations of galaxy images. <a href="/projects.html#Other">Browse other research areas</a>.</p>
+</section>

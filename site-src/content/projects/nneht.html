@@ -1,0 +1,58 @@
+<header class="page-heading">
+  <h1>Neural methods for black hole imaging</h1>
+  <p class="lede">Deep learning for Event Horizon Telescope observations and black hole simulations.</p>
+</header>
+
+<section class="section media-split">
+  <div class="prose">
+    <h2>Estimating physical parameters of M87*</h2>
+    <p class="entry-meta">Tao Tsui and colleagues</p>
+    <p>Computer vision models perform well at tasks such as image classification and object recognition. In this project, we train neural networks on general relativistic magnetohydrodynamic (GRMHD) simulations to infer physical parameters of the supermassive black hole M87*. We explore multitask learning, masked models, long short-term memory networks, attention layers, and super-resolution imaging.</p>
+  </div>
+  <figure>
+    <img src="/assets/general/img/projects/super-resolution.png" width="426" height="472" alt="Three rows of black hole images compare sharp, blurred, and reconstructed rings.">
+    <figcaption>Image comparisons from the M87* super-resolution project.</figcaption>
+  </figure>
+</section>
+
+<section class="section media-split">
+  <div class="prose">
+    <h2>Generating M87* images with adversarial networks</h2>
+    <p class="entry-meta"><a href="https://www.arya-mohan.com/">Arya Mohan</a> and colleagues</p>
+    <p>Simulations of M87* are expensive to run, which limits the size of the training grid. We use conditional progressive generative adversarial networks to generate synthetic black hole images across a range of spin and electron distribution parameters.</p>
+    <p><a href="https://academic.oup.com/mnras/article/527/4/10965/7469481?login=false">Read the paper in Monthly Notices of the Royal Astronomical Society</a></p>
+  </div>
+  <figure>
+    <img src="/assets/general/img/projects/NNEHT_GAN.jpeg" width="114" height="114" alt="An orange, spiral-shaped ring surrounds a dark center." loading="lazy">
+    <figcaption>Example image from the generative adversarial network project.</figcaption>
+  </figure>
+</section>
+
+<section class="section media-split">
+  <div class="prose">
+    <h2>Reconstructing M87* images with diffusion models</h2>
+    <p class="entry-meta"><a href="https://www.linkedin.com/in/yuqing-pan/">Yuqing Pan</a> and colleagues</p>
+    <p>InstructPix2Pix-M87 is a multi-conditional diffusion model that improves the quality of Event Horizon Telescope images. The model trains on GRMHD simulations of M87*. This approach improved deblurring and parameter inference in the project’s tests.</p>
+  </div>
+  <figure>
+    <img src="/assets/general/img/projects/MAD_real_deblur.png" width="426" height="472" alt="Side-by-side M87* images show a sharper, narrower ring after deblurring." loading="lazy">
+    <figcaption>M87* before and after deblurring with InstructPix2Pix-M87.</figcaption>
+  </figure>
+</section>
+
+<section class="section media-split">
+  <div class="prose">
+    <h2>Estimating M87* parameters from visibility data</h2>
+    <p class="entry-meta">Franc O and colleagues</p>
+    <p>The Event Horizon Telescope imaged the supermassive black holes M87* and Sgr A*. We investigate how neural networks can estimate M87* parameters directly from visibility data in the frequency domain. We trained models on standard and normal evolution (SANE) and magnetically arrested disk (MAD) simulations. Static and dynamic models performed well for SANE. Dynamic or polarimetric data were needed for accurate results in the MAD simulations. We also applied the approach to real M87* data.</p>
+  </div>
+  <figure>
+    <img src="/assets/general/img/projects/uvplane.jpeg" width="510" height="471" alt="A plot shows curved sampling tracks at different positions in the uv plane, with both axes measured in kilometers." loading="lazy">
+    <figcaption>Sampling tracks in the uv plane used to represent interferometric observations in the frequency domain.</figcaption>
+  </figure>
+</section>
+
+<nav class="jump-links" aria-label="Related research">
+  <a href="/active_projects.html#NNEHT">Active Event Horizon Telescope projects</a>
+  <a href="/publications.html">Research publications</a>
+</nav>

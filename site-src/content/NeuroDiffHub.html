@@ -1,0 +1,24 @@
+<header class="page-heading">
+  <h1>NeuroDiffHub</h1>
+  <p class="lede">A project for building and sharing neural-network solutions to differential equations.</p>
+</header>
+
+<section class="section prose">
+  <h2>Archived project</h2>
+  <p>NeuroDiffHub was built on NeuroDiffEq to build, train, and share solvers for differential equations. Its archive featured Araz Sharma’s heat equation example, <code>araz/heat_equation_rod1</code>.</p>
+  <p>The project’s example loaded a pretrained one-dimensional solver, trained it further, and saved it to the hub.</p>
+  <pre><code># Load the pretrained solver
+solver = Solver1D.load(name="project_name/equation_name")
+
+# Train it further
+solver.fit(max_epochs=1000)
+
+# Save the retrained solver
+solver.save(name="retrained_equation", save_to_hub=True)</code></pre>
+  <div class="link-group">
+    <a href="/projects.html#NeuroDiffHUB">NeuroDiffHub research</a>
+    <a href="/projects/neurodiff.html">NeuroDiff project</a>
+    <a href="https://pypi.org/project/neurodiffeq/">NeuroDiffEq on PyPI</a>
+    <a href="https://github.com/NeuroDiffGym/neurodiffeq">NeuroDiffEq source</a>
+  </div>
+</section>

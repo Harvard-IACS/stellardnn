@@ -1,28 +1,23 @@
 # StellarDNN website
 
-Source: https://github.com/Harvard-IACS/stellardnn
-Production: https://www.stellardnn.org/
+Production is served at [stellardnn.org](https://www.stellardnn.org/). This branch contains the static research-journal redesign. [Design notes](design.md)
 
-The site retains its original Front/Bootstrap templates, images, shared header
-and footer, CSS and JavaScript. The owner requested information updates only.
+## Edit and build
 
-## Editing and validation
+- Edit the page bodies in `site-src/content/` and the shared templates in `site-src/build.py`.
+- The homepage and Lab updates use `data/recent-publications.json`. The full catalogue and BibTeX are in `site-src/content/publications.html` and `publications.bib`.
+- Edit the shared styles and browser code in `assets/site/`.
 
-`python scripts/update_content.py` restores the original HTML templates from
-`0c1924c` and applies the content updates: cybersecurity research, reviewed
-2025–2026 publications, the owner-supplied biography and current course links.
-`data/pavlos-bio.json` stores the supplied biography; publication records and
-provenance are in `data/recent-publications.json` and `docs/publication-review.md`.
+```sh
+python3 -I -B site-src/build.py
+python3 -I -B site-src/build.py --check
+python3 -I -B -m http.server 8768 --bind 127.0.0.1
+```
 
-Run `python scripts/check_content.py` before publication. Preview with
-`python -m http.server 8768 --bind 127.0.0.1`.
+Open [the local preview](http://127.0.0.1:8768/) from the branch checkout. The generated HTML is checked in so a static host can serve it directly. Build the pages again after editing their sources and include the regenerated HTML in the change.
 
-## Publication
+The original site and maintenance utilities are retained in repository history. The redesigned pages load the browser code in `assets/site/`.
 
-A push to `main` triggers the active purple-hill Azure Static Web Apps workflow.
-The lively-cliff workflow is disabled. Verify deployment and the live site.
-No hosting settings or credentials were changed. Use ordinary revert commits
-to roll back; do not force-push.
+## Hosting
 
-The visual refresh was superseded by the owner's instruction to preserve the
-original design. Its assets and generator have been removed.
+The output uses relative URLs for a domain root or a project subpath. A GitHub Pages preview can serve this branch from its root when enabled. The existing Azure Static Web Apps workflow targets `main`.

@@ -395,6 +395,7 @@ details[open] > .disclosure {
 
 .home-hero .lede {
   max-inline-size: 31ch;
+  font-size: clamp(var(--text-lead), 1.5vw, 1.625rem);
 }
 
 .journal-spread {
@@ -406,7 +407,7 @@ details[open] > .disclosure {
 }
 
 .journal-spread h2 {
-  font-size: clamp(var(--text-h2), 4vw, 3.75rem);
+  font-size: clamp(var(--text-h2), 4vw, 4.5rem);
 }
 
 .journal-publications > .index-list {
@@ -423,7 +424,7 @@ details[open] > .disclosure {
 
 .journal-publications .index-row a {
   color: var(--color-ink);
-  font: 600 var(--text-h3) / 1.18 var(--font-display);
+  font: 600 clamp(var(--text-h3), 1.8vw, 2.125rem) / 1.18 var(--font-display);
   text-decoration-color: transparent;
   text-wrap: pretty;
 }

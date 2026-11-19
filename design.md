@@ -4,10 +4,10 @@
 
 The editorial research-journal direction uses the approved StellarDNN homepage concept. The homepage pairs a large serif masthead and a short lab introduction with a ruled publication index. Research detail pages can lead with a real figure and a caption.
 
-- The light surface is a cool gray. The dark surface is a tinted charcoal. Oxblood carries actions and interactive emphasis.
+- The light surface is a cool gray. Dark mode uses near-black with cool charcoal layers. Oxblood carries actions and interactive emphasis.
 - Use `--font-display` for headings and `--font-body` for navigation, captions, metadata, and copy. Use the mono face for code.
 - Use the shared Hallmark scale from [tokens.css](assets/site/tokens.css). Display titles are fluid. Body text starts at 16 pixels.
-- Cap the site at 76rem and use one shared gutter and column-gap scale. Use hairline rules for indexes and whitespace between sections.
+- Cap the site at 120rem. The masthead and publication spread grow at desktop sizes, while long-form text uses a 68ch reading measure. Use one gutter and column-gap scale with hairline rules for indexes and whitespace between sections.
 - Keep the old route names, anchors, attribution, and verified research material. Limit new visitor-facing copy to the navigation or an action that the new interface needs.
 
 ## Page structure

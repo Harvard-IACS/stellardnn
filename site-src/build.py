@@ -29,14 +29,14 @@ class Page:
 PAGES = {
     "index.html": Page("StellarDNN", "Machine learning for astronomy, physics, and cybersecurity at Harvard SEAS.", "Home"),
     "projects.html": Page("Research", "Research directions and projects at StellarDNN.", "Research"),
-    "active_projects.html": Page("Active research", "Explore active StellarDNN research and opportunities to collaborate.", "Active research"),
+    "active_projects.html": Page("Research opportunities", "Explore StellarDNN research projects and opportunities to collaborate.", "Research opportunities"),
     "publications.html": Page("Publications", "Explore recent and earlier StellarDNN publications and download the bibliography.", "Publications"),
     "people.html": Page("People", "Meet the principal investigator, members, collaborators, and alumni of StellarDNN.", "People"),
     "CV.html": Page("Pavlos Protopapas", "Biography, education, appointments, and teaching of Pavlos Protopapas.", "People"),
     "people copy.html": Page("People archive", "Biographical material from the earlier StellarDNN roster.", "People", "people-archive.html"),
     "courses.html": Page("Education", "Teaching, courses, and educational outreach from StellarDNN.", "Education"),
     "contact_us.html": Page("Contact", "Contact StellarDNN at Harvard’s Science and Engineering Complex."),
-    "work_with_us.html": Page("Work with us", "Explore active research and contact the StellarDNN group.", "Active research"),
+    "work_with_us.html": Page("Work with us", "Explore research opportunities and contact the StellarDNN group.", "Research opportunities"),
     "newsroom.html": Page("Lab updates", "Recent publications and research updates from StellarDNN."),
     "projects/nneht.html": Page("Neural networks for the Event Horizon Telescope", "StellarDNN projects on black hole imaging and Event Horizon Telescope data.", "Research"),
     "projects/neurodiff.html": Page("NeuroDiff", "Neural network methods for solving differential equations.", "Research"),
@@ -56,7 +56,7 @@ NAVIGATION = (
     ("Publications", "/publications.html"),
     ("People", "/people.html"),
     ("Education", "/courses.html"),
-    ("Active research", "/active_projects.html"),
+    ("Research opportunities", "/active_projects.html"),
 )
 
 
@@ -135,7 +135,7 @@ LAB_NAVIGATION = (
 NEURODIFF_NAVIGATION = (
     SidebarLink("NeuroDiffHub", "/NeuroDiffHub.html"),
     SidebarLink("NeuroDiffEq", "/projects/neurodiff.html"),
-    SidebarLink("Active differential equation research", "/active_projects.html#NeuroDiffEq"),
+    SidebarLink("NeuroDiffEq opportunities", "/active_projects.html#NeuroDiffEq"),
 )
 
 # Fragments use site-root paths. Make them relative for a GitHub Pages project

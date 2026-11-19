@@ -208,7 +208,7 @@ PAGE_ACTIONS = {
     "newsroom.html": (PageAction("All publications", "/publications.html"),),
     "projects/nneht.html": (
         PageAction("Research opportunities", "/active_projects.html#NNEHT"),
-        PageAction("All lab publications", "/publications.html"),
+        PageAction("All publications", "/publications.html"),
     ),
     "projects/neurodiff.html": (
         PageAction("Research opportunities", "/active_projects.html#NeuroDiffEq"),
@@ -229,12 +229,23 @@ PAGE_ACTIONS = {
 # Fragments use site-root paths. Make them relative for a GitHub Pages project
 # subpath and for links from nested project pages.
 ROOT_PATH_ATTR = re.compile(r"""(\b(?:href|src)\s*=\s*["'])/(?!/)([^"'<>]*)""", re.IGNORECASE)
+EXTERNAL_ANCHOR = re.compile(r'(<a\b[^<>]*\srel="external"[^<>]*)>(.*?)</a>', re.DOTALL)
 
 
 def relative_urls(markup, route):
     prefix = posixpath.relpath(".", posixpath.dirname(route) or ".")
     prefix = "" if prefix == "." else prefix + "/"
     return ROOT_PATH_ATTR.sub(lambda match: match[1] + (prefix + match[2] or "./"), markup)
+
+
+def with_external_link_cues(markup):
+    return EXTERNAL_ANCHOR.sub(
+        lambda match: (
+            f'{match[1]} aria-describedby="external-site-note">{match[2]}'
+            '<span class="external-link-icon" aria-hidden="true">↗</span></a>'
+        ),
+        markup,
+    )
 
 
 def versioned_asset(path):
@@ -247,10 +258,13 @@ def nav_links(active, route, *, include_home=True):
     for label, url in NAVIGATION:
         if label == "Home" and not include_home:
             continue
-        current = "page" if url == "/" + route else "location"
-        attributes = f' aria-current="{current}"' if label == active else ""
+        if url == "/" + route:
+            item = f'<span aria-current="page">{label}</span>'
+        else:
+            current = ' aria-current="location"' if label == active else ""
+            item = f'<a href="{url}"{current}>{label}</a>'
         item_class = ' class="nav-home"' if label == "Home" else ""
-        links.append(f'<li{item_class}><a href="{url}"{attributes}>{label}</a></li>')
+        links.append(f'<li{item_class}>{item}</li>')
     return "\n".join(links)
 
 
@@ -281,11 +295,7 @@ def header(active, route):
 
 def external_link(label, href, *, button=False):
     style = ' class="quiet-button external-button"' if button else ""
-    return (
-        f'<a{style} href="{escape(href, quote=True)}" rel="external">{escape(label)}'
-        '<span class="external-link-icon" aria-hidden="true">↗</span>'
-        '<span class="sr-only"> (external site)</span></a>'
-    )
+    return f'<a{style} href="{escape(href, quote=True)}" rel="external">{escape(label)}</a>'
 
 
 def footer():
@@ -294,7 +304,7 @@ def footer():
   <div>
     <a class="colophon-title" href="/index.html">StellarDNN</a>
     <p class="fine-print">Harvard John A. Paulson School of Engineering and Applied Sciences</p>
-    <address><a href="{MAP_URL}">Science and Engineering Complex<br>150 Western Ave, Boston, MA 02134</a></address>
+    <address><a href="{MAP_URL}" rel="external">Science and Engineering Complex<br>150 Western Ave, Boston, MA 02134</a></address>
   </div>
   <nav aria-label="People and lab">
     <h2>Lab</h2>
@@ -496,6 +506,7 @@ def render(route, page):
 </head>
 <body>
   <div class="site-stars" aria-hidden="true"></div>
+  <span id="external-site-note" hidden>External site</span>
   <a class="button skip-link" href="#content">Skip to content</a>
   {header(page.active, route)}
   <main class="site-container" id="content">
@@ -505,7 +516,7 @@ def render(route, page):
 </body>
 </html>
 """
-    return relative_urls(document, route)
+    return relative_urls(with_external_link_cues(document), route)
 
 
 def main():

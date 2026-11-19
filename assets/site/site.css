@@ -307,16 +307,18 @@ address {
   list-style: none;
 }
 
-.primary-nav a,
-.mobile-links a {
+:is(.primary-nav, .mobile-links) :is(a, [aria-current="page"]) {
   color: var(--color-ink);
   font-size: var(--text-sm);
   text-decoration-color: transparent;
+  text-decoration-thickness: var(--rule);
+  text-underline-offset: 0.2em;
 }
 
-:is(.primary-nav, .mobile-links) a:is(:hover, [aria-current]) {
+:is(.primary-nav, .mobile-links) :is(a:hover, [aria-current]) {
   color: var(--color-accent);
   text-decoration-color: currentColor;
+  text-decoration-line: underline;
 }
 
 .button,
@@ -1240,7 +1242,7 @@ main.site-container {
     display: none;
   }
 
-  .nav-home a {
+  .nav-home > :is(a, span) {
     display: inline-flex;
     align-items: center;
     justify-content: center;

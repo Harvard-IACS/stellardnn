@@ -123,7 +123,10 @@ function setupNavigation() {
     ) return;
 
     const anchor = event.target instanceof Element && event.target.closest("a[href]");
-    if (!anchor || anchor.hasAttribute("download") || (anchor.target && anchor.target !== "_self")) return;
+    if (
+      !anchor || anchor.relList.contains("external") || anchor.hasAttribute("download") ||
+      (anchor.target && anchor.target !== "_self")
+    ) return;
 
     const url = new URL(anchor.href);
     const samePage = url.pathname === location.pathname && url.search === location.search;
@@ -162,6 +165,14 @@ function setupSectionNav() {
   let active;
   let available;
   let frame;
+  let readingLine = measureReadingLine();
+
+  function measureReadingLine() {
+    // Include the space reserved for the sticky nav when a fragment scrolls into view.
+    const padding = Number.parseFloat(getComputedStyle(root).scrollPaddingBlockStart) || 0;
+    const margin = Number.parseFloat(getComputedStyle(entries[0].section).scrollMarginBlockStart) || 0;
+    return Math.max(Math.min(160, window.innerHeight * 0.25), padding + margin + 1);
+  }
 
   function setActive(entry, scrollBehavior = "auto") {
     if (active !== entry) {
@@ -192,7 +203,6 @@ function setupSectionNav() {
       if (window.scrollY > 0) return available.at(-1);
     }
 
-    const readingLine = Math.min(160, window.innerHeight * 0.25);
     let current = available[0];
     let latestTop = -Infinity;
     for (const entry of available) {
@@ -229,7 +239,10 @@ function setupSectionNav() {
   window.addEventListener("scroll", scheduleUpdate, { passive: true });
   window.addEventListener("hashchange", scheduleUpdate);
   window.addEventListener("pageshow", scheduleUpdate);
-  window.addEventListener("resize", () => setActive(sectionInView()));
+  window.addEventListener("resize", () => {
+    readingLine = measureReadingLine();
+    setActive(sectionInView());
+  });
   return refresh;
 }
 

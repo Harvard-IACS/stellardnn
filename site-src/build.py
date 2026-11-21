@@ -1,9 +1,11 @@
 """Render the StellarDNN pages with the standard library."""
 
 import argparse
+from calendar import month_name
 from dataclasses import dataclass
 from hashlib import sha256
 from html import escape
+from itertools import groupby
 import json
 import posixpath
 from pathlib import Path
@@ -81,7 +83,6 @@ SECTION_NAVIGATION = {
         SidebarLink("Other projects", "Other"),
     ),
     "publications.html": (
-        SidebarLink("Recent publications", "RecentPublications", "Recent"),
         SidebarLink("Earlier publications", "EarlierPublications", "Earlier"),
         SidebarLink("Research archive", "ResearchArchive", "Archive"),
     ),
@@ -388,8 +389,7 @@ def with_heading_navigation(fragment, route):
     return f"{heading}{navigation}\n{separator}{content}"
 
 
-def with_sidebar(fragment, route, page):
-    links = SECTION_NAVIGATION.get(route)
+def with_sidebar(fragment, route, page, links):
     if not links:
         return fragment
 
@@ -450,10 +450,58 @@ def breadcrumbs(route):
 </nav>"""
 
 
-def recent_entries(limit, include_citation=False):
+def recent_publications():
     records = json.loads((ROOT / "data" / "recent-publications.json").read_text(encoding="utf-8"))
+    return sorted(records, key=lambda record: (record["year"], record["date"]), reverse=True)
+
+
+def publication_date(iso_date):
+    year, *parts = iso_date.split("-")
+    if not parts:
+        return year
+    month = month_name[int(parts[0])]
+    if len(parts) == 1:
+        return f"{month} {year}"
+    return f"{month} {int(parts[1])}, {year}"
+
+
+def publication_year_sections():
+    sections = []
+    sidebar = []
+    for year, records in groupby(recent_publications(), key=lambda record: record["year"]):
+        section_id = f"Publications{year}"
+        label = f"{year} publications"
+        heading = label if sections else f'<span id="RecentPublications">{label}</span>'
+        rows = []
+        for record in records:
+            title = escape(record["title"])
+            url = escape(record["url"], quote=True)
+            authors = escape(", ".join(record["authors"]))
+            venue = escape(record["venue"])
+            kind = escape(record["type"])
+            date = record["date"]
+            date_label = publication_date(date)
+            rows.append(f"""    <li class="index-row" data-publication-entry>
+      <div>
+        <h3><a href="{url}">{title}</a></h3>
+        <p class="entry-meta">{authors}</p>
+        <p class="entry-meta">{venue} (<time datetime="{date}">{date_label}</time>), {kind}</p>
+      </div>
+    </li>""")
+        entries = "\n".join(rows)
+        sections.append(f"""<section class="section" aria-labelledby="{section_id}" data-publication-section>
+  <h2 id="{section_id}">{heading}</h2>
+  <ul class="index-list publication-list" role="list">
+{entries}
+  </ul>
+</section>""")
+        sidebar.append(SidebarLink(label, section_id, str(year)))
+    return "\n\n".join(sections), tuple(sidebar)
+
+
+def recent_entries(limit, include_citation=False):
     entries = []
-    for record in records[:limit]:
+    for record in recent_publications()[:limit]:
         title = escape(record["title"])
         link = escape(record["url"], quote=True)
         year = int(record["year"])
@@ -471,12 +519,17 @@ def recent_entries(limit, include_citation=False):
 
 def render(route, page):
     fragment = (CONTENT / (page.source or route)).read_text(encoding="utf-8").strip()
+    sidebar_links = SECTION_NAVIGATION.get(route, ())
     if route == "index.html":
         fragment = fragment.replace("<!-- latest-publications -->", recent_entries(2))
     if route == "newsroom.html":
         fragment = fragment.replace("<!-- latest-publications -->", recent_entries(5, include_citation=True))
+    if route == "publications.html":
+        sections, years = publication_year_sections()
+        fragment = fragment.replace("<!-- publication-year-sections -->", sections)
+        sidebar_links = years + sidebar_links
     fragment = with_heading_navigation(fragment, route)
-    fragment = with_sidebar(fragment, route, page)
+    fragment = with_sidebar(fragment, route, page, sidebar_links)
     trail = breadcrumbs(route)
     if trail:
         fragment = f"{trail}\n\n{fragment}"

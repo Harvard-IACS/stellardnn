@@ -5,7 +5,7 @@ Production is served at [stellardnn.org](https://www.stellardnn.org/). This bran
 ## Edit and build
 
 - Edit the page bodies in `site-src/content/` and the shared templates in `site-src/build.py`.
-- The homepage and Lab updates use `data/recent-publications.json`. The full catalogue and BibTeX are in `site-src/content/publications.html` and `publications.bib`.
+- The recent year sections on Publications, the homepage, and Lab updates use `data/recent-publications.json`. Earlier publications and the Research archive are in `site-src/content/publications.html`. The bibliography export is in `publications.bib`.
 - Edit the shared styles and browser code in `assets/site/`.
 
 ```sh

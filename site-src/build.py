@@ -112,9 +112,6 @@ SECTION_NAVIGATION = {
         SidebarLink("General inquiries", "GeneralInquiries"),
         SidebarLink("Visit", "map"),
     ),
-    "work_with_us.html": (
-        SidebarLink("Research opportunities", "openRolesSection"),
-    ),
     "newsroom.html": (
         SidebarLink("Recent publications", "RecentLabPublications"),
     ),
@@ -127,7 +124,6 @@ SECTION_NAVIGATION = {
     "projects/neurodiff.html": (
         SidebarLink("Differential equations", "DifferentialEquations"),
         SidebarLink("Related research", "RelatedResearch"),
-        SidebarLink("NeuroDiffHub archive", "NeuroDiffHub"),
     ),
     "projects/cosmology.html": (
         SidebarLink("Cosmic expansion", "CosmicExpansion"),
@@ -212,6 +208,7 @@ PAGE_ACTIONS = {
     ),
     "projects/neurodiff.html": (
         PageAction("Research opportunities", "/active_projects.html#NeuroDiffEq"),
+        PageAction("NeuroDiffHub archive", "/NeuroDiffHub.html"),
         PageAction("NeuroDiffEq on GitHub", "https://github.com/NeuroDiffGym/neurodiffeq"),
     ),
     "projects/cosmology.html": (PageAction("Research opportunities", "/active_projects.html#Cosmology"),),

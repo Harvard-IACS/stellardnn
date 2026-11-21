@@ -187,15 +187,17 @@ PAGE_ACTIONS = {
     "projects.html": (PageAction("Research opportunities", "/active_projects.html", primary=True),),
     "active_projects.html": (PageAction("Contact the lab", "/contact_us.html", primary=True),),
     "publications.html": (
-        PageAction("Download reviewed bibliography (BibTeX)", "/publications.bib", download=True),
+        PageAction("Download BibTeX bibliography", "/publications.bib", download=True),
         PageAction("Google Scholar", SCHOLAR_URL),
         PageAction("Astrophysics Data System", ADS_URL),
     ),
     "CV.html": (
-        PageAction("Archived CV (2024 PDF)", "/assets/general/JA/CV_Protopapas.pdf"),
+        PageAction("Download archived CV (2024 PDF)", "/assets/general/JA/CV_Protopapas.pdf", download=True),
         PageAction("Harvard profile", "https://seas.harvard.edu/person/pavlos-protopapas"),
     ),
-    "courses.html": (PageAction("Teaching philosophy (PDF)", "/assets/general/JA/TeachingPhilosophy.pdf"),),
+    "courses.html": (
+        PageAction("Download teaching philosophy (PDF)", "/assets/general/JA/TeachingPhilosophy.pdf", download=True),
+    ),
     "contact_us.html": (PageAction("Work with us", "/work_with_us.html"),),
     "work_with_us.html": (
         PageAction("Research opportunities", "/active_projects.html", primary=True),
@@ -347,8 +349,12 @@ def page_actions(actions):
         if action.href.startswith(("https://", "http://")):
             external_links.append(f"      {external_link(action.label, action.href, button=True)}")
         else:
-            style = "button" if action.primary else "quiet-button"
-            download = " download" if action.download else ""
+            if action.download:
+                style = "button download-link"
+                download = " download"
+            else:
+                style = "button" if action.primary else "quiet-button"
+                download = ""
             href = escape(action.href, quote=True)
             local_links.append(f'      <a class="{style}" href="{href}"{download}>{escape(action.label)}</a>')
 
